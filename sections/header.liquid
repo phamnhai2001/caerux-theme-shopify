@@ -18,11 +18,11 @@
                         </div>
                         <button id="btn">
                             {%- assign ImageUrl = section.block.settings.image -%}
-                            {% if ImageUrl != blank %}
-                                {{ ImageUrl | image_url }}
-                            {% else %}
-                                <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
-                            {% endif %}
+                            {%- if ImageUrl != blank -%}
+                            <img scrset="{{ ImageUrl | img_url }}" alt="">
+                            {%- else -%}
+                            <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
+                            {%- endif -%}
                         </button>
                     </li>
                     <li class="header_welcart_cart">
@@ -42,7 +42,14 @@
             <div class="header_main_inner">
                 <h1 class="header_logo">
                     <a href="#">
-                        <img src="{{ 'logo.png' | asset_url }}" alt="">
+                        {%- if section.settings.logo != blank -%}
+                        {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+                            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+                            src="{{ section.settings.logo | img_url: image_size }}"
+                            alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
+                        {%- else -%}
+                            <img src="{{ 'logo.png' | asset_url }}" alt="">
+                        {%- endif -%}
                     </a>
                 </h1>
                 <div class="header_main_nav">
@@ -92,28 +99,37 @@
 
 {% schema %}
 {
-  "name": "Header",
-  "tag": "section",
-  "settings": [
-    {
-      "type": "text",
-      "id": "description",
-      "label": "Text description"
-    }
-  ],
-  "blocks": [
-     {
-       "name": "image icon",
-       "type": "header",
-       "settings": [
-         {
-           "type": "image_picker",
-           "id": "image",
-           "label": "Image"
-         }
-       ]
-     }
-   ]
+"name": "Header",
+"tag": "section",
+"settings": [
+{
+"type": "text",
+"id": "description",
+"label": "Text description"
+},
+{
+"type": "link_list",
+"id": "menu",
+"label": "Menu"
+},
+{
+"type": "image_picker",
+"id": "logo",
+"label": "Logo"
+}
+],
+"blocks": [
+{
+"name": "image icon",
+"type": "header",
+"settings": [
+{
+"type": "image_picker",
+"id": "image",
+"label": "Image"
+}
+]
+}
+]
 }
 {% endschema %}
-
