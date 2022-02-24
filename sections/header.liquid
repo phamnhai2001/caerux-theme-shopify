@@ -18,11 +18,11 @@
                         </div>
                         <button id="btn">
                             {%- assign ImageUrl = section.block.settings.image -%}
-                            {% if ImageUrl != blank %}
-                               	<img scrset="{{ section.block.settings.image | img_url: image_size }}" alt="" >
-                            {% else %}
+                            {%- if ImageUrl != blank -%}
+                               	<img scrset="{{ ImageUrl | img_url: image_size }}" alt="" >
+                            {%- else -%}
                                 <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
-                            {% endif %}
+                            {%- endif -%}
                         </button>
                     </li>
                     <li class="header_welcart_cart">
