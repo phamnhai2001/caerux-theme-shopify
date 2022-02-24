@@ -19,7 +19,9 @@
                         <button id="btn">
                             {%- assign ImageUrl = section.settings.image -%}
                             {% if ImageUrl != blank %}
-                                {{ ImageUrl | image_url }}
+                                {% for block in section.blocks %}
+        							{{ block.settings.image | image_url}}
+								{% endfor %}
                             {% else %}
                                 
                             <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
@@ -45,9 +47,7 @@
                 <h1 class="header_logo">
                     <a href="#">
 <!--                         <img src="{{ 'logo.png' | asset_url }}" alt=""> -->
-                      {% for block in section.blocks %}
-        {{ block.settings.image | image_url: width: 2048 | image_tag }}
-{% endfor %}
+                      
 
                     </a>
                 </h1>
