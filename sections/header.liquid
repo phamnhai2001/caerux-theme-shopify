@@ -19,7 +19,7 @@
                         <button id="btn">
                             {%- assign ImageUrl = section.block.settings.image -%}
                             {%- if ImageUrl != blank -%}
-                               	<img scrset="{{ ImageUrl | img_url }}" src="{{ ImageUrl | img_url }}" alt="" >
+                               	<img scrset="{{ ImageUrl | img_url }}" alt="" >
                             {%- else -%}
                                 <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
                             {%- endif -%}
