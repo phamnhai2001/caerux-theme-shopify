@@ -7,7 +7,16 @@
           "description": "Photogenic and glamorous everyday wear.",
           "menu": "main-menu-1"
         }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_description": "Enter your address to get $20 off your first orders"
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   }
 }
