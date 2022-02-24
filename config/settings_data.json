@@ -4,7 +4,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "description": "Photogenic and glamorous everyday wear."
+          "description": "Photogenic and glamorous everyday wear.",
+          "menu": "main-menu-1"
         }
       },
       "footer": {
