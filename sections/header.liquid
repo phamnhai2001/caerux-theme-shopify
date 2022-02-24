@@ -20,9 +20,9 @@
                         <button id="btn">
                             {%- assign ImageUrl = section.block.settings.image -%}
                             {%- if ImageUrl != blank -%}
-                            <img scrset="{{ ImageUrl | img_url }}" alt="">
+                               	<img scrset="{{ ImageUrl | img_url }}" alt="" >
                             {%- else -%}
-                            <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
+                                <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
                             {%- endif -%}
                         </button>
                     </li>
@@ -43,17 +43,21 @@
             <div class="header_main_inner">
                 <h1 class="header_logo">
                     <a href="#">
-                        {%- if section.settings.logo != blank -%}
-                        {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-                            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-                            src="{{ section.settings.logo | img_url: image_size }}"
-                            alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
-                        {%- else -%}
-                            <img src="{{ 'logo.png' | asset_url }}" alt="">
-                        {%- endif -%}
+                      {%- if section.settings.logo != blank -%}
+            {%- assign image_size = section.settings.logo_width | append: 'x' -%}
+            <img srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {%- else -%}
+                                    <img src="{{ 'logo.png' | asset_url }}" alt="">
+
+          {%- endif -%}
+
                     </a>
                 </h1>
                 <div class="header_main_nav">
+                      {%- if section.settings.menu != blank -%}
                     <nav class="global_nav_container" role="navigation">
                         <div id="menuToggle">
                             <div id="nav_toggle">
@@ -71,27 +75,20 @@
                                     </a>
                                 </div>
                                 <ul class="list_menu">
+                                            {%- for link in section.settings.menu.links -%}
+
                                     <li class="item_menu">
-                                        <a href="#">Home</a>
+                                      <a href="{{ link.url }}">{{ link.title | escape }} </a>
                                     </li>
-                                    <li class="item_menu">
-                                        <a href="#">Conlection</a>
-                                    </li>
-                                    <li class="item_menu">
-                                        <a href="#">About us</a>
-                                    </li>
-                                    <li class="item_menu">
-                                        <a href="#">Blog</a>
-                                    </li>
-                                    <li class="item_menu">
-                                        <a href="#">Contact</a>
-                                    </li>
+                                            {%- endfor -%}
+
                                     <li class="util_sp"><a href="#">Registration</a></li>
                                     <li class="util_sp"><a href="#">Login</a></li>
                                 </ul>
                             </div>
                         </div>
                     </nav>
+                      {%- endif -%}
                 </div>
             </div>
         </div>
@@ -100,37 +97,38 @@
 
 {% schema %}
 {
-"name": "Header",
-"tag": "section",
-"settings": [
-{
-"type": "text",
-"id": "description",
-"label": "Text description"
-},
-{
-"type": "link_list",
-"id": "menu",
-"label": "Menu"
-},
-{
-"type": "image_picker",
-"id": "logo",
-"label": "Logo"
-}
-],
-"blocks": [
-{
-"name": "image icon",
-"type": "header",
-"settings": [
-{
-"type": "image_picker",
-"id": "image",
-"label": "Image"
-}
-]
-}
-]
+  "name": "Header",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Text description"
+    },
+	{
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menu"
+    },
+	{
+		"type": "image_picker",
+		"id": "logo",
+		"label": "Logo"
+	}
+  ],
+  "blocks": [
+     {
+       "name": "image icon",
+       "type": "header",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
+
