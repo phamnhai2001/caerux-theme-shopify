@@ -1,0 +1,396 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+#wrapper.login {
+  padding-top: 14%; }
+  #wrapper.login section.section#content .inner {
+    max-width: 1200px;
+    width: 88.888%;
+    margin: 0 auto 80px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    @media (max-width: 1000px) {
+      #wrapper.login section.section#content .inner {
+        max-width: 100%;
+        margin: 0 auto 8vw; } }
+    @media (max-width: 768px) {
+      #wrapper.login section.section#content .inner {
+        max-width: 100%;
+        margin: 0 auto 10.416vw; } }
+    #wrapper.login section.section#content .inner .login_wrapper {
+      background: #f7f7f7;
+      padding: 70px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (max-width: 1000px) {
+        #wrapper.login section.section#content .inner .login_wrapper {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          padding: 7vw; } }
+      @media (max-width: 768px) {
+        #wrapper.login section.section#content .inner .login_wrapper {
+          padding: 9.145vw; } }
+      #wrapper.login section.section#content .inner .login_wrapper .login_form {
+        width: 50%; }
+        @media (max-width: 1000px) {
+          #wrapper.login section.section#content .inner .login_wrapper .login_form {
+            width: 100%;
+            border-bottom: 1px solid #D6D6D6;
+            padding-bottom: 4vw;
+            margin-bottom: 4vw; } }
+        #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
+          font-size: 24px;
+          line-height: 31px;
+          margin-bottom: 30px;
+          font-weight: 700;
+          text-align: center; }
+          @media (max-width: 1000px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
+              font-size: 4.1vw;
+              line-height: 5.1vw;
+              margin-bottom: 3vw; } }
+          @media (max-width: 768px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
+              font-size: 5.208vw;
+              line-height: 6.510vw;
+              margin-bottom: 3.906vw; } }
+        #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li {
+          margin-bottom: 20px;
+          padding: 0 40px; }
+          @media (max-width: 1000px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li {
+              margin-bottom: 2.5vw; } }
+          @media (max-width: 768px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li {
+              margin-bottom: 3.255vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li a {
+            color: #949494;
+            font-size: 12px;
+            font-weight: bold; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li a {
+                font-size: 1.6vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li a {
+                font-size: 2.343vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li span {
+            display: block; }
+        #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login {
+          padding: 0 40px; }
+          #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login button {
+            width: 100%;
+            padding: 18px;
+            font-size: 16px;
+            margin-bottom: 25px;
+            cursor: pointer;
+            color: #fff;
+            background: #000000;
+            border: none; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login button {
+                width: 100%;
+                padding: 1.9vw;
+                font-size: 2.6vw;
+                margin-bottom: 2.5vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login button {
+                padding: 2.473vw;
+                font-size: 3.385vw;
+                margin-bottom: 3.255vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm {
+            margin-bottom: 20px; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm {
+                margin-bottom: 2vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm {
+                margin-bottom: 2.604vw; } }
+            #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input {
+              margin: 0 auto;
+              display: inline-block;
+              position: relative;
+              padding: 0 0 20px 20px;
+              outline: none;
+              line-height: 30px;
+              vertical-align: middle;
+              font-weight: 500; }
+              @media (max-width: 1000px) {
+                #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input {
+                  padding: 0 0 2vw 2vw;
+                  line-height: 3vw; } }
+              @media (max-width: 768px) {
+                #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input {
+                  padding: 0 0 2.604vw 2.604vw;
+                  line-height: 3.906vw; } }
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input::before {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #121212;
+                position: absolute;
+                top: 0;
+                left: 0;
+                cursor: pointer; }
+                @media (max-width: 1000px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input::before {
+                    width: 1.5vw;
+                    height: 1.5vw; } }
+                @media (max-width: 768px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input::before {
+                    width: 1.953vw;
+                    height: 1.953vw; } }
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input:checked::after {
+                content: '';
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-image: url(../images/check_white.png);
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-size: 100% auto;
+                background-color: #000000;
+                border: 1px solid #121212;
+                cursor: pointer; }
+                @media (max-width: 1000px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input:checked::after {
+                    width: 1.5vw;
+                    height: 1.5vw; } }
+                @media (max-width: 768px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm input:checked::after {
+                    width: 1.953vw;
+                    height: 1.953vw; } }
+            #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm label {
+              vertical-align: middle;
+              font-size: 12px;
+              line-height: 20px;
+              font-weight: 500; }
+              @media (max-width: 1000px) {
+                #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm label {
+                  font-size: 1.6vw;
+                  line-height: 2vw; } }
+              @media (max-width: 768px) {
+                #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .txt_confirm label {
+                  font-size: 2.083vw;
+                  line-height: 2.604vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .bottom_res {
+            font-size: 13px;
+            line-height: 20px;
+            font-weight: bold;
+            color: #000000; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .bottom_res {
+                font-size: 1.8vw;
+                line-height: 2vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login .bottom_res {
+                font-size: 2.343vw;
+                line-height: 2.604vw; } }
+      #wrapper.login section.section#content .inner .login_wrapper .login_sns {
+        width: 50%;
+        border-left: 1px solid #D6D6D6; }
+        @media (max-width: 1000px) {
+          #wrapper.login section.section#content .inner .login_wrapper .login_sns {
+            width: 100%;
+            border-left: none; } }
+        #wrapper.login section.section#content .inner .login_wrapper .login_sns h3 {
+          font-size: 21px;
+          line-height: 31px;
+          margin-bottom: 30px;
+          font-weight: 700;
+          text-align: center; }
+          @media (max-width: 1000px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns h3 {
+              font-size: 4.1vw;
+              line-height: 5.1vw;
+              margin-bottom: 3vw; } }
+          @media (max-width: 768px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns h3 {
+              font-size: 5.208vw;
+              line-height: 7.8125vw;
+              margin-bottom: 3.906vw; } }
+        #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li {
+          margin-bottom: 20px; }
+          @media (max-width: 1000px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li {
+              margin-bottom: 2vw; } }
+          @media (max-width: 768px) {
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li {
+              margin-bottom: 2.604vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn {
+            margin: auto;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 100%;
+            max-width: 350px;
+            height: 65px;
+            border-radius: 7px;
+            color: #fff;
+            font-size: 20px;
+            text-transform: none;
+            letter-spacing: 1.6px;
+            position: relative;
+            padding: 8px 5px;
+            font-weight: 700;
+            border: none; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn {
+                max-width: 100%;
+                height: 7.5vw;
+                border-radius: 0.7vw;
+                font-size: 2.4vw;
+                letter-spacing: 0.16vw;
+                padding: 0.8vw 0.5vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn {
+                height: 9.765vw;
+                border-radius: 0.911vw;
+                font-size: 3.125vw;
+                letter-spacing: 0.13vw;
+                padding: 1.041vw 0.65vw; } }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.facebook {
+              background-color: #4267B2; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.twitter {
+              background-color: #55ADEF; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.instagram {
+              background-color: #40729C; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.amazon {
+              background-color: #FF9902; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.line {
+              background-color: #4BC104; }
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.line img {
+                width: 35px;
+                height: 35px; }
+                @media (max-width: 1000px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.line img {
+                    width: 4.5vw;
+                    height: 4.5vw; } }
+                @media (max-width: 768px) {
+                  #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.line img {
+                    width: 5.859vw;
+                    height: 5.859vw; } }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.spotify {
+              background-color: #000000; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.google {
+              background-color: #DD4B39; }
+            #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn.linkedin {
+              background-color: #007CB6; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn i {
+                font-size: 3.4vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a.btn i {
+                font-size: 4.427vw; } }
+          #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a span {
+            width: 270px;
+            padding-left: 20px;
+            text-align: left;
+            letter-spacing: -0.1px; }
+            @media (max-width: 1000px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a span {
+                width: 65%;
+                padding-left: 7vw; } }
+            @media (max-width: 768px) {
+              #wrapper.login section.section#content .inner .login_wrapper .login_sns .vertical_list_login li a span {
+                padding-left: 9.115vw; } }
+
+#wrapper.login_false {
+  padding-top: 14%; }
+  #wrapper.login_false .inner section.login_f .upper {
+    max-width: 1200px;
+    width: 88.888%;
+    padding: 0;
+    margin: 0 auto 80px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; }
+    @media (max-width: 1000px) {
+      #wrapper.login_false .inner section.login_f .upper {
+        max-width: 100%;
+        margin: 0 auto 8vw; } }
+    @media (max-width: 768px) {
+      #wrapper.login_false .inner section.login_f .upper {
+        margin: 0 auto 10.416vw; } }
+    #wrapper.login_false .inner section.login_f .upper .login_wrapper {
+      background: #f7f7f7;
+      padding: 70px; }
+      @media (max-width: 1000px) {
+        #wrapper.login_false .inner section.login_f .upper .login_wrapper {
+          padding: 7vw; } }
+      @media (max-width: 768px) {
+        #wrapper.login_false .inner section.login_f .upper .login_wrapper {
+          padding: 9.115vw; } }
+      #wrapper.login_false .inner section.login_f .upper .login_wrapper .tlt_login_f {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+        font-weight: 600; }
+        @media (max-width: 1000px) {
+          #wrapper.login_false .inner section.login_f .upper .login_wrapper .tlt_login_f {
+            font-size: 2vw;
+            line-height: 3vw;
+            margin-bottom: 3vw; } }
+        @media (max-width: 768px) {
+          #wrapper.login_false .inner section.login_f .upper .login_wrapper .tlt_login_f {
+            font-size: 2.604vw;
+            line-height: 3.906vw;
+            margin-bottom: 3.906vw; } }
+        #wrapper.login_false .inner section.login_f .upper .login_wrapper .tlt_login_f span.txt_desp {
+          display: block; }
+      #wrapper.login_false .inner section.login_f .upper .login_wrapper .btn_short01 {
+        background: #000000;
+        color: #fff;
+        font-weight: 600;
+        padding: 15px 70px;
+        line-height: 55px;
+        font-size: 22px; }
+        @media (max-width: 1000px) {
+          #wrapper.login_false .inner section.login_f .upper .login_wrapper .btn_short01 {
+            padding: 1.5vw 7vw;
+            line-height: 5.5vw;
+            font-size: 2.2vw; } }
+        @media (max-width: 768px) {
+          #wrapper.login_false .inner section.login_f .upper .login_wrapper .btn_short01 {
+            padding: 1.953vw 9.115vw;
+            line-height: 7.161vw;
+            font-size: 2.845vw; } }
