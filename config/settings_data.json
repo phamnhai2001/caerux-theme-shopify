@@ -9,6 +9,17 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "edf0c1ed-bbb4-4af0-961a-77d079891cb3": {
+            "type": "footer",
+            "settings": {
+              "copyright": "@2022 Shopify. All Right Reserved"
+            }
+          }
+        },
+        "block_order": [
+          "edf0c1ed-bbb4-4af0-961a-77d079891cb3"
+        ],
         "settings": {
           "footer_description": "Enter your address to get $20 off your first orders"
         }
