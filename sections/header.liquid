@@ -2,7 +2,9 @@
     <div class="inner">
         <div class="header_top">
             <div class="header_top_content">
-                <div class="header_description">Photogenic and glamorous everyday wear.</div>
+                <div class="header_description">
+                    {{sections.settings.textheader_description }}
+                    Photogenic and glamorous everyday wear.</div>
                 <ul class="header_top_nav">
                     <li class="util_pc"><a href="register.html">Registration</a></li>
                     <li class="util_pc"><a href="login.html">Login</a></li>
@@ -15,9 +17,9 @@
                             </form>
                         </div>
                         <button id="btn">
-                            {%- assign ImageUrl = section.settings.image -%}
+                            {%- assign ImageUrl = sections.settings.image -%}
                             {% if ImageUrl != blank %}
-                                {{ sections.settings.image | image_url | image_tag }}
+                                {{ ImageUrl | image_url | image_tag }}
                             {% else %}
                                 
                             <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
