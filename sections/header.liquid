@@ -17,7 +17,7 @@
                             </form>
                         </div>
                         <button id="btn">
-                            {%- assign ImageUrl = section.settings.image -%}
+                            {%- assign ImageUrl = section.block.settings.image -%}
                             {% if ImageUrl != blank %}
                                 {% for block in section.blocks %}
         							{{ block.settings.image | image_url}}
