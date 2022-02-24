@@ -113,17 +113,40 @@
         }
     ],
     "blocks": [
+    {
+      "type": "link_list",
+      "name": "Link list",
+      "settings": [
         {
-            "name": "copyright",
-            "type": "footer",
-            "settings": [
-                {
-                    "type": "text",
-                    "id": "copyright",
-                    "label": "Text copyright"
-                }
-            ]
+          "type": "text",
+          "id": "heading",
+          "label": "Link list"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "Link list"
         }
-    ]
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Heading",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "label": "Subtext"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
