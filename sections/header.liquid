@@ -3,7 +3,7 @@
         <div class="header_top">
             <div class="header_top_content">
                 <div class="header_description">
-                    {{section.settings.textheader_description }}
+                    {{section.settings.description }}
                 </div>
                 <ul class="header_top_nav">
                     <li class="util_pc"><a href="register.html">Registration</a></li>
@@ -17,7 +17,7 @@
                             </form>
                         </div>
                         <button id="btn">
-                            {%- assign ImageUrl = section.settings.image -%}
+                            {%- assign ImageUrl = section.block.settings.image -%}
                             {% if ImageUrl != blank %}
                                 {{ ImageUrl | image_url }}
                             {% else %}
@@ -45,6 +45,8 @@
                 <h1 class="header_logo">
                     <a href="#">
                         <img src="{{ 'logo.png' | asset_url }}" alt="">
+                      
+
                     </a>
                 </h1>
                 <div class="header_main_nav">
@@ -94,19 +96,28 @@
 
 {% schema %}
 {
-    "name": "header",
-    "settings": [
-        {
-            "type": "text",
-            "id": "header_description",
-            "label": "Text header"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        }
-    ]
+  "name": "Header",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "description",
+      "label": "Text description"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "image icon",
+       "type": "header",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
 
