@@ -3,8 +3,11 @@
         "banner": {
             "type": "image_banner",
             "setting": {
-                
+
             }
         }
-    }
+    },
+    "orders": [
+        "banner"
+    ]
 }
