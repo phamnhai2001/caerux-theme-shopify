@@ -44,7 +44,17 @@
             <div class="header_main_inner">
                 <h1 class="header_logo">
                     <a href="#">
-                        <img src="{{ 'logo.png' | asset_url }}" alt="">
+<!--                         <img src="{{ 'logo.png' | asset_url }}" alt=""> -->
+                      {% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'slide' %}
+      <div class="slide" {{ block.shopify_attributes }}>
+        {{ block.settings.image | image_url: width: 2048 | image_tag }}
+      </div>
+    ...
+  {% endcase %}
+{% endfor %}
+
                     </a>
                 </h1>
                 <div class="header_main_nav">
@@ -94,19 +104,30 @@
 
 {% schema %}
 {
-    "name": "header",
-    "settings": [
-        {
-            "type": "text",
-            "id": "header_description",
-            "label": "Text header"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        }
-    ]
+  "name": "Slideshow",
+  "tag": "section",
+  "class": "slideshow",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Slideshow"
+    }
+  ],
+  "blocks": [
+     {
+       "name": "Slide",
+       "type": "slide",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         }
+       ]
+     }
+   ]
 }
 {% endschema %}
 
