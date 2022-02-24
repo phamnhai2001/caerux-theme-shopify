@@ -10,6 +10,17 @@
       },
       "footer": {
         "type": "footer",
+        "blocks": {
+          "d745c35d-6cdb-4c20-9861-061c0f57abc6": {
+            "type": "footer",
+            "settings": {
+              "copyright": ""
+            }
+          }
+        },
+        "block_order": [
+          "d745c35d-6cdb-4c20-9861-061c0f57abc6"
+        ],
         "settings": {
           "footer_description": "Enter your address to get $20 off your first orders"
         }
