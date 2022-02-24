@@ -17,14 +17,16 @@
                             </form>
                         </div>
                         <button id="btn">
-                            {%- assign ImageUrl = section.settings.image -%}
+  
+        					{{ block.settings.image | image_url | image_tag }}
+<!--                             {%- assign ImageUrl = section.settings.image -%}
                             {% if ImageUrl != blank %}
                                 {{ ImageUrl | image_url }}
                             {% else %}
                                 
                             <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
                                 
-                            {% endif %}
+                            {% endif %} -->
                         </button>
                     </li>
                     <li class="header_welcart_cart">
@@ -104,21 +106,21 @@
 
 {% schema %}
 {
-  "name": "Slideshow",
+  "name": "Header",
   "tag": "section",
-  "class": "slideshow",
+  "class": "header",
   "max_blocks": 5,
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Slideshow"
+      "label": "Text description"
     }
   ],
   "blocks": [
      {
-       "name": "Slide",
-       "type": "slide",
+       "name": "Image",
+       "type": "image",
        "settings": [
          {
            "type": "image_picker",
