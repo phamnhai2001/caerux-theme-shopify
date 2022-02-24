@@ -1,0 +1,21 @@
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "description": "Photogenic and glamorous everyday wear."
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "footer_description": ""
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
