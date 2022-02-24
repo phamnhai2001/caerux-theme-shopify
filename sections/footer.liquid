@@ -91,7 +91,8 @@
             <div class="logo">
                 <img src="{{'logo.png' | asset_url }}" alt="">
                 <div class="txt_desp">
-                    <p>@2022 Shopify. All Right Reserved</p>
+                    <p>{{section.block.settings.copyright}}</p>
+                        <!-- @2022 Shopify. All Right Reserved</p> -->
                 </div>
             </div>
             <div class="time">
@@ -110,6 +111,19 @@
             "type": "text",
             "id": "footer_description",
             "label": "Text description"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "footer",
+            "type": "footer",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "copyright",
+                    "label": "Text copyright"
+                }
+            ]
         }
     ]
 }
