@@ -89,9 +89,15 @@
     <div class="copyright">
         <div class="container">
             <div class="logo">
-                <img src="{{'logo.png' | asset_url }}" alt="">
+                        {%- if section.settings.logo_footer != blank -%}
+                            <img srcset="{{ section.settings.logo_footer | img_url }}"
+                            src="{{ section.settings.logo_footer | img_url }}"
+                            alt="">
+                        {%- else -%}
+                            <img src="{{ 'logo.png' | asset_url }}" alt="">
+                        {%- endif -%}
                 <div class="txt_desp">
-                    <p>{{section.block.settings.copyright | escape}}</p>
+                    <p>{{section.block.settings.copyright}}</p>
                         <!-- @2022 Shopify. All Right Reserved</p> -->
                 </div>
             </div>
@@ -110,6 +116,11 @@
             "type": "text",
             "id": "footer_description",
             "label": "Text description"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_footer",
+            "label": "Logo"
         }
     ],
     "blocks": [
