@@ -4,7 +4,7 @@
             <div class="header_top_content">
                 <div class="header_description">
                     {{section.settings.textheader_description }}
-                    Photogenic and glamorous everyday wear.</div>
+                </div>
                 <ul class="header_top_nav">
                     <li class="util_pc"><a href="register.html">Registration</a></li>
                     <li class="util_pc"><a href="login.html">Login</a></li>
@@ -19,7 +19,7 @@
                         <button id="btn">
                             {%- assign ImageUrl = section.settings.image -%}
                             {% if ImageUrl != blank %}
-                                {{ ImageUrl | image_url | image_tag }}
+                                {{ ImageUrl | image_url }}
                             {% else %}
                                 
                             <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
