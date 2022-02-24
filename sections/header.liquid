@@ -19,10 +19,10 @@
                         <button id="btn">
                             {%- assign ImageUrl = section.block.settings.image -%}
                             {% if ImageUrl != blank %}
-        							{{ block.settings.image | image_url}}
+        							{{ ImageUrl | image_url}}
                             {% else %}
                                 
-<!--                             <img src="{{ 'icon_search.svg' | asset_url }}" alt=""> -->
+                            <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
                                 
                             {% endif %}
                         </button>
