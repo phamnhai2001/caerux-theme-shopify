@@ -17,16 +17,14 @@
                             </form>
                         </div>
                         <button id="btn">
-  
-        					{{ block.settings.image | image_url | image_tag }}
-<!--                             {%- assign ImageUrl = section.settings.image -%}
+                            {%- assign ImageUrl = section.settings.image -%}
                             {% if ImageUrl != blank %}
                                 {{ ImageUrl | image_url }}
                             {% else %}
                                 
                             <img src="{{ 'icon_search.svg' | asset_url }}" alt="">
                                 
-                            {% endif %} -->
+                            {% endif %}
                         </button>
                     </li>
                     <li class="header_welcart_cart">
@@ -48,13 +46,7 @@
                     <a href="#">
 <!--                         <img src="{{ 'logo.png' | asset_url }}" alt=""> -->
                       {% for block in section.blocks %}
-  {% case block.type %}
-    {% when 'slide' %}
-      <div class="slide" {{ block.shopify_attributes }}>
         {{ block.settings.image | image_url: width: 2048 | image_tag }}
-      </div>
-    ...
-  {% endcase %}
 {% endfor %}
 
                     </a>
@@ -106,21 +98,21 @@
 
 {% schema %}
 {
-  "name": "Header",
+  "name": "Slideshow",
   "tag": "section",
-  "class": "header",
+  "class": "slideshow",
   "max_blocks": 5,
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Text description"
+      "label": "Slideshow"
     }
   ],
   "blocks": [
      {
-       "name": "Image",
-       "type": "image",
+       "name": "Slide",
+       "type": "slide",
        "settings": [
          {
            "type": "image_picker",
