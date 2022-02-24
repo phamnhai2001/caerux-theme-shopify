@@ -3,7 +3,7 @@
         <div class="header_top">
             <div class="header_top_content">
                 <div class="header_description">
-                    {{sections.settings.textheader_description }}
+                    {{section.settings.textheader_description }}
                     Photogenic and glamorous everyday wear.</div>
                 <ul class="header_top_nav">
                     <li class="util_pc"><a href="register.html">Registration</a></li>
@@ -17,7 +17,7 @@
                             </form>
                         </div>
                         <button id="btn">
-                            {%- assign ImageUrl = sections.settings.image -%}
+                            {%- assign ImageUrl = section.settings.image -%}
                             {% if ImageUrl != blank %}
                                 {{ ImageUrl | image_url | image_tag }}
                             {% else %}
