@@ -10,7 +10,7 @@
                     </div>
                     <div class="txt_desp">
                         <p>
-                          {{section.settings.footer_description}}
+                          {{settings.footer_description}}
                         </p>
                     </div>
                     <div class="form_sub">
@@ -91,7 +91,7 @@
             <div class="logo">
                 <img src="{{'logo.png' | asset_url }}" alt="">
                 <div class="txt_desp">
-                    <p>{{section.block.settings.copyright | escape}}</p>
+                    <p>{{block.settings.copyright | escape}}</p>
                         <!-- @2022 Shopify. All Right Reserved</p> -->
                 </div>
             </div>
@@ -113,40 +113,17 @@
         }
     ],
     "blocks": [
-    {
-      "type": "link_list",
-      "name": "Link list",
-      "settings": [
         {
-          "type": "text",
-          "id": "heading",
-          "label": "Link list"
-        },
-        {
-          "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "Link list"
+            "name": "copyright",
+            "type": "footer",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "copyright",
+                    "label": "Text copyright"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "type": "text",
-      "name": "text",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Heading",
-          "label": "Heading"
-        },
-        {
-          "type": "richtext",
-          "id": "subtext",
-          "label": "Subtext"
-        }
-      ]
-    }
-  ]
+    ]
 }
 {% endschema %}
