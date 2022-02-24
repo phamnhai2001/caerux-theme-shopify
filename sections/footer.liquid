@@ -90,10 +90,9 @@
         <div class="container">
             <div class="logo">
                         {%- if section.settings.logo_footer != blank -%}
-                        {%- assign image_size = section.settings.logo_width | append: 'x' -%}
-                            <img srcset="{{ section.settings.logo_footer | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
-                            src="{{ section.settings.logo_footer | img_url: image_size }}"
-                            alt="{{ section.settings.logo_footer.alt | default: shop.name | escape }}">
+                            <img srcset="{{ section.settings.logo_footer | img_url }} , {{ section.settings.logo | img_url }} "
+                            src="{{ section.settings.logo_footer | img_url }}"
+                            alt="">
                         {%- else -%}
                             <img src="{{ 'logo.png' | asset_url }}" alt="">
                         {%- endif -%}
