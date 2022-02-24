@@ -66,23 +66,28 @@
 {% schema %}
 {
     "name": "Image banner",
+    "tag" : "section",
     "settings": [
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "banner 1"
-        },
-        {
-            "type": "image_picker",
-            "id": "image_2",
-            "label": "banner 2"
-        },
-        {
-            "type": "image_picker",
-            "id": "image_3",
-            "label": "banner 3"
-        }
-    ]
+       
+    ],
+    "blocks": [
+     {
+       "name": "banner",
+       "type": "image-banner",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "image",
+           "label": "Image"
+         },
+         {
+            "type": "text",
+            "id": "title",
+            "label": "title banner"
+         }
+       ]
+     }
+   ]
 
 }
 {% endschema %}
