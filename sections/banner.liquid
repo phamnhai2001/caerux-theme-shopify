@@ -68,28 +68,81 @@
 
 {% schema %}
 {
-    "name": "Image banner",
-    "settings": [
-        
-    ],
-	"blocks": [
-		{
-			"type": "heading",
-			"name": "heading",
-			"settings": [
-				{
-					"type": "text",
-                    "id": "title",
-                    "label": "Title banner"	
-				},
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "banner 1"
-                }	
-			]
-		}
-	]
-
+  "name": "Image banner",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    },
+	{
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "image"
+    },
+	{
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "buttons",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image banner",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
