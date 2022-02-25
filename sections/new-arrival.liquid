@@ -97,18 +97,15 @@
           				{%- when 'text' -%}
                               <p>
                                 {{ block.settings.text | escape }}
-<!--                                 Original chair special feature -->
                  			</p>
                  		{%- when 'heading' -%}
                               <h2>
                                 {{ block.settings.heading | escape }}
-          <!--                       Design Chair -->
                               </h2>
                          {%- when 'buttons' -%}
                               <a class="banner_btn a_btn" href="#">
                                   <span>
                                     {{ block.settings.button_label | escape }}
-<!--                                     Check the item -->
                                   </span>
                               </a>
               		{%- endcase -%}
