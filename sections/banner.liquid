@@ -6,7 +6,13 @@
         <div class="slider_top">
             <div class="slider_item fade">
                 <div class="thumb">
+                  {%- if section.settings.image != blank -%}
+                 	<img srcset="{{ section.settings.image | img_url}}",
+                     src="{{ section.settings.image | img_url }}"
+                     alt="">
+               {%- else -%}
                     <img src="{{ '01.jpg' | asset_url }}" alt="">
+               {%- endif -%}
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
