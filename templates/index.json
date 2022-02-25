@@ -4,9 +4,17 @@
       "type": "banner",
       "settings": {
       }
+    },
+    "collection": {
+      "type": "collection",
+      "settings": {
+        "title": "Collection",
+        "products_to_show": 6
+      }
     }
   },
   "order": [
-    "banner"
+    "banner",
+    "collection"
   ]
 }
