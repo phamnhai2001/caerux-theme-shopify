@@ -15,11 +15,18 @@
       "settings": {
 
       }
+    },
+    "recommend": {
+      "type": "recommend",
+      "settings": {
+
+      }
     }
   },
   "order": [
     "banner",
     "collection",
-    "new-arrival"
+    "new-arrival",
+    "recommend"
   ]
 }

@@ -8,7 +8,7 @@
                         <a class="item_type" href="#">
                             <div class="item_content">
                                 <div class="thumb">
-                                    <img src="assets/images/img.jpg" alt="">
+                                    <img src="{{'img.jpg' | asset_url }}" alt="">
                                 </div>
                                 <div class="txt_desp">
                                     <h3>ウォールシェルフ</h3>
@@ -21,7 +21,7 @@
                         <a class="item_type" href="#">
                             <div class="item_content">
                                 <div class="thumb">
-                                    <img src="assets/images/img.jpg" alt="">
+                                    <img src="{{'img.jpg' | asset_url }}" alt="">
                                 </div>
                                 <div class="txt_desp">
                                     <h3>ウォールシェルフ</h3>
@@ -34,7 +34,7 @@
                         <a class="item_type" href="#">
                             <div class="item_content">
                                 <div class="thumb">
-                                    <img src="assets/images/img.jpg" alt="">
+                                    <img src="{{'img.jpg' | asset_url }}" alt="">
                                 </div>
                                 <div class="txt_desp">
                                     <h3>ウォールシェルフ</h3>
@@ -47,7 +47,7 @@
                         <a class="item_type" href="#">
                             <div class="item_content">
                                 <div class="thumb">
-                                    <img src="assets/images/img.jpg" alt="">
+                                    <img src="{{'img.jpg' | asset_url }}" alt="">
                                 </div>
                                 <div class="txt_desp">
                                     <h3>ウォールシェルフ</h3>
@@ -60,7 +60,7 @@
                         <a class="item_type" href="#">
                             <div class="item_content">
                                 <div class="thumb">
-                                    <img src="assets/images/img.jpg" alt="">
+                                    <img src="{{'img.jpg' | asset_url }}" alt="">
                                 </div>
                                 <div class="txt_desp">
                                     <h3>ウォールシェルフ</h3>
@@ -72,13 +72,26 @@
                 </ul>
                 <div class="prev_next">
                     <a class="prev" onclick="prev(this)">
-                        <img src="assets/images/arrow-left.svg" alt="">
+                        <img src="{{'arrow-left.svg' | asset_url }}" alt="">
                     </a>
                     <a class="next" onclick="next(this)">
-                        <img src="assets/images/arrow-right.svg" alt="">
+                        <img src="{{'arrow-right.svg' | asset_url }}" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "recommend",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ]
+}
+{% endschema %}
