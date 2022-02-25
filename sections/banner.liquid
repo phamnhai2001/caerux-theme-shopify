@@ -29,7 +29,14 @@
             </div>
             <div class="slider_item fade">
                 <div class="thumb">
-                    <img src="{{'02.png' | asset_url }}" alt="">
+                    <div class="thumb">
+                  {%- if section.settings.image != blank -%}
+                 	<img srcset="{{ section.settings.image_2 | img_url}}",
+                     src="{{ section.settings.image | img_url }}"
+                     alt="">
+               {%- else -%}
+                    <img src="{{ '02.jpg' | asset_url }}" alt="">
+               {%- endif -%}
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
@@ -43,7 +50,14 @@
             </div>
             <div class="slider_item fade">
                 <div class="thumb">
-                    <img src="{{'03.png' | asset_url }}" alt="">
+                    <div class="thumb">
+                  {%- if section.settings.image != blank -%}
+                 	<img srcset="{{ section.settings.image_3 | img_url}}",
+                     src="{{ section.settings.image | img_url }}"
+                     alt="">
+               {%- else -%}
+                    <img src="{{ '03.jpg' | asset_url }}" alt="">
+               {%- endif -%}
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
