@@ -21,12 +21,19 @@
       "settings": {
 
       }
+    },
+    "blog": {
+      "type": "main-blog",
+      "settings": {
+
+      }
     }
   },
   "order": [
     "banner",
     "collection",
     "new-arrival",
-    "recommend"
+    "recommend",
+    "blog"
   ]
 }

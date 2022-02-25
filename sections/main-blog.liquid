@@ -7,7 +7,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -23,7 +23,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -39,7 +39,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -55,7 +55,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -71,7 +71,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -87,7 +87,7 @@
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="thumb">
-                                <img src="assets/images/img_blog.jpg" alt="">
+                                <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                             </div>
                             <div class="txt_desp">
                                 <h3>ウォールシェルフウォールシェルフ</h3>
@@ -103,3 +103,16 @@
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+    "name": "main-blog",
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+    ]
+}
+{% endschema %}
