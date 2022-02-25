@@ -82,7 +82,13 @@
         </div>
         <div class="banner_arrival">
             <div class="thumb">
-                <img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+              {%- if section.settings.image != blank -%}
+                 	<img srcset="{{ section.settings.image | img_url}}",
+                     src="{{ section.settings.image | img_url }}"
+                     alt="">
+               {%- else -%}
+                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+               {%- endif -%}
             </div>
             <div class="content">
                 <div class="txt_desp">
@@ -105,7 +111,12 @@
         "type": "text",
         "id": "title",
         "label": "Title"
-      }
+      },
+	{
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image banner"
+    }
     ]
 }
 {% endschema %}
