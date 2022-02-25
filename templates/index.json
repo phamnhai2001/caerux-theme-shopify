@@ -8,24 +8,50 @@
     "collection": {
       "type": "main-collection",
       "settings": {
+        "collection": false
       }
     },
     "new-arrival": {
       "type": "new-arrival",
+      "blocks": {
+        "a3663208-334c-4211-b99b-1d5a0895da9d": {
+          "type": "text",
+          "settings": {
+            "text": "Original chair special feature"
+          }
+        },
+        "7b944152-b0b0-44ed-a99b-642d9c92ff3a": {
+          "type": "heading",
+          "settings": {
+            "heading": "Design Chair"
+          }
+        },
+        "eca92428-ec68-4b21-99f8-039210257dd7": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "Check the item",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "a3663208-334c-4211-b99b-1d5a0895da9d",
+        "7b944152-b0b0-44ed-a99b-642d9c92ff3a",
+        "eca92428-ec68-4b21-99f8-039210257dd7"
+      ],
       "settings": {
-
       }
     },
     "recommend": {
       "type": "recommend",
       "settings": {
-
+        "title": ""
       }
     },
     "blog": {
       "type": "main-blog",
       "settings": {
-
+        "title": ""
       }
     }
   },

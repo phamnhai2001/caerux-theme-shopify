@@ -82,18 +82,110 @@
         </div>
         <div class="banner_arrival">
             <div class="thumb">
-                <img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+              {%- if section.settings.image != blank -%}
+                 	<img srcset="{{ section.settings.image | img_url}}",
+                     src="{{ section.settings.image | img_url }}"
+                     alt="">
+               {%- else -%}
+                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+               {%- endif -%}
             </div>
             <div class="content">
-                <div class="txt_desp">
-                    <p>Original chair special feature</p>
-                    <h2>Design Chair</h2>
-                    <a class="banner_btn a_btn" href="#">
-                        <span>Check the item</span>
-                    </a>
+               <div class="txt_desp">
+               {%- for block in section.blocks -%}
+        			{%- case block.type -%}
+          				{%- when 'text' -%}
+                              <p>
+                                {{ block.settings.text | escape }}
+                 			</p>
+                 		{%- when 'heading' -%}
+                              <h2>
+                                {{ block.settings.heading | escape }}
+                              </h2>
+                         {%- when 'buttons' -%}
+                              <a class="banner_btn a_btn" href="#">
+                                  <span>
+                                    {{ block.settings.button_label | escape }}
+                                  </span>
+                              </a>
+              		{%- endcase -%}
+      			{%- endfor -%}
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+{% schema %}
+{
+  "name": "New arrival",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "heading",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "heading"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "text",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "text"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "name": "buttons",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "button_label",
+          "default": "Button label",
+          "label": "button label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "button link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New arrival",
+      "blocks": [
+        {
+          "type": "heading"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "buttons"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
