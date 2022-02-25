@@ -91,15 +91,28 @@
                {%- endif -%}
             </div>
             <div class="content">
-                <div class="txt_desp">
-                    <p>Original chair special feature</p>
-                    <h2>
-                      {{section.block.settings.heading}}
-<!--                       Design Chair -->
-                  	</h2>
-                    <a class="banner_btn a_btn" href="#">
-                        <span>Check the item</span>
-                    </a>
+               <div class="txt_desp">
+               {%- for block in section.blocks -%}
+        			{%- case block.type -%}
+          				{%- when 'text' -%}
+                              <p>
+                                {{ block.settings.text | escape }}
+<!--                                 Original chair special feature -->
+                 			</p>
+                 		{%- when 'heading' -%}
+                              <h2>
+                                {{ block.settings.heading | escape }}
+          <!--                       Design Chair -->
+                              </h2>
+                         {%- when 'buttons' -%}
+                              <a class="banner_btn a_btn" href="#">
+                                  <span>
+                                    {{ block.settings.button_label | escape }}
+<!--                                     Check the item -->
+                                  </span>
+                              </a>
+              		{%- endcase -%}
+      			{%- endfor -%}
                 </div>
             </div>
         </div>
