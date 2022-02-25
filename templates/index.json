@@ -6,10 +6,8 @@
       }
     },
     "collection": {
-      "type": "collection",
+      "type": "main-collection",
       "settings": {
-        "title": "Collection",
-        "products_to_show": 6
       }
     }
   },
