@@ -9,10 +9,17 @@
       "type": "main-collection",
       "settings": {
       }
+    },
+    "new-arrival": {
+      "type": "new-arrival",
+      "settings": {
+
+      }
     }
   },
   "order": [
     "banner",
-    "collection"
+    "collection",
+    "new-arrival"
   ]
 }
