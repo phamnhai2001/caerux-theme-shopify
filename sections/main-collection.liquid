@@ -8,92 +8,25 @@
                 <li>
                     <a class="item_type" href="#">
                        {% if collection.image != blank or collection.products.first != blank %}
-        {%- assign image_object = collection.image | default: collection.products.first.featured_image -%}
+        				{%- assign image_object = collection.image | default: collection.products.first.featured_image -%}
                         <div class="item_content">
                             <div class="txt_desp">
                                 <p>Color your everyday life</p>
                                 <h2>{%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
-      {{ collection.title | default: default_label }}</h2>
+      								{{ collection.title | default: default_label }}</h2>
                             </div>
                             <div class="thumb">
                                 <img src="{{collection.image | img_url}}" >
                             </div>
                         </div>
-                          </li>
-              {% elsif collection == empty %}
-        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
-        {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
-      {% endif %}
-
-      
-                    </a>
-            
+              			{% elsif collection == empty %}
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        	{{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+                      	{% endif %}
+                  	</a>
+				</li>
               {% endfor %}
-<!--                 <li>
-                    <a class="item_type" href="#">
-                        <div class="item_content">
-                            <div class="txt_desp">
-                                <p>Color your everyday life</p>
-                                <h2>SOFA</h2>
-                            </div>
-                            <div class="thumb">
-                                <img src="{{'conletc_02.jpg' | asset_url }}" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item_type" href="#">
-                        <div class="item_content">
-                            <div class="txt_desp">
-                                <p>Color your everyday life</p>
-                                <h2>50% OFF</h2>
-                            </div>
-                            <div class="thumb">
-                                <img src="{{'conletc_03.jpg' | asset_url }}" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item_type" href="#">
-                        <div class="item_content">
-                            <div class="txt_desp">
-                                <p>Color your everyday life</p>
-                                <h2>STORAGE</h2>
-                            </div>
-                            <div class="thumb">
-                                <img src="{{'conletc_04.jpg' | asset_url }}" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item_type" href="#">
-                        <div class="item_content">
-                            <div class="txt_desp">
-                                <p>Color your everyday life</p>
-                                <h2>CHAIR</h2>
-                            </div>
-                            <div class="thumb">
-                                <img src="{{'conletc_05.jpg' | asset_url }}" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a class="item_type" href="#">
-                        <div class="item_content">
-                            <div class="txt_desp">
-                                <p>Color your everyday life</p>
-                                <h2>LIGHT</h2>
-                            </div>
-                            <div class="thumb">
-                                <img src="{{'conletc_06.jpg' | asset_url }}" alt="">
-                            </div>
-                        </div>
-                    </a>
-                </li> -->
+
             </ul>
         </div>
 
