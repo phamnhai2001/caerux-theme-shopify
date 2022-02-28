@@ -64,15 +64,15 @@
                     <li>
                         <div class="ttl_category">
                             <h3>EXPLORE</h3>
-       
                           {%- assign footer_linklist = section.settings.footer_linklist -%}
                           {% if linklists[footer_linklist].links.size > 0 %}
                             <div class="txt_category">
                               {% for link in linklists[footer_linklist].links %}
                                 <p>{{ link.title }}</p>
                               {% endfor %}
-                            <div>
+                          	</div>
                           {% endif %}
+                        </div>
                     </li>
                     <li>
                         <div class="ttl_category">
