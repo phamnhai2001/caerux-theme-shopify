@@ -64,21 +64,15 @@
                     <li>
                         <div class="ttl_category">
                             <h3>EXPLORE</h3>
-                        </div>
-                        
-                            <p>Home</p>
-                            <p>Conlection</p>
-                            <p>About us</p>
-                            <p>Contact</p>
-                        </div>
-                      {%- assign footer_linklist = section.settings.footer_linklist -%}
-      {% if linklists[footer_linklist].links.size > 0 %}
-        <div class="txt_category">
-          {% for link in linklists[footer_linklist].links %}
-            <p>{{ link.title }}</p>
-          {% endfor %}
-        <div>
-      {% endif %}
+       
+                          {%- assign footer_linklist = section.settings.footer_linklist -%}
+                          {% if linklists[footer_linklist].links.size > 0 %}
+                            <div class="txt_category">
+                              {% for link in linklists[footer_linklist].links %}
+                                <p>{{ link.title }}</p>
+                              {% endfor %}
+                            <div>
+                          {% endif %}
                     </li>
                     <li>
                         <div class="ttl_category">
