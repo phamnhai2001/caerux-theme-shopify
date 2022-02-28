@@ -92,7 +92,8 @@
     "recommend": {
       "type": "recommend",
       "settings": {
-        "title": ""
+        "title": "",
+        "feature_collection": "frontpage"
       }
     },
     "blog": {
