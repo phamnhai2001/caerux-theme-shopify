@@ -12,7 +12,8 @@
                         <div class="item_content">
                             <div class="txt_desp">
                                 <p>Color your everyday life</p>
-                                <h2>GOODS</h2>
+                                <h2>{%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
+      {{ collection.title | default: default_label }}</h2>
                             </div>
                             <div class="thumb">
                                 <img src="{{'conletc_01.jpg' | asset_url }}" alt="">
@@ -24,8 +25,7 @@
         {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
       {% endif %}
 
-      {%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
-      <p>{{ collection.title | default: default_label }}</p>
+      
                     </a>
             
               {% endfor %}
