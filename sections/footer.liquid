@@ -71,6 +71,14 @@
                             <p>About us</p>
                             <p>Contact</p>
                         </div>
+                      {%- assign footer_linklist = section.settings.footer_linklist -%}
+      {% if linklists[footer_linklist].links.size > 0 %}
+        <ul class="nav justify-content-center">
+          {% for link in linklists[footer_linklist].links %}
+            <li  class="nav-item"><a href="{{ link.url }}" class="nav-link active" >{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      {% endif %}
                     </li>
                     <li>
                         <div class="ttl_category">
