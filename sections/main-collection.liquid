@@ -2,8 +2,13 @@
     <div class="inner">
         <div class="list_conlection">
             <ul>
+              {% for block in section.blocks %}
+    			{%- assign collection = collections[block.settings.collection] -%}
+             
                 <li>
                     <a class="item_type" href="#">
+                       {% if collection.image != blank or collection.products.first != blank %}
+        {%- assign image_object = collection.image | default: collection.products.first.featured_image -%}
                         <div class="item_content">
                             <div class="txt_desp">
                                 <p>Color your everyday life</p>
@@ -13,9 +18,18 @@
                                 <img src="{{'conletc_01.jpg' | asset_url }}" alt="">
                             </div>
                         </div>
+                          </li>
+              {% elsif collection == empty %}
+        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+        {{ 'collection-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+      {% endif %}
+
+      {%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
+      <p>{{ collection.title | default: default_label }}</p>
                     </a>
-                </li>
-                <li>
+            
+              {% endfor %}
+<!--                 <li>
                     <a class="item_type" href="#">
                         <div class="item_content">
                             <div class="txt_desp">
@@ -79,7 +93,7 @@
                             </div>
                         </div>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </div>
 
@@ -87,14 +101,47 @@
 </section>
 
 {% schema %}
-{
-    "name": "main-collection",
+  {
+    "name": "Collection list",
+    "max_blocks": 12,
     "settings": [
-        {
-            "type": "checkbox",
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Collection list"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
             "id": "collection",
-            "label": "Collection"
-        }
+            "type": "collection"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection list",
+        "category": "Collection",
+        "blocks": [
+          {
+            "type": "collection"
+          },
+          {
+            "type": "collection"
+          },
+          {
+            "type": "collection"
+          }
+        ]
+      }
     ]
-}
+  }
 {% endschema %}
+
