@@ -4,7 +4,7 @@
         <div class="slider">
             <div class="list_item">
                 <ul id="list_arrival">
-                    <li class="slide">
+<!--                     <li class="slide">
                         <a class="item_type" href="product_detail.html">
                             <div class="item_content">
                                 <div class="thumb">
@@ -15,9 +15,26 @@
                                     <p>$3000<span class="sold_out">Out stock</span></p>
                                 </div>
                             </div>
+                          
                         </a>
+                    </li> -->
+                  {% for product in collections[section.settings.feature_collection].products %}
+                     <li class="slide">
+                     	<a class="item_type" href="{{ product.url }}">
+                       		<div class="item_content">
+                                <div class="thumb">
+                                       <img src="{{ product.featured_image | img_url: 'medium' | format: 'jpg' }}" alt="{{ block.settings.slide_heading }}">
+                                </div>
+                                <div class="txt_desp">
+                                     <h3>{{ product.title }}</h3>
+
+                                     <p>{{ product.price | money | remove: '.00' }} <span class="sold_out">Out stock</span></p>
+                                </div>
+                            </div>
+                    	</a>
                     </li>
-                    <li class="slide">
+          		  {% endfor %}
+<!--                     <li class="slide">
                         <a class="item_type" href="product_detail.html">
                             <div class="item_content">
                                 <div class="thumb">
@@ -68,7 +85,7 @@
                                 </div>
                             </div>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
                 <div class="prev_next">
                     <a class="prev" onclick="prev(this)">
