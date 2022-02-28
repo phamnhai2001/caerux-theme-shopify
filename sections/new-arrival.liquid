@@ -4,20 +4,6 @@
         <div class="slider">
             <div class="list_item">
                 <ul id="list_arrival">
-<!--                     <li class="slide">
-                        <a class="item_type" href="product_detail.html">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000<span class="sold_out">Out stock</span></p>
-                                </div>
-                            </div>
-                          
-                        </a>
-                    </li> -->
                   {% for product in collections[section.settings.feature_collection].products %}
                      <li class="slide">
                      	<a class="item_type" href="{{ product.url }}">
@@ -28,64 +14,12 @@
                                 <div class="txt_desp">
                                      <h3>{{ product.title }}</h3>
 
-                                     <p>{{ product.price | money | remove: '.00' }} <span class="sold_out">Out stock</span></p>
+                                     <p>{{ product.price | money }}</p>
                                 </div>
                             </div>
                     	</a>
                     </li>
           		  {% endfor %}
-<!--                     <li class="slide">
-                        <a class="item_type" href="product_detail.html">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="product_detail.html">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="product_detail.html">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="product_detail.html">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li> -->
                 </ul>
                 <div class="prev_next">
                     <a class="prev" onclick="prev(this)">
