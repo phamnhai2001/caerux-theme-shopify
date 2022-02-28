@@ -7,8 +7,54 @@
     },
     "collection": {
       "type": "main-collection",
+      "blocks": {
+        "4c272516-2b84-44e8-b110-c3b37d38e797": {
+          "type": "collection",
+          "settings": {
+            "collection": "50-off"
+          }
+        },
+        "8291e02c-6f22-4553-9430-d376de38d1ff": {
+          "type": "collection",
+          "settings": {
+            "collection": "chair"
+          }
+        },
+        "07ba67c3-abe5-4be6-9f83-9a48fd8e95f0": {
+          "type": "collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "95c59dad-cd3a-4980-84e3-7256c3cd099a": {
+          "type": "collection",
+          "settings": {
+            "collection": "light"
+          }
+        },
+        "4e903327-7da8-4702-8ec9-a7f44d8b9f3d": {
+          "type": "collection",
+          "settings": {
+            "collection": "feature"
+          }
+        },
+        "e4c6b62e-fd8c-433c-b969-cf1c8e1ee3f2": {
+          "type": "collection",
+          "settings": {
+            "collection": "storage"
+          }
+        }
+      },
+      "block_order": [
+        "4c272516-2b84-44e8-b110-c3b37d38e797",
+        "8291e02c-6f22-4553-9430-d376de38d1ff",
+        "07ba67c3-abe5-4be6-9f83-9a48fd8e95f0",
+        "95c59dad-cd3a-4980-84e3-7256c3cd099a",
+        "4e903327-7da8-4702-8ec9-a7f44d8b9f3d",
+        "e4c6b62e-fd8c-433c-b969-cf1c8e1ee3f2"
+      ],
       "settings": {
-        "collection": false
+        "title": "Collection list"
       }
     },
     "new-arrival": {
