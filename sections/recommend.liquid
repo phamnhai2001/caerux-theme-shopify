@@ -4,71 +4,22 @@
         <div class="slider">
             <div class="list_item">
                 <ul id="list_recommend">
-                    <li class="slide">
-                        <a class="item_type" href="#">
-                            <div class="item_content">
+                    {% for product in collections[section.settings.feature_collection].products %}
+                     <li class="slide">
+                     	<a class="item_type" href="{{ product.url }}">
+                       		<div class="item_content">
                                 <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
+                                       <img src="{{ product.featured_image | img_url: 'medium' | format: 'jpg' }}" alt="{{ block.settings.slide_heading }}">
                                 </div>
                                 <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000<span class="sold_out">Out stock</span></p>
+                                     <h3>{{ product.title }}</h3>
+
+                                     <p>{{ product.price | money }}</p>
                                 </div>
                             </div>
-                        </a>
+                    	</a>
                     </li>
-                    <li class="slide">
-                        <a class="item_type" href="#">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="#">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="#">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="slide">
-                        <a class="item_type" href="#">
-                            <div class="item_content">
-                                <div class="thumb">
-                                    <img src="{{'img.jpg' | asset_url }}" alt="">
-                                </div>
-                                <div class="txt_desp">
-                                    <h3>ウォールシェルフ</h3>
-                                    <p>$3000</p>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
+          		  {% endfor %}
                 </ul>
                 <div class="prev_next">
                     <a class="prev" onclick="prev(this)">
@@ -91,7 +42,18 @@
         "type": "text",
         "id": "title",
         "label": "Title"
-      }
-    ]
+      },
+	{
+       "type": "collection",
+       "id": "feature_collection",
+       "label": "Chose Collection to show on slideshow"
+     }
+    ],
+    "presets": [
+     {
+       "name": "Products Slideshow",
+       "category": "collections"
+     }
+     ]
 }
 {% endschema %}
