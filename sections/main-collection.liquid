@@ -16,11 +16,7 @@
       {{ collection.title | default: default_label }}</h2>
                             </div>
                             <div class="thumb">
-                                 {% include 'responsive-image' with
-            image: image_object,
-            max_width: 480,
-            max_height: 480
-          %}
+                                {{collection.image}}
                             </div>
                         </div>
                           </li>
