@@ -23,8 +23,8 @@
                         {%- endform -%}
                     </div>
                     <div class="social_icon">
-                        <ul>
-                            <li>
+<!--                         <ul> -->
+<!--                             <li>
                                 <a href="">
                                     <i class="fab fa-instagram"></i>
                                 </a>
@@ -43,8 +43,9 @@
                                 <a href="">
                                     <i class="fab fa-google-plus-g"></i>
                                 </a>
-                            </li>
-                        </ul>
+                            </li> -->
+                          {% include 'icon-share', share_title: page_title, share_permalink: page_url, share_image: product %}
+<!--                         </ul> -->
                     </div>
                 </div>
             </div>
