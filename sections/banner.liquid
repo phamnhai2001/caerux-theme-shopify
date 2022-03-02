@@ -4,15 +4,15 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
-          {%- for section in section.settings -%}
+          {%- for block in section.blocks -%}
             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
-                  <img  src="{{ section.settings.image | img_url: 'master'}}" alt="">
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="">
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
-                        <h3>{{ section.settings.title}}</h3>
+                        <h3>{{ block.settings.title}}</h3>
                         <div class="btn_shop">
                             <a href="#">Shop now!</a>
                             <img src="{{'arrow-right.svg' | asset_url }}" alt="">
@@ -41,8 +41,16 @@
 {% schema %}
 {
   "name": "Banner slider",
+  "max_blocks": 6,
   "settings": [
+    
+  ],
+  "blocks": [
     {
+      "type": "image",
+      "name": "Image banner",
+      "settings": [
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
@@ -52,6 +60,8 @@
           "id": "title",
           "label":"Title"
         }
+      ]
+    }
   ]
 }
 {% endschema %}
