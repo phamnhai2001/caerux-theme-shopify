@@ -4,7 +4,7 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
-          {% for block in section.blocks %}
+<!--           {% for block in section.blocks %}
             <div class="slider_item fade">
                 <div class="thumb">
                   {%- if section.settings.image != blank -%}
@@ -27,7 +27,14 @@
                     </div>
                 </div>
             </div>
-          {% endfor %}
+          {% endfor %} -->
+          {%- for block in section.blocks -%}
+            <a href="{{ block.settings.button_link}}">
+              <div class="img-wrap">
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="">
+              </div>
+            </a>
+            {% endfor %}
 <!--             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
@@ -89,48 +96,29 @@
 
 {% schema %}
 {
-  "name": "Image banner",
-  "tag": "section",
+  "name": "Banner slider",
+  "max_blocks": 6,
   "settings": [
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "image"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title banner"
-    }
+    
   ],
-"blocks": [
-      {
-        "type": "image_picker",
-        "name": "Image banner",
-        "settings": [
-          {
-            "label": "Image banner",
-            "id": "image",
-            "type": "image_picker"
-          }
-        ]
-      }
-    ],
-"presets": [
-      {
-        "name": "Image banner",
-        "blocks": [
-          {
-            "type": "image_picker"
-          },
-          {
-            "type": "image_picker"
-          },
-          {
-            "type": "image_picker"
-          }
-        ]
-      }
-    ]
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image banner",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label":"Button link"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}
+
