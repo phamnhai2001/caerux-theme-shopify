@@ -4,6 +4,8 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
+          {% for section in section.settings %}
+    		{%- assign banner = banners[section.settings.image] -%}
             <div class="slider_item fade">
                 <div class="thumb">
                   {%- if section.settings.image != blank -%}
@@ -17,7 +19,7 @@
                 <div class="txt_desp">
                     <div class="desp_content">
                         <h3>
-<!--                           The Title Banner Top 01 -->
+                          The Title Banner Top 01
                       </h3>
                         <div class="btn_shop">
                             <a href="#">Shop now</a>
@@ -26,7 +28,8 @@
                     </div>
                 </div>
             </div>
-            <div class="slider_item fade">
+          {% endfor %}
+<!--             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
                   {%- if section.settings.image != blank -%}
@@ -67,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="prev_next">
                 <a class="prev" onclick="plusSlides(-1)">
                     <img src="{{'arrow-left.svg' | asset_url }}" alt="">
@@ -95,58 +98,10 @@
       "id": "image",
       "label": "image"
     },
-	{
-      "type": "image_picker",
-      "id": "image_2",
-      "label": "image"
-    },
-	{
-      "type": "image_picker",
-      "id": "image_3",
-      "label": "image"
-    }
-  ],
-  "blocks": [
     {
-      "type": "heading",
-      "name": "heading",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "heading"
-        }
-      ]
-    },
-    {
-      "type": "buttons",
-      "name": "buttons",
-      "settings": [
-        {
-          "type": "text",
-          "id": "button_label",
-          "default": "Button label",
-          "label": "button label"
-        },
-        {
-          "type": "url",
-          "id": "button_link",
-          "label": "button link"
-        }
-      ]
-    }
-  ],
-  "presets": [
-    {
-      "name": "Image banner",
-      "blocks": [
-        {
-          "type": "heading"
-        },
-        {
-          "type": "buttons"
-        }
-      ]
+      "type": "text",
+      "id": "title",
+      "label": "Title banner"
     }
   ]
 }
