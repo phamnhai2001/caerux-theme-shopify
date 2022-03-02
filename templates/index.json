@@ -3,17 +3,17 @@
     "banner": {
       "type": "banner",
       "blocks": {
-        "2c154d4d-9b35-44f8-b2f2-696e682992b0": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/bed-side-table.jpg",
-            "button_link": ""
-          }
-        },
         "65057404-4d93-4d30-910f-c77253906e18": {
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/plants-and-table-decorations.jpg",
+            "button_link": ""
+          }
+        },
+        "2c154d4d-9b35-44f8-b2f2-696e682992b0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bed-side-table.jpg",
             "button_link": ""
           }
         },
@@ -26,8 +26,8 @@
         }
       },
       "block_order": [
-        "2c154d4d-9b35-44f8-b2f2-696e682992b0",
         "65057404-4d93-4d30-910f-c77253906e18",
+        "2c154d4d-9b35-44f8-b2f2-696e682992b0",
         "f1bb32b8-733c-4393-b215-8d75e81e7262"
       ],
       "settings": {
