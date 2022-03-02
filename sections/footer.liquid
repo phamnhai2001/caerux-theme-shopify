@@ -15,12 +15,12 @@
                         </p>
                     </div>
                     <div class="form_sub">
-                        <form action="">
+                        {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                             <input type="email" placeholder="your@email.address">
                             <button type="submit">
                                 <img src="{{'envelope-regular-24.png' | asset_url }}" alt="">
                             </button>
-                        </form>
+                        {%- endform -%}
                     </div>
                     <div class="social_icon">
                         <ul>
