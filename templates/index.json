@@ -9,10 +9,18 @@
             "image": "shopify:\/\/shop_images\/plants-and-table-decorations.jpg",
             "title": "The title banner 01"
           }
+        },
+        "759e852d-3542-44f8-aac0-17c136d02ab6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ladder-plant-shelf.jpg",
+            "title": "The title banner 02"
+          }
         }
       },
       "block_order": [
-        "6d5ba0c2-a9f7-4f3f-b3bf-5185e0a0e164"
+        "6d5ba0c2-a9f7-4f3f-b3bf-5185e0a0e164",
+        "759e852d-3542-44f8-aac0-17c136d02ab6"
       ],
       "settings": {
       }
