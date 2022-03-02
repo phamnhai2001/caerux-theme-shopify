@@ -105,14 +105,46 @@
 </section>
 
 {% schema %}
-{
+  {
     "name": "main-blog",
+    "max_blocks": 12,
     "settings": [
-    {
+      {
         "type": "text",
         "id": "title",
-        "label": "Title"
+        "label": "Heading",
+        "default": "Blog list"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "blog",
+        "name": "Blog",
+        "settings": [
+          {
+            "label": "Blog",
+            "id": "blog",
+            "type": "blog"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Blog list",
+        "category": "blog",
+        "blocks": [
+          {
+            "type": "blog"
+          },
+          {
+            "type": "blog"
+          },
+          {
+            "type": "blog"
+          }
+        ]
       }
     ]
-}
+  }
 {% endschema %}
