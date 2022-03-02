@@ -4,24 +4,11 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
-
           {%- for block in section.blocks -%}
-            <a href="{{ block.settings.button_link}}">
-              <div class="img-wrap">
-                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="">
-              </div>
-            </a>
-            {% endfor %}
-<!--             <div class="slider_item fade">
+            <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
-                  {%- if section.settings.image != blank -%}
-                 	<img srcset="{{ section.settings.image_2 | img_url}}",
-                     src="{{ section.settings.image | img_url }}"
-                     alt="">
-               {%- else -%}
-                    <img src="{{ '02.jpg' | asset_url }}" alt="">
-               {%- endif -%}
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="">
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
@@ -33,27 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider_item fade">
-                <div class="thumb">
-                    <div class="thumb">
-                  {%- if section.settings.image != blank -%}
-                 	<img srcset="{{ section.settings.image_3 | img_url}}",
-                     src="{{ section.settings.image | img_url }}"
-                     alt="">
-               {%- else -%}
-                    <img src="{{ '03.jpg' | asset_url }}" alt="">
-               {%- endif -%}
-                </div>
-                <div class="txt_desp">
-                    <div class="desp_content">
-                        <h3>The Title Banner Top 03</h3>
-                        <div class="btn_shop">
-                            <a href="#">Shop now!</a>
-                            <img src="{{'arrow-right.svg' | asset_url }}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div> -->
+            {% endfor %}
             <div class="prev_next">
                 <a class="prev" onclick="plusSlides(-1)">
                     <img src="{{'arrow-left.svg' | asset_url }}" alt="">
