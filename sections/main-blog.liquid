@@ -20,7 +20,16 @@
                                   {%- if section.settings.blog_show_date -%}
                                       <time datetime="">{{ article.published_at | time_tag }}</time>
                                   {%- endif -%}
-                                    <span data-url="https://translate.google.com/">Category</span>
+                                    <span data-url="https://translate.google.com/">{{ tag }}</span>
+                                  {%- if article.tags.size > 0 -%}
+                                    <ul aria-label="{{ 'blogs.article.tags' }}">
+                                    {%- for tag in article.tags -%}
+                                      <li>
+                                        <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
+                                      </li>
+                                    {%- endfor -%}
+                                    </ul>
+                                  {%- endif -%}
                                 </p>
                             </div>
                         </div>
