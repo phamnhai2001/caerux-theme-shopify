@@ -2,6 +2,7 @@
     <div class="inner">
         <h2 class="tlt_section">{{ section.settings.title | escape }}</h2>
         <div class="list_item">
+          {%- assign blog = blogs[section.settings.blog] -%}
           {%- if blog.articles_count > 0 -%}
             <ul>
                 {%- for article in blog.articles limit: section.settings.post_limit -%}
