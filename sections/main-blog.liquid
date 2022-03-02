@@ -3,6 +3,30 @@
         <h2 class="tlt_section">BLOG</h2>
         <div class="list_item">
             <ul>
+              {% for block in section.blocks %}
+    			{%- assign blog = blogs[block.settings.blog] -%}
+             
+                <li>
+                    <a class="item_type" href="#">
+                       {% if blog.image != blank or blog.products.first != blank %}
+        				{%- assign image_object = blog.image | default: blog.products.first.featured_image -%}
+                        <div class="item_content">
+                            <div class="txt_desp">
+                                <p>Color your everyday life</p>
+                                <h2>{%- assign default_label = 'homepage.onboarding.collection_title' | t -%}
+      								{{ blog.title | default: default_label }}</h2>
+                            </div>
+                            <div class="thumb">
+                                <img src="{{blog.image | img_url}}" alt="">
+                            </div>
+                        </div>
+              			{% elsif blog == empty %}
+                        {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+                        	{{ 'blog-' | append: current | placeholder_svg_tag: 'placeholder-svg placeholder-svg--small' }}
+                      	{% endif %}
+                  	</a>
+				</li>
+              {% endfor %}
                 <li>
                     <a class="item_type" href="#">
                         <div class="item_content">
