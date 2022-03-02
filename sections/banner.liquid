@@ -4,30 +4,7 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
-<!--           {% for block in section.blocks %}
-            <div class="slider_item fade">
-                <div class="thumb">
-                  {%- if section.settings.image != blank -%}
-                 	<img srcset="{{ section.settings.image | img_url}}",
-                     src="{{ section.settings.image | img_url }}"
-                     alt="">
-               {%- else -%}
-                    <img src="{{ '01.jpg' | asset_url }}" alt="">
-               {%- endif -%}
-                </div>
-                <div class="txt_desp">
-                    <div class="desp_content">
-                        <h3>
-                          {{ section.settings.title }}
-                      </h3>
-                        <div class="btn_shop">
-                            <a href="#">Shop now</a>
-                            <img src="{{'arrow-right.svg' | asset_url }}" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-          {% endfor %} -->
+
           {%- for block in section.blocks -%}
             <a href="{{ block.settings.button_link}}">
               <div class="img-wrap">
