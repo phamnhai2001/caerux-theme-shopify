@@ -2,6 +2,34 @@
   "sections": {
     "banner": {
       "type": "banner",
+      "blocks": {
+        "89d4c051-8161-4ec1-b63f-0b5e727a5861": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/plants-and-table-decorations.jpg",
+            "button_link": ""
+          }
+        },
+        "68faeaed-2410-46ea-b012-4ea777674962": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ladder-plant-shelf.jpg",
+            "button_link": ""
+          }
+        },
+        "40db4c0c-df18-4943-956c-1bbe6cfbad0b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bed-side-table.jpg",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "89d4c051-8161-4ec1-b63f-0b5e727a5861",
+        "68faeaed-2410-46ea-b012-4ea777674962",
+        "40db4c0c-df18-4943-956c-1bbe6cfbad0b"
+      ],
       "settings": {
       }
     },
@@ -103,8 +131,7 @@
         "blog": "news",
         "post_limit": 3,
         "blog_show_author": false,
-        "blog_show_date": true,
-        "show_view_all": false
+        "blog_show_date": true
       }
     }
   },
