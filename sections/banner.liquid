@@ -20,7 +20,6 @@
                     </div>
                 </div>
             </div>
-            {% endfor %}
             <div class="prev_next">
                 <a class="prev" onclick="plusSlides(-1)">
                     <img src="{{'arrow-left.svg' | asset_url }}" alt="">
@@ -29,6 +28,8 @@
                     <img src="{{'arrow-right.svg' | asset_url }}" alt="">
                 </a>
             </div>
+            {% endfor %}
+
             <div class="slider_dot">
                 <span class="dot_" onclick="currentSlide(1)"></span>
                 <span class="dot_" onclick="currentSlide(2)"></span>
