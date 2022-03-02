@@ -99,7 +99,12 @@
     "blog": {
       "type": "main-blog",
       "settings": {
-        "title": ""
+        "title": "BLOG",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "show_view_all": false
       }
     }
   },
