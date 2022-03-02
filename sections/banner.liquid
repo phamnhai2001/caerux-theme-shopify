@@ -5,7 +5,6 @@
     <div class="inner">
         <div class="slider_top">
           {% for section in section.settings %}
-    		{%- assign banner = banners[section.settings.image] -%}
             <div class="slider_item fade">
                 <div class="thumb">
                   {%- if section.settings.image != blank -%}
