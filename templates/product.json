@@ -40,13 +40,6 @@
         "text": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
-      "settings": {
-        "heading": "Related Product",
-        "feature_collection": "product-recommendations"
-      }
-    },
     "16462978832f2db48d": {
       "type": "apps",
       "blocks": {
@@ -61,11 +54,18 @@
       ],
       "settings": {
       }
+    },
+    "featured-product": {
+      "type": "featured-product",
+      "settings": {
+        "heading": "Related Product",
+        "feature_collection": "product-recommendations"
+      }
     }
   },
   "order": [
     "main",
-    "featured-product",
-    "16462978832f2db48d"
+    "16462978832f2db48d",
+    "featured-product"
   ]
 }
