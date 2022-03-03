@@ -40,8 +40,8 @@
       "settings": {
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "featured-product": {
+      "type": "featured-product",
       "settings": {
         "heading": "Related Product"
       }
@@ -49,6 +49,6 @@
   },
   "order": [
     "main",
-    "product-recommendations"
+    "featured-product"
   ]
 }
