@@ -14,8 +14,8 @@
                                     </a>
                                     <div class="lightbox-target" id="conletc_01">
                                       {% for image in product.images %}
-  {{ image | image_url: width: 300 }}
-{% endfor %}
+                                        {{ image | image_url }}
+                                      {% endfor %}
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
