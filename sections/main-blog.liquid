@@ -18,7 +18,7 @@
                                 <h3>{{ article.title }}</h3>
                                 <p>
                                   {%- if section.settings.blog_show_date -%}
-                                      <time datetime="">{{ article.published_at | time_tag }}</time>
+                                      <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
                                   {%- endif -%}
                                   {%- for tag in article.tags -%}
                                     <span data-url="https://translate.google.com/">{{ tag }}</span>
