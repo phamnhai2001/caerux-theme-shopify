@@ -17,7 +17,13 @@
                                             <img src="{{  }}" alt="">
                                         </div>
                                         <div class="txt_desp">
-                                            <h3>ウォールシェルフ</h3>
+                                            {%- if product_card_product.featured_media -%}
+                                              <h3 class="card-information__text h5">
+                                                <a href="{{ product_card_product.url | default: '#' }}" class="full-unstyled-link">
+                                                  {{ product_card_product.title | escape }}
+                                                </a>
+                                              </h3>
+                                            {%- endif -%}
                                             <p>$3000<span class="sold_out">Out stock</span></p>
                                         </div>
                                     </div>
