@@ -271,11 +271,12 @@
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend">
+                          {% for recommendation in recommendations.products %}
                             <li class="slide">
                                 <a class="item_type" href="#">
                                     <div class="item_content">
                                         <div class="thumb">
-                                            <img src="assets/images/img.jpg" alt="">
+                                            <img src="{{ recommendation | img_url }}" alt="">
                                         </div>
                                         <div class="txt_desp">
                                             <h3>ウォールシェルフ</h3>
@@ -284,6 +285,7 @@
                                     </div>
                                 </a>
                             </li>
+                          {% endfor %}
                             <li class="slide">
                                 <a class="item_type" href="#">
                                     <div class="item_content">
