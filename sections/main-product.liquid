@@ -15,13 +15,13 @@
                             <div class="container">
                               {% for image in product.images %}
                                 <div class="item">
-                                    <a class="lightbox" href="#{{section.id}}">
+                                    <a class="lightbox" href="#{{image.position}}">
                                         <img src="{{ image | image_url }}" alt="">
                                         <button class="zoom_in">
                                             <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="">
                                         </button>
                                     </a>
-                                    <div class="lightbox-target" id="{{section.id}}">
+                                    <div class="lightbox-target" id="{{image.position}}">
 	                                     <img src="{{ image | image_url }}" >   
                                         <a class="lightbox-close" href="#">
                                         </a>
