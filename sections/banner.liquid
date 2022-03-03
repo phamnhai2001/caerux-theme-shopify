@@ -1,27 +1,45 @@
 <script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
 
 
-<div id="slick_main">
-    <div class="slider-wrap">
-        <div class="image-slider">
-        {%- for block in section.blocks -%}
-            <a href="{{ block.settings.button_link}}">
-              <div class="img-wrap">
-                  <img class="util_pc" src="{{ block.settings.image | img_url: 'master'}}" alt="">
-                  <img class="util_sp" src="{{ block.settings.image | img_url: 'master'}}" alt="">
-              </div>
-            </a>
-            {% endfor %}
-        </div>
-        <div class="dot_slider_main">
-            <span class="start-num">01</span>
-            <div class="slider-progress">
-                <span></span>
+<section class="section" id="banner">
+    <div class="inner">
+        <div class="slider_top">
+           {%- for block in section.blocks -%}
+            <div class="slider_item fade">
+                <div class="thumb">
+                    <div class="thumb">
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="">
+                </div>
+                <div class="txt_desp">
+                    <div class="desp_content">
+                        <h3>{{ block.settings.title}}</h3>
+                        <div class="btn_shop">
+                            <a href="#">Shop now!</a>
+                            <img src="{{'arrow-right.svg' | asset_url }}" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-                <span class="end-num">03</span>
+            {% endfor %}
+            <div class="prev_next">
+                <a class="prev" onclick="plusSlides(-1)">
+                    <img src="{{'arrow-left.svg' | asset_url }}" alt="">
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <img src="{{'arrow-right.svg' | asset_url }}" alt="">
+                </a>
+            </div>
+            
+
+            <div class="slider_dot">
+                <span class="dot_" onclick="currentSlide(1)"></span>
+                <span class="dot_" onclick="currentSlide(2)"></span>
+                <span class="dot_" onclick="currentSlide(3)"></span>
+            </div>
         </div>
     </div>
-</div>
+  </div>
+</section>
 
 {% schema %}
 {
