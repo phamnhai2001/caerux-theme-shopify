@@ -16,90 +16,12 @@
                                     </a>
                                     <div class="lightbox-target" id="conletc_01">
                                       
-                                        <img id="Thumbnail-{{ section.id }}-{{ forloop.index }}"
-                        srcset="{% if media.preview_image.width >= 59 %}{{ media.preview_image | img_url: '59x' }} 59x,{% endif %}
-                                {% if media.preview_image.width >= 118 %}{{ media.preview_image | img_url: '118x' }} 118w,{% endif %}
-                                {% if media.preview_image.width >= 84 %}{{ media.preview_image | img_url: '84x' }} 84w,{% endif %}
-                                {% if media.preview_image.width >= 168 %}{{ media.preview_image | img_url: '168x' }} 168w,{% endif %}
-                                {% if media.preview_image.width >= 130 %}{{ media.preview_image | img_url: '130x' }} 130w,{% endif %}
-                                {% if media.preview_image.width >= 260 %}{{ media.preview_image | img_url: '260x' }} 260w{% endif %}"
-                        src="{{ media | img_url: '84x84' }}"
-                        sizes="(min-width: 1200px) calc((1200px - 19.5rem) / 12), (min-width: 750px) calc((100vw - 16.5rem) / 8), calc((100vw - 8rem) / 5)"
-                        alt="{{ media.alt | escape }}"
-                        height="200"
-                        width="200"
-                        loading="lazy"
-                      >
+                                        <img src="{{ image | img_url }}" >
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
                                 </div>
                                {% endfor %}
-                                <div class="item">
-                                    <a class="lightbox" href="#conletc_02">
-                                        <img src="assets/images/conletc_02.jpg" alt="">
-                                        <button class="zoom_in">
-                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
-                                        </button>
-                                    </a>
-                                    <div class="lightbox-target" id="conletc_02">
-                                        <img src="assets/images/conletc_02.jpg" alt="">
-                                        <a class="lightbox-close" href="#">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a class="lightbox" href="#conletc_03">
-                                        <img src="assets/images/conletc_03.jpg" alt="">
-                                        <button class="zoom_in">
-                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
-                                        </button>
-                                    </a>
-                                    <div class="lightbox-target" id="conletc_03">
-                                        <img src="assets/images/conletc_03.jpg" alt="">
-                                        <a class="lightbox-close" href="#">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a class="lightbox" href="#conletc_04">
-                                        <img src="assets/images/conletc_04.jpg" alt="">
-                                        <button class="zoom_in">
-                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
-                                        </button>
-                                    </a>
-                                    <div class="lightbox-target" id="conletc_04">
-                                        <img src="assets/images/conletc_04.jpg" alt="">
-                                        <a class="lightbox-close" href="#">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a class="lightbox" href="#conletc_05">
-                                        <img src="assets/images/conletc_05.jpg" alt="">
-                                        <button class="zoom_in">
-                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
-                                        </button>
-                                    </a>
-                                    <div class="lightbox-target" id="conletc_05">
-                                        <img src="assets/images/conletc_05.jpg" alt="">
-                                        <a class="lightbox-close" href="#">
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <a class="lightbox" href="#conletc_06">
-                                        <img src="assets/images/conletc_06.jpg" alt="">
-                                        <button class="zoom_in">
-                                            <img class="icon_zoom" src="assets/images/zoom-in.png" alt="">
-                                        </button>
-                                    </a>
-                                    <div class="lightbox-target" id="conletc_06">
-                                        <img src="assets/images/conletc_06.jpg" alt="">
-                                        <a class="lightbox-close" href="#">
-                                        </a>
-                                    </div>
-                                </div>
                                 <div class="row">
                                     <div class="column">
                                         <img class="image" src="assets/images/conletc_01.jpg" onclick="currentSlide(1)"
