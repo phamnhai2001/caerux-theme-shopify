@@ -340,3 +340,50 @@
             </section>
         </div>
     </div>
+{% schema %}
+{
+	"name": "main-product",
+	"tag": "section",
+	"blocks": [
+		{
+			"type": "@app"
+		},
+		{
+          "type": "title",
+          "name": "title",
+          "limit": 1
+        },
+        {
+          "type": "price",
+          "name": "price",
+          "limit": 1
+        },
+        {
+          "type": "quantity_selector",
+          "name": "quantity_selector",
+          "limit": 1
+        },
+		{
+          "type": "buy_buttons",
+          "name": "buy_buttons",
+          "limit": 1,
+          "settings": [
+              {
+                "type": "checkbox",
+                "id": "show_dynamic_checkout",
+                "default": true,
+                "label": "show_dynamic_checkout",
+                "info": "show_dynamic_checkout"
+              }
+      		]
+    	},
+		{
+          "type": "description",
+          "name": "description",
+          "limit": 1
+        }
+	],
+    "settings": [
+      ]
+}
+{% endschema %}
