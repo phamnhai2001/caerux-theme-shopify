@@ -7,7 +7,7 @@
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend">
-                          {% for recommendation in recommendations.products %}
+<!--                           {% for recommendation in recommendations.products %}
                             <li class="slide">
                                 <a class="item_type" href="#">
                                     <div class="item_content">
@@ -21,46 +21,16 @@
                                     </div>
                                 </a>
                             </li>
-                          {% endfor %}
-                            <li class="slide">
-                                <a class="item_type" href="#">
-                                    <div class="item_content">
-                                        <div class="thumb">
-                                            <img src="assets/images/img.jpg" alt="">
-                                        </div>
-                                        <div class="txt_desp">
-                                            <h3>ウォールシェルフ</h3>
-                                            <p>$3000</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="slide">
-                                <a class="item_type" href="#">
-                                    <div class="item_content">
-                                        <div class="thumb">
-                                            <img src="assets/images/img.jpg" alt="">
-                                        </div>
-                                        <div class="txt_desp">
-                                            <h3>ウォールシェルフ</h3>
-                                            <p>$3000</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="slide">
-                                <a class="item_type" href="#">
-                                    <div class="item_content">
-                                        <div class="thumb">
-                                            <img src="assets/images/img.jpg" alt="">
-                                        </div>
-                                        <div class="txt_desp">
-                                            <h3>ウォールシェルフ</h3>
-                                            <p>$3000</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
+                          {% endfor %} -->
+                          {% if recommendations.performed %}
+                          {% if recommendations.products_count > 0 %}
+                            {% for product in recommendations.products %}
+                              {{ product.title | link_to: product.url }}
+                            {% endfor %}
+                          {% endif %}
+                        {% else %}
+                          <div class="placeholder">Placeholder animation</div>
+                        {% endif %}
                         </ul>
                     </div>
                 </div>
