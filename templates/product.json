@@ -55,6 +55,11 @@
       "settings": {
       }
     },
+    "review-product": {
+      "type": "review-product",
+      "settings": {
+      }
+    },
     "featured-product": {
       "type": "featured-product",
       "settings": {
@@ -66,6 +71,7 @@
   "order": [
     "main",
     "16462978832f2db48d",
+    "review-product",
     "featured-product"
   ]
 }
