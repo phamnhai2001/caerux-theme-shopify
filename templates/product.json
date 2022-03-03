@@ -37,12 +37,14 @@
         "description"
       ],
       "settings": {
+        "text": ""
       }
     },
     "featured-product": {
       "type": "featured-product",
       "settings": {
-        "heading": "Related Product"
+        "heading": "Related Product",
+        "feature_collection": "product-recommendations"
       }
     }
   },
