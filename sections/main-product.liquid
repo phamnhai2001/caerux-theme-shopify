@@ -6,6 +6,7 @@
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
+                              {% for image in product.images %}
                                 <div class="item">
                                     <a class="lightbox" href="#conletc_01">
                                         <img src="assets/images/conletc_01.jpg" alt="">
@@ -14,15 +15,12 @@
                                         </button>
                                     </a>
                                     <div class="lightbox-target" id="conletc_01">
-                                      
-                                        {% for image in product.images %}
-  {{ image.src  }}
-  {{ image }}
-{% endfor %}
+	                                     {{ image | image_url: width: 500 }}   
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
                                 </div>
+                              {% endfor %}
                                 <div class="row">
                                     <div class="column">
                                         <img class="image" src="assets/images/conletc_01.jpg" onclick="currentSlide(1)"
