@@ -21,7 +21,6 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
           }
         },
         "description": {
@@ -38,14 +37,12 @@
         "description"
       ],
       "settings": {
-        "text": ""
       }
     },
     "featured-product": {
       "type": "featured-product",
       "settings": {
-        "heading": "Related Product",
-        "feature_collection": "product-recommendations"
+        "heading": "Related Product"
       }
     }
   },
