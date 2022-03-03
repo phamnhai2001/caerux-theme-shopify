@@ -7,7 +7,9 @@
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend">
-                          	{% render 'render-products' for product in collections[section.settings.feature_collection].products as product %}
+                          	{% for product in collections[section.settings.feature_collection].products  %}
+                          		{% render 'render-product' %}
+                          {% endfor %}
 						</ul>                       
                     </div>
                 </div>
