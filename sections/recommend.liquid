@@ -4,7 +4,7 @@
         <div class="slider">
             <div class="list_item">
                 <ul id="list_recommend">
-                    {% for product in collections[section.settings.feature_collection].products %}
+                    {% for product in collections[section.settings.recommend_collection].products %}
                      <li class="slide">
                      	<a class="item_type" href="{{ product.url }}">
                        		<div class="item_content">
@@ -45,7 +45,7 @@
       },
 	{
        "type": "collection",
-       "id": "feature_collection",
+       "id": "recommend_collection",
        "label": "Chose Collection to show on slideshow"
      }
     ],
