@@ -1,12 +1,65 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<section class="section" id="recommended">
+                <div class="inner">
+                    <div class="ttl_product">
+                        <h3>Related Product</h3>
+                    </div>
+                    <div class="list_item">
+                        <ul id="list_recommend">
+                          {% for recommendation in recommendations.products %}
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="{{ recommendation | img_url }}" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000<span class="sold_out">Out stock</span></p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                          {% endfor %}
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="slide">
+                                <a class="item_type" href="#">
+                                    <div class="item_content">
+                                        <div class="thumb">
+                                            <img src="assets/images/img.jpg" alt="">
+                                        </div>
+                                        <div class="txt_desp">
+                                            <h3>ウォールシェルフ</h3>
+                                            <p>$3000</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
