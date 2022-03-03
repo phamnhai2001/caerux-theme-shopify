@@ -3,7 +3,7 @@
 			<section class="section" id="recommended">
                 <div class="inner">
                     <div class="ttl_product">
-                        <h3>Related Product</h3>
+                        <h3>{{section.settigs.heading}}</h3>
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend">
@@ -67,3 +67,17 @@
             </section>
   </div>
 </div>
+
+{% schema %}
+{
+	"name": "product-recommendations",
+	"tag": "section",
+	"settings": [
+		{
+			"type": "text",
+			"id": "heading",
+			"label": "Heading"
+		}
+	]
+}
+{% endschema %}
