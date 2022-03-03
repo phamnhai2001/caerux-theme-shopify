@@ -40,14 +40,14 @@
       "settings": {
       }
     },
-    "recommend": {
-      "type": "recommend",
+    "product-recommendations": {
+      "type": "product-recommendations",
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "recommend"
+    "product-recommendations"
   ]
 }
