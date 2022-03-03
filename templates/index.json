@@ -120,8 +120,8 @@
     "recommend": {
       "type": "recommend",
       "settings": {
-        "title": "",
-        "feature_collection": "frontpage"
+        "title": "RECOMMEND",
+        "recommend_collection": "frontpage"
       }
     },
     "blog": {
