@@ -1,6 +1,6 @@
 <section class="section" id="new_arrival">
     <div class="inner">
-        <h2 class="tlt_section">NEW ARRIVAL</h2>
+        <h2 class="tlt_section">{{section.settings.title}}</h2>
         <div class="slider">
             <div class="list_item">
                 <ul id="list_arrival">
@@ -72,6 +72,11 @@
   "name": "New arrival",
   "tag": "section",
   "settings": [
+	{
+		"type": "text",
+		"id": "title",
+		"label": "Heading"
+	},
     {
       "type": "image_picker",
       "id": "image",
