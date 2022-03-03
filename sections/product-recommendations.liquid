@@ -6,29 +6,7 @@
                         <h3>{{section.settings.heading}}</h3>
                     </div>
                     <div class="list_item">
-                        <ul id="list_recommend" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
-                          {% if recommendations.products_count > 0 %}
-                            {% for product in recommendations.products %}
-                            <li class="slide">
-                                <a class="item_type" href="#">
-                                    <div class="item_content">
-                                        <div class="thumb">
-                                            <img src="{{  }}" alt="">
-                                        </div>
-                                        <div class="txt_desp">
-                                            {%- if product_card_product.featured_media -%}
-                                              <h3>
-                                                  {{ product_card_product.title | escape }}
-                                              </h3>
-                                            {%- endif -%}
-                                            <p>$3000<span class="sold_out">Out stock</span></p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                          	{% endfor %}
-                          {% endif %}
-                        </ul>
+                        
                     </div>
                 </div>
             </section>
