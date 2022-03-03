@@ -22,30 +22,12 @@
                                 </div>
                               {% endfor %}
                                 <div class="row">
+                                  {% for image in product.images %}
                                     <div class="column">
-                                        <img class="image" src="assets/images/conletc_01.jpg" onclick="currentSlide(1)"
+                                        <img class="image" src="{{ image.preview_image | image_url }}" onclick="currentSlide(1)"
                                             alt="">
                                     </div>
-                                    <div class="column">
-                                        <img class="image" src="assets/images/conletc_02.jpg" onclick="currentSlide(2)"
-                                            alt="">
-                                    </div>
-                                    <div class="column">
-                                        <img class="image" src="assets/images/conletc_03.jpg" onclick="currentSlide(3)"
-                                            alt="">
-                                    </div>
-                                    <div class="column">
-                                        <img class="image" src="assets/images/conletc_04.jpg" onclick="currentSlide(4)"
-                                            alt="">
-                                    </div>
-                                    <div class="column">
-                                        <img class="image" src="assets/images/conletc_05.jpg" onclick="currentSlide(5)"
-                                            alt="">
-                                    </div>
-                                    <div class="column">
-                                        <img class="image" src="assets/images/conletc_06.jpg" onclick="currentSlide(6)"
-                                            alt="">
-                                    </div>
+                                   {% endfor %}
                                 </div>
                             </div>
                         </div>
