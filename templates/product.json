@@ -44,6 +44,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
+        "heading": "Related Product"
       }
     }
   },
