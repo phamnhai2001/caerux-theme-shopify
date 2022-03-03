@@ -1,0 +1,23 @@
+{% comment %}
+    Renders a product 
+
+    - product
+
+{% endcomment %}
+
+<ul id="list_recommend">
+            <li class="slide">
+                <a class="item_type" href="#">
+                    <div class="item_content">
+                        <div class="thumb">
+                             <img src="{{ product.featured_image | img_url }}" alt="">
+                        </div>
+                        <div class="txt_desp">
+                          	<h3>{{product.title}} </h3>
+                         	<p>{{product.price}}</p>
+                         </div>
+                    </div>
+                </a>
+             </li>
+       
+</ul>                       
