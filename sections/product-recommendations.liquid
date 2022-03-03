@@ -7,7 +7,6 @@
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
-                          {% if recommendations.performed %}
                           {% if recommendations.products_count > 0 %}
                             {% for product in recommendations.products %}
                             <li class="slide">
@@ -31,9 +30,6 @@
                             </li>
                           	{% endfor %}
                           {% endif %}
-                        {% else %}
-                          <div class="placeholder">Placeholder animation</div>
-                        {% endif %}
                         </ul>
                     </div>
                 </div>
