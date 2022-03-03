@@ -119,7 +119,7 @@
                                 <p class="price">{{product.price}}</p>
                             </div>
                             <div class="color">
-                                <p>Color</p>
+                                <p>{{ 'products.product.color.label' | t }}</p>
                                 <div class="color_wrapper">
                                    {% for color_option in product.options_by_name['Color'].values %}
                                     <div class="color_item">
