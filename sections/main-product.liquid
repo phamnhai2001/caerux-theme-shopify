@@ -71,7 +71,7 @@
                                 </form>
                             </div>
                             <div class="txt_note">
-                              <p>{{product.description}} </p>
+                              <p>{{section.blocks.settings.text}} </p>
                             </div>
                             <div class="social_icon">
                                 <ul>
@@ -136,7 +136,7 @@
                      </div>
                      <div class="wrapper_tabcontent">
                         <div id="product_details" class="tabcontent show">
-                            <h3>Product Name</h3>
+                            <h3>{{product.title}}</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         </div>
                
@@ -223,7 +223,18 @@
           "type": "description",
           "name": "description",
           "limit": 1
-        }
+        },
+		{
+			"type": "text",
+			"name": "text",
+			"settings": [
+				{
+					"type": "text",
+					"id": "text",
+					"label": "Text note"
+				}
+			]
+		}
 	],
     "settings": [
       ]
