@@ -4,7 +4,7 @@
 <section class="section" id="banner">
     <div class="inner">
         <div class="slider_top">
-          {%- for block in section.blocks -%}
+           {%- for block in section.blocks -%}
             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
@@ -20,6 +20,7 @@
                     </div>
                 </div>
             </div>
+            {% endfor %}
             <div class="prev_next">
                 <a class="prev" onclick="plusSlides(-1)">
                     <img src="{{'arrow-left.svg' | asset_url }}" alt="">
@@ -35,7 +36,6 @@
                 <span class="dot_" onclick="currentSlide(2)"></span>
                 <span class="dot_" onclick="currentSlide(3)"></span>
             </div>
-            {% endfor %}
         </div>
     </div>
 </section>
