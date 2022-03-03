@@ -6,7 +6,7 @@
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
-                              {% for image in product.images %}
+                              {%- for media in product.media -%}
                                 <div class="item">
                                     <a class="lightbox" href="#conletc_01">
                                         <img src="assets/images/conletc_01.jpg" alt="">
@@ -16,7 +16,20 @@
                                     </a>
                                     <div class="lightbox-target" id="conletc_01">
                                       
-                                        <img src="{{ image | img_url }}" >
+                                        <img id="Thumbnail-{{ section.id }}-{{ forloop.index }}"
+                        srcset="{% if media.preview_image.width >= 59 %}{{ media.preview_image | img_url: '59x' }} 59x,{% endif %}
+                                {% if media.preview_image.width >= 118 %}{{ media.preview_image | img_url: '118x' }} 118w,{% endif %}
+                                {% if media.preview_image.width >= 84 %}{{ media.preview_image | img_url: '84x' }} 84w,{% endif %}
+                                {% if media.preview_image.width >= 168 %}{{ media.preview_image | img_url: '168x' }} 168w,{% endif %}
+                                {% if media.preview_image.width >= 130 %}{{ media.preview_image | img_url: '130x' }} 130w,{% endif %}
+                                {% if media.preview_image.width >= 260 %}{{ media.preview_image | img_url: '260x' }} 260w{% endif %}"
+                        src="{{ media | img_url: '84x84' }}"
+                        sizes="(min-width: 1200px) calc((1200px - 19.5rem) / 12), (min-width: 750px) calc((100vw - 16.5rem) / 8), calc((100vw - 8rem) / 5)"
+                        alt="{{ media.alt | escape }}"
+                        height="200"
+                        width="200"
+                        loading="lazy"
+                      >
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
