@@ -13,7 +13,9 @@
                                         </button>
                                     </a>
                                     <div class="lightbox-target" id="conletc_01">
-                                        <img src="assets/images/conletc_01.jpg" alt="">
+                                      {% for image in product.images %}
+                                        <img src="{{ image.src | img_url }}" alt="{{ image.alt | escape }}">
+                  						{% endfor %}
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
