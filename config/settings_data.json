@@ -11,7 +11,9 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_description": "Enter your address to get $20 off your first orders"
+          "footer_description": "Enter your address to get $20 off your first orders",
+          "footer_linklist": "footer",
+          "copyright": "@2022 Shopify. All Right Reserved"
         }
       }
     },
