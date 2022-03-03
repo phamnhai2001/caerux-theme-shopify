@@ -13,7 +13,9 @@
         "settings": {
           "footer_description": "Enter your address to get $20 off your first orders",
           "footer_linklist": "footer",
-          "copyright": "@2022 Shopify. All Right Reserved"
+          "copyright": "@2022 Shopify. All Right Reserved",
+          "open_time": "9:00 am",
+          "close_time": "8:00 pm"
         }
       }
     },
