@@ -71,7 +71,7 @@
                                 </form>
                             </div>
                             <div class="txt_note">
-                              <p>{{section.block.settings.text}} </p>
+                              <p>{{section.settings.text}} </p>
                             </div>
                             <div class="social_icon">
                                 <ul>
@@ -223,20 +223,14 @@
           "type": "description",
           "name": "description",
           "limit": 1
-        },
-		{
-			"type": "text",
-			"name": "text",
-			"settings": [
-				{
+        }
+	],
+    "settings": [
+{
 					"type": "text",
 					"id": "text",
 					"label": "Text note"
 				}
-			]
-		}
-	],
-    "settings": [
       ]
 }
 {% endschema %}
