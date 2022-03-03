@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="time">
-                <p>Opening Hour: <span>9:00 am</span> - <span>8:00 pm</span></p>
+                <p>Opening Hour: <span>{{section.settings.open_time}}</span> - <span>{{section.settings.close_time}}</span></p>
             </div>
         </div>
     </div>
@@ -126,16 +126,26 @@
             "label": "Logo"
         },
 		{
-        "type": "link_list",
-        "id": "footer_linklist",
-        "label": "First menu",
-        "default": "footer"
-      },
-{
-                    "type": "text",
-                    "id": "copyright",
-                    "label": "Text copyright"
-                }
+            "type": "link_list",
+            "id": "footer_linklist",
+            "label": "First menu",
+            "default": "footer"
+      	},
+		{
+            "type": "text",
+            "id": "copyright",
+            "label": "Text copyright"
+        },
+		{
+			"type": "text",
+			"id": "open_time",
+			"label": "Open time"
+		},
+		{
+			"type": "text",
+			"id": "close_time",
+			"label": "Close time"
+		}
     ]
 }
 {% endschema %}
