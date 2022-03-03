@@ -121,10 +121,10 @@
                             <div class="color">
                                 <p>Color</p>
                                 <div class="color_wrapper">
-                                  {% for value in product_option.colors %}
+                                   {% for color_option in product.options_by_name['Color'].values %}
                                     <div class="color_item">
                                         <input type="radio" name="color" id="blue">
-                                        <label for="blue">{{ colors }}</label>
+                                        <label for="blue">{{ color_option }}</label>
                                     </div>
                                   {% endfor %}
                                     <div class="color_item">
