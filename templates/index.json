@@ -6,21 +6,21 @@
         "6d5ba0c2-a9f7-4f3f-b3bf-5185e0a0e164": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/plants-and-table-decorations.jpg",
+            "image": "shopify:\/\/shop_images\/01.jpg",
             "title": "The title banner 01"
           }
         },
         "759e852d-3542-44f8-aac0-17c136d02ab6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ladder-plant-shelf.jpg",
+            "image": "shopify:\/\/shop_images\/02.png",
             "title": "The title banner 02"
           }
         },
         "9e06e678-9c83-4a98-b517-aa3055e5c265": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/livingroom-tray-with-plant-and-game-controllers.jpg",
+            "image": "shopify:\/\/shop_images\/03.png",
             "title": "The title banner 03"
           }
         }
