@@ -38,7 +38,10 @@
                                             {%- endfor -%}
 
                                           </p>
-                                        <p>{{article.author}}</p>
+                                        {%- if section.settings.blog_show_author -%}
+                                                 <p>{{article.author}}</p>
+                                            {%- endif -%}
+                                       
                                       </div>
                                   </div>
                               </a>
