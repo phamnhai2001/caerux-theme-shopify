@@ -23,7 +23,7 @@
                 <div class="entry_content">
                     <div class="entry_thumb">
                         {%- if article.image -%}
-                             {{ article | image_url | img_tag:'' }}
+                             {{ article | image_url: width: 850 | img_tag:'' }}
                        {%- endif -%}
                     </div>
                     <div class="info_content_post">
