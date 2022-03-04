@@ -25,6 +25,7 @@
                         {%- if article.image -%}
                              {{ article | img_url | img_tag: '' }}
                        {%- endif -%}
+                      <img src="{{'img_blog.jpg' | asset_url }}" alt="">
                     </div>
                     <div class="info_content_post">
                       {%- for tag in article.tags -%}
