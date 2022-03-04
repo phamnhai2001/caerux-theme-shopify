@@ -11,6 +11,7 @@
             </div>
         </div>
         <!-- BLOG -->
+      {%- paginate blog.articles by 3 -%}
         <section class="section" id="blog">
             <div class="inner">
                 <h2 class="tlt_section">{{section.settings.title}}</h2>
@@ -78,6 +79,7 @@
                 </div>
             </div>
         </section>
+  		{%- endpaginate -%}
         <!-- /BLOG -->
     </div>
 </div>
