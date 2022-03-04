@@ -53,7 +53,9 @@
 
                       </ul>
                     {%- endif -%}
-                  
+                  {% if paginate.blog > 1 %}
+                  		{% include "paginate" %}
+                  {% endif %}
             </div>
         </section>
   		{%- endpaginate -%}
