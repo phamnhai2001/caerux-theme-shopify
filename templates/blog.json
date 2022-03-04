@@ -1,13 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "blog",
+      "type": "blog-detail",
       "settings": {
-        "title": "BLOG",
-        "blog_post": "news",
-        "post_limit": 12,
-        "blog_show_author": false,
-        "blog_show_date": true
       }
     }
   },
