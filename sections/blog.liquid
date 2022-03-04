@@ -34,7 +34,7 @@
                                                 <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
                                             {%- endif -%}
                                             
-                                            {%- if section.settings.blog_show_author -%}
+                                            {%- if section.settings.blog_show_tag -%}
                                               {%- for tag in article.tags -%}
                                                 <span data-url="https://translate.google.com/">{{ tag }}</span>
                                               {%- endfor -%}
@@ -94,6 +94,12 @@
       "type": "checkbox",
       "id": "blog_show_date",
       "label": "Show date",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "blog_show_tag",
+      "label": "Show tag",
       "default": true
     }
   ],
