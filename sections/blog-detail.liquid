@@ -5,7 +5,7 @@
                 <ul>
                     <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
                     <li><span class="current"></span><a href="/">Blog</a></li>
-                    <li><span class="current">ウォールシェルフウォールシェルフ</span></li>
+                    <li><span class="current">{{ article.title }}</span></li>
                 </ul>
             </div>
         </div>
@@ -14,13 +14,19 @@
             <div class="inner">
                 <div class="entry_content">
                     <div class="entry_thumb">
-                        <img src="assets/images/img_blog.jpg" alt="">
+                        {%- if article.image -%}
+                             {{ article | img_url | img_tag: '' }}
+                       {%- endif -%}
                     </div>
                     <div class="info_content_post">
-                        <div class="name_cat">カエルエックス</div>
-                        <div class="time">2021.08.26</div>
+                      {%- for tag in article.tags -%}
+                          <div class="name_cat">{{ tag }}</div>
+                       {%- endfor -%}
+                      {%- if section.settings.blog_show_date -%}
+                          <div class="time">{{ article.published_at | date: format: 'basic' }}</div>
+                      {%- endif -%}
                     </div>
-                    <h2 class="tlt_blog">ウォールシェルフウォールシェルフ</h2>
+                    <h2 class="tlt_blog">{{ article.title }}</h2>
                     <div class="txt_desp">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -104,13 +110,13 @@
 </div>
 {% schema %}
 {
-  "name": "Blog posts",
+  "name": "Blog post",
   "settings": [
     {
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Blog posts"
+      "default": "Blog detail"
     },
     {
       "id": "blog_post",
