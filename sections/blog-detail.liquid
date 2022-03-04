@@ -22,9 +22,9 @@
             <div class="inner">
                 <div class="entry_content">
                     <div class="entry_thumb">
-<!--                         {%- if article.image -%} -->
-                             {{ article.image }}
-<!--                        {%- endif -%} -->
+                        {%- if article.image -%}
+                             {{ article | img_url | img_tag: '' }}
+                       {%- endif -%}
                     </div>
                     <div class="info_content_post">
                       {%- for tag in article.tags -%}
