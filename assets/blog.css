@@ -92,7 +92,7 @@ ul, ol {
             font-size: 2.343vw; } }
         .upper .navi_top ul li span.current:before {
           content: "";
-          background: url("../images/bx-chevron-right.svg") no-repeat;
+          background: url("bx-chevron-right.svg") no-repeat;
           background-size: 100% auto;
           width: 22px;
           display: inline-block;
@@ -178,7 +178,7 @@ a.item_type {
     content: "";
     display: inline-block;
     margin-left: 6px;
-    background-image: url("../images/arrow-right.svg");
+    background-image: url("arrow-right.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
@@ -714,22 +714,22 @@ input, select, textarea {
           #wrapper.blog .inner section.section#blog .inner .list_item .pagi_nav ul li a {
             font-size: 12px; }
             #wrapper.blog .inner section.section#blog .inner .list_item .pagi_nav ul li a.next:hover:before {
-              background: url("../images/bx-chevron-right_wht.svg") no-repeat;
+              background: url("bx-chevron-right_wht.svg") no-repeat;
               background-size: 100% auto; }
             #wrapper.blog .inner section.section#blog .inner .list_item .pagi_nav ul li a.next:before {
               content: "";
-              background: url("../images/bx-chevron-right.svg") no-repeat;
+              background: url("bx-chevron-right.svg") no-repeat;
               background-size: 100% auto;
               width: 20px;
               display: inline-block;
               height: 20px;
               vertical-align: sub; }
             #wrapper.blog .inner section.section#blog .inner .list_item .pagi_nav ul li a.prev:hover:before {
-              background: url("../images/bx-chevron-left_wht.svg") no-repeat;
+              background: url("bx-chevron-left_wht.svg") no-repeat;
               background-size: 100% auto; }
             #wrapper.blog .inner section.section#blog .inner .list_item .pagi_nav ul li a.prev:before {
               content: "";
-              background: url("../images/bx-chevron-left.svg") no-repeat;
+              background: url("bx-chevron-left.svg") no-repeat;
               background-size: 100% auto;
               width: 20px;
               display: inline-block;
@@ -821,7 +821,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/twitter.svg") no-repeat center; }
+                background: url("twitter.svg") no-repeat center; }
             #wrapper.blog_detail .inner section.section#blog_detail .inner .entry_content .sns_social ul li.share_facebook a {
               background-color: #3c5999; }
               #wrapper.blog_detail .inner section.section#blog_detail .inner .entry_content .sns_social ul li.share_facebook a:before {
@@ -830,7 +830,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/facebook.svg") no-repeat center;
+                background: url("facebook.svg") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -843,7 +843,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/blogger-logo.png") no-repeat center;
+                background: url("blogger-logo.png") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -855,7 +855,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/pocket.svg") no-repeat center;
+                background: url("pocket.svg") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -867,7 +867,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 10px;
-                background: url("../images/line.svg") no-repeat center;
+                background: url("line.svg") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -880,7 +880,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/copy-solid.png") no-repeat center;
+                background: url("copy-solid.png") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -893,7 +893,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/Feedly.svg") no-repeat center;
+                background: url("Feedly.svg") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
@@ -906,7 +906,7 @@ input, select, textarea {
                 height: 20px;
                 display: inline-block;
                 margin-right: 15px;
-                background: url("../images/Feed.svg") no-repeat center;
+                background: url("Feed.svg") no-repeat center;
                 background-size: cover;
                 position: relative;
                 top: 2px; }
