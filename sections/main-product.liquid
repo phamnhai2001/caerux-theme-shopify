@@ -129,7 +129,56 @@
                 </div>
             </section>
             
-            
+            <section class="section" id="review">
+                <div class="inner">
+                    <div class="tabs">
+                        <button class="tablinks show" data-electronic="product_details">Product Details</button>
+                        <button class="tablinks" data-electronic="product_review">Review</button>
+                     </div>
+                     <div class="wrapper_tabcontent">
+                        <div id="product_details" class="tabcontent show">
+                            <h3>{{product.title}}</h3>
+                            <p>{{product.description}}</p>
+                        </div>
+               
+                        <div id="product_review" class="tabcontent">
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>{{review.author}}</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>{{review.content}}</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>John</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                            <div class="txt_content">
+                                <div class="name">
+                                    <h3>John</h3>
+                                </div>
+                                <div class="content_commit">
+                                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                                <div class="date">
+                                    <time date-time = "2022.01.01">2022.01.01</time>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </section>
         </div>
     </div>
 {% schema %}
