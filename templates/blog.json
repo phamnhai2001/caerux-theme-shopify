@@ -4,8 +4,8 @@
       "type": "blog",
       "settings": {
         "title": "BLOG",
-        "blog": "",
-        "post_limit": 3,
+        "blog_post": "news",
+        "post_limit": 12,
         "blog_show_author": false,
         "blog_show_date": true
       }
