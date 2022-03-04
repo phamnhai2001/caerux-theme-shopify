@@ -9,15 +9,9 @@
         "blog_show_author": false,
         "blog_show_date": true
       }
-    },
-    "detail": {
-      "type": "blog",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "detail"
+    "main"
   ]
 }
