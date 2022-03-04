@@ -33,12 +33,14 @@
                                             {%- if section.settings.blog_show_date -%}
                                                 <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
                                             {%- endif -%}
-                                            {%- for tag in article.tags -%}
-                                              <span data-url="https://translate.google.com/">{{ tag }}</span>
-                                            {%- endfor -%}
-
+                                            
+                                            {%- if section.settings.blog_show_author -%}
+                                              {%- for tag in article.tags -%}
+                                                <span data-url="https://translate.google.com/">{{ tag }}</span>
+                                              {%- endfor -%}
+                                            {%- endif -%}
                                           </p>
-                                        {%- if section.settings.blog_show_author -%}
+                                        	{%- if section.settings.blog_show_author -%}
                                                  <p>{{article.author}}</p>
                                             {%- endif -%}
                                        
