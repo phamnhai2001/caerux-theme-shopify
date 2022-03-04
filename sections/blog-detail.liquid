@@ -59,115 +59,101 @@
             <div class="inner">
                 <h2 class="tlt_section">Related Posts</h2>
                 <div class="list_item">
-                    <ul>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="item_type" href="#">
-                                <div class="item_content">
-                                    <div class="thumb">
-                                        <img src="assets/images/img.jpg" alt="">
-                                    </div>
-                                    <div class="txt_desp">
-                                        <h3>ウォールシェルフ</h3>
-                                        <p>$3000<span class="sold_out">Out stock</span></p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
+                    {%- assign blog = blogs[section.settings.blog_post] -%}
+                    {%- if blog.articles_count > 0 -%}
+                      <ul>
+                          {%- for article in blog.articles limit: section.settings.post_limit -%}
+                          <li>
+                              <a class="item_type" href="{{ article.url }}">
+                                  <div class="item_content">
+                                      <div class="thumb">
+                                        {%- if article.image -%}
+                                          {{ article | img_url | img_tag: '' }}
+                                        {%- endif -%}
+                                      </div>
+                                      <div class="txt_desp">
+                                          <h3>{{ article.title }}</h3>
+                                          <p>
+                                            {%- if section.settings.blog_show_date -%}
+                                                <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
+                                            {%- endif -%}
+                                            
+                                            {%- if section.settings.blog_show_tag -%}
+                                              {%- for tag in article.tags -%}
+                                                <span data-url="https://translate.google.com/">{{ tag }}</span>
+                                              {%- endfor -%}
+                                            {%- endif -%}
+                                          </p>
+                                        	{%- if section.settings.blog_show_author -%}
+                                                 <p>{{article.author}}</p>
+                                            {%- endif -%}
+                                       
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                        {%- endfor -%}
+
+                      </ul>
+                    {%- endif -%}
                 </div>
             </div>
         </section>
         <!-- /Related Posts -->
     </div>
 </div>
+{% schema %}
+{
+  "name": "Blog posts",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Blog posts"
+    },
+    {
+      "id": "blog_post",
+      "type": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "label": "Posts",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": "Show date",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "blog_show_tag",
+      "label": "Show tag",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog posts",
+      "category": "Blog",
+      "settings": {
+        "blog_post": "News",
+        "post_limit": 6
+      }
+    }
+  ]
+}
+{% endschema %}
