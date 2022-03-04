@@ -3,7 +3,7 @@
         <div class="upper">
             <div class="navi_top">
                 <ul>
-                    <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                    <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
                     <li><span class="current"></span><a href="/">Blog</a></li>
                     <li><span class="current">{{ article.title }}</span></li>
                 </ul>
@@ -15,7 +15,7 @@
                 <div class="entry_content">
                     <div class="entry_thumb">
                         {%- if article.image -%}
-                             {{ article | img_url | img_tag: '' }}
+                             {{ article | img_url }}
                        {%- endif -%}
                     </div>
                     <div class="info_content_post">
