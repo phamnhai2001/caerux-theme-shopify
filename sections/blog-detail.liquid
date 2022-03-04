@@ -68,7 +68,7 @@
         <!-- Related Posts -->
         <section class="section" id="related_post">
             <div class="inner">
-                <h2 class="tlt_section">Related Posts</h2>
+                <h2 class="tlt_section">{{section.settings.title}}</h2>
                 <div class="list_item">
                     {%- assign blog = blogs[section.settings.blog_post] -%}
                     {%- if blog.articles_count > 0 -%}
