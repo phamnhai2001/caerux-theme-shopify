@@ -3,6 +3,12 @@
     "article": {
       "type": "blog-detail",
       "settings": {
+        "title": "Blog detail",
+        "blog_post": "news",
+        "post_limit": 4,
+        "blog_show_author": true,
+        "blog_show_date": true,
+        "blog_show_tag": true
       }
     }
   },
