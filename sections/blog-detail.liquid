@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="{{ 'blog_detail.css' | asset_url }}" media="print" onload="this.media='all'">
-
+{%- style -%}
+	.entry_content .entry_thumb img {
+		width: 100%;
+        object-fit: cover;
+	}
+{%- endstyle -%}
 <div id="wrapper" class="blog_detail">
     <div class="inner">
         <div class="upper">
