@@ -3,6 +3,11 @@
     "main": {
       "type": "blog",
       "settings": {
+        "title": "BLOG",
+        "blog": "",
+        "post_limit": 3,
+        "blog_show_author": false,
+        "blog_show_date": true
       }
     }
   },
