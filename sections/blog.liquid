@@ -15,7 +15,7 @@
             <div class="inner">
                 <h2 class="tlt_section">{{section.settings.title}}</h2>
                 <div class="list_item">
-                    {%- assign blog = blogs[section.settings.blog] -%}
+                    {%- assign blog = blogs[section.settings.blog_post] -%}
                     {%- if blog.articles_count > 0 -%}
                       <ul>
                           {%- for article in blog.articles limit: section.settings.post_limit -%}
@@ -65,7 +65,7 @@
       "default": "Blog posts"
     },
     {
-      "id": "blog",
+      "id": "blog_post",
       "type": "blog",
       "label": "Blog"
     },
@@ -96,7 +96,7 @@
       "name": "Blog posts",
       "category": "Blog",
       "settings": {
-        "blog": "News",
+        "blog_post": "News",
         "post_limit": 6
       }
     }
