@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "featured-collection"
+  ]
+}
