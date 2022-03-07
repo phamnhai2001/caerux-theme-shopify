@@ -3,7 +3,6 @@ class CartNotification extends HTMLElement {
     super();
 
     this.notification = document.getElementById('cart');
-    this.header = document.querySelector('sticky-header');
     this.onBodyClick = this.handleBodyClick.bind(this);
     
     this.notification.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
