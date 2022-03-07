@@ -133,7 +133,24 @@ text-align: left;
                 </div>
             </section>
             
-            
+            <section class="section" id="review">
+                <div class="inner">
+                    <div class="tabs">
+                        <button class="tablinks show" data-electronic="product_details">Product Details</button>
+                        <button class="tablinks" data-electronic="product_review">Review</button>
+                     </div>
+                     <div class="wrapper_tabcontent">
+                        <div id="product_details" class="tabcontent show">
+                            <h3>{{product.title}}</h3>
+                            <p>{{product.description}}</p>
+                        </div>
+               
+                        <div id="product_review" class="tabcontent">
+                            {{section.blocks.app}}
+                        </div>
+                     </div>
+                </div>
+            </section>
         </div>
     </div>
 {% schema %}
