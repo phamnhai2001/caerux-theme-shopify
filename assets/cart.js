@@ -44,7 +44,7 @@ function disCartItem() {
         <div class="item_cart">
             <div class="data_cart">
                 <div class="item_thumb">
-					<img src="${item.image}" alt="">
+				<img src="${item.image}" alt="">
                 </div>
                 <div class="data">
                     <a href="">
