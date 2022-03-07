@@ -91,29 +91,11 @@ text-align: left;
                             </div>
                             <div class="quantity">
                                 <p>{{ 'products.product.quantity.label' | t }}</p>
-                                <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-              <label class="form__label" for="Quantity-{{ section.id }}">
-                {{ 'products.product.quantity.label' | t }}
-              </label>
-
-              <quantity-input class="quantity">
-                <button class="quantity__button no-js-hidden" name="minus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon-minus' %}
-                </button>
-                <input class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="1"
-                    value="1"
-                    form="{{ product_form_id }}"
-                  >
-                <button class="quantity__button no-js-hidden" name="plus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon-plus' %}
-                </button>
-              </quantity-input>
+                                <div class="btn_quantity">
+                                    <button class="minus_btn">-</button>
+                                    <input type="number" id="quantity" value="1" min="1" >
+                                    <button class="plus_btn">+</button>
+                                </div>
                             </div>
                             <div class="btn">
                                 <button id="cart_view" type="submit" class="add_cart">
