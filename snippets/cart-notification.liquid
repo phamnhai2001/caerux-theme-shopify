@@ -28,10 +28,10 @@
                                 <span class="number">0</span>
                             </a>
                             <form action="{{ routes.cart_url }}" method="post">
-                                <button class="checkout" type="submit">Check out</button>
+                                <button class="checkout" name="checkout">{{ 'sections.cart.checkout' | t }}</button>
                             </form>
                             <button class="continue_shopping">
-                                Continue shopping
+                                {{ 'general.continue_shopping' | t }}
                             </button>
                         </div>
                     </div>
