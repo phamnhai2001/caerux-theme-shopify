@@ -12,8 +12,8 @@
                         <div class="cart_blocks">
                             <div class="js_contents">
                                 <div class="total">
-                                    <h3 class="total_subtotal">Subtotal</h3>
-                                    <p class="total_price">0</p>
+                                    <h3 class="total_subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
+                                    <p class="total_price">{{ cart.total_price | money_with_currency }}</p>
                                 </div>
                                 <small>Taxes and shipping calculated at checkout</small>
                             </div>
