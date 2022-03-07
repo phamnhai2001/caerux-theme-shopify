@@ -129,38 +129,7 @@ text-align: left;
                             </div>
                         </div>
                     </div>
-                    <div class="cart_notify" id="cart">
-                        <div class="cart_header">
-                            <div class="txt_desp">
-                                <img src="assets/images/check_icon.png" alt="">
-                                <p>Item added to your cart</p>
-                            </div>
-                            <button class="close" id="close">
-                                <a href="">
-                                    <img src="assets/images/close.png" alt="">
-                                </a>
-                            </button>
-                        </div>
-                        <div class="cart_product">
-
-                        </div>
-                        <div class="cart_links">
-                            <a class="header_cart" href="cart.html">
-                                <h3>View my cart</h3>
-                                <span class="number">0</span>
-                            </a>
-                            <!-- <a id="view" class="view" href="cart.html">
-                                        <h3>View my cart</h3>
-                                        <span>(0)</span>
-                                    </a> -->
-                            <form action="">
-                                <button class="checkout" type="submit">Check out</button>
-                            </form>
-                            <button class="continue_shopping">
-                                Continue shopping
-                            </button>
-                        </div>
-                    </div>
+                    {% render 'cart-notification' %}
                 </div>
             </section>
             
