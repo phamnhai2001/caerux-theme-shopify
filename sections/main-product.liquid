@@ -101,7 +101,7 @@ text-align: left;
                                 <h1 class="name">{{product.title}}</h1>
                                 <p class="price">{{product.price}}</p>
                             </div>
-                          {%- when 'color' -%}
+                          {%- when 'variant_picker' -%}
                             <div class="color">
                                 <p>Color</p>
                                 <div class="color_wrapper">
@@ -310,7 +310,7 @@ text-align: left;
           "limit": 1
         },
 		{
-			"type": "color",
+			"type": "variant_picker",
 			"name": "Color"
 		},
         {
