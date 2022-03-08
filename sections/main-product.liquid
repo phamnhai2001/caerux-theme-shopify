@@ -105,7 +105,7 @@ text-align: left;
                             <div class="color">
                                 <p>Color</p>
                                 <div class="color_wrapper" class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-                                   {% for color_option in product.options_by_name['Color'].values %}
+                                   {%- for option in product.options_with_values -%}
                                     <div class="color_item">
                                         <input type="radio" name="color" id="{{ color_option }}">
                                         <label for="{{ color_option }}">{{ color_option }}</label>
