@@ -137,14 +137,11 @@ text-align: left;
                   					<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                                     <button id="cart_view" type="submit" class="add_cart">
                                          {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                    >
-                        <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
-                          {%- else -%}
-                            {{ 'products.product.sold_out' | t }}
-                          {%- endif -%}
-                        </span>
+                                          {%- if product.selected_or_first_available_variant.available -%}
+                                            {{ 'products.product.add_to_cart' | t }}
+                                          {%- else -%}
+                                            {{ 'products.product.sold_out' | t }}
+                                          {%- endif -%}
                                     </button>
                               {%- endform -%}
                                     <form action="">
