@@ -15,7 +15,7 @@ if (!customElements.get('product-form')) {
       if (submitButton.classList.contains('loading')) return;
 
 
-      const config = fetchConfig('javascript');
+      const config = fetch('javascript');
       config.headers['X-Requested-With'] = 'XMLHttpRequest';
       delete config.headers['Content-Type'];
 
