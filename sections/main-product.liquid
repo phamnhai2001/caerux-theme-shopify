@@ -91,10 +91,10 @@ text-align: left;
                                 </div>
                             </div>
                         </div>
-                        <div class="product_details">
-                          {%- assign product_form_id = 'product-form-' | append: section.id -%}
+                       {%- assign product_form_id = 'product-form-' | append: section.id -%}
                            	{%- for block in section.blocks -%}
                           		{%- case block.type -%}
+                        <div class="product_details">
                             <div class="txt_desp">
                               {%- when 'title' -%}
                                 <h1 class="name" {{ block.shopify_attributes }}>{{product.title}}</h1>
@@ -141,7 +141,8 @@ text-align: left;
                             <div class="txt_note">
                               <p>{{section.settings.text}} </p>
                             </div>
-                            <div class="social_icon">
+                        </div>
+                         <div class="social_icon">
                                 <ul>
                                     <li>
                                         <a href="">
@@ -162,7 +163,6 @@ text-align: left;
                             </div>
                           {%- endcase -%}
         				{%- endfor -%}
-                        </div>
                     </div>
                     {% render 'cart-notification' %}
                 </div>
