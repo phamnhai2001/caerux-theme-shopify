@@ -101,7 +101,7 @@ text-align: left;
                                 <h1 class="name">{{product.title}}</h1>
                                 <p class="price">{{product.price}}</p>
                             </div>
-                          
+                          {%- when 'variant_picker' -%}
                             <div class="color">
                                 <p>Color</p>
                                 <div class="color_wrapper">
@@ -163,7 +163,7 @@ text-align: left;
                                 </ul>
                             </div>
                           {%- endcase -%}
-        {%- endfor -%}
+        				{%- endfor -%}
                         </div>
                     </div>
                     {% render 'cart-notification' %}
