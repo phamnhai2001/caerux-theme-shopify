@@ -97,7 +97,7 @@ text-align: left;
                           		{%- case block.type -%}
                             <div class="txt_desp">
                               {%- when 'title' -%}
-                                <h1 class="name">{{product.title}}</h1>
+                                <h1 class="name" {{ block.shopify_attributes }}>{{product.title}}</h1>
                               {%- when 'price' -%}
                                 <p class="price" role="status" {{ block.shopify_attributes }}>{{product.price}}</p>
                             </div>
