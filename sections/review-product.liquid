@@ -13,7 +13,12 @@
                         </div>
                
                         <div id="product_review" class="tabcontent">
-                            {{section.block.type}}
+                            {%- for block in section.blocks -%}
+                              {%- case block.type -%}
+                              	{%- when '@app' -%}
+                                	{% render block %}
+                          		{%- endcase -%}
+        					{%- endfor -%}
                         </div
                      </div>
                 </div>
