@@ -98,7 +98,7 @@ text-align: left;
                             <div class="quantity">
                                 <p>{{ 'products.product.quantity.label' | t }}</p>
                                 <div class="btn_quantity">
-                                    <button class="minus_btn">-</button>
+                                    <button class="minus_btn">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}-</button>
                                     <input type="number" id="quantity" value="1" min="1" >
                                     <button class="plus_btn">+</button>
                                 </div>
