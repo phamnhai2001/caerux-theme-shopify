@@ -37,6 +37,7 @@
       "block_order": [
         "title",
         "price",
+        "variant_picker",
         "quantity_selector",
         "buy_buttons",
         "description"
