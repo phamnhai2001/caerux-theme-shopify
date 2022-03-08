@@ -91,80 +91,72 @@ text-align: left;
                                 </div>
                             </div>
                         </div>
-                      <div class="product_details">
-                       {%- assign product_form_id = 'product-form-' | append: section.id -%}
-                           	{%- for block in section.blocks -%}
-                          		{%- case block.type -%}
-                                
-                                    <div class="txt_desp">
-                                      {%- when 'title' -%}
-                                        <h1 class="name" {{ block.shopify_attributes }}>{{product.title}}</h1>
-                                      {%- when 'price' -%}
-                                        <p class="price" role="status" {{ block.shopify_attributes }}>{{product.price}}</p>
+                        <div class="product_details">
+                            <div class="txt_desp">
+                                <h1 class="name">{{product.title}}</h1>
+                                <p class="price">{{product.price}}</p>
+                            </div>
+                            <div class="color">
+                                <p>Color</p>
+                                <div class="color_wrapper">
+                                   {% for color_option in product.options_by_name['Color'].values %}
+                                    <div class="color_item">
+                                        <input type="radio" name="color" id="{{ color_option }}">
+                                        <label for="{{ color_option }}">{{ color_option }}</label>
                                     </div>
-                                    <div class="color">
-                                        <p>Color</p>
-                                        <div class="color_wrapper">
-                                           {% for color_option in product.options_by_name['Color'].values %}
-                                            <div class="color_item">
-                                                <input type="radio" name="color" id="{{ color_option }}">
-                                                <label for="{{ color_option }}">{{ color_option }}</label>
-                                            </div>
-                                          {% endfor %}
-                                          <script type="application/json">
-                                            {{ product.variants | json }}
-                                          </script>
-                                        </div>
-                                    </div>
-                                    <div class="quantity">
-                                        <p>{{ 'products.product.quantity.label' | t }}</p>
-                                        <div class="btn_quantity">
-                                            <button class="minus_btn">
-                                                <span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                                                {% render 'icon-minus' %}
-                                            </button>
-                                            <input type="number" id="quantity" value="1" min="1" max="10">
-                                            <button class="plus_btn">
-                                               <span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                                               {% render 'icon-plus' %}
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="btn">
-                                        <button id="cart_view" type="submit" class="add_cart">
-                                            Add to cart
-                                        </button>
-                                        <form action="">
-                                            <button type="submit" class="btn_buy">Buy now</button>
-                                        </form>
-                                    </div>
-
-                                    <div class="txt_note">
-                                      <p>{{section.settings.text}} </p>
-                                    </div>
+                                  {% endfor %}
+                                  <script type="application/json">
+                                    {{ product.variants | json }}
+                                  </script>
                                 </div>
-                                 <div class="social_icon">
-                                        <ul>
-                                            <li>
-                                                <a href="">
-                                                    <img src="{{'facebook_icon.png' | asset_url }}" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <img src="{{'linkedin_icon.png' | asset_url }}" alt="">
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="">
-                                                    <img src="{{'twitter_icon.png' | asset_url }}" alt="">
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                          {%- endcase -%}
-        				{%- endfor -%}
-                      </div>
+                            </div>
+                            <div class="quantity">
+                                <p>{{ 'products.product.quantity.label' | t }}</p>
+                                <div class="btn_quantity">
+                                    <button class="minus_btn">
+                                        <span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        				{% render 'icon-minus' %}
+                                  	</button>
+                                    <input type="number" id="quantity" value="1" min="1" max="10">
+                                    <button class="plus_btn">
+                                       <span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  					   {% render 'icon-plus' %}
+                                  	</button>
+                                </div>
+                            </div>
+                            <div class="btn">
+                                <button id="cart_view" type="submit" class="add_cart">
+                                    Add to cart
+                                </button>
+                                <form action="">
+                                    <button type="submit" class="btn_buy">Buy now</button>
+                                </form>
+                            </div>
+                          
+                            <div class="txt_note">
+                              <p>{{section.settings.text}} </p>
+                            </div>
+                            <div class="social_icon">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="{{'facebook_icon.png' | asset_url }}" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="{{'linkedin_icon.png' | asset_url }}" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="{{'twitter_icon.png' | asset_url }}" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     {% render 'cart-notification' %}
                 </div>
             </section>
