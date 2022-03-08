@@ -110,36 +110,20 @@ text-align: left;
                                   </script>
                                 </div>
                             </div>
-                            <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
-              <label class="form__label sr-only" for="Quantity-{{ section.id }}">
-                {{ 'products.product.quantity.label' | t }}
-              </label>
-              <div class="product-qty__wrapper grid grid-cols-3 border border-black" 
-                x-data="{ 
-                    qty: 1,
-                    minus(value) {
-                      (this.qty == 1) ? this.qty = 1 : this.qty -= value;
-                    },
-                    plus(value) {
-                      this.qty += value;
-                    }
-                  }">
-
-                <button type="button" class=" min-h-[44px] w-full flex items-center justify-center cursor-pointer" @click="minus(1)">
-                  <span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon-minus' %}
-                </button>
-
-                <input type="number" x-model="qty" name="quantity" class="product-qty__input border-x text-center border-black" value="1" min="1" max="10">
-
-                <button type="button" class=" min-h-[44px] w-full flex items-center justify-center cursor-pointer" @click="plus(1)">
-                  <span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon-plus' %}
-                </button>
-
-              </div>
-
-            </div>
+                            <div class="quantity">
+                                <p>{{ 'products.product.quantity.label' | t }}</p>
+                                <div class="btn_quantity">
+                                    <button class="minus_btn">
+                                        <span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        				{% render 'icon-minus' %}
+                                  	</button>
+                                    <input type="number" id="quantity" value="1" min="1" max="10">
+                                    <button class="plus_btn">
+                                       <span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  					   {% render 'icon-plus' %}
+                                  	</button>
+                                </div>
+                            </div>
                             <div class="btn">
                                 <button id="cart_view" type="submit" class="add_cart">
                                     Add to cart
