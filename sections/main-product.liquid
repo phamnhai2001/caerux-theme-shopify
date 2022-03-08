@@ -100,7 +100,7 @@ text-align: left;
                                 <div class="btn_quantity">
                                     <button class="minus_btn">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}-</button>
                                     <input type="number" id="quantity" value="1" min="1" >
-                                    <button class="plus_btn">+</button>
+                                    <button class="plus_btn">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}+</button>
                                 </div>
                             </div>
                             <div class="btn">
