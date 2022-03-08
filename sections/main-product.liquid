@@ -106,9 +106,9 @@ text-align: left;
                       this.qty += value;
                     }
                   }">
-                                    <button class="minus_btn">-</button>
-                                    <input type="number" id="quantity" value="1" min="1" >
-                                    <button class="plus_btn">+</button>
+                                    <button class="minus_btn" @click="minus(1)">-</button>
+                                    <input type="number" x-model="qty" name="quantity" class="product-qty__input border-x text-center border-black" value="1" min="1" max="10" id="quantity" value="1" min="1" >
+                                    <button class="plus_btn"  @click="plus(1)">+</button>
                                 </div>
                             </div>
                             <div class="btn">
