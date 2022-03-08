@@ -145,9 +145,9 @@ text-align: left;
                                         </span>
                                     </button>
                               {%- endform -%}
-                                    <form action="">
-                                        <button type="submit" class="btn_buy">Buy now</button>
-                                    </form>
+                                       {%- if block.settings.show_dynamic_checkout -%}
+                      {{ form | payment_button }}
+                    {%- endif -%}
                             </div>
                           
                             <div class="txt_note">
