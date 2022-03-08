@@ -102,7 +102,7 @@ text-align: left;
                                 <p class="price">{{product.price}}</p>
                             </div>
                           {%- when 'variant_picker' -%}
-                            <variant-radios class="color">
+                            <variant-radios class="color" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                                 <p>Color</p>
                                 <div class="color_wrapper" >
                                    {% for color_option in product.options_by_name['Color'].values %}
