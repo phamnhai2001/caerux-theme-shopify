@@ -1,4 +1,4 @@
-<script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script>
+<!-- <script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script> -->
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
@@ -134,7 +134,7 @@ text-align: left;
                                 </div>
                             </div>
                           {%- when 'buy_buttons' -%}
-                            <product-form class="btn" {{ block.shopify_attributes }}>
+                            <product-form class="btn product-form" {{ block.shopify_attributes }}>
                                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   					<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                                     <button id="cart_view" type="submit" name="add"
