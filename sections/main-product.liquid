@@ -135,8 +135,8 @@ text-align: left;
                             <div class="btn" {{ block.shopify_attributes }}>
                                {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   					<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
-                                    <button id="cart_view" type="submit" class="add_cart" name="add"
-                      class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                                    <button id="cart_view" type="submit" name="add"
+                      class="add_cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
                                         <span>
                                           {%- if product.selected_or_first_available_variant.available -%}
                                             {{ 'products.product.add_to_cart' | t }}
