@@ -56,12 +56,12 @@
                               <div class="entry_points">
                                  <div class="box_check">
                                       <div class="btn_quantity">
-                                          <button class="minus_btn">
+                                          <button class="minus_btn" onclick="changeNumberOfUnits('minus', ${item.id})">
                                         	<span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
                         					{% render 'icon-minus' %}
                                   			</button>
                                     	<input type="number" id="quantity" value="{{ item.quantity }}" min="0" aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}">
-                                    	<button class="plus_btn">
+                                    	<button class="plus_btn" onclick="changeNumberOfUnits('plus', ${item.id})">
                                        		<span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
                   					   		{% render 'icon-plus' %}
                                   		</button>
