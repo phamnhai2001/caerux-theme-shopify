@@ -70,24 +70,6 @@ function subTotal() {
 }
 subTotal();
 
-document.querySelector(".minus_btn").setAttribute("disabled","disable");
-var valueCount;
-
-document.querySelector(".plus_btn").addEventListener("click", function(){
-    valueCount = document.getElementById("quantity").value;
-    valueCount++;
-    document.getElementById("quantity").value = valueCount;
-    if(valueCount > 1) {
-        document.querySelector(".minus_btn").removeAttribute("disabled");
-        document.querySelector(".minus_btn").classList.remove("disabled");
-    }
-});
-
-document.querySelector(".minus_btn").addEventListener("click", function(){
-    valueCount = document.getElementById("quantity").value;
-    valueCount--;
-    document.getElementById("quantity").value = valueCount;
-    if(valueCount == 1) {
-        document.querySelector(".minus_btn").setAttribute("disabled","disable");
-    }
-});
+function updateNumber(){
+  
+}
