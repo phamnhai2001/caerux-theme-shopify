@@ -33,9 +33,9 @@ function subTotal() {
 }
 subTotal();
 
-
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
 function changeNumberOfUnits(action, id) {
- let cart = cart.map((item) => {
+ cart = cart.map((item) => {
     let numberOfUnits = item.numberOfUnits;
 
     if (item.id === id) {
