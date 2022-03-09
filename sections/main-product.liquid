@@ -1,4 +1,5 @@
 <script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
 	.row .column img {
@@ -108,7 +109,7 @@ text-align: left;
                                 <div class="color_wrapper" >
                                    {% for color_option in product.options_by_name['Color'].values %}
                                     <div class="color_item">
-                                        <input type="radio" name="color" id="{{ color_option }}" >
+                                        <input type="radio" name="color" id="{{ color_option }}">
                                         <label for="{{ color_option }}">{{ color_option }}</label>
                                     </div>
                                   {% endfor %}
@@ -177,6 +178,7 @@ text-align: left;
         				{%- endfor -%}
                         </div>
                     </div>
+                    {% render 'cart-notification' %}
                 </div>
             </section>
             
