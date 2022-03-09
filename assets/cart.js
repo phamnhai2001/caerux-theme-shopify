@@ -36,48 +36,7 @@ function addItemToLacal(product) {
     window.location.reload();
 }
 
-function disCartItem() {
-    html = '';
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-    cartItem.forEach(item => {
-        html += `<li>
-        <div class="item_cart">
-            <div class="data_cart">
-                <div class="item_thumb">
-				<img src="${item.image}" alt="">
-                </div>
-                <div class="data">
-                    <a href="">
-                        <h3>${item.name}</h3>
-                    </a>
-                </div>
-            </div>
-            <div class="entry_points">
-               <div class="box_check">
-                    <div class="btn_quantity">
-                        <button class="minus_btn">
-                            <span>-</span>
-                        </button>
-                        <input type="number" id="quantity" value="${item.quantity}">
-                        <button class="plus_btn">
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="btn_del">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-               </div>
-               <div class="point">
-                   <h3>${item.price}</h3>
-               </div>
-            </div>
-        </div>
-    </li>`
-    });
-    document.querySelector('.list_cart_item').innerHTML = html;
 
-}
-disCartItem();
 
 function cartNumberDisplay() {
     let cartNumbers = 0;
