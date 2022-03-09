@@ -1,6 +1,4 @@
 <script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-
 
 {%- style -%}
 	.row .column img {
@@ -114,7 +112,9 @@ text-align: left;
                                         <label for="{{ color_option }}">{{ color_option }}</label>
                                     </div>
                                   {% endfor %}
-                                 
+                                  <script type="application/json">
+                                    {{ product.variants | json }}
+                                  </script>
                                 </div>
                             </variant-radios>
                           {%- when 'quantity_selector' -%}
