@@ -35,7 +35,7 @@ subTotal();
 
 
 function changeNumberOfUnits(action, id) {
-  cart = cart.map((item) => {
+ let cart = cart.map((item) => {
     let numberOfUnits = item.numberOfUnits;
 
     if (item.id === id) {
