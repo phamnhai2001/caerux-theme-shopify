@@ -71,5 +71,13 @@ function subTotal() {
 subTotal();
 
 function updateNumber(){
-  
+      var minusButton = document.getElementsByClassName("minus_btn")
+      for (var i = 0; i < minusButton.length; i++) {
+      minusButton[i].addEventListener("click", function(event){
+      var quantity = document.getElementsByClassName("cart-quantity-input")
+      for (var i = 0; i < quantity.length; i++) {
+      var quantity = quantity[i].value--
+      //console.log(quantity)
+       }
+      })};
 }
