@@ -70,15 +70,19 @@ function subTotal() {
 }
 subTotal();
 
-function updateNumber(){
-      var minusButton = document.getElementsByClassName("minus_btn")
-      for (var i = 0; i < minusButton.length; i++) {
-      minusButton[i].addEventListener("click", function(event){
-      var quantity = document.getElementsByClassName("cart-quantity-input")
-      for (var i = 0; i < quantity.length; i++) {
-      var quantity = quantity[i].value--
-      //console.log(quantity)
-       }
-      })};
+ let deductBtnArr = document.getElementsByClassName('minus_btn');
+let addButtonArr = document.getElementsByClassName('plus_btn');
+
+for(let deductBtn of deductBtnArr){
+    deductBtn.onclick = function(){
+        let currentInputBox = deductBtn.nextElementSibling;
+        currentInputBox.value =  currentInputBox.value - 1;
+    }
 }
-updateNumber();
+
+for(let addButton of addButtonArr){
+    addButton.onclick = () => {
+        let currentInputBox = addButton.previousElementSibling;
+        currentInputBox.value =  parseInt(currentInputBox.value) + 1;
+    }
+}
