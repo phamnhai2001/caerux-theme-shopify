@@ -24,7 +24,9 @@
                         <a class="header_cart" href="{{ routes.cart_url }}"><span class="header_welcart_cart_label">Cart</span>
                             <span class="header_welcart_cart_badge">
                                 <img src="{{ 'cart.svg' | asset_url }}" alt="">
+                              {{ cart.item_count }}
                             </span>
+                          
                         </a>
                         <div class="header_view_cart" id="header_view_cart">
                             <p class="wc_empty_cart">There are no items in the cart right now.</p>
