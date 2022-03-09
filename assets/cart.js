@@ -1,6 +1,5 @@
 const btn = document.getElementsByClassName('add_cart');
 const products = [] ;
-console.log(event.target.parentElement.parentElement.children[0].children[0]);
 for(var i=0; i <btn.length; i++) {
     let cartBtn = btn[i];
     cartBtn.addEventListener("click", () => {
