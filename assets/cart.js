@@ -32,25 +32,3 @@ function subTotal() {
     document.querySelector('.total_price').innerText = subTotal;
 }
 subTotal();
-
-let cart = JSON.parse(localStorage.getItem("CART")) || [];
-function changeNumberOfUnits(action, id) {
- cart = cart.map((item) => {
-    let numberOfUnits = item.numberOfUnits;
-
-    if (item.id === id) {
-      if (action === "minus" && numberOfUnits > 1) {
-        numberOfUnits--;
-      } else if (action === "plus" && numberOfUnits < item.instock) {
-        numberOfUnits++;
-      }
-    }
-
-    return {
-      ...item,
-      numberOfUnits,
-    };
-  });
-
-  subTotal();
-}
