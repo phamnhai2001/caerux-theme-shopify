@@ -1,5 +1,3 @@
-
-
 function cartNumberDisplay() {
     let cartNumbers = 0;
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
@@ -34,16 +32,3 @@ function subTotal() {
     document.querySelector('.total_price').innerText = subTotal;
 }
 subTotal();
-
-
-const open = document.getElementById('cart_view');
-const cart_notify = document.getElementById('cart');
-const close = document.getElementById('close');
-
-open.addEventListener('click', () => {
-    cart_notify.classList.add('animate','active');
-});
-
-close.addEventListener('click', () => {
-    cart_notify.classList.remove('active');
-})
