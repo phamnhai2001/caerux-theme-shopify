@@ -1,12 +1,12 @@
 {
   "sections": {
-    "main": {
-      "type": "main-collection",
+    "product-grid": {
+      "type": "main-collection-product",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "product-grid"
   ]
 }
