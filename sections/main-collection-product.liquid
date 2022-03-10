@@ -19,6 +19,7 @@
                                 <div class="collection_product_count">
                                     <p>There are <span>250 products</span> available </p>
                                 </div>
+                              {%- if enable_sorting -%}
                               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                                 <div class="collection_product_sortby">
                                     <label for="">Sort by:</label>
@@ -30,6 +31,7 @@
                                         </select>
                                     </div>
                                 </div>
+                              {%- endif -%}
                             </div>
                         </div>
                         <div class="collection_product_list">
