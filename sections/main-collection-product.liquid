@@ -194,7 +194,21 @@
                                 <div class="loading_overlay gradient"></div>
                                 <div class="list_item" >
                                     <ul id="list_collection" class="items">
-
+                                       {%- for product in collection.products -%}
+                                      		<li data-category="" data-price="">
+                                              <a class="item_type" href="#">
+                                                <div class="item_content">
+                                                  <div class="thumb">
+                                                    <img src="${n.image}" alt="">
+                                                  </div>
+                                                  <div class="txt_desp">
+                                                    <h3>${n.name}</h3>
+                                                    <p>${n.price}</p>
+                                                  </div>
+                                                </div>
+                                              </a>
+                                            </li>
+                                      {%- endfor -%}
                                     </ul>
                                 </div>
                             </div>
