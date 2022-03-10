@@ -19,8 +19,11 @@
         <img src="{{ product | image_url: width: 300 }}" alt="">
      </div>
      <div class="txt_desp">
+       {%- if product_card_product.featured_media -%}
+
         <h3>{{ product_card_product.title | escape }}</h3>
         <p></p>
+       {%- endif -%}
      </div>
   </div>
 </a>
