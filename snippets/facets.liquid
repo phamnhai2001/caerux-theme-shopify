@@ -60,6 +60,7 @@
                             </li>
                         </ul>
                     </div>
+  {%- for filter in results.filters -%}
                     <div class="filters" id="filters">
                         <div class="txt_desp util_pc">
                             <h3>Filter By</h3>
@@ -69,7 +70,7 @@
                                 <h3>Filter :</h3>
                             </div>
                          
-                          {%- for filter in results.filters -%}
+                          
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
                               	{% when 'list' %}
@@ -98,99 +99,100 @@
                                           </div>
                                       </div>
                             		</div>
-                          {% when 'price_range' %}
-                            <div class="price">
-                                <div class="ttl_filters" id="filter_price">
-                                    <p>Price</p>
-                                    <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
-                                </div>
-                                <div class="facets_display" id="content_price">
-                                    <div class="facets_price">
-                                        <span class="field-currency">$</span>
-                                        <div class="field">
-                                            <input class="field_input" type="text" value="" id="price-min">
+                              {% when 'price_range' %}
+                                <div class="price">
+                                    <div class="ttl_filters" id="filter_price">
+                                        <p>Price</p>
+                                        <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
+                                    </div>
+                                    <div class="facets_display" id="content_price">
+                                        <div class="facets_price">
+                                            <span class="field-currency">$</span>
+                                            <div class="field">
+                                                <input class="field_input" type="text" value="" id="price-min">
+                                            </div>
+                                            <span class="field-currency">$</span>
+                                            <div class="field">
+                                                <input class="field_input" type="text" value="" id="price-max">
+                                            </div>
                                         </div>
-                                        <span class="field-currency">$</span>
-                                        <div class="field">
-                                            <input class="field_input" type="text" value="" id="price-max">
+                                        <div class="reset">
+                                            <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
                                         </div>
                                     </div>
-                                    <div class="reset">
-                                        <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                </div>
+                              {% when 'color' %}
+                                <div class="color">
+                                    <div class="ttl_filters" id="filter_color">
+                                        <p>Color</p>
+                                        <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
+                                    </div>
+                                    <div class="facets_display" id="content_color">
+                                        <ul class="facets_list">
+                                            <li class="facets_item">
+                                                <label for="">
+                                                    <input type="checkbox" value="color 01">
+                                                    <p class="txt_label">Color 01 (5)</p>
+                                                </label>
+                                            </li>
+                                            <li class="facets_item">
+                                                <label for="">
+                                                    <input type="checkbox" value="color 02">
+                                                    <p class="txt_label">Color 02 (5)</p>
+                                                </label>
+                                            </li>
+                                            <li class="facets_item">
+                                                <label for="">
+                                                    <input type="checkbox" value="color 03">
+                                                    <p class="txt_label">Color 03 (5)</p>
+                                                </label>
+                                            </li>
+                                            <li class="facets_item">
+                                                <label for="">
+                                                    <input type="checkbox" value="color 04">
+                                                    <p class="txt_label">Color 04 (5)</p>
+                                                </label>
+                                            </li>
+                                            <li class="facets_item" value="color 05">
+                                                <label for="">
+                                                    <input type="checkbox">
+                                                    <p class="txt_label">Color 05 (5)</p>
+                                                </label>
+                                            </li>
+                                            <li class="facets_item" value="color 06">
+                                                <label for="">
+                                                    <input type="checkbox">
+                                                    <p class="txt_label">Color 06 (5)</p>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <div class="reset">
+                                            <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                          {% when 'color' %}
-                            <div class="color">
-                                <div class="ttl_filters" id="filter_color">
-                                    <p>Color</p>
-                                    <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
-                                </div>
-                                <div class="facets_display" id="content_color">
-                                    <ul class="facets_list">
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="color 01">
-                                                <p class="txt_label">Color 01 (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="color 02">
-                                                <p class="txt_label">Color 02 (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="color 03">
-                                                <p class="txt_label">Color 03 (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="color 04">
-                                                <p class="txt_label">Color 04 (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item" value="color 05">
-                                            <label for="">
-                                                <input type="checkbox">
-                                                <p class="txt_label">Color 05 (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item" value="color 06">
-                                            <label for="">
-                                                <input type="checkbox">
-                                                <p class="txt_label">Color 06 (5)</p>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                    <div class="reset">
-                                        <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                            <div class="wrapper util_sp">
+                                <div class="collection_product_wrap ">
+                                    <div class="collection_product_count">
+                                        <p>250 products</p>
+                                    </div>
+                                    <div class="collection_product_sortby">
+                                        <label for="">Sort by:</label>
+                                        <div class="select">
+                                            <select name="sort_by" class="selected">
+                                                <option value="Default">Default</option>
+                                                <option value="LowToHigh">Price, low to high</option>
+                                                <option value="HighToLow">Price, high to low</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="wrapper util_sp">
-                            <div class="collection_product_wrap ">
-                                <div class="collection_product_count">
-                                    <p>250 products</p>
-                                </div>
-                                <div class="collection_product_sortby">
-                                    <label for="">Sort by:</label>
-                                    <div class="select">
-                                        <select name="sort_by" class="selected">
-                                            <option value="Default">Default</option>
-                                            <option value="LowToHigh">Price, low to high</option>
-                                            <option value="HighToLow">Price, high to low</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       {% endcase %}
-            			{%- endfor -%}
+                           {% endcase %}
                     </div>
+                              {%- endfor -%}
+
                         {%- endif -%}
 
                 </div>
