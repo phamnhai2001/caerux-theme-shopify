@@ -25,7 +25,7 @@
                                   <div class="item_content">
                                       <div class="thumb">
                                         {%- if article.image -%}
-                                          {{ article | img_url | img_tag: '' }}
+                                          {{ article | img_url: 'master' | img_tag: '' }}
                                         {%- endif -%}
                                       </div>
                                       <div class="txt_desp">
