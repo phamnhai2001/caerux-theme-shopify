@@ -80,18 +80,14 @@
                                       </div>
                                       <div class="facets_display" id="content_availability">
                                           <ul class="facets_list">
+                                            {%- for value in filter.values -%}
                                               <li class="facets_item">
                                                   <label for="">
-                                                      <input type="checkbox" value="in stock" >
-                                                      <p class="txt_label">In stock (5)</p>
+                                                      <input type="checkbox" name="{{ value.param_name }}" value="{{ value.value }}">
+                                                      <p class="txt_label">{{ value.label | escape }} ({{ value.count }})</p>
                                                   </label>
                                               </li>
-                                              <li class="facets_item">
-                                                  <label for="">
-                                                      <input type="checkbox" value="out stock">
-                                                      <p class="txt_label">Out of stock (5)</p>
-                                                  </label>
-                                              </li>
+                                            {%- endfor -%}
                                           </ul>
                                           <div class="reset" >
                                               <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
