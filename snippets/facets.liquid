@@ -68,31 +68,36 @@
                                 <h3>Filter :</h3>
                             </div>
                           {% if enable_filtering %}
-                            <div class="availability">
-                                <div class="ttl_filters" id="filter_availability">
-                                    <p>{{ filter.label | escape }}</p>
-                                    <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
-                                </div>
-                                <div class="facets_display" id="content_availability">
-                                    <ul class="facets_list">
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="in stock" >
-                                                <p class="txt_label">In stock (5)</p>
-                                            </label>
-                                        </li>
-                                        <li class="facets_item">
-                                            <label for="">
-                                                <input type="checkbox" value="out stock">
-                                                <p class="txt_label">Out of stock (5)</p>
-                                            </label>
-                                        </li>
-                                    </ul>
-                                    <div class="reset" >
-                                        <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
-                                    </div>
-                                </div>
-                            </div>
+                          {%- for filter in results.filters -%}
+                              {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                              {% case filter.type %}
+                              	{% when 'list' %}
+                                  <div class="availability">
+                                      <div class="ttl_filters" id="filter_availability">
+                                          <p>{{ filter.label | escape }}</p>
+                                          <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
+                                      </div>
+                                      <div class="facets_display" id="content_availability">
+                                          <ul class="facets_list">
+                                              <li class="facets_item">
+                                                  <label for="">
+                                                      <input type="checkbox" value="in stock" >
+                                                      <p class="txt_label">In stock (5)</p>
+                                                  </label>
+                                              </li>
+                                              <li class="facets_item">
+                                                  <label for="">
+                                                      <input type="checkbox" value="out stock">
+                                                      <p class="txt_label">Out of stock (5)</p>
+                                                  </label>
+                                              </li>
+                                          </ul>
+                                          <div class="reset" >
+                                              <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                          </div>
+                                      </div>
+                            		</div>
+                          {% when 'price_range' %}
                             <div class="price">
                                 <div class="ttl_filters" id="filter_price">
                                     <p>Price</p>
@@ -114,6 +119,7 @@
                                     </div>
                                 </div>
                             </div>
+                          {% when 'color' %}
                             <div class="color">
                                 <div class="ttl_filters" id="filter_color">
                                     <p>Color</p>
@@ -181,6 +187,8 @@
                                 </div>
                             </div>
                         </div>
+                       {% endcase %}
+            			{%- endfor -%}
                       {%- endif -%}
                     </div>
                 </div>
