@@ -22,7 +22,9 @@
                               {%- if enable_sorting -%}
                               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                                 <div class="collection_product_sortby">
-                                    <label for="">Sort by:</label>
+                                    {% if collection.sort_by %}
+  Sort by: {{ collection.sort_by }}
+{% endif %}
                                     <div class="select">
                                         <select name="sort_by" class="selected" id="SortBy" aria-describedby="a11y-refresh-page-message">
                                           {%- for option in results.sort_options -%}
