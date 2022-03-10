@@ -67,6 +67,7 @@
                             <div class="txt_desp util_sp">
                                 <h3>Filter :</h3>
                             </div>
+                          {% if enable_filtering %}
                             <div class="availability">
                                 <div class="ttl_filters" id="filter_availability">
                                     <p>{{ filter.label | escape }}</p>
@@ -180,5 +181,6 @@
                                 </div>
                             </div>
                         </div>
+                      {%- endif -%}
                     </div>
                 </div>
