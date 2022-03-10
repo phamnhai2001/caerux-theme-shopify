@@ -197,6 +197,7 @@
                                 <div class="list_item" >
                                     <ul id="list_collection" class="items">
                                        {%- for product in collection.products -%}
+                                      	  {% for image in product.images %}
                                       		<li data-category="" data-price="">
                                               <a class="item_type" href="#">
                                                 <div class="item_content">
@@ -210,6 +211,7 @@
                                                 </div>
                                               </a>
                                             </li>
+                                         {%- endfor -%}
                                       {%- endfor -%}
                                     </ul>
                                 </div>
