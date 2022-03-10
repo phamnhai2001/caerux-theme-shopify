@@ -17,7 +17,7 @@
                         <div class="wrapper  util_pc">
                             <div class="collection_product_wrap">
                                 <div class="collection_product_count">
-                                    <p>There are <span>{{collection.all_products_count}} products</span></p>
+                                    <p>There are <span>{{ collection.products_count }} products</span></p>
                                 </div>
                               {%- if enable_sorting -%}
                               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
