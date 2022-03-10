@@ -7,6 +7,7 @@
     Usage:
     {% render 'product-card' %}
 {% endcomment %}
+{%- if product_card_product.featured_media -%}
 <a class="item_type" href="{{ product.url }}">
   <div class="item_content">
      <div class="thumb">
@@ -19,3 +20,4 @@
      </div>
   </div>
 </a>
+{%- endif -%}
