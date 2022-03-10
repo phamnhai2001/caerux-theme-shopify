@@ -43,6 +43,42 @@ function filterGoods() {
 }
 
 
+
+const DATA = [
+  {
+    name: "product name",
+    image: "assets/images/conletc_01.jpg",
+    color: "color 01",
+    price: "20",
+    size: "S",
+    stock: "in stock"
+},
+{
+    name: "product name",
+    image: "assets/images/conletc_02.jpg",
+    color: "color 02",
+    price: "30",
+    size: "M",
+    stock: "out stock"
+},
+{
+    name: "product name",
+    image: "assets/images/conletc_03.jpg",
+    color: "color 03",
+    price: "90.72",
+    size: "L",
+    stock: "in stock"
+},
+{
+    name: "product name",
+    image: "assets/images/conletc_04.jpg",
+    color: "color 04",
+    price: "50.99",
+    size: "S",
+    stock: "out stock"
+}
+];
+
 outputGoods(DATA);
 
 
