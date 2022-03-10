@@ -42,62 +42,6 @@ function filterGoods() {
   );
 }
 
-function outputGoods(goods) {
-  document.getElementById("list_collection").innerHTML = goods
-    .map(
-      (n) => `
-      <li data-category="" data-price="">
-        <a class="item_type" href="#">
-          <div class="item_content">
-            <div class="thumb">
-              <img src="${n.image}" alt="">
-            </div>
-            <div class="txt_desp">
-              <h3>${n.name}</h3>
-              <p>${n.price}</p>
-            </div>
-          </div>
-        </a>
-      </li>
-  `
-    )
-    .join("");
-}
-
-const DATA = [
-  {
-    name: "product name",
-    image: "assets/images/conletc_01.jpg",
-    color: "color 01",
-    price: "20",
-    size: "S",
-    stock: "in stock"
-},
-{
-    name: "product name",
-    image: "assets/images/conletc_02.jpg",
-    color: "color 02",
-    price: "30",
-    size: "M",
-    stock: "out stock"
-},
-{
-    name: "product name",
-    image: "assets/images/conletc_03.jpg",
-    color: "color 03",
-    price: "90.72",
-    size: "L",
-    stock: "in stock"
-},
-{
-    name: "product name",
-    image: "assets/images/conletc_04.jpg",
-    color: "color 04",
-    price: "50.99",
-    size: "S",
-    stock: "out stock"
-}
-];
 
 outputGoods(DATA);
 
