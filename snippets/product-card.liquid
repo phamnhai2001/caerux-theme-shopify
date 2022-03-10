@@ -13,16 +13,17 @@
     Usage:
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
+{%- if product_card_product.featured_media -%}
 <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
   <div class="item_content">
+    
      <div class="thumb">
         <img src="{{ image | image_url }}" alt="">
      </div>
-    {%- if product_card_product.featured_media -%}
      <div class="txt_desp">
         <h3>{{ product_card_product.title | escape }}</h3>
         <p>{{ 'products.product.price.regular_price' | t }}</p>
      </div>
-    {%- endif -%}
   </div>
-</a>                                              
+</a>
+{%- endif -%}
