@@ -11,7 +11,7 @@
 <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
   <div class="item_content">
      <div class="thumb">
-        <img src="{{ product_card_product.featured_media | img_url }}" alt="">
+        <img src="{{ product_card_product.featured_media | img_url: 'master' }}" alt="">
      </div>
      <div class="txt_desp">
 
