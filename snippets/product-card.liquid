@@ -14,7 +14,6 @@
     {% render 'product-card', show_vendor: section.settings.show_vendor %}
 {% endcomment %}
 <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
-  {%- if product_card_product.featured_media -%}
   <div class="item_content">
      <div class="thumb">
         <img src="{{ image | image_url }}" alt="">
@@ -24,5 +23,4 @@
         <p>{{ 'products.product.price.regular_price' | t }}</p>
      </div>
   </div>
-  {%- endif -%}
 </a>
