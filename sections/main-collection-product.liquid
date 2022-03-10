@@ -41,9 +41,7 @@
                                     <ul id="list_collection" class="items">
                                        {%- for product in collection.products -%}
                                       		<li data-category="" data-price="">
-                                              {%- if product_card_product.featured_media -%}
-                                              
-                                              {%- endif -%}
+                                              {% render 'product-card', show_vendor: section.settings.show_vendor %}
                                             </li>
                                       {%- endfor -%}
                                     </ul>
