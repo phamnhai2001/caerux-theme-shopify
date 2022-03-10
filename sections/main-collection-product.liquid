@@ -19,21 +19,19 @@
                                 <div class="collection_product_count">
                                     <p>There are <span>{{ collection.products_count }} products</span></p>
                                 </div>
-                              {%- if enable_sorting -%}
-                              {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+                              {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
                                 <div class="collection_product_sortby">
-                                    {% if collection.sort_by %}
-  Sort by: {{ collection.sort_by }}
-{% endif %}
+                                    <label for="">Sort by:</label>
                                     <div class="select">
                                         <select name="sort_by" class="selected" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                                          {%- for option in results.sort_options -%}
-                                            <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                                          {%- endfor -%}
+                                          {% for option in collection.sort_options %}
+    <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
+      {{ option.name }}
+    </option>
+  {% endfor %}
                                         </select>
                                     </div>
                                 </div>
-                              {%- endif -%}
                             </div>
                         </div>
                         <div class="collection_product_list">
