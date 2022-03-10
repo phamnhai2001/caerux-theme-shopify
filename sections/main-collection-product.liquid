@@ -1,6 +1,6 @@
 <!-- <script src="{{ 'collection.js' | asset_url }}" defer="defer"></script> -->
 <div id="wrapper" class="collection">
-  
+  {%- paginate collection.products by section.settings.products_per_page -%}
         <div class="inner">
             <div class="txt_desp">
                 <h3>Shop Collection</h3>
@@ -52,6 +52,7 @@
                 </div>
             </div>
         </div>
+  {%- endpaginate -%}
     </div>
 {% schema %}
 {
