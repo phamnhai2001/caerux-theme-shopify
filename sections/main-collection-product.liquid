@@ -37,21 +37,19 @@
                                 <div class="list_item" >
                                     <ul id="list_collection" class="items">
                                        {%- for product in collection.products -%}
-                                      	  {% for image in product.images %}
                                       		<li data-category="" data-price="">
-                                              <a class="item_type" href="#">
+                                              <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
                                                 <div class="item_content">
                                                   <div class="thumb">
                                                     <img src="{{ image | image_url }}" alt="">
                                                   </div>
                                                   <div class="txt_desp">
-                                                    <h3>${n.name}</h3>
+                                                    <h3>{{ product_card_product.title | escape }}</h3>
                                                     <p>${n.price}</p>
                                                   </div>
                                                 </div>
                                               </a>
                                             </li>
-                                         {%- endfor -%}
                                       {%- endfor -%}
                                     </ul>
                                 </div>
