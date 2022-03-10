@@ -19,13 +19,14 @@
                                 <div class="collection_product_count">
                                     <p>There are <span>250 products</span> available </p>
                                 </div>
+                              {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
                                 <div class="collection_product_sortby">
                                     <label for="">Sort by:</label>
                                     <div class="select">
                                         <select name="sort_by" class="selected">
-                                            <option value="Default">Default</option>
-                                            <option value="LowToHigh">Price, low to high</option>
-                                            <option value="HighToLow">Price, high to low</option>
+                                          {%- for option in results.sort_options -%}
+                                            <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
+                                          {%- endfor -%}
                                         </select>
                                     </div>
                                 </div>
