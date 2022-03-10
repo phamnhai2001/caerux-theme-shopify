@@ -42,7 +42,27 @@ function filterGoods() {
   );
 }
 
-
+function outputGoods(goods) {
+  document.getElementById("list_collection").innerHTML = goods
+    .map(
+      (n) => `
+      <li data-category="" data-price="">
+        <a class="item_type" href="#">
+          <div class="item_content">
+            <div class="thumb">
+              <img src="${n.image}" alt="">
+            </div>
+            <div class="txt_desp">
+              <h3>${n.name}</h3>
+              <p>${n.price}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+  `
+    )
+    .join("");
+}
 
 const DATA = [
   {
