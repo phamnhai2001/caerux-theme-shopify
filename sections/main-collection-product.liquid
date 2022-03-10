@@ -17,7 +17,13 @@
                         <div class="wrapper  util_pc">
                             <div class="collection_product_wrap">
                                 <div class="collection_product_count">
-                                    <p>There are <span>250 products</span> available </p>
+                                    <p>There are <span>{%- if results.results_count -%}
+                {{ 'templates.search.results_with_count' | t: terms: results.terms, count: results.results_count }}
+              {%- elsif results.products_count == results.all_products_count -%}
+                {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
+              {%- else -%}
+                {{ 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
+              {%- endif -%} products</span> available </p>
                                 </div>
                               {%- if enable_sorting -%}
                               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
