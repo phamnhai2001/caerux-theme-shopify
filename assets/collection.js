@@ -67,7 +67,7 @@ function outputGoods(goods) {
 const DATA = [
   {
     name: "product name",
-    image: "assets/images/conletc_01.jpg",
+    image: "conletc_01.jpg",
     color: "color 01",
     price: "20",
     size: "S",
@@ -75,7 +75,7 @@ const DATA = [
 },
 {
     name: "product name",
-    image: "assets/images/conletc_02.jpg",
+    image: "conletc_02.jpg",
     color: "color 02",
     price: "30",
     size: "M",
@@ -83,7 +83,7 @@ const DATA = [
 },
 {
     name: "product name",
-    image: "assets/images/conletc_03.jpg",
+    image: "conletc_03.jpg",
     color: "color 03",
     price: "90.72",
     size: "L",
@@ -91,7 +91,7 @@ const DATA = [
 },
 {
     name: "product name",
-    image: "assets/images/conletc_04.jpg",
+    image: "conletc_04.jpg",
     color: "color 04",
     price: "50.99",
     size: "S",
