@@ -22,6 +22,7 @@
   endif
 -%}
 <div class="collection_filters">
+   {% if enable_filtering %}
                     <div class="categories util_pc">
                         <div class="txt_desp">
                             <h3>Categories</h3>
@@ -67,7 +68,7 @@
                             <div class="txt_desp util_sp">
                                 <h3>Filter :</h3>
                             </div>
-                          {% if enable_filtering %}
+                         
                           {%- for filter in results.filters -%}
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
@@ -189,6 +190,7 @@
                         </div>
                        {% endcase %}
             			{%- endfor -%}
-                      {%- endif -%}
                     </div>
+                        {%- endif -%}
+
                 </div>
