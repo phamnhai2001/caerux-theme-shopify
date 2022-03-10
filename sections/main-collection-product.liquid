@@ -40,7 +40,9 @@
                                     <ul id="list_collection" class="items">
                                       {%- for product in collection.products -%}
                                       		<li	>
-                                              {% render 'product-card' %}
+                                              {% render 'product-card',
+                                               product_card_product: product
+                                              %}
                                             </li>
                                       {%- endfor -%}
                                     </ul>
