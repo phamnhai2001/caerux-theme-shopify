@@ -23,7 +23,7 @@
                 {{ 'products.facets.product_count_simple' | t: count: results.products_count }}
               {%- else -%}
                 {{ 'products.facets.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
-              {%- endif -%} products</span> available </p>
+              {%- endif -%} products</span></p>
                                 </div>
                               {%- if enable_sorting -%}
                               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
