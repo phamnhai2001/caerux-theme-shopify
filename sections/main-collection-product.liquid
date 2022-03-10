@@ -42,17 +42,7 @@
                                        {%- for product in collection.products -%}
                                       		<li data-category="" data-price="">
                                               {%- if product_card_product.featured_media -%}
-                                              <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
-                                                <div class="item_content">
-                                                  <div class="thumb">
-                                                    <img src="{{ image | image_url }}" alt="">
-                                                  </div>
-                                                  <div class="txt_desp">
-                                                    <h3>{{ product_card_product.title | escape }}</h3>
-                                                    <p>{{ 'products.product.price.regular_price' | t }}</p>
-                                                  </div>
-                                                </div>
-                                              </a>
+                                              
                                               {%- endif -%}
                                             </li>
                                       {%- endfor -%}
