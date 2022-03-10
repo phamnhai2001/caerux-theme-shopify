@@ -169,7 +169,7 @@
                 <div class="collection_product_grid">
                     <div class="collection util_pc">
                         <div class="collection_banner">
-                            <img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+                            <img src="{{section.settings.image_banner | img_url }}" alt="">
                         </div>
                     </div>
                     <div class="collection_product">
@@ -221,9 +221,14 @@
     </div>
 {% schema %}
 {
-  "name": "t:sections.main-collection-product-grid.name",
-  "class": "spaced-section collection-grid-section",
+  "name": "main-collection-product",
+  "class": "section",
   "settings": [
+	{
+		"type": "image_picker",
+		"id": "image_banner",
+		"label": "Banner image"
+	},
     {
       "type": "range",
       "id": "products_per_page",
