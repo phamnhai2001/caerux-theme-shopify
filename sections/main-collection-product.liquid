@@ -38,6 +38,7 @@
                                     <ul id="list_collection" class="items">
                                        {%- for product in collection.products -%}
                                       		<li data-category="" data-price="">
+                                              {%- if product_card_product.featured_media -%}
                                               <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
                                                 <div class="item_content">
                                                   <div class="thumb">
@@ -49,6 +50,7 @@
                                                   </div>
                                                 </div>
                                               </a>
+                                              {%- endif -%}
                                             </li>
                                       {%- endfor -%}
                                     </ul>
