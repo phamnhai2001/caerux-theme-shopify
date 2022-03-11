@@ -5,9 +5,8 @@
                 <h3>{{- collection.title | escape -}}</h3>
             </div>
             <div class="collection_section">
+                 {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, collapse_on_larger_devices: false %}
                 <div class="collection_product_grid">
-                  				{% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, collapse_on_larger_devices: false %}
-
                     <div class="collection util_pc">
                         <div class="collection_banner">
                             <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="">
