@@ -66,7 +66,8 @@ class FacetFiltersForm extends HTMLElement {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
   }
 
- 
+  
+
   static renderFilters(html, event) {
     const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
 
@@ -128,7 +129,7 @@ class FacetFiltersForm extends HTMLElement {
   static getSections() {
     return [
       {
-        section: document.getElementById('product-grid').dataset.id,
+        section: document.getElementById('list_collection').dataset.id,
       }
     ]
   }
