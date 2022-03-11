@@ -73,7 +73,7 @@
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
                               {% when 'list' %}
-                                  <div class="availability">
+                                  <div class="availability js-filter">
                                       <div class="ttl_filters" id="filter_availability">
                                           <p>{{ filter.label | escape }}</p>
                                           <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
@@ -97,7 +97,7 @@
                                       </div>
                             		</div>
                               {% when 'price_range' %}
-                                <div class="price">
+                                <div class="price js-filter">
                                     <div class="ttl_filters" id="filter_price">
                                         <p>{{ filter.label | escape }}</p>
                                         <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                               {% when 'color' %}
-                                <div class="color">
+                                <div class="color js-filter">
                                     <div class="ttl_filters" id="filter_color">
                                         <p>Color</p>
                                         <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
