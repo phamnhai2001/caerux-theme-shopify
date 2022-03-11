@@ -60,15 +60,15 @@
                             </li>
                         </ul>
              </div>
-             <div class="filters" id="filters">
+             <form class="filters" id="filters">
                         <div class="txt_desp util_pc">
                             <h3>Filter By</h3>
                         </div>
-                        <form class="facets_wrapper">
+                        <div class="facets_wrapper">
                             <div class="txt_desp util_sp">
                                 <h3>Filter :</h3>
                             </div>
-                         
+                         <div id="FacetsWrapperDesktop" class="facets__wrapper">
                             {%- for filter in results.filters -%}
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
@@ -188,7 +188,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
                             <div class="wrapper util_sp">
                                 <div class="collection_product_wrap ">
                                     <div class="collection_product_count">
@@ -208,7 +208,8 @@
                             </div>
                            {% endcase %}
                            {%- endfor -%}
-                    </div>
+               			</div>
+                    </form>
              {%- endif -%}
 
         </div>		
