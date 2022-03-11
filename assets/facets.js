@@ -31,15 +31,7 @@ class FacetFiltersForm extends HTMLElement {
   static renderPage(searchParams, event, updateURLHash = true) {
     FacetFiltersForm.searchParamsPrev = searchParams;
     const sections = FacetFiltersForm.getSections();
-    const countContainer = document.getElementById('ProductCount');
-    const countContainerDesktop = document.getElementById('ProductCountDesktop');
-    document.getElementById('ProductGridContainer').querySelector('.collection').classList.add('loading');
-    if (countContainer){
-      countContainer.classList.add('loading');
-    }
-    if (countContainerDesktop){
-      countContainerDesktop.classList.add('loading');
-    }
+   
 
     sections.forEach((section) => {
       const url = `${window.location.pathname}?section_id=${section.section}&${searchParams}`;
@@ -61,7 +53,6 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.filterData = [...FacetFiltersForm.filterData, { html, url }];
         FacetFiltersForm.renderFilters(html, event);
         FacetFiltersForm.renderProductGridContainer(html);
-        FacetFiltersForm.renderProductCount(html);
       });
   }
 
@@ -69,24 +60,13 @@ class FacetFiltersForm extends HTMLElement {
     const html = FacetFiltersForm.filterData.find(filterDataUrl).html;
     FacetFiltersForm.renderFilters(html, event);
     FacetFiltersForm.renderProductGridContainer(html);
-    FacetFiltersForm.renderProductCount(html);
   }
 
   static renderProductGridContainer(html) {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
   }
 
-  static renderProductCount(html) {
-    const count = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductCount').innerHTML
-    const container = document.getElementById('ProductCount');
-    const containerDesktop = document.getElementById('ProductCountDesktop');
-    container.innerHTML = count;
-    container.classList.remove('loading');
-    if (containerDesktop) {
-      containerDesktop.innerHTML = count;
-      containerDesktop.classList.remove('loading');
-    }
-  }
+  
 
   static renderFilters(html, event) {
     const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
