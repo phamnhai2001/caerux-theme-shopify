@@ -68,7 +68,6 @@
                             <div class="txt_desp util_sp">
                                 <h3>Filter :</h3>
                             </div>
-                         
                             {%- for filter in results.filters -%}
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
