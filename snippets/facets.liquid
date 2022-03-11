@@ -60,10 +60,11 @@
                             </li>
                         </ul>
              </div>
-             <facet-filters-form class="filters" id="filters">
+             <div class="filters" id="filters">
                         <div class="txt_desp util_pc">
                             <h3>Filter By</h3>
                         </div>
+               		<facet-filters-form class="facets small-hide">
                         <form id="FacetFiltersForm" class="facets_wrapper">
                             <div class="txt_desp util_sp">
                                 <h3>Filter :</h3>
@@ -205,6 +206,7 @@
                            {%- endfor -%}
                           </div>
                          </form>
+               			</facet-filters-form>
                             <div class="wrapper util_sp">
                                 <div class="collection_product_wrap ">
                                     <div class="collection_product_count">
@@ -222,6 +224,6 @@
                                     </div>
                                 </div>
                             </div>
-                    </facet-filters-form>
+          </div>
           {%- endif -%}
         </div>		
