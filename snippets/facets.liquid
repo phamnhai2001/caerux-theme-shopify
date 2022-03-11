@@ -79,6 +79,7 @@
                                           <img class="util_sp" src="{{'chevron-down.png' | asset_url }}" alt="">
                                       </div>
                                       <div class="facets_display" id="content_availability">
+                                        <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
                                           <ul class="facets_list">
                                             {%- for value in filter.values -%}
                                               <li class="facets_item">
@@ -92,7 +93,11 @@
                                             {%- endfor -%}
                                           </ul>
                                           <div class="reset" >
-                                              <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                              <facet-remove>
+                                                <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                                                  {{ 'products.facets.reset' | t }}
+                                                </a>
+                                              </facet-remove>
                                           </div>
                                       </div>
                             		</div>
@@ -134,7 +139,11 @@
                                             </div>
                                         </div>
                                         <div class="reset">
-                                            <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                            <facet-remove>
+                                                <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                                                  {{ 'products.facets.reset' | t }}
+                                                </a>
+                                              </facet-remove>
                                         </div>
                                     </div>
                                 </div>
@@ -184,7 +193,11 @@
                                             </li>
                                         </ul>
                                         <div class="reset">
-                                            <a href="{{ filter.url_to_remove }}">{{ 'products.facets.reset' | t }}</a>
+                                            <facet-remove>
+                                                <a href="{{ filter.url_to_remove }}" class="facets__reset link underlined-link">
+                                                  {{ 'products.facets.reset' | t }}
+                                                </a>
+                                              </facet-remove>
                                         </div>
                                     </div>
                                 </div>
