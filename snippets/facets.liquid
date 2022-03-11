@@ -21,8 +21,8 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 -%}
-<div class="collection_filters">
    {% if enable_filtering %}
+<div class="collection_filters">
                     <div class="categories util_pc">
                         <div class="txt_desp">
                             <h3>Categories</h3>
@@ -209,7 +209,5 @@
                            {% endcase %}
                            {%- endfor -%}
                     </div>
-
-                        {%- endif -%}
-
                 </div>
+                        {%- endif -%}
