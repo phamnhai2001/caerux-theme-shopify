@@ -5,11 +5,10 @@ for(var i=0; i <btn.length; i++) {
     let cartBtn = btn[i];
     cartBtn.addEventListener("click", () => {
         let product = {
-            image: event.target.parentElement.parentElement.parentElement.children[0].children[0].innerText,
             name: event.target.parentElement.parentElement.children[0].children[0].innerText,
             price: event.target.parentElement.parentElement.children[0].children[1].innerText,
             totalPrice: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText),
-            quantity: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText)
+            quantity: 1
         }
         addItemToLacal(product);
     })
