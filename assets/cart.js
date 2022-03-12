@@ -1,5 +1,6 @@
 const btn = document.getElementsByClassName('add_cart');
 const products = [] ;
+
 for(var i=0; i <btn.length; i++) {
     let cartBtn = btn[i];
     cartBtn.addEventListener("click", () => {
@@ -7,11 +8,12 @@ for(var i=0; i <btn.length; i++) {
             name: event.target.parentElement.parentElement.children[0].children[0].innerText,
             price: event.target.parentElement.parentElement.children[0].children[1].innerText,
             totalPrice: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText),
-            quantity: 1
+            quantity: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText)
         }
         addItemToLacal(product);
     })
 }
+
 function addItemToLacal(product) {
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
     if(cartItem === null) {
@@ -34,6 +36,50 @@ function addItemToLacal(product) {
     localStorage.setItem('prdInCart', JSON.stringify(products));
     window.location.reload();
 }
+
+function disCartItem() {
+    html = '';
+    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
+    cartItem.forEach(item => {
+        html += `<li>
+        <div class="item_cart">
+            <div class="data_cart">
+                <div class="item_thumb">
+                    <img src="assets/images/img.jpg" alt="">
+                </div>
+                <div class="data">
+                    <a href="">
+                        <h3>${item.name}</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="entry_points">
+               <div class="box_check">
+                    <div class="btn_quantity">
+                        <button class="minus_btn">
+                            <span>-</span>
+                        </button>
+                        <input type="number" id="quantity" value="${item.quantity}">
+                        <button class="plus_btn">
+                            <span>+</span>
+                        </button>
+                    </div>
+                    <div class="btn_del">
+                        <i class="far fa-trash-alt"></i>
+                    </div>
+               </div>
+               <div class="point">
+                   <h3>${item.price}</h3>
+               </div>
+            </div>
+        </div>
+    </li>`
+    });
+    document.querySelector('.list_cart_item').innerHTML = html;
+
+}
+disCartItem();
+
 function cartNumberDisplay() {
     let cartNumbers = 0;
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
@@ -69,19 +115,4 @@ function subTotal() {
 }
 subTotal();
 
- let deductBtnArr = document.getElementsByClassName('minus_btn');
-let addButtonArr = document.getElementsByClassName('plus_btn');
 
-for(let deductBtn of deductBtnArr){
-    deductBtn.onclick = function(){
-        let currentInputBox = deductBtn.nextElementSibling;
-        currentInputBox.value =  currentInputBox.value - 1;
-    }
-}
-
-for(let addButton of addButtonArr){
-    addButton.onclick = () => {
-        let currentInputBox = addButton.previousElementSibling;
-        currentInputBox.value =  parseInt(currentInputBox.value) + 1;
-    }
-}
