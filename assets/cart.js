@@ -56,17 +56,23 @@ function disCartItem() {
             <div class="entry_points">
                <div class="box_check">
                     <div class="btn_quantity">
-                        <button class="minus_btn">
-                            <span>-</span>
-                        </button>
-                        <input type="number" id="quantity" value="${item.quantity}">
-                        <button class="plus_btn">
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="btn_del">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
+                                          <button class="minus_btn" data-product={{item.product.id}}>
+                                        	<span class="sr-only">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
+                        					{% render 'icon-minus' %}
+                                  			</button>
+                                    	<input class="cart-quantity-input quantity" type="number" id="quantity" value="${{ item.quantity }}" min="0" aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}">
+                                    	<button class="plus_btn" data-product={{item.product.id}}>
+                                       		<span class="sr-only">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
+                  					   		{% render 'icon-plus' %}
+                                  		</button>
+                                      </div>
+                                      <div class="btn_del">
+                                        <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                                          <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                                            {% render 'icon-remove' %}
+                                          </a>
+                                        </cart-remove-button>
+                                      </div>
                </div>
                <div class="point">
                    <h3>${item.price}</h3>
