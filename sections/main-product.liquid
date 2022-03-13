@@ -108,15 +108,6 @@ text-align: left;
                                 <div class="color_wrapper" >
                                    {%- for value in option.values -%}
                                     <div class="color_item" >
-                                      <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                            name="{{ option.name }}"
-                                            value="{{ value | escape }}"
-                                            form="{{ product_form_id }}"
-                                            {% if option.selected_value == value %}checked{% endif %}
-                                      >
-                                      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                                        {{ value }}
-                                      </label>
                                   	</div>
                                     {%- endfor -%}
                                   <script type="application/json">
