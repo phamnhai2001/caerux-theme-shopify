@@ -106,25 +106,14 @@ text-align: left;
                             <variant-radios class="color" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                                 <p>Color</p>
                                 <div class="color_wrapper" >
-                                   {% for color_option in product.options_by_name['Color'].values %}
-                                    
-                                        <input type="radio" name="color" id="{{ color_option }}" form="{{ product_form_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
-                                        <label for="{{ color_option }}">{{ color_option }}</label>
-                                    
-                                  {% endfor %}
-                                  {%- for value in option.values -%}
-                              		<div class="color_item">
-                                    <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                          name="{{ option.name }}"
-                                          value="{{ value | escape }}"
-                                          form="{{ product_form_id }}"
-                                          {% if option.selected_value == value %}checked{% endif %}
-                                    >
-                                    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                                      {{ value }}
-                                    </label>
+                                   {%- for option in product.options_with_values -%}
+                                  	{%- for value in option.values -%}
+                                      <div class="color_item">
+                                          <input type="radio" name="color" id="{{ color_option }}" form="{{ product_form_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
+                                          <label for="{{ color_option }}">{{ value | escape }}</label>
                                       </div>
-                                  {%- endfor -%}
+                                  	{% endfor %}
+                                  {% endfor %}
                                   <script type="application/json">
                                     {{ product.variants | json }}
                                   </script>
