@@ -109,7 +109,7 @@ text-align: left;
                                    {%- for option in product.options_with_values -%}
                                   	{%- for value in option.values -%}
                                       <div class="color_item">
-                                          <input type="radio" name="color" id="{{ color_option }}" form="{{ product_form_id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
+                                          <input type="radio" name="color" id="{{ color_option }}"  value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %}>
                                           <label for="{{ color_option }}">{{ value }}</label>
                                       </div>
                                   	{% endfor %}
