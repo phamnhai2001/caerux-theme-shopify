@@ -1,19 +1,23 @@
+
+
 const btn = document.getElementsByClassName('add_cart');
 const products = [] ;
-
 for(var i=0; i <btn.length; i++) {
     let cartBtn = btn[i];
+
     cartBtn.addEventListener("click", () => {
         let product = {
             name: event.target.parentElement.parentElement.children[0].children[0].innerText,
+            image: event.target.parentElement.parentElement.parentElement.children[0].children[0].children[0].children[0].children[0].src,
+            color: event.target.parentElement.parentElement.children[1].children[1].children[0].children[0].value,
             price: event.target.parentElement.parentElement.children[0].children[1].innerText,
             totalPrice: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText),
-            quantity: 1
+            quantity: parseInt(event.target.parentElement.parentElement.children[2].children[1].children[2].value.innerText)
         }
         addItemToLacal(product);
     })
-}
 
+}
 function addItemToLacal(product) {
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
     if(cartItem === null) {
@@ -24,8 +28,8 @@ function addItemToLacal(product) {
     }else {
         cartItem.forEach(item => {
             if(product.name == item.name) {
-                product.quantity = item.quantity += 1;
-                product.totalPrice = item.totalPrice += product.totalPrice;
+                product.quantity = item.quantity + parseInt(document.getElementById("quantity").value);
+                product.totalPrice = product.quantity * item.price;
 
             }else {
                 products.push(item);
@@ -36,6 +40,7 @@ function addItemToLacal(product) {
     localStorage.setItem('prdInCart', JSON.stringify(products));
     window.location.reload();
 }
+
 function disCartItem() {
     html = '';
     let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
@@ -44,12 +49,13 @@ function disCartItem() {
         <div class="item_cart">
             <div class="data_cart">
                 <div class="item_thumb">
-					<img src="${item.image}" alt="">
+                    <img src="${item.image}" alt="">
                 </div>
                 <div class="data">
                     <a href="">
                         <h3>${item.name}</h3>
                     </a>
+                    <p>Color: ${item.color} </p>
                 </div>
             </div>
             <div class="entry_points">
@@ -114,4 +120,6 @@ function subTotal() {
 }
 subTotal();
 
-
+function updateCart() {
+    
+}
