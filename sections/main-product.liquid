@@ -108,7 +108,7 @@ text-align: left;
                                 <div class="color_wrapper" >
                                    {% for color_option in product.options_by_name['Color'].values %}
                                     <div class="color_item">
-                                        <input type="radio" name="{{ color_option.name }}" id="{{ color_option }}" form="{{ product_form_id }}" value="{{ color_option }}" {% if color_option.selected_value == value %}checked{% endif %}>
+                                        <input type="radio" name="color" id="{{ color_option }}" form="{{ product_form_id }}" value="{{ color_option }}" {% if color_option.selected_value == value %}checked{% endif %}>
                                         <label for="{{ color_option }}">{{ color_option }}</label>
                                     </div>
                                   {% endfor %}
