@@ -168,7 +168,9 @@ text-align: left;
                                           {%- endif -%}
                                         </span>
                                     </button>
-                      				{{ form | payment_button }}
+                      				{%- if block.settings.show_dynamic_checkout -%}
+                                      {{ form | payment_button }}
+                                    {%- endif -%}
                               {%- endform -%}
                                        
                             </product-form>
