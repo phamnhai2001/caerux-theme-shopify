@@ -183,13 +183,7 @@
         </div>
     </div>
 <script>
-  function onKeyUpEscape(event) {
-  if (event.code.toUpperCase() !== 'ESCAPE') return;
-
-  const openDetailsElement = event.target.closest('details[open]');
-  if (!openDetailsElement) return;
-
-  const summaryElement = openDetailsElement.querySelector('summary');
+  
 
   class QuantityInput extends HTMLElement {
   constructor() {
