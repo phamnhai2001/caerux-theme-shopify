@@ -22,7 +22,7 @@
                                 <div class="collection_product_sortby facet-filters sorting caption" data-index="mobile-{{ forloop.index }}">
                                     <label for="">Sort by:</label>
                                     <div class="select">
-                                        <select name="sort_by" class="selected" id="SortBy" aria-describedby="a11y-refresh-page-message">
+                                        <select name="sort_by" class="selected facet-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
                                           {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
                                           {% for option in collection.sort_options %}
                                             <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
