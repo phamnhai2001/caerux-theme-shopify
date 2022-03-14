@@ -82,7 +82,7 @@
                   <div class="js-contents">
                   <div class="cart_content">
                    {%- if cart != empty -%}
-                    <ul class="list_cart_item">
+                    <ul class="list_cart_item" id="CartItem-{{ item.index | plus: 1 }}">
                       {%- for item in cart.items -%}
                         <li>
                           <div class="item_cart">
