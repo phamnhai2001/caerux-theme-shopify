@@ -1,5 +1,4 @@
 {{ 'collection.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 <div id="wrapper" class="collection">
         <div class="inner">
             <div class="txt_desp">
@@ -57,6 +56,25 @@
             </div>
         </div>
 </div>
+<script>
+  function debounce(fn, wait) {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn.apply(this, args), wait);
+  };
+}
+
+function fetchConfig(type = 'json') {
+  return {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': `application/${type}` }
+  };
+}
+
+</script>
+<script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+
 {% schema %}
 {
   "name": "main-collection-product",
