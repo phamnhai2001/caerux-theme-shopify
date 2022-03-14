@@ -87,7 +87,9 @@
 <div class="pagi_nav">
     <ul>
      	<li>
-            <a class="prev page_num" href="{{ paginate.previous.url }}"></a>
+            <a class="prev page_num" href="{{ paginate.previous.url }}">
+              {%- render 'icon-caret' -%}
+          </a>
         </li>
        {% for part in paginate.parts %}
        <li>
