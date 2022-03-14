@@ -74,22 +74,6 @@ function fetchConfig(type = 'json') {
   };
 }
 
-  // open filters
-
-document.getElementById("filter_color").onclick = function () { color() };
-function color() {
-    document.getElementById("content_color").classList.toggle("show");
-}
-
-document.getElementById("filter_price").onclick = function () { price() };
-function price() {
-    document.getElementById("content_price").classList.toggle("show");
-}
-
-document.getElementById("filter_availability").onclick = function () { availability() };
-function availability() {
-    document.getElementById("content_availability").classList.toggle("show");
-}
 </script>
 <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 
