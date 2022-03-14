@@ -1,4 +1,14 @@
 {{ 'collection.css' | asset_url | stylesheet_tag }}
+{% style %}
+    .collection_section {
+    	position: relative;
+    }
+	.sorting {
+		position: absolute;
+        top: 20%;
+        right: 0;
+	}
+{% endstyle %}
 <div id="wrapper" class="collection">
         <div class="inner">
             <div class="txt_desp">
