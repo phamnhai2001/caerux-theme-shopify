@@ -62,15 +62,12 @@ text-align: left;
 .product-form {
 	display: block;
 }
-.icon-error {
-	width: 12px;
-}
-.product-form__error-message-wrapper {
+
+.product-form__error-message-wrapper:not([hidden]) {
 	display: flex;
-}
-.product-form__error-message {
 	font-size: 12px;
 }
+
 {%- endstyle -%}
 <div id="wrapper_product">
         <div class="inner">
