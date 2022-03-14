@@ -18,21 +18,6 @@
                                 <div class="collection_product_count">
                                     <p>There are <span>{{ collection.products_count }} products</span></p>
                                 </div>
-                              {%- if section.settings.enable_sorting -%}
-                                <div class="collection_product_sortby facet-filters sorting caption" data-index="mobile-{{ forloop.index }}">
-                                    <label for="">Sort by:</label>
-                                    <div class="select">
-                                        <select name="sort_by" class="selected facet-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                                          {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
-                                          {% for option in collection.sort_options %}
-                                            <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
-                                              {{ option.name }}
-                                            </option>
-                                          {% endfor %}
-                                        </select>
-                                    </div>
-                                </div>
-                              {%- endif -%}
                             </div>
                         </div>
                         <div id="ProductGridContainer" class="collection_product_list">
