@@ -7,6 +7,20 @@
     Usage:
     {% render 'product-card' %}
 {% endcomment %}
+{% style %}
+	span .sale {
+		    background: #d90000;
+            border-radius: 12px;
+            color: #fff;
+            display: inline-block;
+            font-size: 12px;
+            line-height: 1;
+            min-width: 75px;
+            padding: 6px 12px;
+            text-align: center;
+            margin-left: 6px;
+	}
+{% endstyle %}
 {%- if product_card_product.featured_media -%}
 <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
   <div class="item_content">
