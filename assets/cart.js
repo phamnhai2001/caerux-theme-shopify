@@ -1,125 +1,137 @@
-
-
-const btn = document.getElementsByClassName('add_cart');
-const products = [] ;
-for(var i=0; i <btn.length; i++) {
-    let cartBtn = btn[i];
-
-    cartBtn.addEventListener("click", () => {
-        let product = {
-            name: event.target.parentElement.parentElement.children[0].children[0].innerText,
-            image: event.target.parentElement.parentElement.parentElement.children[0].children[0].children[0].children[0].children[0].src,
-            color: event.target.parentElement.parentElement.children[1].children[1].children[0].children[0].value,
-            price: event.target.parentElement.parentElement.children[0].children[1].innerText,
-            totalPrice: parseInt(event.target.parentElement.parentElement.children[0].children[1].innerText),
-            quantity: parseInt(event.target.parentElement.parentElement.children[2].children[1].children[2].value.innerText)
-        }
-        addItemToLacal(product);
-    })
-
+class CartRemoveButton extends HTMLElement {
+  constructor() {
+    super();
+    this.addEventListener('click', (event) => {
+      event.preventDefault();
+      this.closest('cart-items').updateQuantity(this.dataset.index, 0);
+    });
+  }
 }
-function addItemToLacal(product) {
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-    if(cartItem === null) {
-        products.push(product);
-        localStorage.setItem('prdInCart', JSON.stringify(products));
-        console.log(cartItem);
-    
-    }else {
-        cartItem.forEach(item => {
-            if(product.name == item.name) {
-                product.quantity = item.quantity + parseInt(document.getElementById("quantity").value);
-                product.totalPrice = product.quantity * item.price;
 
-            }else {
-                products.push(item);
-            }
-        });
-        products.push(product);
+customElements.define('cart-remove-button', CartRemoveButton);
+
+class CartItems extends HTMLElement {
+  constructor() {
+    super();
+
+    this.lineItemStatusElement = document.getElementById('shopping-cart-line-item-status');
+
+    this.currentItemCount = Array.from(this.querySelectorAll('[name="updates[]"]'))
+      .reduce((total, quantityInput) => total + parseInt(quantityInput.value), 0);
+
+    this.debouncedOnChange = debounce((event) => {
+      this.onChange(event);
+    }, 300);
+
+    this.addEventListener('change', this.debouncedOnChange.bind(this));
+  }
+
+  onChange(event) {
+    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'));
+  }
+
+  getSectionsToRender() {
+    return [
+      {
+        id: 'main-cart-items',
+        section: document.getElementById('main-cart-items').dataset.id,
+        selector: '.js-contents',
+      },
+      {
+        id: 'cart-icon-bubble',
+        section: 'cart-icon-bubble',
+        selector: '.shopify-section'
+      },
+      {
+        id: 'cart-live-region-text',
+        section: 'cart-live-region-text',
+        selector: '.shopify-section'
+      },
+      {
+        id: 'main-cart-footer',
+        section: document.getElementById('main-cart-footer').dataset.id,
+        selector: '.js-contents',
+      }
+    ];
+  }
+
+  updateQuantity(line, quantity, name) {
+    this.enableLoading(line);
+
+    const body = JSON.stringify({
+      line,
+      quantity,
+      sections: this.getSectionsToRender().map((section) => section.section),
+      sections_url: window.location.pathname
+    });
+
+    fetch(`${routes.cart_change_url}`, {...fetchConfig(), ...{ body }})
+      .then((response) => {
+        return response.text();
+      })
+      .then((state) => {
+        const parsedState = JSON.parse(state);
+        this.classList.toggle('is-empty', parsedState.item_count === 0);
+        const cartFooter = document.getElementById('main-cart-footer');
+
+        if (cartFooter) cartFooter.classList.toggle('is-empty', parsedState.item_count === 0);
+
+        this.getSectionsToRender().forEach((section => {
+          const elementToReplace =
+            document.getElementById(section.id).querySelector(section.selector) || document.getElementById(section.id);
+
+          elementToReplace.innerHTML =
+            this.getSectionInnerHTML(parsedState.sections[section.section], section.selector);
+        }));
+
+        this.updateLiveRegions(line, parsedState.item_count);
+        const lineItem =  document.getElementById(`CartItem-${line}`);
+        if (lineItem && lineItem.querySelector(`[name="${name}"]`)) lineItem.querySelector(`[name="${name}"]`).focus();
+        this.disableLoading();
+      }).catch(() => {
+        this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
+        document.getElementById('cart-errors').textContent = window.cartStrings.error;
+        this.disableLoading();
+      });
+  }
+
+  updateLiveRegions(line, itemCount) {
+    if (this.currentItemCount === itemCount) {
+      document.getElementById(`Line-item-error-${line}`)
+        .querySelector('.cart-item__error-text')
+        .innerHTML = window.cartStrings.quantityError.replace(
+          '[quantity]',
+          document.getElementById(`Quantity-${line}`).value
+        );
     }
-    localStorage.setItem('prdInCart', JSON.stringify(products));
-    window.location.reload();
+
+    this.currentItemCount = itemCount;
+    this.lineItemStatusElement.setAttribute('aria-hidden', true);
+
+    const cartStatus = document.getElementById('cart-live-region-text');
+    cartStatus.setAttribute('aria-hidden', false);
+
+    setTimeout(() => {
+      cartStatus.setAttribute('aria-hidden', true);
+    }, 1000);
+  }
+
+  getSectionInnerHTML(html, selector) {
+    return new DOMParser()
+      .parseFromString(html, 'text/html')
+      .querySelector(selector).innerHTML;
+  }
+
+  enableLoading(line) {
+    document.getElementById('main-cart-items').classList.add('cart__items--disabled');
+    this.querySelectorAll(`#CartItem-${line} .loading-overlay`).forEach((overlay) => overlay.classList.remove('hidden'));
+    document.activeElement.blur();
+    this.lineItemStatusElement.setAttribute('aria-hidden', false);
+  }
+
+  disableLoading() {
+    document.getElementById('main-cart-items').classList.remove('cart__items--disabled');
+  }
 }
 
-function disCartItem() {
-    html = '';
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-    cartItem.forEach(item => {
-        html += `<li>
-        <div class="item_cart">
-            <div class="data_cart">
-                <div class="item_thumb">
-                    <img src="${item.image}" alt="">
-                </div>
-                <div class="data">
-                    <a href="">
-                        <h3>${item.name}</h3>
-                    </a>
-                    <p>Color: ${item.color} </p>
-                </div>
-            </div>
-            <div class="entry_points">
-               <div class="box_check">
-                    <div class="btn_quantity">
-                        <button class="minus_btn">
-                            <span>-</span>
-                        </button>
-                        <input type="number" id="quantity" value="${item.quantity}">
-                        <button class="plus_btn">
-                            <span>+</span>
-                        </button>
-                    </div>
-                    <div class="btn_del">
-                        <i class="far fa-trash-alt"></i>
-                    </div>
-               </div>
-               <div class="point">
-                   <h3>${item.price}</h3>
-               </div>
-            </div>
-        </div>
-    </li>`
-    });
-    document.querySelector('.list_cart_item').innerHTML = html;
-
-}
-disCartItem();
-
-function cartNumberDisplay() {
-    let cartNumbers = 0;
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-
-    cartItem.forEach(item => {
-        cartNumbers = item.quantity += cartNumbers;
-    });
-    document.querySelector('.header_cart .number').innerText = cartNumbers;
-}
-cartNumberDisplay();
-
-const removeItem = document.getElementsByClassName('btn_del');
-for(var i=0; i <removeItem.length; i++) {
-    let removeBtn = removeItem[i];
-    removeBtn.addEventListener('click', () =>{
-        let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-        cartItem.forEach(item => {
-            if(item.name != event.target.parentElement.parentElement.parentElement.parentElement.children[0].children[1].innerText){
-                products.push(item);
-            }
-        });
-        localStorage.setItem('prdInCart', JSON.stringify(products));
-        window.location.reload();
-    });
-}
-function subTotal() {
-    let subTotal = 0;
-    let cartItem = JSON.parse(localStorage.getItem('prdInCart'));
-    cartItem.forEach(item => {
-        subTotal = item.totalPrice += subTotal;
-    });
-    document.querySelector('.total_price').innerText = subTotal;
-}
-subTotal();
-
-function updateCart() {
-    
-}
+customElements.define('cart-items', CartItems);
