@@ -19,9 +19,9 @@
           {{ product_card_product.price }}
            {%- if product_card_product.available == false -%}
           <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
-        {%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
+        	{%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
           <span class="sold_out">{{ 'products.product.on_sale' | t }}</span>
-        {%- endif -%}
+        	{%- endif -%}
     	</p>
       </div>
         
