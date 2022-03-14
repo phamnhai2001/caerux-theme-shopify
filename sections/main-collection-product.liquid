@@ -19,9 +19,7 @@
                                     <p>There are <span>{{ collection.products_count }} products</span></p>
                                 </div>
                               {%- if section.settings.enable_sorting -%}
-                                <div class="collection_product_sortby mobile-facets__details js-filter" data-index="mobile-{{ forloop.index }}">
-                                  <div class="mobile-facets__summary">
-                    				<div class="mobile-facets__sort">
+                                <div class="collection_product_sortby facet-filters sorting caption js-filter" data-index="mobile-{{ forloop.index }}">
                                     <label for="">Sort by:</label>
                                     <div class="select">
                                         <select name="sort_by" class="selected" id="SortBy" aria-describedby="a11y-refresh-page-message">
@@ -33,8 +31,6 @@
                                           {% endfor %}
                                         </select>
                                     </div>
-                                    </div>
-                                  </div>
                                 </div>
                               {%- endif -%}
                             </div>
