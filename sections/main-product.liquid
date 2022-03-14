@@ -69,6 +69,48 @@ text-align: left;
 	display: flex;
 	font-size: 12px;
 }
+.quantity {
+	display: flex;
+	position: relative;
+	width: 130px;
+	height: 35px;
+	border: 1px solid #dddddd;
+}
+.quantity__button {
+    flex-shrink: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+	width: 30px;
+}
+.visually-hidden {
+    position: absolute!important;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    word-wrap: normal!important;
+}
+.quantity__button svg {
+    width: 10px;
+    pointer-events: none;
+}
+.quantity__input {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: 0;
+    width: 100%;
+    flex-grow: 1;
+    appearance: none;
+}
 {%- endstyle -%}
 <div id="wrapper_product">
         <div class="inner">
