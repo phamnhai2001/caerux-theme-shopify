@@ -88,7 +88,9 @@
        </li>
        {% endfor %}
        <li>
-       		<a class="next page_num" href="{{ paginate.next.url }}"></a>
+       		<a class="next page_num" href="{{ paginate.next.url }}">
+              {%- render 'icon-caret' -%}
+         </a>
        </li>
     </ul>
 </div>
