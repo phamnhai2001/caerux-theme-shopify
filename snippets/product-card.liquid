@@ -15,9 +15,7 @@
      </div>
      <div class="txt_desp">
         <h3>{{ product_card_product.title | escape }}</h3>
-       
-      </div>
-        <p>
+       <p>
           {{ product_card_product.price }}
            {%- if product_card_product.available == false -%}
           <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
@@ -25,6 +23,8 @@
           <span class="sold_out">{{ 'products.product.on_sale' | t }}</span>
         {%- endif -%}
     	</p>
+      </div>
+        
      </div>
   </div>
 </a>
