@@ -142,7 +142,7 @@
                       {%- endfor -%}
                     </ul>
                   
-                    <div class="cart_footer">
+                    <div class="cart_footer" id="main-cart-footer" data-id="{{ section.id }}">
                         <div class="cart_blocks">
                           {% for block in section.blocks %}
                             {%- case block.type -%}
