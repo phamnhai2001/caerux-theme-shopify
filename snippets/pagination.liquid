@@ -82,9 +82,6 @@
      	<li>
             <a class="prev page_num" href="{{ paginate.previous.url }}"></a>
         </li>
-       <li>
-            <span aria-current="page" class="page_num current">1</span>
-       </li>
        {% for part in paginate.parts %}
        <li>
            <a href="{{part.url}}" class="page_num current">{{part.title}}</a>
