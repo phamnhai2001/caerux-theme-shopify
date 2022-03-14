@@ -79,6 +79,8 @@
                 </div>
               <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
                 <div class="cart_content" id="main-cart-items" data-id="{{ section.id }}">
+                  <div class="js-contents">
+                   {%- if cart != empty -%}
                     <ul class="list_cart_item">
                       {%- for item in cart.items -%}
                         <li>
@@ -184,6 +186,7 @@
         				{% endfor %}
                         </div>
                     </div>
+                    {%- endif -%}
                 </div>
               </form>
             </div>
