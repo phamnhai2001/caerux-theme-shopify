@@ -103,6 +103,7 @@
                                       </div>
                             		</div>
                               {% when 'price_range' %}
+                            <details id="Details-{{ forloop.index }}-{{ section.id }}" class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
                                 <div class="price js-filter">
                                     <div class="ttl_filters" id="filter_price">
                                         <p>{{ filter.label | escape }}</p>
@@ -148,6 +149,7 @@
                                         </div>
                                     </div>
                                 </div>
+                               </details>
                               {% when 'colors' %}
                                 <div class="color js-filter">
                                     <div class="ttl_filters" id="filter_color">
