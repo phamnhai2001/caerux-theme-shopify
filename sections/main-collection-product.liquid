@@ -59,7 +59,8 @@
         </div>
 </div>
 <script>
-  function debounce(fn, wait) {
+
+function debounce(fn, wait) {
   let t;
   return (...args) => {
     clearTimeout(t);
@@ -67,12 +68,70 @@
   };
 }
 
-function fetchConfig(type = 'json') {
-  return {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'Accept': `application/${type}` }
-  };
+class MenuDrawer extends HTMLElement {
+  constructor() {
+    super();
+
+    this.mainDetailsToggle = this.querySelector('details');
+
+    if (navigator.platform === 'iPhone') document.documentElement.style.setProperty('--viewport-height', `${window.innerHeight}px`);
+
+    this.bindEvents();
+  }
+
+  bindEvents() {
+    this.querySelectorAll('summary').forEach(summary => summary.addEventListener('click', this.onSummaryClick.bind(this)));
+    this.querySelectorAll('button').forEach(button => button.addEventListener('click', this.onCloseButtonClick.bind(this)));
+  }
+
+  
+
+  onSummaryClick(event) {
+    const summaryElement = event.currentTarget;
+    const detailsElement = summaryElement.parentNode;
+    const isOpen = detailsElement.hasAttribute('open');
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function addTrapFocus() {
+      trapFocus(summaryElement.nextElementSibling, detailsElement.querySelector('button'));
+      summaryElement.nextElementSibling.removeEventListener('transitionend', addTrapFocus);
+    }
+
+    if (detailsElement === this.mainDetailsToggle) {
+      if(isOpen) event.preventDefault();
+      isOpen ? this.closeMenuDrawer(event, summaryElement) : this.openMenuDrawer(summaryElement);
+    } else {
+      setTimeout(() => {
+        detailsElement.classList.add('menu-opening');
+        summaryElement.setAttribute('aria-expanded', true);
+        !reducedMotion || reducedMotion.matches ? addTrapFocus() : summaryElement.nextElementSibling.addEventListener('transitionend', addTrapFocus);
+      }, 100);
+    }
+  }
+
+  
+  onFocusOut(event) {
+    setTimeout(() => {
+      if (this.mainDetailsToggle.hasAttribute('open') && !this.mainDetailsToggle.contains(document.activeElement)) this.closeMenuDrawer();
+    });
+  }
+
+  onCloseButtonClick(event) {
+    const detailsElement = event.currentTarget.closest('details');
+    this.closeSubmenu(detailsElement);
+  }
+
+  closeSubmenu(detailsElement) {
+    detailsElement.classList.remove('menu-opening');
+    detailsElement.querySelector('summary').setAttribute('aria-expanded', false);
+    removeTrapFocus();
+    this.closeAnimation(detailsElement);
+  }
+
+  
 }
+
+customElements.define('menu-drawer', MenuDrawer);
 
 </script>
 <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
