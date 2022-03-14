@@ -4,7 +4,9 @@
       "type": "main-collection-product",
       "settings": {
         "image_banner": "shopify:\/\/shop_images\/banner_arrival.jpg",
-        "products_per_page": 16
+        "products_per_page": 6,
+        "enable_filtering": true,
+        "enable_sorting": true
       }
     }
   },
