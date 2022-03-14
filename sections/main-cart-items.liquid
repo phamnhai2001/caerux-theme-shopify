@@ -79,8 +79,8 @@
                 </div>
               <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
                 <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
-                <div class="cart_content">
                   <div class="js-contents">
+                  <div class="cart_content">
                    {%- if cart != empty -%}
                     <ul class="list_cart_item">
                       {%- for item in cart.items -%}
