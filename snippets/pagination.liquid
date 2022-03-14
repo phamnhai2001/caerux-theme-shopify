@@ -100,7 +100,11 @@
         </li>
        {% for part in paginate.parts %}
        <li>
-           <a href="{{part.url}}" class="page_num">{{part.title}}</a>
+         {%- if part.title == paginate.current_page -%}
+              <span aria-current="page" class="page_num current">{{ part.title }}</span>
+            {%- else -%}
+              <a href="{{part.url}}" class="page_num">{{part.title}}</a>
+            {%- endif -%}
        </li>
        {% endfor %}
        <li>
