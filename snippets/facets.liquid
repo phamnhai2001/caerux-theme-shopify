@@ -110,6 +110,7 @@
                                     </div>
                                     <div class="facets_display" id="content_price">
                                         <div class="facets_price">
+                                          <price-range class="facets__price">
                                             <span class="field-currency">{{ cart.currency.symbol }}</span>
                                             <div class="field">
                                                 <input class="field_input" name="{{ filter.min_value.param_name }}"
@@ -138,6 +139,7 @@
                                                           max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                                                         {% endif %}>
                                             </div>
+                                            </price-range>
                                         </div>
                                         <div class="reset">
                                             <facet-remove>
