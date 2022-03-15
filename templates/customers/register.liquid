@@ -16,9 +16,10 @@
                 <div class="register_wrapper">
                     <div class="register_form">
                         <h3>Register</h3>
-                      {% form 'create_customer' %}
-	      					{{ form.errors | default_errors }}
+                      
                         <form action="" novalidate="novalidate" id="register">
+                          {% form 'create_customer' %}
+	      					{{ form.errors | default_errors }}
                             <ul>
                                 <li>
                                     <input type="text" name="text" id="firstname" value="" placeholder="First name" class="lg_input" aria-invalid="true">
@@ -48,8 +49,8 @@
                                     <label for="policies" class="checkbox normal">Omitting ID input from next time</label>
                                 </p>
                             </div>
+                           {% endform %}
                         </form>
-                      {% endform %}
                         <div class="rules_information">
                             <p>If you are a first-time user, please register as a member from here. E-mail address</p>
                             <p>There are the following merits when you register as a member.</p>
