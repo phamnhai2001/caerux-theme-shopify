@@ -23,42 +23,6 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// btn quantity 
-document.querySelector(".minus_btn").setAttribute("disabled","disable");
-var valueCount;
-
-document.querySelector(".plus_btn").addEventListener("click", function(){
-    valueCount = document.getElementById("quantity").value;
-    valueCount++;
-    document.getElementById("quantity").value = valueCount;
-    if(valueCount > 1 && valueCount < 10) {
-        document.querySelector(".minus_btn").removeAttribute("disabled");
-        document.querySelector(".minus_btn").classList.remove("disabled");
-    }
-});
-
-document.querySelector(".minus_btn").addEventListener("click", function(){
-    valueCount = document.getElementById("quantity").value;
-    valueCount--;
-    document.getElementById("quantity").value = valueCount;
-    if(valueCount == 1) {
-        document.querySelector(".minus_btn").setAttribute("disabled","disable");
-    }
-});
-
-//add cart
-const open = document.getElementById('cart_view');
-const cart_notify = document.getElementById('cart');
-const close = document.getElementById('close');
-
-open.addEventListener('click', () => {
-    cart_notify.classList.add('active');
-});
-
-close.addEventListener('click', () => {
-    cart_notify.classList.remove('active');
-});
-
 
 // change tabs
 var tabLinks = document.querySelectorAll(".tablinks");
