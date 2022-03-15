@@ -34,7 +34,7 @@
                                 </li>
                                 <li>
                                     <div class="title_contact">
-                                        <label>Email</label>
+                                        <label>{{ 'templates.contact.form.email' | t }}</label>
                                     </div>
                                     <div>
                                         <input type="email" placeholder="{{ 'templates.contact.form.email' | t }}" class="input_contact" name="email" id="email"  value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
