@@ -266,7 +266,7 @@
     font-size: 2.343vw;
   }
 }
-.cart_notify.active {
+.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: visibility 0s,-webkit-transform 200ms ease;
