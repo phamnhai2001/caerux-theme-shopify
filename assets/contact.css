@@ -92,7 +92,7 @@ ul, ol {
             font-size: 2.343vw; } }
         .upper .navi_top ul li span.current:before {
           content: "";
-          background: url("../images/bx-chevron-right.svg") no-repeat;
+          background: url("bx-chevron-right.svg") no-repeat;
           background-size: 100% auto;
           width: 22px;
           display: inline-block;
@@ -178,7 +178,7 @@ a.item_type {
     content: "";
     display: inline-block;
     margin-left: 6px;
-    background-image: url("../images/arrow-right.svg");
+    background-image: url("arrow-right.svg");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% auto;
@@ -835,7 +835,7 @@ input, select, textarea {
             display: block;
             width: 15px;
             height: 15px;
-            background-image: url(../images/check_white.png);
+            background-image: url(check_white.png);
             position: absolute;
             top: 0;
             left: 0;
