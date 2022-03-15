@@ -15,7 +15,7 @@
                     </div>
                     <div class="list_item">
                         <ul id="list_recommend">
-                          	{%- for product in collection.products limit: section.settings.products_to_show -%}
+                          	{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
                                    <li	>
                                      {% render 'product-card',
                                          product_card_product: product
