@@ -23,7 +23,17 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
+const open = document.getElementById('cart_view');
+const cart_notify = document.getElementById('cart');
+const close = document.getElementById('close');
 
+open.addEventListener('click', () => {
+    cart_notify.classList.add('active');
+});
+
+close.addEventListener('click', () => {
+    cart_notify.classList.remove('active');
+});
 // change tabs
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent =document.querySelectorAll(".tabcontent");
