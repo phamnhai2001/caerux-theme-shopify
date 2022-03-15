@@ -27,7 +27,7 @@
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.company' | t }}</div>
                                 <div class="input_content company">
-                                    <input id="company" type="text" name="address[company_name]" placeholder="ULTRA_VYBE">
+                                    <input id="company" type="text" name="address[company_name]" placeholder="ULTRA_VYBE" value="{{ form.company }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
@@ -43,7 +43,7 @@
                                 </div>
                             </div>
                             <div class="form_item">
-                                <div class="title">Post code</div>
+                                <div class="title">{{ 'customer.addresses.zip' | t }}</div>
                                 <div class="input_content post_office">
                                     <input id="first_block_post_number" type="text" name="address[post_office_number_block_1]" placeholder="150">
                                     <div class="peg"></div>
