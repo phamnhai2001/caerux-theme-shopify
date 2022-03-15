@@ -2,6 +2,22 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
       "settings": {
       }
     },
