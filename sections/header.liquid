@@ -10,7 +10,7 @@
                 <ul class="header_top_nav">
                     <li class="util_pc"><a href="register.html">Registration</a></li>
                     <li class="util_pc">
-                      {%- if shop.customer_accounts_enabled -%}
+                      
                       <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
                         Login
                         <span class="visually-hidden">
@@ -23,7 +23,6 @@
                           -%}
                         </span>
                       </a>
-                      {%- endif -%}
                   	</li>
                     <li id="header_upper-search">
                         <div id="header_upper_search_form" class="search_content">
