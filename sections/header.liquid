@@ -8,7 +8,11 @@
                     {{section.settings.description }}
                 </div>
                 <ul class="header_top_nav">
-                    <li class="util_pc"><a href="register.html">Registration</a></li>
+                    <li class="util_pc">
+                      <a href="{{ routes.account_register_url }}">
+                        Registration
+                      </a>
+                  	</li>
                     <li class="util_pc">
                       
                       <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
