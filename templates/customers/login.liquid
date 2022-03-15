@@ -1,106 +1,82 @@
-<link rel="stylesheet" href="{{ 'login.css' | asset_url }}" media="print" onload="this.media='all'">
-<script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'login.js' | asset_url }}" defer="defer"></script>
-<div id="wrapper" class="login">
-    <div class="inner">
-        <div class="upper">
-            <div class="navi_top">
-                <ul>
-                    <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
-                    <li><span class="current">Login</span></li>
-                </ul>
-            </div>
-        </div>
-        <!-- banner -->
-        <section class="section" id="content">
-            <div class="inner">
-                <div class="login_wrapper">
-                    <div class="login_form">
-                        <h3>Login</h3>
-                        {%- form 'recover_customer_password' -%}
-      						{% assign recover_success = form.posted_successfully? %}
-                            <ul>
-                                <li>
-                                    <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <input type="password" value="" name="password" id="password" placeholder="This is password" class="lg_input">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <a class="tlt_bottom_login" href="#">Click here if you have forgotten your password</a>
-                                </li>
-                            </ul>
-                            <div class="btn_login">
-                                <button type="submit"  class="btn_login">Login</button>
-                                <p class="txt_confirm">
-                                    <input type="checkbox" value="" id="policies">
-                                    <label for="policies" class="checkbox normal">Omitting ID input from next time</label>
-                                </p>
-                                <a class="bottom_res" href="#">First time users (new member registration)</a>
-                            </div>
-                        {%- endform -%}
-                    </div>
-                    <div class="login_sns">
-                        <h3>Login with social</h3>
-                        <ul class="vertical_list_login">
-                            <li>
-                                <a href="#" class="btn btn_social facebook">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                                    <span>Login with Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social twitter">
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <span>Login with Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social instagram">
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    <span>Login with Instagram</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social amazon">
-                                    <i class="fa fa-amazon" aria-hidden="true"></i>
-                                    <span>Login with Amazon</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social line">
-                                    <img src="assets/images/line3.png" alt="">
-                                    <p></p>
-                                    <span>Login with LINE</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social spotify">
-                                    <i style="color: #1bd75f;" class="fa fa-spotify" aria-hidden="true"></i>
-                                    <span>Login with Spotify</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social google">
-                                    <i class="fa fa-google" aria-hidden="true"></i>
-                                    <span>Login with Google</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn_social linkedin">
-                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                    <span>Login with Linkedin</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- /banner -->
+{% layout settings.customer_layout %}
+
+<div id="template">
+  <div id="customer">
+    <div class="template_header">
+      <h2 class="title">Customer Login</h2>
     </div>
+
+    {% form 'customer_login' %}
+      {{ form.errors | default_errors }}
+
+      <div id="login_email" class="clearfix large_form">
+        <label for="customer_email" class="login">Email Address</label>
+        <input type="email" value="" name="customer[email]" id="customer_email" class="large" size="30" />
+      </div>
+
+      {% if form.password_needed %}
+
+        {% comment %}
+          Customer Account Login
+        {% endcomment %}
+
+        <div id="login_password" class="clearfix large_form">
+          <label for="customer_password" class="login">Password</label>
+          <input type="password" value="" name="customer[password]" id="customer_password" class="large password" size="16" />
+          <div id="forgot_password">
+            <a href="#" onclick="showRecoverPasswordForm();return false;">Forgot your password?</a>
+          </div>
+        </div>
+
+      {% endif %}
+
+      <div class="action_bottom">
+        <input class="btn" type="submit" value="Sign In" />
+        <span class="note">or <a href="{{ shop.url }}">Return to Store</a></span>
+      </div>
+    {% endform %}
+  </div>
+
+  {% comment %}
+    Recover Password Form
+  {% endcomment %}
+
+  <div id="recover-password" style='display:none'>
+    <div class="template_header">
+      <h2 class="title">Reset Password</h2>
+      <p class="note">We will send you an email to reset your password.</p>
+    </div>
+
+    {% form 'recover_customer_password' %}
+      {{ form.errors | default_errors }}
+
+      <div id="recover_email" class="clearfix large_form">
+        <label for="email" class="large">Email</label>
+        <input type="email" value="" size="30" name="email" id="recover-email" class="large" />
+      </div>
+      <div class="action_bottom">
+        <input class="btn" type="submit" value="Submit" />
+        <span class="note">or <a href="#" onclick="hideRecoverPasswordForm();return false;">Cancel</a></span>
+      </div>
+    {% endform %}
+  </div>
+
+
+  {% comment %}
+    Guest Login form for shops with optional customer accounts. This form is displayed only when users click on the checkout link
+    on the cart page.
+  {% endcomment %}
+
+  {% if shop.checkout.guest_login %}
+  <div id="guest">
+    <div class="template_header">
+      <h3 class="title">Guest Login</h3>
+    </div>
+    {% form 'guest_login' %}
+      <input class="btn" type="submit" value="Continue as Guest" />
+    {% endform %}
+  </div>
+  {% endif %}
 </div>
 
 
