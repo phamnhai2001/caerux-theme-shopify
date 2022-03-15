@@ -2,21 +2,26 @@
   "sections": {
     "cart-items": {
       "type": "main-cart-items",
+      "settings": {
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
       "blocks": {
-        "bc3beb64-c2ff-45c6-94e1-e11379a628b5": {
+        "subtotal": {
           "type": "subtotal",
           "settings": {
           }
         },
-        "7bd368d8-ebaf-46dc-bef0-dd3502c5c311": {
+        "buttons": {
           "type": "buttons",
           "settings": {
           }
         }
       },
       "block_order": [
-        "bc3beb64-c2ff-45c6-94e1-e11379a628b5",
-        "7bd368d8-ebaf-46dc-bef0-dd3502c5c311"
+        "subtotal",
+        "buttons"
       ],
       "settings": {
       }
@@ -30,6 +35,7 @@
   },
   "order": [
     "cart-items",
+    "cart-footer",
     "featured-collection"
   ]
 }
