@@ -155,6 +155,7 @@ text-align: left;
                                 <p class="price">{{product.price}}</p>
                             </div>
                           {%- when 'variant_picker' -%}
+                          {%- unless product.has_only_default_variant -%}
                             <variant-radios class="color" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                                 <p>Color</p>
                               {%- for option in product.options_with_values -%}
@@ -179,6 +180,7 @@ text-align: left;
                                     {{ product.variants | json }}
                                   </script>
                             </variant-radios>
+                          {%- endunless -%}
                           {%- when 'quantity_selector' -%}
                            <div class="product-form__input product-form__quantity" {{ block.shopify_attributes }}>
                               <label class="form__label" for="Quantity-{{ section.id }}">
