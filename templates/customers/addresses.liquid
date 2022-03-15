@@ -1,16 +1,19 @@
+<link rel="stylesheet" href="{{ 'login.css' | asset_url }}" media="print" onload="this.media='all'">
+<script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'address.js' | asset_url }}" defer="defer"></script>
 <div id="wrapper" class="address">
         <div class="inner">
             <div class="upper">
                 <div class="navi_top">
                     <ul>
-                        <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
-                        <li><span class="current">Address</span></li>
+                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
+                        <li><span class="current">{{ 'customer.addresses.title' | t }}</span></li>
                     </ul>
                 </div>
             </div>
             <section class="section create_address edit_address">
                 <div class="edit_content">
-                    <div class="form_name">Register your address</div>
+                    <div class="form_name">{{ 'customer.addresses.title' | t }}</div>
                     <div class="form_edit">
                         <form id="formAddress" action="">
                             <div class="form_item">
