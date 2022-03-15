@@ -222,13 +222,13 @@ text-align: left;
                   					<input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                                     <button id="cart_view" type="submit" name="add"
                       class="add_cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
-                                        <span>
-                                          {%- if product.selected_or_first_available_variant.available -%}
-                                            {{ 'products.product.add_to_cart' | t }}
-                                          {%- else -%}
-                                            {{ 'products.product.sold_out' | t }}
-                                          {%- endif -%}
-                                        </span>
+                                         <span>
+                                            {%- if product.selected_or_first_available_variant.available -%}
+                                              {{ 'products.product.add_to_cart' | t }}
+                                            {%- else -%}
+                                              {{ 'products.product.sold_out' | t }}
+                                            {%- endif -%}
+                                          </span>
                                     </button>
                       				{%- if block.settings.show_dynamic_checkout -%}
                                       {{ form | payment_button }}
