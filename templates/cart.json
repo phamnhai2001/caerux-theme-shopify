@@ -24,6 +24,7 @@
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
+        "collection": "all"
       }
     }
   },
