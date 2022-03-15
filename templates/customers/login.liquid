@@ -7,7 +7,7 @@
             <div class="navi_top">
                 <ul>
                     <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
-                    <li><span class="current">Login</span></li>
+                    <li><span class="current">{{ 'customer.login_page.title' | t }}</span></li>
                 </ul>
             </div>
         </div>
@@ -16,7 +16,7 @@
             <div class="inner">
                 <div class="login_wrapper">
                     <div class="login_form">
-                        <h3>Login</h3>
+                        <h3>{{ 'customer.login_page.title' | t }}</h3>
                        	<form action="" id="login">
                           {%- form 'customer_login' -%}
                             <ul>
