@@ -2,7 +2,7 @@ class CartNotification extends HTMLElement {
   constructor() {
     super();
 
-    this.notification = document.getElementById('cart_notify');
+    this.notification = document.getElementById('cart');
     this.onBodyClick = this.handleBodyClick.bind(this);
     
     this.notification.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
