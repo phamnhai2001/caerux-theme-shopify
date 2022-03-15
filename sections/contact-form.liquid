@@ -3,7 +3,7 @@
             <div class="upper">
                 <div class="navi_top">
                     <ul>
-                        <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
                         <li><span class="current">Contact</span></li>
                     </ul>
                 </div>
@@ -12,7 +12,7 @@
                 <div class="inner">
                     <div class="form_contact">
                         <h2>Form contact</h2>
-                        <form action="" id="contact">
+                        {%- form 'contact', id: 'contact' -%}
                             <ul>
                                 <li>
                                     <div class="title_contact">
@@ -78,7 +78,7 @@
                             <div class="submit_contact">
                                 <input type="submit" class="btn01 sp" id="register_contact" value="Check the contents">
                             </div>
-                        </form>
+                        {%- endform -%}
                     </div>
                 </div>
             </section>
