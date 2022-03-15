@@ -15,7 +15,8 @@
                 <div class="login_wrapper">
                     <div class="login_form">
                         <h3>Login</h3>
-                        <form action="" novalidate="novalidate" id="login">
+                        {%- form 'recover_customer_password' -%}
+      						{% assign recover_success = form.posted_successfully? %}
                             <ul>
                                 <li>
                                     <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
@@ -37,7 +38,7 @@
                                 </p>
                                 <a class="bottom_res" href="#">First time users (new member registration)</a>
                             </div>
-                        </form>
+                        {%- endform -%}
                     </div>
                     <div class="login_sns">
                         <h3>Login with social</h3>
