@@ -1,12 +1,86 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+ <div id="wrapper" class="contact">
+        <div class="inner">
+            <div class="upper">
+                <div class="navi_top">
+                    <ul>
+                        <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                        <li><span class="current">Contact</span></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section" id="form_contact">
+                <div class="inner">
+                    <div class="form_contact">
+                        <h2>Form contact</h2>
+                        <form action="" id="contact">
+                            <ul>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>Name</label>
+                                    </div>
+                                    <ul class="holizontal_list_contact">
+                                        <li>
+                                            <input type="text" placeholder="First Name" class="input_contact" name="firstName" id="firstName">
+                                            <span class="form_message"></span>
+                                        </li>
+                                        <li>
+                                            <input type="text" placeholder="Last Name" class="input_contact" name="lastName" id="lastName">
+                                            <span class="form_message"></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>Email</label>
+                                    </div>
+                                    <div>
+                                        <input type="email" placeholder="Email address" class="input_contact" name="email" id="email">
+                                        <span class="form_message"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>Contents of inquiry</label>
+                                    </div>
+                                    <div id="box_check_option" class="input-content nation">
+                                        <select id="select-box" class="box_select_sort box_select_contact" name="select">
+                                            <option value="Regarding products and inventory"> Regarding products and inventory</option>
+                                            <option value="Regarding the account">Regarding the account </option>
+                                            <option value="About payment">About payment</option>
+                                            <option value="About the actual store"> About the actual store</option>
+                                            <option value="About the event">About the event</option>
+                                            <option value="Others">Others</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>Contents of inquiry</label>
+                                    </div>
+                                    <textarea name="content" id="content"
+                                              placeholder="Please enter the content of your inquiry." class="c_content"></textarea>
+                                </li>
+                                <li>
+                                    <div class="title_contact policy_area">
+                                        <label>Handling of personal information</label>
+                                    </div>
+                                    <div class="c_contact_policy">
+                                        <input type="checkbox" name="policies" id="policies"
+                                               class="checkbox normal">
+                                        <span for="policies" class="group_title_span"><a href="" class="special_word">Privacy policy</a>I agree with</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-recaptcha"
+                                         data-sitekey="6Lep-WEeAAAAAITPLoh0hnG_KuhYMxwDaANJPTY8"></div>
+                                </li>
+                            </ul>
+                            <div class="submit_contact">
+                                <input type="submit" class="btn01 sp" id="register_contact" value="Check the contents">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
