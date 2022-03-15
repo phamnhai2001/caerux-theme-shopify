@@ -16,19 +16,11 @@
                     <div class="list_item">
                         <ul id="list_recommend">
                           	{%- for product in section.settings.collection.products limit: section.settings.products_to_show -%}
-                          		<li class="slide">
-                                    <a class="item_type" href="{{product.url}}">
-                                        <div class="item_content">
-                                            <div class="thumb">
-                                                 <img src="{{ product.featured_image | img_url }}" alt="">
-                                            </div>
-                                            <div class="txt_desp">
-                                                <h3>{{product.title}} </h3>
-                                                <p>{{product.price}}</p>
-                                             </div>
-                                        </div>
-                                    </a>
-                                 </li>
+                                   <li	>
+                                     {% render 'product-card',
+                                         product_card_product: product
+                                      %}
+                                   </li>
                           {% endfor %}
 						</ul>                       
                     </div>
