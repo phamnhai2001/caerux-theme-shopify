@@ -11,24 +11,6 @@ class CartNotification extends HTMLElement {
     );
   }
 
-  open() {
-    this.notification.classList.add('active');
-
-    this.notification.addEventListener('transitionend', () => {
-      this.notification.focus();
-      trapFocus(this.notification);
-    }, { once: true });
-
-    document.body.addEventListener('click', this.onBodyClick);
-  }
-
-  close() {
-    this.notification.classList.remove('active');
-
-    document.body.removeEventListener('click', this.onBodyClick);
-
-    removeTrapFocus(this.activeElement);
-  }
 
   renderContents(parsedState) {
       this.productId = parsedState.id;
@@ -38,7 +20,6 @@ class CartNotification extends HTMLElement {
       }));
 
       if (this.header) this.header.reveal();
-      this.open();
   }
 
   getSectionsToRender() {
@@ -67,7 +48,6 @@ class CartNotification extends HTMLElement {
     if (target !== this.notification && !target.closest('cart-notification')) {
       const disclosure = target.closest('details-disclosure');
       this.activeElement = disclosure ? disclosure.querySelector('summary') : null;
-      this.close();
     }
   }
 
