@@ -16,6 +16,9 @@
                     <div class="form_contact">
                         <h2>Form contact</h2>
                         {%- form 'contact', id: 'contact' -%}
+                        {%- if form.posted_successfully? -%}
+                          <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</div>
+                        {%- endif -%}
                             <ul>
                                 <li>
                                     <div class="title_contact">
