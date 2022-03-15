@@ -2,7 +2,7 @@ class CartNotification extends HTMLElement {
   constructor() {
     super();
 
-    this.notification = document.getElementById('cart');
+    this.notification = document.getElementById('cart_notify');
     this.onBodyClick = this.handleBodyClick.bind(this);
     
     this.notification.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.close());
@@ -12,7 +12,7 @@ class CartNotification extends HTMLElement {
   }
 
   open() {
-    this.notification.classList.add('animate', 'active');
+    this.notification.classList.add('active');
 
     this.notification.addEventListener('transitionend', () => {
       this.notification.focus();
