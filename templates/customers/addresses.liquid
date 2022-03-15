@@ -10,7 +10,7 @@
 
 <div id="add_address" class="customer_address edit_address" style="display:none;">
   {% form 'customer_address', customer.new_address %}
-    <h4 id="add_address_title">Add a new address</h4>
+    <h4 id="add_address_title">{{ 'customer.addresses.title' | t }}</h4>
     <table class="customer_address_table">
       <tr>
         <td class="label"><label for="address_first_name_new">First Name</label></td>
