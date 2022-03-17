@@ -96,7 +96,6 @@
         </div>
     </div>
 {% endif %}
-{%- if cart != empty -%}
 <cart-items id="wrapper" class="cart">
         <div class="inner">
             <div class="cart_wrapper">
@@ -107,7 +106,7 @@
                 <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
                   <div class="js-contents">
                   <div class="cart_content">
-                   
+                   {%- if cart != empty -%}
                     <ul class="list_cart_item" id="CartItem-{{ item.index | plus: 1 }}">
                       {%- for item in cart.items -%}
                         <li>
@@ -177,7 +176,7 @@
                       </li>
                       {%- endfor -%}
                     </ul>
-                  
+                  {%- endif -%}
                     <div class="cart_footer" id="main-cart-footer" data-id="{{ section.id }}">
                         <div class="cart_blocks">
                           {% for block in section.blocks %}
@@ -232,7 +231,6 @@
             </div>
         </div>
     </cart-items>
-{%- endif -%}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     function isIE() {
