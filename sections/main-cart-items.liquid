@@ -96,7 +96,7 @@
         </div>
     </div>
 {% endif %}
-<cart-items id="wrapper" class="cart">
+<cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
         <div class="inner">
             <div class="cart_wrapper">
                 <div class="txt_desp">
