@@ -98,6 +98,7 @@
 {% endif %}
 <cart-items id="wrapper" class="cart">
         <div class="inner">
+           {%- if cart != empty -%}
             <div class="cart_wrapper">
                 <div class="txt_desp">
                     <h2>Your cart</h2>
@@ -106,7 +107,6 @@
                 <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
                   <div class="js-contents">
                   <div class="cart_content">
-                   {%- if cart != empty -%}
                     <ul class="list_cart_item" id="CartItem-{{ item.index | plus: 1 }}">
                       {%- for item in cart.items -%}
                         <li>
@@ -176,7 +176,6 @@
                       </li>
                       {%- endfor -%}
                     </ul>
-                  {%- endif -%}
                     <div class="cart_footer" id="main-cart-footer" data-id="{{ section.id }}">
                         <div class="cart_blocks">
                           {% for block in section.blocks %}
@@ -229,6 +228,7 @@
               <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
               </form>
             </div>
+            {%- endif -%}
         </div>
     </cart-items>
 <script>
