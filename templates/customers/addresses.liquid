@@ -56,10 +56,8 @@
                             <div class="form_item create_box_select">
                                 <div class="title">{{ 'customer.addresses.country' | t }}</div>
                                 <div id="box_check_option" class="input_content nation">
-                                    <select id="select_box" class="box_select_sort box_select_create_address" name="state">
-                                        <option value="2">Tokyo</option>
-                                        <option value="3">Tokyo</option>
-                                        <option value="4">Tokyo</option>
+                                    <select id="select_box" class="box_select_sort box_select_create_address" name="address[province]" data-default="{{ form.province }}"
+                						autocomplete="address-level1">
                                     </select>
                                 </div>
                             </div>
