@@ -57,7 +57,8 @@
                                 <div class="title">{{ 'customer.addresses.country' | t }}</div>
                                 <div id="box_check_option" class="input_content nation">
                                     <select id="select_box" class="box_select_sort box_select_create_address" name="address[country]" data-default="{{ form.country }}"
-                autocomplete="country">
+                						autocomplete="country">
+                                      {{ all_country_option_tags }}
                                     </select>
                                 </div>
                             </div>
