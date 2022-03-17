@@ -2,6 +2,7 @@
 <link rel="stylesheet" href="{{ 'contact_success.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'contact.js' | asset_url }}" defer="defer"></script>
+{%- form 'contact', id: 'contact' -%}
 {%- if form.posted_successfully? -%}
       <div id="wrapper" class="success">
             <div class="inner">
@@ -39,7 +40,7 @@
                     <div class="form_contact">
                 <div class="inner">
                         <h2>Form contact</h2>
-                        {%- form 'contact', id: 'contact' -%}
+                        
                             <ul>
                                 <li>
                                     <div class="title_contact">
@@ -105,12 +106,12 @@
                             <div class="submit_contact">
                                 <input type="submit" class="btn01 sp" id="register_contact" value="{{ 'templates.contact.form.send' | t }}">
                             </div>
-                        {%- endform -%}
                     </div>
                 </div>
             </section>
         </div>
     </div>
+{%- endform -%}
 {% schema %}
 {
   "name": "t:sections.contact-form.name",
