@@ -2,22 +2,7 @@
 <link rel="stylesheet" href="{{ 'contact_success.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'contact.js' | asset_url }}" defer="defer"></script>
-<div id="wrapper" class="contact">
-        <div class="inner">
-            <div class="upper">
-                <div class="navi_top">
-                    <ul>
-                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
-                        <li><span class="current">Contact</span></li>
-                    </ul>
-                </div>
-            </div>
-            <section class="section" id="form_contact">
-                    <div class="form_contact">
-                <div class="inner">
-                        <h2>Form contact</h2>
-                        {%- form 'contact', id: 'contact' -%}
-                        {%- if form.posted_successfully? -%}
+{%- if form.posted_successfully? -%}
                           <div id="wrapper" class="success">
                               <div class="inner">
                                   <div class="upper">
@@ -40,6 +25,21 @@
                               </div>
                           </div>
                         {%- endif -%}
+<div id="wrapper" class="contact">
+        <div class="inner">
+            <div class="upper">
+                <div class="navi_top">
+                    <ul>
+                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
+                        <li><span class="current">Contact</span></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="section" id="form_contact">
+                    <div class="form_contact">
+                <div class="inner">
+                        <h2>Form contact</h2>
+                        {%- form 'contact', id: 'contact' -%}
                             <ul>
                                 <li>
                                     <div class="title_contact">
