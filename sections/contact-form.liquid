@@ -20,6 +20,8 @@
                         <h2>Form contact</h2>
                          {%- if form.posted_successfully? -%}
                   				<p>Susscess</p>
+                  		  {%- elsif form.errors -%}
+                  				<p>error</p>
                           {%- endif -%}
                             <ul>
                                 <li>
