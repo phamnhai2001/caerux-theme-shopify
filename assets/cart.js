@@ -90,7 +90,6 @@ class CartItems extends HTMLElement {
         this.disableLoading();
       }).catch(() => {
         this.querySelectorAll('.loading-overlay').forEach((overlay) => overlay.classList.add('hidden'));
-        document.getElementById('cart-errors').textContent = window.cartStrings.error;
         this.disableLoading();
       });
   }
