@@ -84,7 +84,7 @@
 }
 {%- endstyle -%}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-{% if cart == empty %}
+<!-- {% if cart == empty %}
 <div id="wrapper" class="cart_empty">
         <div class="inner">
             <section class="section" id="wrapper_cart_empty">
@@ -95,7 +95,7 @@
             </section>
         </div>
     </div>
-{% endif %}
+{% endif %} -->
 <cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
         <div class="inner">
             <div class="cart_wrapper">
