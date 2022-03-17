@@ -275,3 +275,31 @@
   transition: transform 200ms ease,visibility 0s,-webkit-transform 200ms ease;
   visibility: visible;
 }
+.cart-notification-product {
+	display: flex;
+    margin-bottom: 30px;
+}
+.cart-notification-product__image {
+	width: 80px;
+	margin-right: 10px;
+  	height: 80px;
+    object-fit: cover;
+}
+.cart-notification-product__name {
+	font-size: 14px;
+    font-weight: bold;
+  	text-align: left;
+    margin-bottom: 10px;
+}
+#cart-notification-button {
+    border: 1px solid black;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    margin-bottom: 10px;
+  	color: black;
+}
+.product-option {
+	display: flex;
+  	text-align: left;
+}
