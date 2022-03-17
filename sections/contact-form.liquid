@@ -26,11 +26,11 @@
                                     </div>
                                     <ul class="holizontal_list_contact">
                                         <li>
-                                            <input type="text" placeholder="First Name" class="input_contact" name="firstName" id="firstName" value="{% if form[fname] %}{{ form[fname] }}{% elsif customer %}{{ customer.first_name }}{% endif %}">
+                                            <input type="text" placeholder="First Name" class="input_contact" name="firstName" id="firstName" value="{% if form.first_name %}{{ form.first_name }}{% elsif customer %}{{ customer.first_name }}{% endif %}">
                                             <span class="form_message"></span>
                                         </li>
                                         <li>
-                                            <input type="text" placeholder="Last Name" class="input_contact" name="lastName" id="lastName" value="{% if form[lname] %}{{ form[lname] }}{% elsif customer %}{{ customer.last_name }}{% endif %}">
+                                            <input type="text" placeholder="Last Name" class="input_contact" name="lastName" id="lastName" value="{% if form.last_name %}{{ form.last_name }}{% elsif customer %}{{ customer.last_name }}{% endif %}">
                                             <span class="form_message"></span>
                                         </li>
                                     </ul>
