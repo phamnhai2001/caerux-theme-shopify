@@ -3,28 +3,28 @@
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'contact.js' | asset_url }}" defer="defer"></script>
 {%- if form.posted_successfully? -%}
-                          <div id="wrapper" class="success">
-                              <div class="inner">
-                                  <div class="upper">
-                                      <div class="navi_top">
-                                          <ul>
-                                              <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
-                                              <li><span class="current">Contact success</span></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <section class="section contact_success">
-                                      <div class="form_success">
-                                          <div class="notification_success">
-                                              <h2>Transmission completed</h2>
-                                              <p>Please contact us.<span>Thank you very much!</span></p>
-                                              <a href="index.html" class="btn_shopping">Continue shopping</a>
-                                          </div>
-                                      </div>
-                                  </section>
-                              </div>
-                          </div>
-                        {%- endif -%}
+      <div id="wrapper" class="success">
+            <div class="inner">
+                <div class="upper">
+                   <div class="navi_top">
+                       <ul>
+                      		<li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
+                            <li><span class="current">Contact success</span></li>
+                       </ul>
+               		</div>
+            	</div>
+             	<section class="section contact_success">
+             		<div class="form_success">
+                        <div class="notification_success">
+                              <h2>Transmission completed</h2>
+                            <p>Please contact us.<span>Thank you very much!</span></p>
+                            <a href="index.html" class="btn_shopping">Continue shopping</a>
+                       	</div>
+                     </div>
+              	</section>
+            </div>
+      </div>
+{%- endif -%}
 <div id="wrapper" class="contact">
         <div class="inner">
             <div class="upper">
