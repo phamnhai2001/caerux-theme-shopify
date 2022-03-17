@@ -18,7 +18,6 @@
                         <h3>{{ 'customer.register.title' | t }}</h3>
                       
                           {% form 'create_customer', id: 'register'%}
-	      					{{ form.errors | default_errors }}
                             <ul>
                                 <li>
                                     <input type="text" name="text" id="firstname" value="" placeholder="{{ 'customer.register.first_name' | t }}" class="lg_input" aria-invalid="true">
