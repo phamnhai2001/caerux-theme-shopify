@@ -65,7 +65,7 @@
                             <div class="form_item">
                                 <div class="title">Municipalities </div>
                                 <div class="input_content city">
-                                    <input id="city" type="text" name="address[city]" placeholder="Shibuya Ward">
+                                    <input id="city" type="text" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
