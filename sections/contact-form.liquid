@@ -30,7 +30,7 @@
                                             <span class="form_message"></span>
                                         </li>
                                         <li>
-                                            <input type="text" placeholder="Last Name" class="input_contact" name="lastName" id="lastName">
+                                            <input type="text" placeholder="Last Name" class="input_contact" name="lastName" id="lastName" value="{% if form[lname] %}{{ form[lname] }}{% elsif customer %}{{ customer.last_name }}{% endif %}">
                                             <span class="form_message"></span>
                                         </li>
                                     </ul>
