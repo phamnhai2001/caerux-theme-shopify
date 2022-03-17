@@ -130,25 +130,27 @@
                                 </div>
                             </div>
                             <div class="form_item create_box_select">
-                                <div class="title">Country / Region</div>
+                                <div class="title"> {{ 'customer.addresses.country' | t }}</div>
                                 <div id="box_check_option" class="input_content nation">
-                                    <select id="select_box" class="box_select_sort box_select_create_address" name="state">
-                                        <option value="2">Tokyo</option>
-                                        <option value="3">Tokyo</option>
-                                        <option value="4">Tokyo</option>
+                                    <select id="select_box" class="box_select_sort box_select_create_address" name="address[country]"
+                                    data-address-country-select
+                                    data-default="{{ form.country }}"
+                                    data-form-id="{{ form.id }}"
+                                    autocomplete="country">
+                                         {{ all_country_option_tags }}
                                     </select>
                                 </div>
                             </div>
                             <div class="form_item">
-                                <div class="title">Municipalities </div>
+                                <div class="title">{{ 'customer.addresses.city' | t }}</div>
                                 <div class="input_content city">
-                                    <input id="city" type="text" name="address[city]" value="Shibuya Ward">
+                                    <input id="city" type="text" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">Address</div>
                                 <div class="input_content street">
-                                    <input id="street" type="text" name="address[street]" value="East 1_28_9 1F">
+                                    <input id="street" type="text" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
                                 </div>
                             </div>
                             <div class="form_item">
