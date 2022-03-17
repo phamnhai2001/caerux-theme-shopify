@@ -17,7 +17,27 @@
                         <h2>Form contact</h2>
                         {%- form 'contact', id: 'contact' -%}
                         {%- if form.posted_successfully? -%}
-                          <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'templates.contact.form.post_success' | t }}</div>
+                          <div id="wrapper" class="success">
+                              <div class="inner">
+                                  <div class="upper">
+                                      <div class="navi_top">
+                                          <ul>
+                                              <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
+                                              <li><span class="current">Contact success</span></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <section class="section contact_success">
+                                      <div class="form_success">
+                                          <div class="notification_success">
+                                              <h2>Transmission completed</h2>
+                                              <p>Please contact us.<span>Thank you very much!</span></p>
+                                              <a href="index.html" class="btn_shopping">Continue shopping</a>
+                                          </div>
+                                      </div>
+                                  </section>
+                              </div>
+                          </div>
                         {%- endif -%}
                             <ul>
                                 <li>
