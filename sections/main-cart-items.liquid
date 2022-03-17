@@ -101,6 +101,14 @@
 {% endif %} -->
 <cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
         <div class="inner">
+          {% if cart == empty %}
+          <section class="section" id="wrapper_cart_empty">
+                <div class="inner">
+                    <h3>Your cart is empty</h3>
+                    <a href="" class="btn_shopping">Continue shopping</a>
+                </div>
+            </section>
+          {% endif %}
             <div class="cart_wrapper">
                 <div class="txt_desp">
                     <h2>Your cart</h2>
