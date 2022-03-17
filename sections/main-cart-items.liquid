@@ -108,7 +108,7 @@
           <section class="section" id="wrapper_cart_empty">
                 <div class="inner">
                     <h3>Your cart is empty</h3>
-                    <a href="" class="btn_shopping">Continue shopping</a>
+                    <a href="{{ routes.all_products_collection_url }}" class="btn_shopping">{{ 'general.continue_shopping' | t }}</a>
                 </div>
             </section>
           {% endif %}
