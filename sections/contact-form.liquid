@@ -12,12 +12,12 @@
                 </div>
             </div>
             <section class="section" id="form_contact">
-                <div class="inner">
                     <div class="form_contact">
+                <div class="inner">
                         <h2>Form contact</h2>
                         {%- form 'contact', id: 'contact' -%}
                         {%- if form.posted_successfully? -%}
-                          <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{{ 'templates.contact.form.post_success' | t }}</div>
+                          <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'templates.contact.form.post_success' | t }}</div>
                         {%- endif -%}
                             <ul>
                                 <li>
