@@ -18,21 +18,20 @@
                 <div class="inner">
                         {%- form 'contact', id: 'contact' -%}
                         <h2>Form contact</h2>
-                          {%- if form.posted_successfully? -%}
-                                    <div id="wrapper" class="success">
-                                          <div class="inner">
-                                              <section class="section contact_success">
-                                                  <div class="form_success">
-                                                      <div class="notification_success">
-                                                            <h2>Transmission completed</h2>
-                                                          <p>Please contact us.<span>Thank you very much!</span></p>
-                                                          <a href="index.html" class="btn_shopping">Continue shopping</a>
-                                                      </div>
-                                                   </div>
-                                              </section>
-                                          </div>
-                                    </div>
-                              {%- endif -%}
+                         {%- if form.posted_successfully? -%}
+      <div class="form-status form-status-list form__message" tabindex="-1" autofocus>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</div>
+    {%- elsif form.errors -%}
+      <div class="form__message">
+        <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>{% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}</h2>
+      </div>
+      <ul class="form-status-list caption-large" role="list">
+        <li>
+          <a href="#ContactForm-email" class="link">
+            {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}
+          </a>
+        </li>
+      </ul>
+    {%- endif -%}
                             <ul>
                                 <li>
                                     <div class="title_contact">
