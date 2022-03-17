@@ -22,6 +22,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+if(this.currentItemCount <= itemCount){
 const open = document.getElementById('cart_view');
 const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
@@ -33,6 +34,7 @@ open.addEventListener('click', () => {
 close.addEventListener('click', () => {
     cart_notify.classList.remove('active');
 });
+}
 // change tabs
 var tabLinks = document.querySelectorAll(".tablinks");
 var tabContent =document.querySelectorAll(".tabcontent");
