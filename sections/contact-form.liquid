@@ -19,9 +19,9 @@
                         {%- form 'contact', id: 'contact' -%}
                         <h2>Form contact</h2>
                          {%- if form.posted_successfully? -%}
-                  				<p>Susscess</p>
+                  				<p>{{ 'templates.contact.form.post_success' | t }}</p>
                   		  {%- elsif form.errors -%}
-                  				<p>error</p>
+                  				<p>{{ 'templates.contact.form.error_heading' | t }}</p>
                           {%- endif -%}
                             <ul>
                                 <li>
