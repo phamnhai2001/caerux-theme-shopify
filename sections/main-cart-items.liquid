@@ -90,18 +90,6 @@
 }
 {%- endstyle -%}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
-<!-- {% if cart == empty %}
-<div id="wrapper" class="cart_empty">
-        <div class="inner">
-            <section class="section" id="wrapper_cart_empty">
-                <div class="inner">
-                    <h3>Your cart is empty</h3>
-                    <a href="" class="btn_shopping">Continue shopping</a>
-                </div>
-            </section>
-        </div>
-    </div>
-{% endif %} -->
 <cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
         <div class="inner">
           {% if cart == empty %}
