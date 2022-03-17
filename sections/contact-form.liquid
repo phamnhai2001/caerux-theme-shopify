@@ -16,8 +16,8 @@
             <section class="section" id="form_contact">
                     <div class="form_contact">
                 <div class="inner">
+                      {%- form 'contact', id: 'contact' -%}
                         <h2>Form contact</h2>
-                        {%- form 'contact', id: 'contact' -%}
                           {%- if form.posted_successfully? -%}
                                     <div id="wrapper" class="success">
                                           <div class="inner">
