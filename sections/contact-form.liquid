@@ -67,8 +67,9 @@
                                     <div class="title_contact">
                                         <label>Contents of inquiry</label>
                                     </div>
-                                    <textarea name="content" id="content"
-                                              placeholder="Please enter the content of your inquiry." class="c_content"></textarea>
+                                    <textarea  id="content"
+                                              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+        										placeholder="{{ 'templates.contact.form.comment' | t }}" class="c_content"></textarea>
                                 </li>
                                 <li>
                                     <div class="title_contact policy_area">
