@@ -21,7 +21,7 @@
                          {%- if form.posted_successfully? -%}
                   				<p>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</p>
                   		  {%- elsif form.errors -%}
-                  				<p>{{ 'templates.contact.form.error_heading' | t }}</p>
+                  				<p>{% render 'icon-error' %}{{ 'templates.contact.form.error_heading' | t }}</p>
                           {%- endif -%}
                             <ul>
                                 <li>
