@@ -28,21 +28,21 @@
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.company' | t }}</div>
                                 <div class="input_content company">
-                                    <input id="company" type="text" name="address[company_name]" autocomplete="organization" placeholder="ULTRA_VYBE" value="{{ form.company }}">
+                                    <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">Phone number</div>
                                 <div class="input_content phone">
-                                    <input id="first_block_phone_number" type="text" name="address[phone]"  autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
+                                    <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.zip' | t }}</div>
                                 <div class="input_content post_office">
-                                    <input id="first_block_post_number" type="text" name="address[zip]" autocapitalize="characters" autocomplete="postal-code" placeholder="150">
+                                    <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
                                     <span class="form_message"></span>
 
                                 </div>
@@ -50,8 +50,12 @@
                             <div class="form_item create_box_select">
                                 <div class="title">{{ 'customer.addresses.country' | t }}</div>
                                 <div id="box_check_option" class="input_content nation">
-                                    <select id="select_box" class="box_select_sort box_select_create_address" name="address[country]" data-default="{{ form.country }}"
-                						autocomplete="country">
+                                   <select
+                                      id="AddressCountryNew"
+                                      name="address[country]"
+                                      data-default="{{ form.country }}"
+                                      autocomplete="country"
+                                    >
                                       {{ all_country_option_tags }}
                                     </select>
                                 </div>
@@ -59,14 +63,14 @@
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.city' | t }}</div>
                                 <div class="input_content city">
-                                    <input id="city" type="text" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
+                                    <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">Address</div>
                                 <div class="input_content street">
-                                    <input id="street" type="text" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="East 1_28_9 1F">
+                                   <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="{{ 'customer.addresses.address1' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
