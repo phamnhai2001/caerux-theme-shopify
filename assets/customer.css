@@ -447,6 +447,7 @@
 
 :is(.account, .order) h1 {
   margin-bottom: 1rem;
+  font-size: 65px;
 }
 
 :is(.account, .order) h2 {
