@@ -83,8 +83,10 @@
                                     <label for="policy" class="checkbox normal">Set this address as the default</label>
                                 </div>
                             </div>
-                            <input type="submit" class="update btn_short01" value="{{ 'customer.addresses.add' | t }}">
-                            <a class="cancel" href="">{{ 'customer.addresses.cancel' | t }}</a>
+                            <div>
+                              <button>{{ 'customer.addresses.add' | t }}</button>
+                              <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                            </div>
                         {%- endform -%}
                     </div>
                 </div>
