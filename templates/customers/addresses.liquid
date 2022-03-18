@@ -17,7 +17,7 @@
                     <div class="form_name">{{ 'customer.addresses.title' | t }}</div>
                     <div class="form_edit">
                        {%- form 'customer_address', customer.new_address, id: 'formAddress' -%}
-                            <<div class="field">
+                            <div class="field">
             <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
             <label for="AddressFirstNameNew">{{ 'customer.addresses.first_name' | t }}</label>
           </div>
