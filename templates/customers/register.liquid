@@ -16,34 +16,34 @@
                 <div class="register_wrapper">
                     <div class="register_form">
                         <h3>{{ 'customer.register.title' | t }}</h3>
-                          {% form 'create_customer', id: 'register'%}
-                       		{{ form.errors | default_errors }}
-                            <ul>
-                                <li>
-                                    <input type="text" name="customer[first_name]" id="firstname" value="" placeholder="{{ 'customer.register.first_name' | t }}" class="lg_input" aria-invalid="true">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <input type="text" name="customer[last_name]" id="lastname" value="" placeholder="{{ 'customer.register.last_name' | t }}" class="lg_input" aria-invalid="true">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <input type="email" name="customer[email]" id="email" value="" placeholder="{{ 'customer.register.email' | t }}" class="lg_input" aria-invalid="true">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <input type="password" value="" name="customer[password]" id="password" placeholder="{{ 'customer.register.password' | t }}" class="lg_input">
-                                    <span class="form_message"></span>
-                                </li>
-                            </ul>
-                            <div class="btn_register">
-                                <button type="submit" class="btn_register">{{ 'customer.register.submit' | t }}</button>
-                                <p class="txt_confirm">
-                                    <input type="checkbox" value="" id="policies">
-                                    <label for="policies" class="checkbox normal">Omitting ID input from next time</label>
-                                </p>
-                            </div>
-                           {% endform %}
+                          {% form 'create_customer' %}
+  {{ form.errors | default_errors }}
+
+  <div class="first-name">
+    <label for="first-name">First name</label>
+    <input type="text" name="customer[first_name]">
+  </div>
+
+  <div class="last-name">
+    <label for="last-name">Last name</label>
+    <input type="text" name="customer[last_name]">
+  </div>
+
+  <div class="email">
+    <label for="email">Email</label>
+    <input type="email" name="customer[email]">
+  </div>
+
+  <div class="password">
+    <label for="password">Password</label>
+    <input type="password" name="customer[password]">
+  </div>
+
+  <div class="submit">
+    <input type="submit" value="Create">
+  </div>
+{% endform %}
+
                         <div class="rules_information">
                             <p>If you are a first-time user, please register as a member from here. E-mail address</p>
                             <p>There are the following merits when you register as a member.</p>
