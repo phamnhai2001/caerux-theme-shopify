@@ -76,8 +76,8 @@
                             </div>
                             <div class="form_item">
                                 <div class="input_content default_address">
-                                    <input type="checkbox" value="" id="policy">
-                                    <label for="policy" class="checkbox normal">Set this address as the default</label>
+                                   {{ form.set_as_default_checkbox }}
+                                    <label for="policy" class="checkbox normal">{{ 'customer.addresses.set_default' | t }}</label>
                                 </div>
                             </div>
                             <div>
