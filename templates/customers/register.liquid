@@ -20,19 +20,19 @@
                           {% form 'create_customer', id: 'register'%}
                             <ul>
                                 <li>
-                                    <input type="text" name="text" id="firstname" value="" placeholder="{{ 'customer.register.first_name' | t }}" class="lg_input" aria-invalid="true">
+                                    <input type="text" name="customer[first_name]" id="firstname" value="" placeholder="{{ 'customer.register.first_name' | t }}" class="lg_input" aria-invalid="true">
                                     <span class="form_message"></span>
                                 </li>
                                 <li>
-                                    <input type="text" name="text" id="lastname" value="" placeholder="{{ 'customer.register.last_name' | t }}" class="lg_input" aria-invalid="true">
+                                    <input type="text" name="customer[last_name]" id="lastname" value="" placeholder="{{ 'customer.register.last_name' | t }}" class="lg_input" aria-invalid="true">
                                     <span class="form_message"></span>
                                 </li>
                                 <li>
-                                    <input type="email" name="email" id="email" value="" placeholder="{{ 'customer.register.email' | t }}" class="lg_input" aria-invalid="true">
+                                    <input type="email" name="customer[email]" id="email" value="" placeholder="{{ 'customer.register.email' | t }}" class="lg_input" aria-invalid="true">
                                     <span class="form_message"></span>
                                 </li>
                                 <li>
-                                    <input type="password" value="" name="password" id="password" placeholder="{{ 'customer.register.password' | t }}" class="lg_input">
+                                    <input type="password" value="" name="customer[password]" id="password" placeholder="{{ 'customer.register.password' | t }}" class="lg_input">
                                     <span class="form_message"></span>
                                 </li>
                                 <li>
