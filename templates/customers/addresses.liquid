@@ -11,6 +11,7 @@
                     </ul>
                 </div>
             </div>
+          {%- paginate customer.addresses by 5 -%}
             <section class="section create_address edit_address">
                 <div class="edit_content">
                     <div class="form_name">{{ 'customer.addresses.title' | t }}</div>
@@ -167,5 +168,6 @@
                 </div>
             </section>	
           {%- endfor -%}
+          {%- endpaginate -%}
         </div>
     </div>
