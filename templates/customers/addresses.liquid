@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="{{ 'address.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'address.js' | asset_url }}" defer="defer"></script>
-<!-- <script src="{{ 'customer.js' | asset_url }}" defer="defer"></script> -->
 {% style %}
 	input[type=tel] {
 	  width: 100%;
@@ -129,7 +128,6 @@ button[type=reset] {
                {{ address | format_address }}
                   <button
                     type="button"
-                    class="edit"
                     id="EditFormButton_{{ address.id }}"
                     aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
                     aria-controls="EditAddress_{{ address.id }}"
@@ -146,6 +144,7 @@ button[type=reset] {
                   >
                     {{ 'customer.addresses.delete' | t }}
                   </button>
+                  <div class="update">
                     <div class="form_name">{{ 'customer.addresses.edit_address' | t }}</div>
                     <div class="form_edit">
                         {%- form 'customer_address', address -%}
@@ -218,6 +217,7 @@ button[type=reset] {
                             </div>
                         {%- endform -%}
                     </div>
+                  </div>
                   {%- endfor -%}
                 </div>
             </section>
