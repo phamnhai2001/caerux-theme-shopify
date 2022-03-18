@@ -20,29 +20,29 @@
                             <div class="form_item">
                                 <div class="title">Name</div>
                                 <div class="input_content name">
-                                    <input id="first_name" type="text" name="address[first_name]" placeholder="Ultra">
-                                    <input id="last_name" type="text" name="address[last_name]" placeholder="Taro">
+                                    <input id="first_name" type="text" name="address[first_name]" autocomplete="given-name" placeholder="Ultra">
+                                    <input id="last_name" type="text" name="address[last_name]" autocomplete="family-name" placeholder="Taro">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.company' | t }}</div>
                                 <div class="input_content company">
-                                    <input id="company" type="text" name="address[company_name]" placeholder="ULTRA_VYBE" value="{{ form.company }}">
+                                    <input id="company" type="text" name="address[company_name]" autocomplete="organization" placeholder="ULTRA_VYBE" value="{{ form.company }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">Phone number</div>
                                 <div class="input_content phone">
-                                    <input id="first_block_phone_number" type="text" name="address[phone]" placeholder="03">
+                                    <input id="first_block_phone_number" type="text" name="address[phone]"  placeholder="03">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.zip' | t }}</div>
                                 <div class="input_content post_office">
-                                    <input id="first_block_post_number" type="text" name="address[zip]" placeholder="150">
+                                    <input id="first_block_post_number" type="text" name="address[zip]" autocapitalize="characters" autocomplete="postal-code" placeholder="150">
                                     <span class="form_message"></span>
 
                                 </div>
