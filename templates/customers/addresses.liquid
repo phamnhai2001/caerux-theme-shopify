@@ -20,8 +20,8 @@
                             <div class="form_item">
                                 <div class="title">Name</div>
                                 <div class="input_content name">
-                                    <input id="first_name" type="text" name="address[first_name]" autocomplete="given-name" placeholder="Ultra">
-                                    <input id="last_name" type="text" name="address[last_name]" autocomplete="family-name" placeholder="Taro">
+                                    <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+                                    <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
                                     <span class="form_message"></span>
                                 </div>
                             </div>
