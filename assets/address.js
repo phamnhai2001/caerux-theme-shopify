@@ -13,13 +13,13 @@ Validator({
 });
 
 // show hide button
-var content = Array.from(document.querySelectorAll(".update"));
-
-content.forEach(function(el){
-    //var content= el.querySelector(".content");
-    var button = el.querySelector(".edit");
-    button.addEventListener("click", function () {
-        el.classList.toggle("open");
-           
-    }, false)
-});
+var content = document.getElementsByClassName("update");
+var buttons = document.getElementsByClassName("edit");
+button.onclick = function() {
+    if (content.style.display == 'none') {
+        content.style.display = 'block';
+    }
+    else {
+        content.style.display = 'none';
+    }
+};
