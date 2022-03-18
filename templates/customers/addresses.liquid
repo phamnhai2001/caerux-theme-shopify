@@ -187,7 +187,9 @@ button[type=reset] {
                                    <select
                                       id="select_box"
                                       name="address[country]"
+                                      data-address-country-select
                                       data-default="{{ form.country }}"
+                                      data-form-id="{{ form.id }}"
                                       autocomplete="country"
                                     >
                                       {{ all_country_option_tags }}
