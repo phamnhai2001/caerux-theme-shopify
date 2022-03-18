@@ -16,10 +16,10 @@ Validator({
 var content = document.getElementsByClassName("update");
 var buttons = document.getElementsByClassName("edit");
 button.onclick = function() {
-    if (content.style.display !== 'none') {
-        content.style.display = 'none';
+    if (content.style.display == 'none') {
+        content.style.display = 'block';
     }
     else {
-        content.style.display = 'block';
+        content.style.display = 'none';
     }
 };
