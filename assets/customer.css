@@ -406,6 +406,7 @@
 :is(.account, .order) {
   max-width: var(--page-width);
   padding: 0 2rem;
+    text-align: left;
 }
 
 @media screen and (min-width: 750px) {
