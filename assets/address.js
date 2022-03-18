@@ -13,3 +13,5 @@ Validator({
 });
 
 // show hide button
+var content = document.getElementsByClassName("content");
+var button = document.getElementsByClassName("content");
