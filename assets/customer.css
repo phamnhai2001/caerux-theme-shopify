@@ -1,4 +1,4 @@
-.inner {
+#wrapper .inner {
 	padding-top: 10%;
 }
 .customer:not(.account):not(.order) {
