@@ -442,7 +442,8 @@
 
 :is(.account, .order) p {
   margin: 0 0 2rem;
-  font-size: 1.6rem;
+    font-size: 18px;
+    color: #95a7b7;
 }
 
 :is(.account, .order) h1 {
