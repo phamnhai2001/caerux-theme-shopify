@@ -18,14 +18,15 @@
                     <div class="login_form">
                         <h3>{{ 'customer.login_page.title' | t }}</h3>
                           {%- form 'customer_login', id: 'login' -%}
+                      {{ form.errors | default_errors }}
                             <ul>
                                 <li>
-                                    <input type="email" name="email" id="email" value="" placeholder="{{ 'customer.login_page.email' | t }}" class="lg_input" aria-invalid="true">
+                                    <input type="email" name="customer[email]" id="email" value="" placeholder="{{ 'customer.login_page.email' | t }}" class="lg_input" aria-invalid="true">
                                     <span class="form_message"></span>
                                 </li>
                               {%- if form.password_needed -%}
                                 <li>
-                                    <input type="password" value="" name="password" id="password" placeholder="{{ 'customer.login_page.password' | t }}" class="lg_input">
+                                    <input type="password" value="" name="customer[password]" id="password" placeholder="{{ 'customer.login_page.password' | t }}" class="lg_input">
                                     <span class="form_message"></span>
                                 </li>
                               {%- endif -%}
