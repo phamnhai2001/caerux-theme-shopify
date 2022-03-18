@@ -13,20 +13,13 @@ Validator({
 });
 
 // show hide button
-function toggleDocs(event) {
+var content = Array.from(document.querySelectorAll(".update"));
 
-    if (event.target.className == 'edit') {
-
-        var next = event.target.nextElementSibling.nextElementSibling;
-
-
-        if (next.style.display == "none") {
-            next.style.display = "block";
-
-        } else {
-            next.style.display = "none";
-        }
-    }
-}
-
-document.addEventListener('click', toggleDocs, true);
+content.forEach(function(el){
+    //var content= el.querySelector(".content");
+    var button = el.querySelector(".edit");
+    button.addEventListener("click", function () {
+        el.classList.toggle("open");
+           
+    }, false)
+});
