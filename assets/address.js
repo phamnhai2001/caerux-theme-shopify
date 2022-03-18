@@ -13,13 +13,20 @@ Validator({
 });
 
 // show hide button
-var content = document.getElementsByClassName("update");
-var buttons = document.getElementsByClassName("edit");
-button.onclick = function() {
-    if (content.style.display == 'none') {
-        content.style.display = 'block';
+function toggleDocs(event) {
+
+    if (event.target && event.target.className == 'edit') {
+
+        var next = event.target.nextElementSibling.nextElementSibling;
+
+
+        if (next.style.display == "none") {
+            next.style.display = "block";
+
+        } else {
+            next.style.display = "none";
+        }
     }
-    else {
-        content.style.display = 'none';
-    }
-};
+}
+
+document.addEventListener('click', toggleDocs, true);
