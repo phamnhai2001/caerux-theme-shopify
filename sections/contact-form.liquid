@@ -69,7 +69,9 @@
                                     </div>
                                     <textarea  id="content"
                                               name="contact[{{ 'templates.contact.form.comment' | t }}]"
-        										placeholder="{{ 'templates.contact.form.comment' | t }}" class="c_content"></textarea>
+        										placeholder="{{ 'templates.contact.form.comment' | t }}" class="c_content">
+                                      {{- form.body -}}
+                                  </textarea>
                                 </li>
                                 <li>
                                     <div class="title_contact policy_area">
