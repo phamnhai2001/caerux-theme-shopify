@@ -13,18 +13,18 @@ Validator({
 });
 
 // show hide button
-var content = document.getElementsByClassName("update");
-var buttons = document.getElementsByClassName("edit");
-for (var i = 0; i < content.length; i++) {
-  let div = content[i];
-  let button = buttons[i];
-  button.onclick = function() {
-    if (div.className == "open") {
-      //shrink the box
-      div.className = "update";
-    }  else {
-      //expand the box
-      div.className = "open";
-    }
-  };
-}
+// var content = document.getElementsByClassName("update");
+// var buttons = document.getElementsByClassName("edit");
+// for (var i = 0; i < content.length; i++) {
+//   let div = content[i];
+//   let button = buttons[i];
+//   button.onclick = function() {
+//     if (div.className == "open") {
+//       //shrink the box
+//       div.className = "update";
+//     }  else {
+//       //expand the box
+//       div.className = "open";
+//     }
+//   };
+// }
