@@ -136,7 +136,7 @@ button[type=reset] {
                 aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
                 aria-controls="EditAddress_{{ address.id }}"
                 aria-expanded="false"
-                data-address-id="{{ address.id }}"
+                data-address-id="{{ address.id }}" onclick="myFunction()"
               >
                 {{ 'customer.addresses.edit' | t }}
               </button>
@@ -217,7 +217,7 @@ button[type=reset] {
                                 </div>
                             </div>
                            <div>
-                              <button class="add" onclick="myFunction()">{{ 'customer.addresses.update' | t }}</button>
+                              <button class="add" >{{ 'customer.addresses.update' | t }}</button>
                               <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                             </div>
                         {%- endform -%}
