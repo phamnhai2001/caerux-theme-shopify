@@ -146,7 +146,6 @@ button[type=reset] {
                   >
                     {{ 'customer.addresses.delete' | t }}
                   </button>
-                  <div class="update">
                     <div class="form_name">{{ 'customer.addresses.edit_address' | t }}</div>
                     <div class="form_edit">
                         {%- form 'customer_address', address -%}
@@ -219,7 +218,6 @@ button[type=reset] {
                             </div>
                         {%- endform -%}
                     </div>
-                  </div>
                   {%- endfor -%}
                 </div>
             </section>
