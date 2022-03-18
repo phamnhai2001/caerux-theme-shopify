@@ -124,30 +124,26 @@ button[type=reset] {
                             </div>
                         {%- endform -%}
                     </div>
-                </div>
-            </section>
-           {%- for address in customer.addresses -%}
-           {{ address | format_address }}
-              <button
-                type="button"
-                id="EditFormButton_{{ address.id }}"
-                aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
-                aria-controls="EditAddress_{{ address.id }}"
-                aria-expanded="false"
-                data-address-id="{{ address.id }}" 
-              >
-                {{ 'customer.addresses.edit' | t }}
-              </button>
-              <button
-                type="button"
-                aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
-                data-target="{{ address.url }}"
-                data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
-              >
-                {{ 'customer.addresses.delete' | t }}
-              </button>
-          <section class="section create_address edit_address update">
-                <div class="edit_content">
+              {%- for address in customer.addresses -%}
+               {{ address | format_address }}
+                  <button
+                    type="button"
+                    id="EditFormButton_{{ address.id }}"
+                    aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
+                    aria-controls="EditAddress_{{ address.id }}"
+                    aria-expanded="false"
+                    data-address-id="{{ address.id }}" 
+                  >
+                    {{ 'customer.addresses.edit' | t }}
+                  </button>
+                  <button
+                    type="button"
+                    aria-label="{{ 'customer.addresses.delete' | t }} {{ forloop.index }}"
+                    data-target="{{ address.url }}"
+                    data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+                  >
+                    {{ 'customer.addresses.delete' | t }}
+                  </button>
                     <div class="form_name">{{ 'customer.addresses.edit_address' | t }}</div>
                     <div class="form_edit">
                         {%- form 'customer_address', address -%}
@@ -220,9 +216,9 @@ button[type=reset] {
                             </div>
                         {%- endform -%}
                     </div>
+                  {%- endfor -%}
                 </div>
-            </section>	
-          {%- endfor -%}
+            </section>
           {%- endpaginate -%}
         </div>
     </div>
