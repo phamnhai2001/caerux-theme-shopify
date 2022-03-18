@@ -14,7 +14,7 @@ Validator({
 
 // show hide button
 function myFunction() {
-  var x = document.getElementByClassName("edit_content");
+  var x = document.getElementByClassName("edit_address");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
