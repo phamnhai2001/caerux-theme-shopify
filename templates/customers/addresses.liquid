@@ -16,7 +16,8 @@
                 <div class="edit_content">
                     <div class="form_name">{{ 'customer.addresses.title' | t }}</div>
                     <div class="form_edit">
-                        {%- form 'customer_address', customer.new_address, aria-labelledBy: 'formAddress' -%}
+                        {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
+                      	<form id="formAddress" >
                             <div class="form_item">
                                 <div class="title">Name</div>
                                 <div class="input_content name">
@@ -84,6 +85,7 @@
                               <button>{{ 'customer.addresses.add' | t }}</button>
                               <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                             </div>
+                      </form>
                         {%- endform -%}
                     </div>
                 </div>
