@@ -13,5 +13,5 @@ Validator({
 });
 
 // show hide button
-var content = document.getElementsByClassName("content");
-var button = document.getElementsByClassName("content");
+var content = document.getElementsByClassName("update");
+var button = document.getElementsByClassName("edit");
