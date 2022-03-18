@@ -15,7 +15,7 @@ Validator({
 // show hide button
 function toggleDocs(event) {
 
-    if (event.target && event.target.className == 'edit') {
+    if (event.target.className == 'edit') {
 
         var next = event.target.nextElementSibling.nextElementSibling;
 
