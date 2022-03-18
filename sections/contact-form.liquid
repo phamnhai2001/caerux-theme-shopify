@@ -19,7 +19,7 @@
                          <h2>Form contact</h2>
                         {%- form 'contact', id: 'contact' -%}
                          {%- if form.posted_successfully? -%}
-                  				<p>{{ 'templates.contact.form.post_success' | t }}</p>
+                  				<p>{% render 'icon-success' %} {{ 'templates.contact.form.post_success' | t }}</p>
                   		  {%- elsif form.errors -%}
                   				<p>{{ 'templates.contact.form.error_heading' | t }}</p>
                           {%- endif -%}
