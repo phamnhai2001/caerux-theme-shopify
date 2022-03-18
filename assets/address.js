@@ -15,11 +15,16 @@ Validator({
 // show hide button
 var content = document.getElementsByClassName("update");
 var buttons = document.getElementsByClassName("edit");
-button.onclick = function() {
-    if (content.style.display == 'none') {
-        content.style.display = 'block';
+for (var i = 0; i < content.length; i++) {
+  let div = content[i];
+  let button = buttons[i];
+  button.onclick = function() {
+    if (div.className == "open") {
+      //shrink the box
+      div.className = "update";
+    }  else {
+      //expand the box
+      div.className = "open";
     }
-    else {
-        content.style.display = 'none';
-    }
-};
+  };
+}
