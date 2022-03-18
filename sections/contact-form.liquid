@@ -23,54 +23,69 @@
                   		  {%- elsif form.errors -%}
                   				<p>{{ 'templates.contact.form.error_heading' | t }}</p>
                           {%- endif -%}
-                           <div class="contact__fields">
-      <div class="field">
-        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-        <input class="field__input" autocomplete="name" type="text" id="ContactForm-name" name="contact[{{ 'templates.contact.form.name' | t }}]" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" placeholder="{{ 'templates.contact.form.name' | t }}">
-        <label class="field__label" for="ContactForm-name">{{ 'templates.contact.form.name' | t }}</label>
-      </div>
-      <div class="field field--with-error">
-        <input
-          autocomplete="email"
-          type="email"
-          id="ContactForm-email"
-          class="field__input"
-          name="contact[email]"
-          spellcheck="false"
-          autocapitalize="off"
-          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
-          aria-required="true"
-          {% if form.errors contains 'email' %}
-            aria-invalid="true"
-            aria-describedby="ContactForm-email-error"
-          {% endif %}
-          placeholder="{{ 'templates.contact.form.email' | t }}"
-        >
-        <label class="field__label" for="ContactForm-email">{{ 'templates.contact.form.email' | t }} <span aria-hidden="true">*</span></label>
-        {%- if form.errors contains 'email' -%}
-          <small class="contact__field-error" id="ContactForm-email-error">
-            <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
-            <span class="form__message">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</span>
-          </small>
-        {%- endif -%}
-      </div>
-    </div>
-    <div class="field">
-      <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
-      <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-    </div>
-    <div class="field">
-      <textarea
-        rows="10"
-        id="ContactForm-body"
-        class="text-area field__input"
-        name="contact[{{ 'templates.contact.form.comment' | t }}]"
-        placeholder="{{ 'templates.contact.form.comment' | t }}"
-      >
-        {{- form.body -}}
-      </textarea>
-      <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
-    </div>
+                            <ul>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>{{ 'templates.contact.form.name' | t }}</label>
+                                    </div>
+                                    <ul class="holizontal_list_contact">
+                                        <li>
+                                            <input type="text" placeholder="First Name" class="input_contact" name="contact[first_name]" id="firstName" >
+                                            <span class="form_message"></span>
+                                        </li>
+                                        <li>
+                                            <input type="text" placeholder="Last Name" class="input_contact" name="contact[last_name]" id="lastName" >
+                                            <span class="form_message"></span>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>{{ 'templates.contact.form.email' | t }}</label>
+                                    </div>
+                                    <div>
+                                        <input type="email" placeholder="{{ 'templates.contact.form.email' | t }}" class="input_contact" name="contact[email]" id="email"  >
+                                        <span class="form_message"></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>Contents of inquiry</label>
+                                    </div>
+                                    <div class="request-type">
+                                        <select id="request-type" name="contact[request_type]">
+                                          <option>Returns</option>
+                                          <option>Shipping</option>
+                                          <option>Custom order</option>
+                                          <option>Other</option>
+                                        </select>
+                                      </div>
+                                </li>
+                                <li>
+                                    <div class="title_contact">
+                                        <label>{{ 'templates.contact.form.comment' | t }}</label>
+                                    </div>
+                                    <textarea  id="content"
+                                              name="contact[{{ 'templates.contact.form.comment' | t }}]"
+        										placeholder="{{ 'templates.contact.form.comment' | t }}" class="c_content">
+                                      {{- form.body -}}
+                                  </textarea>
+                                </li>
+                                <li>
+                                    <div class="title_contact policy_area">
+                                        <label>Handling of personal information</label>
+                                    </div>
+                                    <div class="c_contact_policy">
+                                        <input type="checkbox" name="policies" id="policies"
+                                               class="checkbox normal">
+                                        <span for="policies" class="group_title_span"><a href="" class="special_word">Privacy policy</a>I agree with</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="g-recaptcha"
+                                         data-sitekey="6Lep-WEeAAAAAITPLoh0hnG_KuhYMxwDaANJPTY8"></div>
+                                </li>
+                            </ul>
                             <div class="submit_contact">
                                 <input type="submit" class="btn01 sp" id="register_contact" value="{{ 'templates.contact.form.send' | t }}">
                             </div>
