@@ -462,8 +462,10 @@
 }
 
 .account h1 + a {
-  display: inline-flex;
-  align-items: center;
+  display: block;
+    align-items: center;
+    color: black;
+    text-decoration: underline;
 }
 
 .account a svg {
