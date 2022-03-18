@@ -446,7 +446,7 @@
     color: #95a7b7;
 }
 
-:is(.account, .order) a {
+:is(.account, .order) a .view-address{
  color: white;
     background-color: black;
     padding: 13px 13px;
