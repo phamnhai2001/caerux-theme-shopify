@@ -128,6 +128,7 @@ button[type=reset] {
                {{ address | format_address }}
                   <button
                     type="button"
+                    class="edit"
                     id="EditFormButton_{{ address.id }}"
                     aria-label="{{ 'customer.addresses.edit_address' | t }} {{ forloop.index }}"
                     aria-controls="EditAddress_{{ address.id }}"
