@@ -16,7 +16,6 @@
                 <div class="register_wrapper">
                     <div class="register_form">
                         <h3>{{ 'customer.register.title' | t }}</h3>
-                      
                           {% form 'create_customer', id: 'register'%}
                       		{%- if form.errors -%}
                       			<p>Error</p>
@@ -38,10 +37,6 @@
                                 </li>
                                 <li>
                                     <input type="password" value="" name="customer[password]" id="password" placeholder="{{ 'customer.register.password' | t }}" class="lg_input">
-                                    <span class="form_message"></span>
-                                </li>
-                                <li>
-                                    <input type="password" value="" name="password2" id="password2" placeholder="Enter password" class="lg_input">
                                     <span class="form_message"></span>
                                 </li>
                             </ul>
