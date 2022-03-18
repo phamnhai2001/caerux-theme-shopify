@@ -446,6 +446,13 @@
     color: #95a7b7;
 }
 
+:is(.account, .order) a {
+ color: white;
+    background-color: black;
+    padding: 13px 13px;
+    text-align: center;
+    display: block;
+}
 :is(.account, .order) h1 {
   margin-bottom: 1rem;
   font-size: 55px;
