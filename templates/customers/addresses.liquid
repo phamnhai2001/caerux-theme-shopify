@@ -45,52 +45,51 @@ button[type=reset] {
                 <a href="">Return account</a>
                 <div data-address>
                     <button type="button" aria-expanded="false" aria-controls="AddAddress">
-                        Add new address
+                        {{ 'customer.addresses.add_new' | t }}
                     </button>
                     <div id="AddAddress">
-                        <h2 id="AddressNewHeading">Create new address</h2>
-                        <form action="">
+                        <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
+                        {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
                             <div class="field">
                                 <div class="title">Name</div>
-                                <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="" autocomplete="given-name" placeholder="First name">
-                                <input type="text" id="AddressLastNameNew" name="address[last_name]" value="" autocomplete="family-name" placeholder="Lasst name">
+                                <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+                                <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
                             </div>
                             <div class="field">
-                                <div class="title">Company Name</div>
-                                <input type="text" id="AddressCompanyNew" name="address[company]" value="" autocomplete="organization" placeholder="">
+                                <div class="title">{{ 'customer.addresses.company' | t }}</div>
+                                <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
                             </div>
                             <div class="field">
-                                <div class="title">Phone number</div>
-                                <input type="tel" id="AddressPhoneNew" name="address[phone]" value="" autocomplete="tel" placeholder="">
+                                <div class="title">{{ 'customer.addresses.phone' | t }}</div>
+                                <input type="tel" id="AddressPhoneNew" name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
                             </div>
                             <div class="field">
-                                <div class="title">Post code</div>
-                                <input type="text" id="AddressZipNew" name="address[zip]" value="" autocapitalize="characters" autocomplete="postal-code" placeholder="">
+                                <div class="title">{{ 'customer.addresses.zip' | t }}</div>
+                                <input type="text" id="AddressZipNew" name="address[zip]" value="{{ form.zip }}" autocapitalize="characters" autocomplete="postal-code" placeholder="{{ 'customer.addresses.zip' | t }}">
                             </div>
                             <div class="create_box_select">
-                                <div class="title">Country / Region</div>
+                                <div class="title">{{ 'customer.addresses.country' | t }}</div>
                                 <div class="select">
-                                    <select id="AddressCountryNew" name="address[country]" data-default="" autocomplete="country">
-                                        <option value="Ha Noi">Ha Noi</option>
-                                        <option value="Ho Chi Minh">Ho Chi Minh</option>
+                                    <select id="AddressCountryNew" name="address[country]" data-default="{{ form.country }}" autocomplete="country">
+                                        {{ all_country_option_tags }}
                                     </select>
                                 </div>
                             </div>
                             <div class="field">
-                                <div class="title">Municipalities </div>
-                                <input type="text" id="AddressCityNew" name="address[city]" value="" autocomplete="address-level2" placeholder="City">
+                                <div class="title">{{ 'customer.addresses.city' | t }} </div>
+                                <input type="text" id="AddressCityNew" name="address[city]" value="{{ form.city }}" autocomplete="address-level2" placeholder="{{ 'customer.addresses.city' | t }}">
                             </div>
                             <div class="field">
                                 <div class="title">Address</div>
-                                <input type="text" id="AddressAddress1New" name="address[address1]" value="" autocomplete="address-line1" placeholder="Address">
+                                <input type="text" id="AddressAddress1New" name="address[address1]" value="{{ form.address1 }}" autocomplete="address-line1" placeholder="Address">
                             </div>
                             <div >
-                                <input type="checkbox" value="" id="policy">
-                                <label for="policy" class="checkbox normal">Set this address as the default</label>
+                                {{ form.set_as_default_checkbox }}
+                                <label for="policy" class="checkbox normal">{{ 'customer.addresses.set_default' | t }}</label>
                             </div>
-                            <button>Add</button>
-                            <button type="reset">Cancel</button>
-                        </form>
+                            <button>{{ 'customer.addresses.add' | t }}</button>
+                            <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
+                         {%- endform -%}
                     </div>
                 </div>
             </div>
