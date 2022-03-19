@@ -205,3 +205,8 @@ button[type=reset] {
         </li>
       {%- endfor -%}
     </ul>
+<script>
+  window.onload = () => {
+    typeof CustomerAddresses !== 'undefined' && new CustomerAddresses();
+  }
+</script>
