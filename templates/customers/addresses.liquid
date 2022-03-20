@@ -55,9 +55,9 @@ button[type=reset] {
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor"/>
                   </symbol>
                 </svg>
-                <h1>Addresses</h1>
-                <a href="">
-                  Return account details
+                <h1>{{ 'customer.addresses.title' | t }}</h1>
+                <a href="{{ routes.account_url }}">
+                  {{ 'customer.account.return' | t }}
                 </a>
                 <div data-address>
                   <button
@@ -65,21 +65,21 @@ button[type=reset] {
                     aria-expanded="false"
                     aria-controls="AddAddress"
                   >
-                    Add new address
+                    {{ 'customer.addresses.add_new' | t }}
                   </button>
                   <div id="AddAddress">
-                    <h2 id="AddressNewHeading">Add new</h2>
+                    <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
                     <form action="">
                       <div class="field">
                         <label for="AddressFirstNameNew">Name</label>
                         <div>
-                          <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="" autocomplete="given-name" placeholder="">
-                          <input type="text" id="AddressLastNameNew" name="address[last_name]" value="" autocomplete="family-name" placeholder="">
+                          <input type="text" id="AddressFirstNameNew" name="address[first_name]" value="{{ form.first_name }}" autocomplete="given-name" placeholder="{{ 'customer.addresses.first_name' | t }}">
+                          <input type="text" id="AddressLastNameNew" name="address[last_name]" value="{{ form.last_name }}" autocomplete="family-name" placeholder="{{ 'customer.addresses.last_name' | t }}">
                         </div>
                       </div>
                       <div class="field">
-                        <label for="AddressCompanyNew">Company</label>
-                        <input type="text" id="AddressCompanyNew" name="address[company]" value="" autocomplete="organization" placeholder="">
+                        <label for="AddressCompanyNew">{{ 'customer.addresses.company' | t }}</label>
+                        <input type="text" id="AddressCompanyNew" name="address[company]" value="{{ form.company }}" autocomplete="organization" placeholder="{{ 'customer.addresses.company' | t }}">
                       </div>
                       <div class="field">
                         <label for="AddressAddress1New">Address</label>
