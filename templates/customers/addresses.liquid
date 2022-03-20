@@ -98,6 +98,22 @@ button[type=reset] {
                                     </select>
                                 </div>
                             </div>
+                          <div>
+                            <label for="AddressCountryNew">{{ 'customer.addresses.country' | t }}</label>
+                            <div class="select">
+                              <select
+                                id="AddressCountryNew"
+                                name="address[country]"
+                                data-default="{{ form.country }}"
+                                autocomplete="country"
+                              >
+                                {{ all_country_option_tags }}
+                              </select>
+                              <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                                <use href="#icon-caret" />
+                              </svg>
+                            </div>
+                          </div>
                           <div id="AddressProvinceContainerNew" style="display: none">
                               <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
                               <div class="select">
