@@ -39,16 +39,7 @@ button[type=reset] {
 }
 
 {% endstyle %}
-<div id="wrapper">
-        <div class="inner">
-            <div class="upper">
-                <div class="navi_top">
-                    <ul>
-                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
-                        <li><span class="current">{{ 'customer.addresses.title' | t }}</span></li>
-                    </ul>
-                </div>
-            </div>
+
           	<div class="customer addresses" data-customer-addresses>
                 <svg style="display: none">
                   <symbol id="icon-caret" viewBox="0 0 10 6">
@@ -248,5 +239,4 @@ button[type=reset] {
                   {%- endfor -%}
                 </ul>
             </div>
-        </div>
-    </div>
+       
