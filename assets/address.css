@@ -149,7 +149,7 @@ ul, ol {
   border: 1px solid;
   padding: 10px 40px;
   cursor: pointer;
-  margin: 30px 10px;
+  margin: 0 0 30px;
 }
 .addresses ul li .edit {
   padding-top: 30px;
