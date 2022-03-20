@@ -1,7 +1,11 @@
 <link rel="stylesheet" href="{{ 'address.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'customer.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'address.js' | asset_url }}" defer="defer"></script>
-
+{% style %}
+.addresses [aria-expanded=false]~div[id] {
+	display: none;
+}
+{% endstyle %}
           	<div class="customer addresses" data-customer-addresses>
                 <svg style="display: none">
                   <symbol id="icon-caret" viewBox="0 0 10 6">
