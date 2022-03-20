@@ -114,6 +114,9 @@ ul, ol {
   right: 10px;
   top: 50%;
 }
+.addresses div form .default_address {
+  margin-bottom: 25px;
+}
 .addresses div form .default_address label {
   font-size: 14px;
   font-weight: 500;
