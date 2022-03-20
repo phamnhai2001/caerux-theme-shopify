@@ -98,6 +98,21 @@ button[type=reset] {
                                     </select>
                                 </div>
                             </div>
+                          <div id="AddressProvinceContainerNew" style="display: none">
+                              <label for="AddressProvinceNew">{{ 'customer.addresses.province' | t }}</label>
+                              <div class="select">
+                                <select
+                                  id="AddressProvinceNew"
+                                  name="address[province]"
+                                  data-default="{{ form.province }}"
+                                  autocomplete="address-level1"
+                                >
+                                </select>
+                                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                                  <use href="#icon-caret" />
+                                </svg>
+                              </div>
+                            </div>
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.city' | t }}</div>
                                 <div class="input_content city">
@@ -195,6 +210,23 @@ button[type=reset] {
                                       {{ all_country_option_tags }}
                                     </select>
                                 </div>
+                            </div>
+                      		<div id="AddressProvinceContainer_{{ form.id }}" style="display:none;">
+                              <label for="AddressProvince_{{ form.id }}">
+                                {{ 'customer.addresses.province' | t }}
+                              </label>
+                              <div class="select">
+                                <select
+                                  id="AddressProvince_{{ form.id }}"
+                                  name="address[province]"
+                                  data-default="{{ form.province }}"
+                                  autocomplete="address-level1"
+                                >
+                                </select>
+                                <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                                  <use href="#icon-caret" />
+                                </svg>
+                              </div>
                             </div>
                             <div class="form_item">
                                 <div class="title">{{ 'customer.addresses.city' | t }}</div>
