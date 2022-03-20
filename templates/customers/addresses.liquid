@@ -69,7 +69,7 @@ button[type=reset] {
                   </button>
                   <div id="AddAddress">
                     <h2 id="AddressNewHeading">{{ 'customer.addresses.add_new' | t }}</h2>
-                    <form action="">
+                    {%- form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' -%}
                       <div class="field">
                         <label for="AddressFirstNameNew">Name</label>
                         <div>
@@ -136,7 +136,7 @@ button[type=reset] {
                         <button>{{ 'customer.addresses.add' | t }}</button>
                         <button type="reset">{{ 'customer.addresses.cancel' | t }}</button>
                       </div>
-                    </form>
+                    {%- endform -%}
                   </div>
                 </div>
             
