@@ -51,181 +51,89 @@
 .template-search .template-search__header .template-search__search form .field button svg {
   width: 15px;
 }
-.template-search .page-width .facets-container {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(2, auto);
+.template-search .page-width .collection_filters .categories {
+  display: none !important;
 }
-.template-search .page-width .facets-container .facets {
-  display: block;
-  grid-column-start: span 2;
+.template-search .page-width .collection_filters .filters .txt_desp.util_pc {
+  display: none !important;
 }
-.template-search .page-width .facets-container .facets form {
-  display: grid;
-  gap: 0 50px;
-  grid-template-columns: 1fr -webkit-max-content max-content;
-  grid-template-columns: 1fr max-content max-content;
-  margin-bottom: 5px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper {
+.template-search .page-width .collection_filters .filters .facets form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper h2 {
-  margin-right: 15px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details {
-  margin-right: 35px;
-  position: relative;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary {
-  list-style: none;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div span {
+.template-search .page-width .collection_filters .filters .facets form .txt_desp.util_sp h3 {
+  font-size: 16px;
   font-weight: 500;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div svg {
-  width: 10px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display {
-  border: 1px solid #f3f3f3;
-  position: absolute;
-  overflow-y: auto;
-  width: 350px;
-  max-height: 250px;
-  background: white;
-  top: 40px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header {
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 20px;
+  width: 100%;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header span {
-  font-size: 15px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header .facets__reset {
-  font-size: 14px;
-  color: black;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list {
-  border-top: 1px solid #f3f3f3;
-  padding: 20px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item {
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .ttl_filters {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item:last-child {
-  margin-bottom: 0;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox {
-  position: relative;
-  font-size: 15px;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input {
-  position: absolute;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input:checked ~ .icon-checkmark {
-  visibility: visible;
-}
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox svg {
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .ttl_filters img {
   width: 20px;
   height: 20px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display {
+  border: 1px solid #dddddd;
+  background: white;
+  width: 290px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list .facets_item label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list .facets_item label input {
   margin-right: 10px;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox .icon-checkmark {
-  visibility: hidden;
-  position: absolute;
-  top: 0;
-  z-index: 5;
-  left: 3px;
-  width: 13px;
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .reset {
+  border-top: 1px solid #dddddd;
+  padding: 10px;
+  text-align: right;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price {
-  border-top: 1px solid #f3f3f3;
-  padding: 20px;
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .reset a {
+  color: black;
+  text-underline-offset: 3px;
+}
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_price .facets__price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px 15px;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field {
-  position: relative;
+.template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_price .facets__price input {
+  height: 30px;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__input {
-  border: 1px solid;
-  padding: 15px;
+.template-search .page-width .collection_filters .filters .wrapper {
+  display: none !important;
 }
-.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__label {
-  position: absolute;
-  left: 15px;
-  top: 15px;
-}
-.template-search .page-width .facets-container .facets form .active-facets {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: 100%;
-  grid-column: 1 / -1;
-  grid-row: 2;
-  margin-top: 5px;
-}
-.template-search .page-width .facets-container .facets form .sorting {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  grid-column: 2;
-  grid-row: 1;
-}
-.template-search .page-width .facets-container .facets form .sorting .facet-filters__field {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-.template-search .page-width .facets-container .facets form .sorting .facet-filters__field h2 {
-  padding-right: 15px;
-}
-.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select {
-  position: relative;
-}
-.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select select {
-  border: 0;
-  width: 100%;
-  padding-right: 15px;
-  font-size: 16px;
-}
-.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select svg {
-  position: absolute;
-  width: 10px;
-  right: 0;
-  top: 6px;
+.template-search #ProductGridContainer ul li a .item_content .thumb img {
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
