@@ -30,8 +30,24 @@
                   	</li>
                     <li id="header_upper-search">
                         <div id="header_upper_search_form" class="search_content">
-                            <form role="search" method="get" action="">
-                                <input id="header_upper_search__input" name="s" type="text" value="">
+                            <form role="search" method="get" action="{{ routes.search_url }}" role="search" class="search search-modal__form">
+                                <input id="header_upper_search__input" id="Search-In-Modal"
+                                      type="search"
+                                      name="q"
+                                      value=""
+                                      placeholder="{{ 'general.search.search' | t }}"
+                                      {%- if settings.predictive_search_enabled -%}
+                                        role="combobox"
+                                        aria-expanded="false"
+                                        aria-owns="predictive-search-results-list"
+                                        aria-controls="predictive-search-results-list"
+                                        aria-haspopup="listbox"
+                                        aria-autocomplete="list"
+                                        autocorrect="off"
+                                        autocomplete="off"
+                                        autocapitalize="off"
+                                        spellcheck="false"
+                                      {%- endif -%}>
                                 <button class="p-header__upper-search__submit icon_button">
                                 </button>
                             </form>
