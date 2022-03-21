@@ -128,6 +128,7 @@
 }
 .template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_price .facets__price input {
   height: 30px;
+  border: 1px solid;
 }
 .template-search .page-width .collection_filters .filters .wrapper {
   display: none !important;
