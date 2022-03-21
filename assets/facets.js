@@ -10,6 +10,7 @@ class FacetFiltersForm extends HTMLElement {
     this.querySelector('form').addEventListener('input', this.debouncedOnSubmit.bind(this));
 
     const facetWrapper = this.querySelector('#FacetsWrapperDesktop');
+    if (facetWrapper) facetWrapper.addEventListener('keyup', onKeyUpEscape);
   }
 
   static setListeners() {
@@ -41,6 +42,7 @@ class FacetFiltersForm extends HTMLElement {
         FacetFiltersForm.renderSectionFromFetch(url, event);
     });
 
+    if (updateURLHash) FacetFiltersForm.updateURLHash(searchParams);
   }
 
   static renderSectionFromFetch(url, event) {
@@ -64,13 +66,12 @@ class FacetFiltersForm extends HTMLElement {
     document.getElementById('ProductGridContainer').innerHTML = new DOMParser().parseFromString(html, 'text/html').getElementById('ProductGridContainer').innerHTML;
   }
 
-  
-
+ 
   static renderFilters(html, event) {
     const parsedHTML = new DOMParser().parseFromString(html, 'text/html');
 
     const facetDetailsElements =
-      parsedHTML.querySelectorAll('#FacetFiltersForm .js-filter');
+      parsedHTML.querySelectorAll('#FacetFiltersForm .js-filter, #FacetFiltersFormMobile .js-filter');
     const matchesIndex = (element) => {
       const jsFilter = event ? event.target.closest('.js-filter') : undefined;
       return jsFilter ? element.dataset.index === jsFilter.dataset.index : false;
@@ -101,13 +102,14 @@ class FacetFiltersForm extends HTMLElement {
   }
 
   static renderAdditionalElements(html) {
-    const mobileElementSelectors = ['.sorting'];
+    const mobileElementSelectors = ['.mobile-facets__open', '.mobile-facets__count', '.sorting'];
 
     mobileElementSelectors.forEach((selector) => {
       if (!html.querySelector(selector)) return;
       document.querySelector(selector).innerHTML = html.querySelector(selector).innerHTML;
     });
 
+    document.getElementById('FacetFiltersFormMobile').closest('menu-drawer').bindEvents();
   }
 
   static renderCounts(source, target) {
@@ -119,11 +121,14 @@ class FacetFiltersForm extends HTMLElement {
     }
   }
 
+  static updateURLHash(searchParams) {
+    history.pushState({ searchParams }, '', `${window.location.pathname}${searchParams && '?'.concat(searchParams)}`);
+  }
 
   static getSections() {
     return [
       {
-        section: document.getElementById('list_collection').dataset.id,
+        section: document.getElementById('product-grid').dataset.id,
       }
     ]
   }
