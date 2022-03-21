@@ -1,5 +1,5 @@
  {% comment %}
-    Renders facets (filtering and sorting)
+    Renders facet-search (filtering and sorting)
 
     Accepts:
     - results: {Object} Collection or Search object
@@ -8,7 +8,7 @@
     - collapse_on_larger_devices: {Boolean} Collapse filtering/sorting into menu on larger devices when true
 
     Usage:
-    {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true %}
+    {% render 'facet-search', results: collection, enable_filtering: true, enable_sorting: true %}
 {% endcomment %}
 
 {%- liquid
