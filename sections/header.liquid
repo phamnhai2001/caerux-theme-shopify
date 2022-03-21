@@ -58,13 +58,9 @@
                     </li>
                     <li class="header_welcart_cart header__icons">
                         <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
-                            {%- liquid
-                              if cart == empty
-                                render 'icon-cart-empty'
-                              else
-                                render 'icon-cart'
-                              endif
-                            -%}
+                            <span class="header_welcart_cart_badge">
+                                    <img src="{{'cart.svg' | asset_url }}" alt="">
+                            </span>
                             <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
                             {%- if cart != empty -%}
                               <div class="cart-count-bubble">
