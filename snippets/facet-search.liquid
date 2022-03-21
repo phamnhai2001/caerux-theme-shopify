@@ -1,11 +1,10 @@
  {% comment %}
-    Renders facet-search (filtering and sorting)
+    Renders facets (filtering and sorting)
 
     Accepts:
     - results: {Object} Collection or Search object
     - enable_filtering: {Boolean} Show filtering when true
     - enable_sorting: {Boolean} Show sorting when true
-    - collapse_on_larger_devices: {Boolean} Collapse filtering/sorting into menu on larger devices when true
 
     Usage:
     {% render 'facet-search', results: collection, enable_filtering: true, enable_sorting: true %}
@@ -35,7 +34,7 @@
                       {%- for filter in results.filters -%}
                         {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                         {% case filter.type %}
-                        {% when 'list' %}
+                        	{% when 'list' %}
                             <details id="Details-{{ forloop.index }}-{{ section.id }}"
                                class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
                                 <summary class="facets__summary caption-large focus-offset">
