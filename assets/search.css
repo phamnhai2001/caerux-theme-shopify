@@ -38,41 +38,44 @@ ul, ol {
 /* automatic size vh */
 /* text clamp */
 /* anime In order */
-.inner .template-search {
+.template-search {
   padding-top: 15%;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 88.888%;
 }
-.inner .template-search .template-search__header {
+.template-search .template-search__header {
   margin-bottom: 80px;
 }
-.inner .template-search .template-search__header .h2 {
+.template-search .template-search__header .h2 {
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
   margin-bottom: 30px;
 }
-.inner .template-search .template-search__header .template-search__search form {
+.template-search .template-search__header .template-search__search form {
   max-width: 500px;
   margin: 0 auto;
 }
-.inner .template-search .template-search__header .template-search__search form .field {
+.template-search .template-search__header .template-search__search form .field {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.inner .template-search .template-search__header .template-search__search form .field .search__input {
+.template-search .template-search__header .template-search__search form .field .search__input {
   width: 100%;
   height: 55px;
   border: 1px solid;
   padding: 15px;
 }
-.inner .template-search .template-search__header .template-search__search form .field label {
+.template-search .template-search__header .template-search__search form .field label {
   position: absolute;
   left: 15px;
   top: 6px;
   font-size: 12px;
 }
-.inner .template-search .template-search__header .template-search__search form .field button {
+.template-search .template-search__header .template-search__search form .field button {
   border: 0;
   cursor: pointer;
   display: -webkit-box;
@@ -85,47 +88,47 @@ ul, ol {
   top: 20px;
   background: none;
 }
-.inner .template-search .template-search__header .template-search__search form .field button svg {
+.template-search .template-search__header .template-search__search form .field button svg {
   width: 15px;
 }
-.inner .template-search .page-width .facets-container {
+.template-search .page-width .facets-container {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(2, auto);
 }
-.inner .template-search .page-width .facets-container .facets {
+.template-search .page-width .facets-container .facets {
   display: block;
   grid-column-start: span 2;
 }
-.inner .template-search .page-width .facets-container .facets form {
+.template-search .page-width .facets-container .facets form {
   display: grid;
   gap: 0 50px;
   grid-template-columns: 1fr -webkit-max-content max-content;
   grid-template-columns: 1fr max-content max-content;
   margin-bottom: 5px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper {
+.template-search .page-width .facets-container .facets form .facets__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper h2 {
+.template-search .page-width .facets-container .facets form .facets__wrapper h2 {
   margin-right: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details {
+.template-search .page-width .facets-container .facets form .facets__wrapper details {
   margin-right: 35px;
   position: relative;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary {
   list-style: none;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div span {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div span {
   font-weight: 500;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div svg {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__summary div svg {
   width: 10px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display {
   border: 1px solid #f3f3f3;
   position: absolute;
   overflow-y: auto;
@@ -134,7 +137,7 @@ ul, ol {
   background: white;
   top: 40px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,44 +146,44 @@ ul, ol {
           justify-content: space-between;
   padding: 20px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header span {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header span {
   font-size: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header .facets__reset {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__header .facets__reset {
   font-size: 14px;
   color: black;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list {
   border-top: 1px solid #f3f3f3;
   padding: 20px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item:last-child {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item:last-child {
   margin-bottom: 0;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox {
   position: relative;
   font-size: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input {
   position: absolute;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input:checked ~ .icon-checkmark {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox input:checked ~ .icon-checkmark {
   visibility: visible;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox svg {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox svg {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox .icon-checkmark {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__list .list-menu__item .facet-checkbox .icon-checkmark {
   visibility: hidden;
   position: absolute;
   top: 0;
@@ -188,7 +191,7 @@ ul, ol {
   left: 3px;
   width: 13px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price {
   border-top: 1px solid #f3f3f3;
   padding: 20px;
   display: -webkit-box;
@@ -201,19 +204,19 @@ ul, ol {
       -ms-flex-align: center;
           align-items: center;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field {
   position: relative;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__input {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__input {
   border: 1px solid;
   padding: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__label {
+.template-search .page-width .facets-container .facets form .facets__wrapper details .facets__display .facets__price .field .field__label {
   position: absolute;
   left: 15px;
   top: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .active-facets {
+.template-search .page-width .facets-container .facets form .active-facets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,7 +227,7 @@ ul, ol {
   grid-row: 2;
   margin-top: 5px;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting {
+.template-search .page-width .facets-container .facets form .sorting {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -234,7 +237,7 @@ ul, ol {
   grid-column: 2;
   grid-row: 1;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting .facet-filters__field {
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -248,19 +251,19 @@ ul, ol {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting .facet-filters__field h2 {
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field h2 {
   padding-right: 15px;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select {
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select {
   position: relative;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select select {
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select select {
   border: 0;
   width: 100%;
   padding-right: 15px;
   font-size: 16px;
 }
-.inner .template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select svg {
+.template-search .page-width .facets-container .facets form .sorting .facet-filters__field .select svg {
   position: absolute;
   width: 10px;
   right: 0;
