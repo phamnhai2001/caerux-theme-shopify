@@ -21,15 +21,7 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 -%}
-{% style %}
 
-.facets_price .field .field_input {
-	width: 85px !important;
-}
-.facets__price {
-	display: flex;
-}
-{% endstyle %}
 		<div class="facets-container">
              <facet-filters-form class="facets small-hide">
                  <form id="FacetFiltersForm" class="facets__form">
