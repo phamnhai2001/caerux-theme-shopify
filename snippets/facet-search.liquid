@@ -25,8 +25,10 @@
 		<div class="facets-container">
              <facet-filters-form class="facets small-hide">
                  <form id="FacetFiltersForm" class="facets__form">
+                    {%- if results.terms -%}
                     <input type="hidden" name="q" value="loop">
                     <input name="options[prefix]" type="hidden" value="last">
+                   {%- endif -%}
                    {% if enable_filtering %}
                     <div id="FacetsWrapperDesktop" class="facets__wrapper">
                         <h2 class="facets__heading caption-large text-body">{{ 'products.facets.filter_by_label' | t }}</h2>
