@@ -27,6 +27,7 @@
                  <form id="FacetFiltersForm" class="facets__form">
                     <input type="hidden" name="q" value="loop">
                     <input name="options[prefix]" type="hidden" value="last">
+                   {% if enable_filtering %}
                     <div id="FacetsWrapperDesktop" class="facets__wrapper">
                         <h2 class="facets__heading caption-large text-body">{{ 'products.facets.filter_by_label' | t }}</h2>
                       {%- for filter in results.filters -%}
@@ -261,6 +262,7 @@
                                         </a>
                                     </facet-remove>
                                 </div>
+                   {% endif %}
                     <div class="facet-filters sorting caption">
                                     <div class="facet-filters__field">
                                         <h2 class="facet-filters__label caption-large text-body">
