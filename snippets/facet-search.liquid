@@ -51,7 +51,7 @@
                                 </summary>
                                 <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="facets__display">
                                     <div class="facets__header">
-                                        <span class="facets__selected no-js-hidden">0 selected</span>
+                                        <span class="facets__selected no-js-hidden">{{ 'products.facets.filters_selected' | t: count: filter.active_values.size }}</span>
                                         <facet-remove>
                                                 <a href="/search?options%5Bprefix%5D=last&q=loop"
                                                    class="facets__reset link underlined-link">
