@@ -90,7 +90,11 @@
                     <input type="hidden" name="q" value="loop">
                     <input name="options[prefix]" type="hidden" value="last">
                     <div id="FacetsWrapperDesktop" class="facets__wrapper">
-                        <h2 class="facets__heading caption-large text-body">Filter:</h2>
+                        <h2 class="facets__heading caption-large text-body">{{ 'products.facets.filter_by_label' | t }}</h2>
+                      {%- for filter in results.filters -%}
+                        {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
+                        {% case filter.type %}
+                        {% when 'list' %}
                             <details id="Details-1-template--15375595733155__main"
                                class="disclosure-has-popup facets__disclosure js-filter" data-index="1">
                                 <summary class="facets__summary caption-large focus-offset">
@@ -158,6 +162,7 @@
                                             </ul>
                                 </div>
                             </details>
+                      {% when 'price_range' %}
                             <details id="Details-2-template--15375595733155__main"
                                 class="disclosure-has-popup facets__disclosure js-filter" data-index="2">
                                         <summary class="facets__summary caption-large focus-offset">
@@ -199,6 +204,7 @@
                                             </price-range>
                                         </div>
                                     </details>
+                      {% when 'colors' %}
                             <details id="Details-3-template--15375595733155__main"
                                 class="disclosure-has-popup facets__disclosure js-filter" data-index="3">
                                         <summary class="facets__summary caption-large focus-offset">
@@ -301,7 +307,9 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                    </details>
+                              </details>
+                      		{% endcase %}
+            			{%- endfor -%}
                             <noscript>
                                <button type="submit"
                                   class="facets__button-no-js button button--tertiary">Filter</button>
