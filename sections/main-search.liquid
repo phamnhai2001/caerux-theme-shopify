@@ -84,7 +84,7 @@
     {%- if search.filters != empty -%}
       {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
         <div class="page-width">
-          
+          {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
         </div>
       {%- endif -%}
     {%- endif -%}
