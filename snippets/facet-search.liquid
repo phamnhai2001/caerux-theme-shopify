@@ -36,7 +36,7 @@
                         {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                         {% case filter.type %}
                         {% when 'list' %}
-                            <details id="Details-1-template--15375595733155__main"
+                            <details id="Details-{{ forloop.index }}-{{ section.id }}"
                                class="disclosure-has-popup facets__disclosure js-filter" data-index="1">
                                 <summary class="facets__summary caption-large focus-offset">
                                     <div>
