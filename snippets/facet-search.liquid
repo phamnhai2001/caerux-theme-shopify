@@ -37,7 +37,7 @@
                         {% case filter.type %}
                         {% when 'list' %}
                             <details id="Details-{{ forloop.index }}-{{ section.id }}"
-                               class="disclosure-has-popup facets__disclosure js-filter" data-index="1">
+                               class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
                                 <summary class="facets__summary caption-large focus-offset">
                                     <div>
                                         <span>{{ filter.label | escape }}</span>
@@ -49,7 +49,7 @@
                                         </svg>
                                      </div>
                                 </summary>
-                                <div id="Facet-1-template--15375595733155__main" class="facets__display">
+                                <div id="Facet-{{ forloop.index }}-{{ section.id }}" class="facets__display">
                                     <div class="facets__header">
                                         <span class="facets__selected no-js-hidden">0 selected</span>
                                         <facet-remove>
