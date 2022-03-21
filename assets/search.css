@@ -51,6 +51,6 @@
 .template-search .template-search__header .template-search__search form .field button svg {
   width: 15px;
 }
-.categories {
+.collection_filters .categories {
 	display: none !important;
 }
