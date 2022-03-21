@@ -267,8 +267,8 @@
   }
 }
 .active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
   -webkit-transition: visibility 0s,-webkit-transform 200ms ease;
   transition: visibility 0s,-webkit-transform 200ms ease;
   transition: transform 200ms ease,visibility 0s;
