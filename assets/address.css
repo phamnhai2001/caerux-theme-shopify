@@ -157,7 +157,7 @@ ul, ol {
     margin: 0 0 30px;
   font-weight: 600;
 }
-.addresses ul li button:last-child() {
+.addresses ul li button:last-child {
 	border-right: 0;
 }
 .addresses ul li .edit {
