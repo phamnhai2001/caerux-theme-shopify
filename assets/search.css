@@ -134,6 +134,11 @@
 .template-search .page-width .collection_filters .filters .wrapper {
   display: none !important;
 }
+.template-search #ProductGridContainer ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .template-search #ProductGridContainer ul li a .item_content .thumb img {
   width: 200px;
   -o-object-fit: cover;
