@@ -173,3 +173,6 @@ ul, ol {
 input[type=text],input[type=tel], select{
 	outline: none;
 }
+li[data-address] {
+border-top: 1px solid #dddddd;
+}
