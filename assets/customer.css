@@ -477,6 +477,7 @@
     align-items: center;
     color: black;
     text-decoration: underline;
+    text-underline-offset: 3px;
 }
 
 .account a svg {
