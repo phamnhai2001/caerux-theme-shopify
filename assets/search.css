@@ -151,6 +151,7 @@
 }
 a.item_type .item_content .thumb {
 	width: 200px;
+  margin-bottom: 10px;
 }
 .template-search #ProductGridContainer ul li a .item_content .txt_desp {
 	font-size: 16px;
