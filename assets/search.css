@@ -74,6 +74,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  display: none;
 }
 .template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .ttl_filters {
   display: -webkit-box;
