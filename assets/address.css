@@ -38,6 +38,7 @@ ul, ol {
     max-width: 1200px;
     width: 88.888%;
     margin: 0 auto 80px;
+  text-align: left;
 }
 .addresses h1 {
   font-size: 40px;
