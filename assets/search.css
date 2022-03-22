@@ -218,3 +218,8 @@ font-weight: 500;
     line-height: 30px;
     text-underline-offset: 3px;
 }
+.template-search__search p {
+  padding: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}
