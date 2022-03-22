@@ -141,17 +141,24 @@
   flex-wrap: wrap;
 }
 .template-search #ProductGridContainer ul li {
-	width: 25%;
+	width: 24.888%;
 }
 .template-search #ProductGridContainer ul li a .item_content .thumb img {
-  width: 200px;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
+     display: block;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 a.item_type .item_content .thumb {
-	width: 200px;
-  margin-bottom: 10px;
+	margin-bottom: 14px;
+    overflow: hidden;
+    padding-top: 60.526%;
+    position: relative;
+    width: 100%;
 }
 .template-search #ProductGridContainer ul li a .item_content .txt_desp h3{
 	font-size: 16px;
