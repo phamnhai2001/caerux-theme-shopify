@@ -143,6 +143,7 @@
 .template-search #ProductGridContainer ul li {
 	width: 23.888%;
       padding: 0 10px;
+  margin-bottom: 30px;
 }
 .template-search #ProductGridContainer ul li a .item_content .thumb img {
      display: block;
