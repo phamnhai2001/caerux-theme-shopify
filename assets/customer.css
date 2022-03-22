@@ -409,6 +409,8 @@
      background: #f7f7f7;
     padding: 40px 60px;
     text-align: left;
+  width: 88.888%;
+    margin: 0 auto;
   box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 }
 
