@@ -107,6 +107,7 @@
 }
 .template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .facets_list .facets_item label input {
   margin-right: 10px;
+  appearance: auto;
 }
 .template-search .page-width .collection_filters .filters .facets form .facets__wrapper .js-filter .facets_display .reset {
   border-top: 1px solid #dddddd;
