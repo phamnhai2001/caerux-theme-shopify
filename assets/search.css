@@ -171,7 +171,7 @@ a .item_content .txt_desp p {
 	font-size: 16px;
     font-weight: 600;
 }
-a .item_content .txt_desp p span {
+a .item_content .txt_desp p span.sold_out {
 	color: #fff;
     border-radius: 15px;
     font-size: 12px;
