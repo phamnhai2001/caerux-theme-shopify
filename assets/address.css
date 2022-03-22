@@ -35,6 +35,9 @@ ul, ol {
 
 .addresses {
   padding-top: 15%;
+    max-width: 1200px;
+    width: 88.888%;
+    margin: 0 auto 80px;
 }
 .addresses h1 {
   font-size: 40px;
