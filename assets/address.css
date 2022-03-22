@@ -158,7 +158,7 @@ ul, ol {
   font-weight: 600;
 }
 .addresses ul li button:last-child {
-	border-right: 0;
+	border-right: none;
 }
 .addresses ul li .edit {
   padding-top: 30px;
