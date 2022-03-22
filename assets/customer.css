@@ -413,7 +413,7 @@
 
 @media screen and (min-width: 750px) {
   :is(.account, .order) {
-    padding: 0 5rem;
+/*     padding: 0 5rem; */
   }
 }
 
