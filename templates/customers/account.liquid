@@ -34,8 +34,8 @@
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
      
-<!--       {% paginate customer.orders by 20 %} -->
-<!--         {%- if customer.orders.size > 0 -%} -->
+      {% paginate customer.orders by 20 %}
+        {%- if customer.orders.size == 0 -%}
           <ul class="list_order_history">
                             <li>
                                 <div class="item_my_page">
@@ -68,9 +68,9 @@
                                 </div>
                             </li>
                         </ul>
-<!--         {%- else -%}
+        {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
-        {%- endif -%} -->
+        {%- endif -%}
 
         {%- if paginate.pages > 1 -%}
           {%- if paginate.parts.size > 0 -%}
@@ -113,7 +113,7 @@
               </nav>
           {%- endif -%}
         {%- endif -%}
-<!--       {% endpaginate %} -->
+      {% endpaginate %}
     </div>
 
     <div class="info">
