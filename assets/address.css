@@ -34,6 +34,7 @@ ul, ol {
 }
 
 .addresses {
+  background: #f7f7f7;
   padding: 30px 60px;
     max-width: 1200px;
     width: 88.888%;
