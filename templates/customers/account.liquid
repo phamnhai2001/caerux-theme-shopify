@@ -67,9 +67,11 @@
           </table>
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
-<a href="{{ customer.orders.customer_url }}" aria-label="">
-                      #1001
-                    </a>
+       {%- for order in customer.orders -%}
+        <a href="{{ customer.orders.customer_url }}" aria-label="">
+                              #1001
+                            </a>
+              {%- endfor -%}
         {%- endif -%}
 
         {%- if paginate.pages > 1 -%}
