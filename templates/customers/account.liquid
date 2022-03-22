@@ -68,7 +68,7 @@
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
        {%- for order in customer.orders -%}
-<a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+<a href="{{ order.customer_url }}" aria-label="">
                       #1001
                     </a>
       {%- endfor -%}
