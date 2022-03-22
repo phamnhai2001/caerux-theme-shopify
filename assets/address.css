@@ -34,7 +34,7 @@ ul, ol {
 }
 
 .addresses {
-  padding-top: 15%;
+  padding: 15% 30px 0;
     max-width: 1200px;
     width: 88.888%;
     margin: 0 auto 80px;
