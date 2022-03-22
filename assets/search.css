@@ -171,6 +171,13 @@ a .item_content .txt_desp p {
 	font-size: 16px;
     font-weight: 600;
 }
+a .item_content .txt_desp p span {
+	color: #fff;
+    border-radius: 15px;
+    font-size: 12px;
+    padding: 4px 10px;
+    background: #d90000;
+}
 .card__inner {
     text-align: left;
 }
