@@ -169,6 +169,6 @@ ul, ol {
     margin-bottom: 15px;
   font-weight: 500;
 }
-input[type=text],input[type=tel]{
+input[type=text],input[type=tel], select{
 	outline: none;
 }
