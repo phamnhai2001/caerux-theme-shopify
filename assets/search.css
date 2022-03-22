@@ -205,3 +205,8 @@ font-weight: 500;
     height: 220px;
     display: flex;
 }
+.card--search .card__inner {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    width: 100%;
+}
