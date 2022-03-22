@@ -36,50 +36,40 @@
      
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
-          <table role="table" class="order-history">
-            <caption class="visually-hidden">{{ 'customer.orders.title' | t }}</caption>
-            <thead role="rowgroup">
-              <tr role="row">
-                <th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
-                <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
-                <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
-                <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
-                <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
-              </tr>
-            </thead>
-            <tbody role="rowgroup">
-              {%- for order in customer.orders -%}
-                <tr role="row">
-                  <td
-                    id="RowOrder"
-                    role="cell"
-                    headers="ColumnOrder"
-                    data-label="{{ 'customer.orders.order_number' | t }}"
-                  >
-                    
-                  </td>
-                  <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
-                    {{ order.created_at | time_tag: format: 'date' }}
-                  </td>
-                  <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
-                    {{ order.financial_status_label }}
-                  </td>
-                  <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
-                    {{ order.fulfillment_status_label }}
-                  </td>
-                  <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
-                    {{ order.total_price | money_with_currency }}</td>
-                </tr>
-              {%- endfor -%}
-            </tbody>
-          </table>
+          <ul class="list_order_history">
+                            <li>
+                                <div class="item_my_page">
+                                    <div class="info_order_history">
+                                        <h3>Order number: # 1001<span class="send">Sent</span></h3>
+                                        <span>Order date: 2020/5/1 Number of products: 2 Total: $20.9</span>
+                                        <span>Payment status: Hold</span>
+                                    </div>
+                                    <a href="" class="btn_short">View the details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item_my_page">
+                                    <div class="info_order_history">
+                                        <h3>Order number: # 1001<span class="send">Sent</span></h3>
+                                        <span>Order date: 2020/5/1  Number of products: 2  Total: $20.9</span>
+                                        <span>Payment status: Hold</span>
+                                    </div>
+                                    <a href="" class="btn_short">View the details</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="item_my_page">
+                                    <div class="info_order_history">
+                                        <h3>Order number: # 1001<span class="send">Sent</span></h3>
+                                        <span>Order date: 2020/5/1 Number of products: 2 Total: $20.9</span>
+                                        <span>Payment status: Hold</span>
+                                    </div>
+                                    <a href="" class="btn_short">View the details</a>
+                                </div>
+                            </li>
+                        </ul>
         {%- else -%}
           <p>{{ 'customer.orders.none' | t }}</p>
-       {%- for order in customer.orders -%}
-        <a href="{{ customer.orders.customer_url }}" aria-label="">
-                              #1001
-                            </a>
-              {%- endfor -%}
         {%- endif -%}
 
         {%- if paginate.pages > 1 -%}
