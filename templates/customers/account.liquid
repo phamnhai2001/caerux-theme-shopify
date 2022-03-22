@@ -25,9 +25,11 @@
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
+      {%- for order in customer.orders -%}
 <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
                       {{ order.name }}
                     </a>
+      {%- endfor -%}
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <table role="table" class="order-history">
