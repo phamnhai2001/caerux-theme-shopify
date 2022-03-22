@@ -185,6 +185,9 @@ a .item_content .txt_desp p {
   font-weight: 600;
   margin-bottom: 5px;
 }
+.card__content .card-article-info {
+	margin-bottom: 8px;
+}
 .card__content .card-article-info span time {
 font-weight: 500;
     color: #8d8787;
