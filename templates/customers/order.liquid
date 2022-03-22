@@ -130,18 +130,20 @@
                                 </div>
                             </div>
                             <div class="billing_address">
-                                <h3>Billing address</h3>
-                                <span>Ultrataro</span>
-                                <span>〒150-0011</span>
-                                <span>1-28-9 Higashi, Shibuya-ku, Tokyo</span>
-                                <span>Japan</span>
+                                <h3>{{ 'customer.order.billing_address' | t }}</h3>
+                                <span>
+                                  <strong>{{ 'customer.order.payment_status' | t }}:</strong>
+                                  {{ order.financial_status_label }}
+                                </span>
+                                <span>{{ order.billing_address | format_address }}</span>
                             </div>
                             <div class="shipping_address">
-                                <h3>Shipping address</h3>
-                                <span>Shipping status: Ultrataro</span>
-                                <span>〒150-0011</span>
-                                <span>1-28-9 Higashi, Shibuya-ku, Tokyo</span>
-                                <span>Japan</span>
+                                <h3>{{ 'customer.order.shipping_address' | t }}</h3>
+                                <span>
+                                  <strong>{{ 'customer.order.fulfillment_status' | t }}:</strong>
+                                  {{ order.fulfillment_status_label }}
+                                </span>       
+                                <span>{{ order.shipping_address | format_address }}</span>
                             </div>
                         </div>
                     </div>
