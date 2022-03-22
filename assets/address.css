@@ -149,11 +149,12 @@ ul, ol {
   cursor: pointer;
 }
 .addresses ul li button {
-  background: none;
-  border: 1px solid;
-  padding: 10px 40px;
-  cursor: pointer;
-  margin: 0 0 30px;
+  padding: 3px 19px;
+    cursor: pointer;
+    border: none;
+    border-right: 1px solid #dddddd;
+    background: none;
+    margin: 0 0 30px;
 }
 .addresses ul li .edit {
   padding-top: 30px;
