@@ -153,7 +153,11 @@ a.item_type .item_content .thumb {
 	width: 200px;
   margin-bottom: 10px;
 }
-.template-search #ProductGridContainer ul li a .item_content .txt_desp {
+.template-search #ProductGridContainer ul li a .item_content .txt_desp h3{
 	font-size: 16px;
     font-weight: 600;
+  margin-bottom: 10px;
+}
+a .item_content .txt_desp p {
+	
 }
