@@ -40,6 +40,7 @@ ul, ol {
     width: 88.888%;
     margin: 0 auto 80px;
   text-align: left;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .addresses h1 {
   font-size: 40px;
