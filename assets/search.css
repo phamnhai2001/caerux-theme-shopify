@@ -149,3 +149,6 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+a.item_type .item_content .thumb {
+	width: 200px;
+}
