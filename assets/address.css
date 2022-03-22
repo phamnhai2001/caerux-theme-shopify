@@ -155,6 +155,7 @@ ul, ol {
     border-right: 1px solid #dddddd;
     background: none;
   font-weight: 600;
+  padding-right: 15px;
 }
 .addresses ul li button:last-child {
 	border-right: none;
