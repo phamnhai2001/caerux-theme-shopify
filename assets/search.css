@@ -141,7 +141,8 @@
   flex-wrap: wrap;
 }
 .template-search #ProductGridContainer ul li {
-	width: 24.888%;
+	width: 23.888%;
+      padding: 0 10px;
 }
 .template-search #ProductGridContainer ul li a .item_content .thumb img {
      display: block;
