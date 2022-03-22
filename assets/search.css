@@ -200,3 +200,8 @@ font-weight: 500;
     display: inline-block;
     border-radius: 25px;
 }
+.card--search {
+    background: #f4f6f8;
+    height: 220px;
+    display: flex;
+}
