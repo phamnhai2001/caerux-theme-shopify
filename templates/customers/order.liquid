@@ -4,15 +4,15 @@
             <div class="upper">
                 <div class="navi_top">
                     <ul>
-                        <li><a href="/"><img src="assets/images/bx-home.svg" alt=""></a></li>
-                        <li><span class="current">Order details</span></li>
+                        <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
+                        <li><span class="current">{{ 'customer.order.title' | t: name: order.name }}</span></li>
                     </ul>
                 </div>
             </div>
             <section class="section order_history">
                 <div class="inner">
                     <div class="util_pc title">
-                        <span>Order details</span>
+                        <span>{{ 'customer.order.title' | t: name: order.name }}</span>
                     </div>
                     <div class="inner_order_history">
                         <div class="contanier_list_order_history">
