@@ -25,7 +25,9 @@
   <div>
     <div>
       <h2>{{ 'customer.orders.title' | t }}</h2>
-
+<a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+                      {{ order.name }}
+                    </a>
       {% paginate customer.orders by 20 %}
         {%- if customer.orders.size > 0 -%}
           <table role="table" class="order-history">
@@ -48,9 +50,7 @@
                     headers="ColumnOrder"
                     data-label="{{ 'customer.orders.order_number' | t }}"
                   >
-                    <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
-                      {{ order.name }}
-                    </a>
+                    
                   </td>
                   <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
                     {{ order.created_at | time_tag: format: 'date' }}
