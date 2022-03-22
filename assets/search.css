@@ -175,7 +175,7 @@ a .item_content .txt_desp p {
 	height: 100%;
     width: 100%;
 }
-.media.media--cropped .card__content h2 {
+.card__content h2 {
 	font-size: 14px;
   color: black;
   font-weight: 600;
