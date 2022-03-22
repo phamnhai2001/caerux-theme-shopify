@@ -159,5 +159,8 @@ ul, ol {
   padding-top: 30px;
 }
 .addresses ul p {
-	font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  font-weight: 500;
 }
