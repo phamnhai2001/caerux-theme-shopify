@@ -150,12 +150,10 @@ ul, ol {
   cursor: pointer;
 }
 .addresses ul li button {
-  padding: 3px 19px;
     cursor: pointer;
     border: none;
     border-right: 1px solid #dddddd;
     background: none;
-    margin: 0 0 30px;
   font-weight: 600;
 }
 .addresses ul li button:last-child {
