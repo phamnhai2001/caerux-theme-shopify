@@ -211,3 +211,10 @@ font-weight: 500;
     width: 100%;
   text-align: center;
 }
+.card--text-only .card__inner .card__content h2 {
+    margin: 67px 50px;
+    font-size: 20px;
+    text-decoration: underline;
+    line-height: 30px;
+    text-underline-offset: 3px;
+}
