@@ -404,7 +404,7 @@
 
 /* Account/Order */
 :is(.account, .order) {
- max-width: 1300px;
+ max-width: 1200px;
     padding: 0 2rem;
     text-align: left;
     margin: 0 auto;
