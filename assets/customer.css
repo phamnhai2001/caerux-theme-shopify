@@ -442,8 +442,9 @@
 
 :is(.account, .order) p {
   margin: 0 0 2rem;
-    font-size: 18px;
-    color: #95a7b7;
+    font-weight: 500;
+    font-size: 17px;
+    color: #080808;
 }
 
  .info .view-address{
