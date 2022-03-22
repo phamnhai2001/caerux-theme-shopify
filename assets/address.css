@@ -175,4 +175,5 @@ input[type=text],input[type=tel], select{
 }
 li[data-address] {
 border-top: 1px solid #dddddd;
+  margin-bottom: 0;
 }
