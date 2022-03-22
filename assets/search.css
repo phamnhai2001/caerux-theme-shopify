@@ -183,6 +183,7 @@ a .item_content .txt_desp p {
 	font-size: 14px;
   color: black;
   font-weight: 600;
+  margin-bottom: 5px;
 }
 .card__content .card-article-info span time {
 font-weight: 500;
