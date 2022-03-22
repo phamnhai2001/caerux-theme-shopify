@@ -158,3 +158,6 @@ ul, ol {
 .addresses ul li .edit {
   padding-top: 30px;
 }
+.addresses ul p {
+	font-weight: 500;
+}
