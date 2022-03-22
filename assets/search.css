@@ -171,3 +171,7 @@ a .item_content .txt_desp p {
 	font-size: 16px;
     font-weight: 600;
 }
+.media .media--cropped img {
+	height: 100%;
+    width: 100%;
+}
