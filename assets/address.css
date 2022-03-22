@@ -47,6 +47,7 @@ ul, ol {
   text-decoration: underline;
   margin-bottom: 30px;
   display: block;
+  text-underline-offset: 3px;
 }
 .addresses div button[type=button] {
   background: black;
