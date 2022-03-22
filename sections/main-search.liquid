@@ -15,10 +15,9 @@
         {%- if search.results_count > 0 -%}        
           <p role="status">{{ 'templates.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}</p>
         {%- else if -%}
-      {%- if search.results_count == 0 -%}        
         <p role="status">{{ 'templates.search.no_results' | t: terms: search.terms }}</p>
       {%- endif -%}
-    {%- endif -%
+    {%- endif -%}
     {%- if search.performed -%}
       <h1 class="h2">{{ 'templates.search.title' | t }}</h1>
     {%- else -%}
