@@ -209,4 +209,5 @@ font-weight: 500;
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     width: 100%;
+  text-align: center;
 }
