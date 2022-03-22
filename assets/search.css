@@ -140,6 +140,9 @@
   display: flex;
   flex-wrap: wrap;
 }
+.template-search #ProductGridContainer ul li {
+	width: 25%;
+}
 .template-search #ProductGridContainer ul li a .item_content .thumb img {
   width: 200px;
   height: 200px;
