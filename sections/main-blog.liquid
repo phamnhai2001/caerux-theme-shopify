@@ -1,5 +1,6 @@
 <section class="section" id="blog">
     <div class="inner">
+      {%- paginate blog.articles by 6 -%}
         <h2 class="tlt_section">{{ section.settings.title | escape }}</h2>
         <div class="list_item">
           {%- assign blog = blogs[section.settings.blog] -%}
@@ -34,6 +35,7 @@
             </ul>
           {%- endif -%}
         </div>
+      {%- endpaginate -%}
     </div>
 </section>
 
