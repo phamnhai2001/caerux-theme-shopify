@@ -21,7 +21,7 @@
                         <span class="visually-hidden">
                           {%- liquid
                             if customer
-                              echo 'customer.name' | t
+                              echo 'customer.last_name' | t
                             else
                               echo 'customer.log_in' | t
                             endif
