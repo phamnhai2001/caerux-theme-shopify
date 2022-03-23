@@ -88,6 +88,9 @@
 .cart_empty .cart_wrapper h2 {
 	display: none;
 }
+a .visually-hidden {
+	position: inherit !important;
+}
 {%- endstyle -%}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
