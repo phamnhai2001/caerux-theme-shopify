@@ -21,7 +21,7 @@
                         <span class="visually-hidden">
                           {%- liquid
                             if customer
-                              echo 'customer.account_fallback' | t
+                              echo 'customer.name' | t
                             else
                               echo 'customer.log_in' | t
                             endif
@@ -70,9 +70,6 @@
                               </div>
                             {%- endif -%}
                           </a>
-<!--                         <div class="header_view_cart" id="header_view_cart">
-                            <p class="wc_empty_cart">There are no items in the cart right now.</p>
-                        </div> -->
                     </li>
                 </ul>
             </div>
