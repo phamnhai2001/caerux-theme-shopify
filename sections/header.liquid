@@ -17,6 +17,7 @@
                     <li class="util_pc">
                       
                       <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
+                        login
                         <span class="visually-hidden">
                           {%- liquid
                             if customer
