@@ -36,7 +36,7 @@
           {%- endif -%}
         </div>
        {%- if paginate.pages > 1 -%}
-            {% render 'pagination', paginate: paginate, anchor: '' %}
+            {%- render 'pagination', paginate: paginate -%}
        {%- endif -%}
       {%- endpaginate -%}
     </div>
