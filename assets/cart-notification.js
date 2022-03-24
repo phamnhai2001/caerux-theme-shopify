@@ -79,7 +79,15 @@ let check = document.getElementById('check');
 let hidden = check.getAttribute("hidden");
 
     if (hidden) {
-       check.removeAttribute("hidden");
+       check.setAttribute("hidden", "hidden");
+       open.addEventListener('click', () => {
+      		cart_notify.classList.remove('animate');
+  		});
+	console.log('hidden');
+      
+    } else {
+      
+ check.removeAttribute("hidden");
       open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
       });
@@ -87,13 +95,6 @@ let hidden = check.getAttribute("hidden");
           cart_notify.classList.remove('animate');
       });
 console.log('visiable');
-      
-    } else {
-       check.setAttribute("hidden", "hidden");
-       open.addEventListener('click', () => {
-      		cart_notify.classList.remove('animate');
-  		});
-	console.log('hidden');
     }
   
 //  open.addEventListener('click', () => {
