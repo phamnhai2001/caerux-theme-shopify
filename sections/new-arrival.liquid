@@ -14,7 +14,10 @@
                                 <div class="txt_desp">
                                      <h3>{{ product.title }}</h3>
 
-                                     <p>{{ product.price | money }}</p>
+                                     <p>
+                                       {{ product.price | money }}
+                                       <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
+                                  	</p>
                                 </div>
                             </div>
                     	</a>
