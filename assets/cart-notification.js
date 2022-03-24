@@ -79,7 +79,7 @@ let check = document.getElementById('check');
 
   
  open.addEventListener('click', () => {
-                       
+                       console.log(check.isHidden);
   	if (check.isHidden) {
       cart_notify.classList.remove('animate');
       
