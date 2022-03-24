@@ -81,7 +81,7 @@ if (check.offsetParent === null) {
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
-console.log("Element is hidden.");
+	console.log("Element is hidden.");
 
 
 } else {
