@@ -14,7 +14,14 @@
                                 <div class="txt_desp">
                                      <h3>{{ product.title }}</h3>
 
-                                     <p>{{ product.price | money }}</p>
+                                     <p>
+                                       {{ product.price | money }}
+                                        {%- if product.available == false -%}
+                                    <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
+                                      {%- elsif product.compare_at_price > product.price and product.available -%}
+                                    <span class="sale">{{ 'products.product.on_sale' | t }}</span>
+                                      {%- endif -%}
+                                  </p>
                                 </div>
                             </div>
                     	</a>
