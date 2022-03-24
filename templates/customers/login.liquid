@@ -80,6 +80,7 @@
                     {{ 'customer.login_page.title' | t }}
                   </h1>
                     <div>
+                      <div class="form">
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
                             <ul>
@@ -119,6 +120,7 @@
                           </div>
                       {%- endif -%}
                     </div>
+                  </div>
                     <div class="login_sns">
                         <h3>Login with social</h3>
                         <ul class="vertical_list_login">
