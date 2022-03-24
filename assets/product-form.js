@@ -53,28 +53,7 @@ if (!customElements.get('product-form')) {
 
       if (errorMessage) {
         this.errorMessage.textContent = errorMessage;
-          const open = document.getElementById('cart_view');
-          const cart_notify = document.getElementById('cart');
-          const close = document.getElementById('close');
-
-
-          let check = document.getElementById('check');
-
-
-
-           open.addEventListener('click', () => {
-              if (check.offsetParent != null) {
-                cart_notify.classList.remove('animate');
-
-               }
-               if (check.offsetParent == null) {
-          		cart_notify.classList.add('animate');
-                close.addEventListener('click', () => {
-                   cart_notify.classList.remove('animate');
-                });
-               }
-           });
-
+          
          }
       }
     }
