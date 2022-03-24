@@ -40,7 +40,7 @@
   }
 }
 #wrapper.login section.section#content .inner .login_wrapper .login_form {
-  width: 50%;
+  width: 100%;
 }
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper .login_form {
