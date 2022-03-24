@@ -11064,3 +11064,10 @@ header#header.header_home02 > .inner .header_main .header_main_nav nav.global_na
 .addresses ul li .edit {
   padding-top: 30px;
 }
+.shopify-challenge__container .shopify-challenge__button {
+    	background: black;
+      border: none;
+      font-size: 14px;
+      color: #fff;
+      padding: 10px 15px;
+    }
