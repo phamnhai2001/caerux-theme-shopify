@@ -11,12 +11,13 @@
                 </ul>
             </div>
         </div>
-        <h1 id="recover" tabindex="-1">
-          {{ 'customer.recover_password.title' | t }}
-        </h1>
+        
        <section class="section" id="content">
                 <div class="inner">
                     <div class="reset_password_wrapper">
+                        <h1 id="recover" tabindex="-1">
+                          {{ 'customer.recover_password.title' | t }}
+                        </h1>
                         <div class="reset_password_form">
                             <p>We will notify the registered e-mail address of the URL for resetting the password.</p>
                             {%- form 'recover_customer_password' -%}
@@ -37,12 +38,13 @@
                     </div>
                 </div>
             </section>
-      <h1 id="login" tabindex="-1">
-        {{ 'customer.login_page.title' | t }}
-      </h1>
+      
         <section class="section" id="content">
             <div class="inner">
                 <div class="login_wrapper">
+                  <h1 id="login" tabindex="-1">
+                    {{ 'customer.login_page.title' | t }}
+                  </h1>
                     <div class="login_form">
                         
                           {%- form 'customer_login', id: 'login' -%}
