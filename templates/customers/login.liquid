@@ -6,7 +6,7 @@
 		display: none;
 	}
 	#recover + div {
-display: none;
+		display: none;
 	}
 	#recover:target,#recover:target + div
 	{
@@ -31,7 +31,15 @@ display: none;
        <section class="section" id="content">
                 <div class="inner">
                     <div class="reset_password_wrapper">
-                        <h1 id="recover" tabindex="-1">
+                        
+                    </div>
+                </div>
+            </section>
+      
+        <section class="section" id="content">
+            <div class="inner">
+                <div class="login_wrapper">
+                  <h1 id="recover" tabindex="-1">
                           {{ 'customer.recover_password.title' | t }}
                         </h1>
                         <div>
@@ -65,13 +73,6 @@ display: none;
                                 </a>
                             {%- endform -%}
                         </div>
-                    </div>
-                </div>
-            </section>
-      
-        <section class="section" id="content">
-            <div class="inner">
-                <div class="login_wrapper">
                   <h1 id="login" tabindex="-1">
                     {{ 'customer.login_page.title' | t }}
                   </h1>
