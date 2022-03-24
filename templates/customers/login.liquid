@@ -28,6 +28,9 @@
 .reset_password_form p {
 	margin-bottom: 20px;
 }
+.input_reset {
+	margin-bottom: 20px;
+}
 {% endstyle %}
 <div id="wrapper" class="login">
     <div class="inner">
@@ -58,7 +61,7 @@
                             <p>{{ 'customer.recover_password.subtext' | t }}</p>
                             {%- form 'recover_customer_password', id:'form_reset' -%}
       							{% assign recover_success = form.posted_successfully? %}
-                                <ul>
+                                <ul class="input_reset">
                                     <li>
                                         <input type="email"
                                               value=""
