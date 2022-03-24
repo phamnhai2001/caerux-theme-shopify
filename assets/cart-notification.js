@@ -79,22 +79,20 @@ let check = document.getElementById('check');
 let hidden = check.getAttribute("hidden");
 
     if (hidden) {
-       check.setAttribute("hidden", "hidden");
        open.addEventListener('click', () => {
       		cart_notify.classList.remove('animate');
   		});
-	console.log('hidden');
+		console.log('hidden');
       
     } else {
       
- check.removeAttribute("hidden");
       open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
       });
       close.addEventListener('click', () => {
           cart_notify.classList.remove('animate');
       });
-console.log('visiable');
+	console.log('visiable');
     }
   
 //  open.addEventListener('click', () => {
