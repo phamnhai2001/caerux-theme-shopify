@@ -1,5 +1,5 @@
 Validator({
-    form: '#login',
+    form: '#login_form',
     errorSelector: '.form_message',
     rules: [
         Validator.isEmail('#email'),
