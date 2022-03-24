@@ -68,7 +68,7 @@ const hidden = document.getElementByClassName('product-form__error-message-wrapp
 const open = document.getElementById('cart_view');
 const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
-if(hidden.offsetParent === null){
+if(hidden.is(':hidden')){
   open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
   });
