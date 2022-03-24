@@ -63,13 +63,12 @@ if (!customElements.get('product-form')) {
 
 
            open.addEventListener('click', () => {
-               console.log(check.offsetParent == null);
-              if (check.offsetParent == null) {
+              if (check.offsetParent != null) {
                 cart_notify.classList.remove('animate');
 
                }
                if (check.offsetParent == null) {
-          cart_notify.classList.add('animate');
+          		cart_notify.classList.add('animate');
                 close.addEventListener('click', () => {
                    cart_notify.classList.remove('animate');
                 });
