@@ -226,7 +226,7 @@ a .visually-hidden {
                           {%- when 'buy_buttons' -%}
                           <div {{ block.shopify_attributes }}>
                             <product-form class="btn product-form" {{ block.shopify_attributes }}>
-                              <div class="product-form__error-message-wrapper" role="alert" hidden>
+                              <div class="product-form__error-message-wrapper" id="check" role="alert" hidden>
                                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                                     <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
                                     <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
