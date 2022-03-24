@@ -9,22 +9,6 @@ class CartNotification extends HTMLElement {
     );
   }
 
-//   open() {
-//   	this.addCart = document.getElementById('cart_view');
-
-//     this.addCart.addEventListener('click', () => {
-//         this.notification.classList.add('active');
-//     });
-
-    
-//   }
-
-//   close(){https://nhaipt.myshopify.com/admin/themes/129173520547?key=sections%2Fcart-notification-product.liquid
-//   	this.closeCart = document.getElementById('close');
-// 	this.closeCart.addEventListener('click', () => {
-//         this.notification.classList.remove('active');
-//     });
-//   }
 
   renderContents(parsedState) {
       this.productId = parsedState.id;
