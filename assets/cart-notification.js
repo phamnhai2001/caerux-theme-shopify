@@ -65,3 +65,29 @@ class CartNotification extends HTMLElement {
 customElements.define('cart-notification', CartNotification);
 
 
+// open view cart
+const open = document.getElementById('cart_view');
+const cart_notify = document.getElementById('cart');
+const close = document.getElementById('close');
+
+
+let check = document.getElementById('check');
+
+if (check.offsetParent === null) {
+
+ open.addEventListener('click', () => {
+      cart_notify.classList.add('animate');
+  });
+  close.addEventListener('click', () => {
+      cart_notify.classList.remove('animate');
+  });
+	console.log("Element is hidden.");
+
+
+} else {
+     open.addEventListener('click', () => {
+      cart_notify.classList.remove('animate');
+  });
+	console.log("Element is visiable.");
+
+}
