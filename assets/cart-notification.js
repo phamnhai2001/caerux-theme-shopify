@@ -82,5 +82,6 @@ let check = document.getElementById('check');
   	if (check.offsetParent == null) {
    		return 1;
 //       cart_notify.classList.add('animate');
- 	} else cart_notify.classList.remove('animate');
+ } else {
+   cart_notify.classList.remove('animate');}
   });
