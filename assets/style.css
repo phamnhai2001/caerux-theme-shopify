@@ -11075,3 +11075,6 @@ header#header.header_home02 > .inner .header_main .header_main_nav nav.global_na
     margin-bottom: 15px;
     font-weight: 500;
 }
+.shopify-challenge__container .g-recaptcha {
+    margin-bottom: 20px;
+}
