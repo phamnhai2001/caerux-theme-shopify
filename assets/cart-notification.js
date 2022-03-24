@@ -57,25 +57,23 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-console.log(check.offsetParent);
-
-
 if (check.offsetParent == null) {
   
- open.addEventListener('click', () => {
+	console.log("Element is hidden.");
+     open.addEventListener('click', () => {
+      cart_notify.classList.remove('animate');
+  });
+	console.log("Element is visiable.");
+
+
+} else {
+   open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
   });
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
-	console.log("Element is hidden.");
 
-
-} else {
-     open.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
-	console.log("Element is visiable.");
 
 }
 
