@@ -10,17 +10,17 @@
                        		<div class="item_content">
                                 <div class="thumb">
                                        <img src="{{ product.featured_image | img_url: 'medium' | format: 'jpg' }}" alt="{{ block.settings.slide_heading }}">
-                                </div>
+                                      {%- if product.available == false -%}
+                                        <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
+                                          {%- elsif product.compare_at_price > product.price and product.available -%}
+                                        <span class="sale">{{ 'products.product.on_sale' | t }}</span>
+                                      {%- endif -%}
+                              	</div>
                                 <div class="txt_desp">
                                      <h3>{{ product.title }}</h3>
 
                                      <p>
                                        {{ product.price | money }}
-                                        {%- if product.available == false -%}
-                                    <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
-                                      {%- elsif product.compare_at_price > product.price and product.available -%}
-                                    <span class="sale">{{ 'products.product.on_sale' | t }}</span>
-                                      {%- endif -%}
                                   	</p>
                                 </div>
                             </div>
