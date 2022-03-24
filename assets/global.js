@@ -85,6 +85,7 @@ Shopify.postLink = function(path, options) {
   document.body.removeChild(form);
 };
 
+// get country 
 Shopify.CountryProvinceSelector = function(country_domid, province_domid, options) {
   this.countryEl         = document.getElementById(country_domid);
   this.provinceEl        = document.getElementById(province_domid);
