@@ -79,7 +79,7 @@ let check = document.getElementById('check');
 
   
  open.addEventListener('click', () => {
-  	if (check.offsetParent != null) {
+  	if (check.offsetParent !== null) {
       cart_notify.classList.remove('animate');
       close.addEventListener('click', () => {
          cart_notify.classList.remove('animate');
