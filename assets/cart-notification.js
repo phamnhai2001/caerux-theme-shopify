@@ -57,28 +57,10 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-// if (check.offsetParent == null) {
-  
-//  open.addEventListener('click', () => {
-//       cart_notify.classList.add('animate');
-//   });
-//   close.addEventListener('click', () => {
-//       cart_notify.classList.remove('animate');
-//   });
-// 	console.log("Element is hidden.");
+console.log(check.offsetParent);
 
 
-// } else {
-//      open.addEventListener('click', () => {
-//       cart_notify.classList.remove('animate');
-//   });
-// 	console.log("Element is visiable.");
-
-// }
-
-console.log(check.isHidden);
-
-if (!check.isHidden) {
+if (check.offsetParent == null) {
   
  open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
@@ -96,3 +78,22 @@ if (!check.isHidden) {
 	console.log("Element is visiable.");
 
 }
+
+// if (!check.isHidden) {
+  
+//  open.addEventListener('click', () => {
+//       cart_notify.classList.add('animate');
+//   });
+//   close.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
+// 	console.log("Element is hidden.");
+
+
+// } else {
+//      open.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
+// 	console.log("Element is visiable.");
+
+// }
