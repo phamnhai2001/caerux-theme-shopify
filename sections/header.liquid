@@ -74,45 +74,41 @@
             </div>
         </div>
         <div class="header_main">
-            <div class="header_main_inner">
-                <h1 class="header_logo">
-                    <a href="#">
-                        {%- if section.settings.logo != blank -%}
+           		<nav>
+                    <div class="logo">
+                        <a href="" class="logo">
+                            {%- if section.settings.logo != blank -%}
                             <img srcset="{{ section.settings.logo | img_url}}",
                             src="{{ section.settings.logo | img_url }}"
                             alt="">
                         {%- else -%}
                             <img src="{{ 'logo.png' | asset_url }}" alt="">
                         {%- endif -%}
-                    </a>
-                </h1>
-                <div class="header_main_nav">
-                    {%- if section.settings.menu != blank -%}
-                    <nav class="global_nav_container" role="navigation">
-                        <div id="menuToggle">
-                            <div id="nav_toggle">
-                                <div>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                </div>
+                        </a>
+                    </div>
+             		{%- if section.settings.menu != blank -%}
+                    <div class="nav_main_top" id="menuToggle">
+                        <div id="nav_toggle">
+                            <div>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                            <div id="nav_bg"></div>
-                            <div id="global_nav">
-                                <div class="header_logo util_sp">
-                                    <a href="#">
-                                        <img src="{{'logo.png' | asset_url }}" alt="">
-                                    </a>
-                                </div>
-                                <ul class="list_menu">
+                        </div>
+                        <div id="nav_bg"></div>
+                        <div id="global_nav">
+                            <div class="header_logo util_sp">
+                                <a href="">
+                                    <img src="{{'logo.png' | asset_url }}" alt="">
+                                </a>
+                            </div>
+                            <ul class="list_menu">
                                     {%- for link in section.settings.menu.links -%}
 
                                     <li class="item_menu">
                                         <a href="{{ link.url }}">{{ link.title | escape }} </a>
                                     </li>
                                     {%- endfor -%}
-
-<!--                                     <li class="util_sp"><a href="#">Registration</a></li> -->
                                     <li class="util_sp">
                                   <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}">
                                     <span class="visually-hidden">
@@ -127,12 +123,10 @@
                                   </a>
                                   	</li>
                                 </ul>
-                            </div>
                         </div>
-                    </nav>
-                    {%- endif -%}
-                </div>
-            </div>
+                    </div>
+             		{%- endif -%}
+                </nav>
         </div>
     </div>
 </header>
