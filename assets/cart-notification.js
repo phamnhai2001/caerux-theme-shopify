@@ -57,26 +57,7 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-if (check.offsetParent == null) {
-  
- open.addEventListener('click', () => {
-      cart_notify.classList.add('animate');
-  });
-  close.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
-	console.log("Element is hidden.");
-
-
-} else {
-     open.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
-	console.log("Element is visiable.");
-
-}
-
-// if (!check.isHidden) {
+// if (check.offsetParent == null) {
   
 //  open.addEventListener('click', () => {
 //       cart_notify.classList.add('animate');
@@ -94,3 +75,10 @@ if (check.offsetParent == null) {
 // 	console.log("Element is visiable.");
 
 // }
+
+
+  
+ open.addEventListener('click', () => {
+                       if (check.offsetParent == null) {console.log(1)} else console.log(2)
+//       cart_notify.classList.add('animate');
+  });
