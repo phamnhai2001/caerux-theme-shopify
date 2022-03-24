@@ -90,11 +90,11 @@ if (check.offsetParent === null) {
 	console.log("Element is hidden.");
 
 } else {
-//  open.addEventListener('click', () => {
-//       cart_notify.classList.add('animate');
-//   });
-//   close.addEventListener('click', () => {
-//       cart_notify.classList.remove('animate');
-//   });
+ open.addEventListener('click', () => {
+      cart_notify.classList.add('animate');
+  });
+  close.addEventListener('click', () => {
+      cart_notify.classList.remove('animate');
+  });
 console.log("Element is visible.");
 }
