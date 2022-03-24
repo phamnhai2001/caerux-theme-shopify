@@ -20,7 +20,7 @@ class CartNotification extends HTMLElement {
     
 //   }
 
-//   close(){
+//   close(){https://nhaipt.myshopify.com/admin/themes/129173520547?key=sections%2Fcart-notification-product.liquid
 //   	this.closeCart = document.getElementById('close');
 // 	this.closeCart.addEventListener('click', () => {
 //         this.notification.classList.remove('active');
