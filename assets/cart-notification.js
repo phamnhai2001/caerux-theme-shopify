@@ -84,11 +84,13 @@ const check = document.getElementById('check');
 if (check.offsetParent === null) {
 
   open.addEventListener('click', () => {
-      cart_notify.classList.add('animate');
+      cart_notify.classList.remove('animate');
   });
 
 } else {
-
+ open.addEventListener('click', () => {
+      cart_notify.classList.add('animate');
+  });
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
