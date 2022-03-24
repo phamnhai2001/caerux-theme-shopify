@@ -45,41 +45,28 @@
                   		<h1 id="recover" tabindex="-1">
                           {{ 'customer.recover_password.title' | t }}
                         </h1>
-                        <div class="recover_form">
+                        <div class="reset_password_form">
+                            <h3>Reset password</h3>
                             <p>We will notify the registered e-mail address of the URL for resetting the password.</p>
-                            {%- form 'recover_customer_password' -%}
-                          {% assign recover_success = form.posted_successfully? %}
-                               <div class="field">
-                                  <label for="RecoverEmail">
-                                      {{ 'customer.login_page.email' | t }}
-                                    </label>
-                                    <input type="email"
-                                      value=""
-                                      name="email"
-                                      id="RecoverEmail"
-                                      autocorrect="off"
-                                      autocapitalize="off"
-                                      autocomplete="email"
-                                      {% if form.errors %}
-                                        aria-invalid="true"
-                                        aria-describedby="RecoverEmail-email-error"
-                                        autofocus
-                                      {% endif %}
-                                      placeholder="{{ 'customer.login_page.email' | t }}"
-                                    >
-                                   
-                                  </div>
+                            {%- form 'recover_customer_password', id:'form_reset' -%}
+      							{% assign recover_success = form.posted_successfully? %}
+                                <ul>
+                                    <li>
+                                        <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
+                                        <span class="form_message"></span>
+                                    </li>
+                                </ul>
                                 <button>
-                                    {{ 'customer.login_page.submit' | t }}
+                                  {{ 'customer.login_page.sign_in' | t }}
                                 </button>
-                               <a href="#login">
-                                  {{ 'customer.login_page.cancel' | t }}
+                                <a href="{{ routes.account_register_url }}">
+                                  {{ 'customer.login_page.create_account' | t }}
                                 </a>
                             {%- endform -%}
                         </div>
-                  <h1 id="login" tabindex="-1">
-                    {{ 'customer.login_page.title' | t }}
-                  </h1>
+                    <h1 id="login" tabindex="-1">
+                      {{ 'customer.login_page.title' | t }}
+                    </h1>
                     <div class="login_form">
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
