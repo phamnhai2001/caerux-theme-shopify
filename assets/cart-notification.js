@@ -79,11 +79,12 @@ let check = document.getElementById('check');
 
   
  open.addEventListener('click', () => {
+                       console.log(check.offsetParent)
   	if (check.offsetParent === null) {
       cart_notify.classList.add('animate');
-   close.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
- } else {
-   cart_notify.classList.remove('animate');}
-  });
+      close.addEventListener('click', () => {
+         cart_notify.classList.remove('animate');
+      });
+     } else {
+       cart_notify.classList.remove('animate');}
+ });
