@@ -103,7 +103,20 @@ display: none;
                                 <a class="bottom_res" href="{{ routes.account_register_url }}">First time users ({{ 'customer.login_page.create_account' | t }})</a>
                             </div>
                           {%- endform -%}
-                       <div class="login_sns">
+                      {%- if shop.checkout.guest_login -%}
+                        <div>
+                          <hr>
+                          <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
+
+                          {%- form 'guest_login' -%}
+                            <button>
+                              {{ 'customer.login_page.guest_continue' | t }}
+                            </button>
+                          {%- endform -%}
+                        </div>
+                      {%- endif -%}
+                    </div>
+                    <div class="login_sns">
                         <h3>Login with social</h3>
                         <ul class="vertical_list_login">
                             <li>
@@ -157,20 +170,6 @@ display: none;
                             </li>
                         </ul>
                     </div>
-                      {%- if shop.checkout.guest_login -%}
-                        <div>
-                          <hr>
-                          <h2>{{ 'customer.login_page.guest_title' | t }}</h2>
-
-                          {%- form 'guest_login' -%}
-                            <button>
-                              {{ 'customer.login_page.guest_continue' | t }}
-                            </button>
-                          {%- endform -%}
-                        </div>
-                      {%- endif -%}
-                    </div>
-                   
                 </div>
             </div>
         </section>
