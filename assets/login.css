@@ -73,7 +73,6 @@
 }
 #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li {
   margin-bottom: 20px;
-  padding: 0 40px;
 }
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper .login_form form ul li {
