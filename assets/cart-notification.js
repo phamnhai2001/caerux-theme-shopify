@@ -72,7 +72,7 @@ if(hidden.is(':hidden')){
   open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
   });
-}else if {
+}else{
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
