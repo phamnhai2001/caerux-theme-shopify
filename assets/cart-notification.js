@@ -79,7 +79,7 @@ const close = document.getElementById('close');
 //   });
 // }
 
-const check = document.getElementById('check');
+let check = document.getElementById('check');
 
 if (check.offsetParent !== null) {
 
