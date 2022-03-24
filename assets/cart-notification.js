@@ -79,11 +79,9 @@ let check = document.getElementById('check');
 
   
  open.addEventListener('click', () => {
-  	if (check.offsetParent !== null) {
+                       
+  	if (check.isHidden) {
       cart_notify.classList.remove('animate');
-      close.addEventListener('click', () => {
-         cart_notify.classList.remove('animate');
-      });
       
      }
      if (check.offsetParent == null) {
