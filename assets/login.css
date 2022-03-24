@@ -51,11 +51,11 @@
   }
 }
 #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
-  font-size: 24px;
-  line-height: 31px;
-  margin-bottom: 30px;
+  font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    text-align: left;
   font-weight: 700;
-  text-align: center;
 }
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
