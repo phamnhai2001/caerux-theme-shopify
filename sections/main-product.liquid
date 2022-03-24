@@ -183,7 +183,7 @@ a .visually-hidden {
                                     <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
                                       {%- elsif product.compare_at_price > product.price and product.available -%}
                                     <span class="sale">{{ 'products.product.on_sale' | t }}</span>
-                                      {%- endif -%}
+                                   {%- endif -%}
                               </p>
                             </div>
                           {%- when 'variant_picker' -%}
