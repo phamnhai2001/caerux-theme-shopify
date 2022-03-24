@@ -24,9 +24,6 @@
 #wrapper.login section.section#content .inner .login_wrapper {
   background: #f7f7f7;
   padding: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper {
