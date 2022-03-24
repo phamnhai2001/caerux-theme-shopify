@@ -64,15 +64,31 @@ class CartNotification extends HTMLElement {
 
 customElements.define('cart-notification', CartNotification);
 
-const hidden = document.getElementByClassName('product-form__error-message-wrapper');
+
+// open view cart
 const open = document.getElementById('cart_view');
 const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
-if(hidden.is(':hidden')){
+// if(hidden.is(':hidden')){
+//   open.addEventListener('click', () => {
+//       cart_notify.classList.add('animate');
+//   });
+// }else{
+//   close.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
+// }
+
+const check = document.getElementById('check');
+
+if (thing.offsetParent === null) {
+
   open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
   });
-}else{
+
+} else {
+
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
