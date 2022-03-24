@@ -76,10 +76,10 @@ let check = document.getElementById('check');
 
 // }
 
-let hidden = element.getAttribute("hidden");
+let hidden = check.getAttribute("hidden");
 
     if (hidden) {
-       element.removeAttribute("hidden");
+       check.removeAttribute("hidden");
       open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
       });
@@ -89,7 +89,7 @@ let hidden = element.getAttribute("hidden");
 console.log('visiable');
       
     } else {
-       element.setAttribute("hidden", "hidden");
+       check.setAttribute("hidden", "hidden");
        open.addEventListener('click', () => {
       		cart_notify.classList.remove('animate');
   		});
