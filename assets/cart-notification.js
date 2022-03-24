@@ -82,9 +82,11 @@ let check = document.getElementById('check');
                        console.log(check.offsetParent === null)
   	if (check.offsetParent != null) {
       cart_notify.classList.remove('animate');
-      close.addEventListener('click', () => {
+      
+     } else if (check.offsetParent == null) {
+       cart_notify.classList.add('animate');
+       close.addEventListener('click', () => {
          cart_notify.classList.remove('animate');
       });
-     } else if (check.offsetParent == null) {
-       cart_notify.classList.add('animate');}
+     }
  });
