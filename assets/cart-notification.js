@@ -87,7 +87,6 @@ let check = document.getElementById('check');
       });
       
      } else if (check.offsetParent == null) {
-       cart_notify.classList.add('animate');
        close.addEventListener('click', () => {
          cart_notify.classList.remove('animate');
       });
