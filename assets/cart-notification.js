@@ -73,7 +73,7 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-if (check.offsetParent !== null) {
+// if (check.offsetParent !== null) {
 
  open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
@@ -84,10 +84,10 @@ if (check.offsetParent !== null) {
 console.log("Element is visible.");
 
 
-} else {
+// } else {
 //    open.addEventListener('click', () => {
 //       cart_notify.classList.add('animate');
 //   });
 	console.log("Element is hidden.");
 
-}
+// }
