@@ -57,7 +57,28 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-if (check.offsetParent == null) {
+// if (check.offsetParent == null) {
+  
+//  open.addEventListener('click', () => {
+//       cart_notify.classList.add('animate');
+//   });
+//   close.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
+// 	console.log("Element is hidden.");
+
+
+// } else {
+//      open.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
+// 	console.log("Element is visiable.");
+
+// }
+
+console.log(check);
+
+if (check.isHidden == null) {
   
  open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
