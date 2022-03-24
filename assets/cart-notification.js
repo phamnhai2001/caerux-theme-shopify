@@ -57,7 +57,7 @@ const close = document.getElementById('close');
 
 let check = document.getElementById('check');
 
-if (check.offsetParent === null) {
+if (check.offsetParent == null) {
 
  open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
