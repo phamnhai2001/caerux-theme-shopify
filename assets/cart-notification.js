@@ -76,7 +76,7 @@ let check = document.getElementById('check');
 
 // }
 
-console.log(check);
+console.log(check.isHidden);
 
 if (!check.isHidden) {
   
