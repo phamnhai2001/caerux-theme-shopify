@@ -11,11 +11,36 @@
                 </ul>
             </div>
         </div>
+        <h3 id="recover">Reset password</h3>
+       <section class="section" id="content">
+                <div class="inner">
+                    <div class="reset_password_wrapper">
+                        <div class="reset_password_form">
+                            <p>We will notify the registered e-mail address of the URL for resetting the password.</p>
+                            {%- form 'recover_customer_password' -%}
+                                <ul>
+                                    <li>
+                                        <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
+                                        <span class="form_message"></span>
+                                    </li>
+                                </ul>
+                                <button>
+                                    {{ 'customer.login_page.submit' | t }}
+                                </button>
+                               <a href="#login">
+                                  {{ 'customer.login_page.cancel' | t }}
+                                </a>
+                            {%- endform -%}
+                        </div>
+                    </div>
+                </div>
+            </section>
+      <h3 id="login">{{ 'customer.login_page.title' | t }}</h3>
         <section class="section" id="content">
             <div class="inner">
                 <div class="login_wrapper">
                     <div class="login_form">
-                        <h3>{{ 'customer.login_page.title' | t }}</h3>
+                        
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
                             <ul>
