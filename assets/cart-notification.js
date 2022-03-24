@@ -3,7 +3,6 @@ class CartNotification extends HTMLElement {
     super();
 
     this.notification = document.getElementById('cart');
-    this.onBodyClick = this.handleBodyClick.bind(this);
     
     this.querySelectorAll('button[type="button"]').forEach((closeButton) =>
       closeButton.addEventListener('click', this.close.bind(this))
@@ -58,14 +57,6 @@ class CartNotification extends HTMLElement {
       .querySelector(selector).innerHTML;
   }
 
-  handleBodyClick(evt) {
-    const target = evt.target;
-    if (target !== this.notification && !target.closest('cart-notification')) {
-      const disclosure = target.closest('details-disclosure');
-      this.activeElement = disclosure ? disclosure.querySelector('summary') : null;
-    }
-  }
-
   setActiveElement(element) {
     this.activeElement = element;
   }
@@ -75,7 +66,7 @@ customElements.define('cart-notification', CartNotification);
 const open = document.getElementById('cart_view');
 const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
-
+if()
 open.addEventListener('click', () => {
     cart_notify.classList.add('animate');
 });
