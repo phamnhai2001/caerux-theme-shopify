@@ -11071,3 +11071,7 @@ header#header.header_home02 > .inner .header_main .header_main_nav nav.global_na
       color: #fff;
       padding: 10px 15px;
     }
+.shopify-challenge__container .shopify-challenge__message {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
