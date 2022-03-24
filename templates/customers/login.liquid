@@ -10,10 +10,10 @@
 	{
 		display: block;
 	}
-	#recover:target~#login, 
-	#recover:target~#login.login_form {
-		display: none;
-	}
+	#recover:target ~ #login,
+      #recover:target ~ #login + div {
+        display: none;
+      }
 {% endstyle %}
 <div id="wrapper" class="login">
     <div class="inner">
@@ -73,7 +73,7 @@
                   <h1 id="login" tabindex="-1">
                     {{ 'customer.login_page.title' | t }}
                   </h1>
-                    <div class="login_form">
+                    <div>
                         
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
