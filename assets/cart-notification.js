@@ -59,21 +59,20 @@ let check = document.getElementById('check');
 
 if (check.offsetParent == null) {
   
-	console.log("Element is hidden.");
-     open.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
-	console.log("Element is visiable.");
-
-
-} else {
-   open.addEventListener('click', () => {
+ open.addEventListener('click', () => {
       cart_notify.classList.add('animate');
   });
   close.addEventListener('click', () => {
       cart_notify.classList.remove('animate');
   });
+	console.log("Element is hidden.");
 
+
+} else {
+     open.addEventListener('click', () => {
+      cart_notify.classList.remove('animate');
+  });
+	console.log("Element is visiable.");
 
 }
 
