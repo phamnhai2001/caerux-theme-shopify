@@ -77,7 +77,6 @@
                     {{ 'customer.login_page.title' | t }}
                   </h1>
                     <div>
-                        <div class="login_form">
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
                             <ul>
@@ -115,7 +114,6 @@
                             </button>
                           {%- endform -%}
                           </div>
-                        </div>
                       {%- endif -%}
                     </div>
                     <div class="login_sns">
