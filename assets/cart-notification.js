@@ -78,9 +78,9 @@ const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
 
 open.addEventListener('click', () => {
-    cart_notify.classList.add('active');
+    cart_notify.classList.add('animate');
 });
 
 close.addEventListener('click', () => {
-    cart_notify.classList.remove('active');
+    cart_notify.classList.remove('animate');
 });
