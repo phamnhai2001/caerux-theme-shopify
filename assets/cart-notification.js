@@ -79,6 +79,7 @@ let check = document.getElementById('check');
 
   
  open.addEventListener('click', () => {
-                       if (check.offsetParent == null) {console.log(1)} else console.log(2)
-//       cart_notify.classList.add('animate');
+  	if (check.offsetParent == null) {
+      cart_notify.classList.add('animate');
+ 	} else cart_notify.classList.remove('animate');
   });
