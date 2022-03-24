@@ -81,13 +81,13 @@ if (check.offsetParent !== null) {
 //   close.addEventListener('click', () => {
 //       cart_notify.classList.remove('animate');
 //   });
+console.log("Element is visible.");
 
-	console.log("Element is hidden.");
 
 } else {
 //    open.addEventListener('click', () => {
 //       cart_notify.classList.add('animate');
 //   });
+	console.log("Element is hidden.");
 
-console.log("Element is visible.");
 }
