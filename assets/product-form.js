@@ -44,7 +44,7 @@ if (!customElements.get('product-form')) {
           submitButton.removeAttribute('aria-disabled');
         });
     }
-
+	const cart_notify = document.getElementById('cart');
     handleErrorMessage(errorMessage = false) {
       this.errorMessageWrapper = this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
       this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
@@ -53,6 +53,7 @@ if (!customElements.get('product-form')) {
 
       if (errorMessage) {
         this.errorMessage.textContent = errorMessage;
+        cart_notify.style.display="none";
       }
     }
   });
