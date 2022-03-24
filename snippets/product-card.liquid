@@ -20,7 +20,7 @@
      <div class="txt_desp">
         <h3>{{ product_card_product.title | escape }}</h3>
        <p>
-          {{ product_card_product.price }}
+          {{ product_card_product.price | money }}
            {%- if product_card_product.available == false -%}
           <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
         	{%- elsif product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
