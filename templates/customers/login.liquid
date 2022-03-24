@@ -6,6 +6,7 @@
 		display: none;
 	}
 	#recover + div {
+display: none;
 	}
 	#recover:target,#recover:target + div
 	{
@@ -30,14 +31,7 @@
        <section class="section" id="content">
                 <div class="inner">
                     <div class="reset_password_wrapper">
-                        
-                    </div>
-                </div>
-            </section>
-      
-        <section class="section" id="content">
-            <div class="inner">
-                <h1 id="recover" tabindex="-1">
+                        <h1 id="recover" tabindex="-1">
                           {{ 'customer.recover_password.title' | t }}
                         </h1>
                         <div>
@@ -71,11 +65,18 @@
                                 </a>
                             {%- endform -%}
                         </div>
+                    </div>
+                </div>
+            </section>
+      
+        <section class="section" id="content">
+            <div class="inner">
+                <div class="login_wrapper">
                   <h1 id="login" tabindex="-1">
                     {{ 'customer.login_page.title' | t }}
                   </h1>
-					<div>
-                        <div class="login_wrapper">
+                    <div>
+                        
                           {%- form 'customer_login', id: 'login' -%}
                       {{ form.errors | default_errors }}
                             <ul>
