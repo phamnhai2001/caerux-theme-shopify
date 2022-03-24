@@ -1,6 +1,12 @@
 <link rel="stylesheet" href="{{ 'login.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'login.js' | asset_url }}" defer="defer"></script>
+{% style %}
+	#recover,
+	.reset_password_wrapper {
+		display: none;
+	}
+{% endstyle %}
 <div id="wrapper" class="login">
     <div class="inner">
         <div class="upper">
