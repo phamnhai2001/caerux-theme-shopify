@@ -2,11 +2,11 @@
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'login.js' | asset_url }}" defer="defer"></script>
 {% style %}
-	#recover,#recover + .reset_password_wrapper {
+	#recover,#recover + div {
 		display: none;
 	}
 	
-	#recover:target,#recover + .reset_password_wrapper
+	#recover:target,#recover + div
 	{
 		display: block;
 	}
@@ -32,7 +32,7 @@
                         <h1 id="recover" tabindex="-1">
                           {{ 'customer.recover_password.title' | t }}
                         </h1>
-                        <div class="reset_password_form">
+                        <div>
                             <p>We will notify the registered e-mail address of the URL for resetting the password.</p>
                             {%- form 'recover_customer_password' -%}
                           {% assign recover_success = form.posted_successfully? %}
