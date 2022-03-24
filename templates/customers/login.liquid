@@ -22,12 +22,25 @@
                             <p>We will notify the registered e-mail address of the URL for resetting the password.</p>
                             {%- form 'recover_customer_password' -%}
                           {% assign recover_success = form.posted_successfully? %}
-                                <ul>
-                                    <li>
-                                        <input type="email" name="email" id="email" value="" placeholder="This is mail address" class="lg_input" aria-invalid="true">
-                                        <span class="form_message"></span>
-                                    </li>
-                                </ul>
+                               <div class="field">
+                                    <input type="email"
+                                      value=""
+                                      name="email"
+                                      id="RecoverEmail"
+                                      autocorrect="off"
+                                      autocapitalize="off"
+                                      autocomplete="email"
+                                      {% if form.errors %}
+                                        aria-invalid="true"
+                                        aria-describedby="RecoverEmail-email-error"
+                                        autofocus
+                                      {% endif %}
+                                      placeholder="{{ 'customer.login_page.email' | t }}"
+                                    >
+                                    <label for="RecoverEmail">
+                                      {{ 'customer.login_page.email' | t }}
+                                    </label>
+                                  </div>
                                 <button>
                                     {{ 'customer.login_page.submit' | t }}
                                 </button>
