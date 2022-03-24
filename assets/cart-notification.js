@@ -85,7 +85,7 @@ console.log("Element is hidden.");
 
 
 } else {
-      cart_notify.style.visiable="hidden";
+      cart_notify.classList.remove('animate');
 	console.log("Element is visiable.");
 
 }
