@@ -75,18 +75,19 @@ let check = document.getElementById('check');
 
 if (check.offsetParent !== null) {
 
-//   open.addEventListener('click', () => {
-//       cart_notify.classList.remove('animate');
-//   });
-
-	console.log("Element is hidden.");
-
-} else {
 //  open.addEventListener('click', () => {
 //       cart_notify.classList.add('animate');
 //   });
 //   close.addEventListener('click', () => {
 //       cart_notify.classList.remove('animate');
 //   });
+
+	console.log("Element is hidden.");
+
+} else {
+//    open.addEventListener('click', () => {
+//       cart_notify.classList.add('animate');
+//   });
+
 console.log("Element is visible.");
 }
