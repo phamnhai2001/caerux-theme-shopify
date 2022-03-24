@@ -87,14 +87,14 @@ if (check.offsetParent === null) {
       cart_notify.classList.remove('animate');
   });
 
-console.log("Element is hidden.");
+	console.log("Element is hidden.");
 
 } else {
- open.addEventListener('click', () => {
-      cart_notify.classList.add('animate');
-  });
-  close.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
+//  open.addEventListener('click', () => {
+//       cart_notify.classList.add('animate');
+//   });
+//   close.addEventListener('click', () => {
+//       cart_notify.classList.remove('animate');
+//   });
 console.log("Element is visible.");
 }
