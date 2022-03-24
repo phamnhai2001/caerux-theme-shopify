@@ -85,9 +85,7 @@ console.log("Element is hidden.");
 
 
 } else {
-   open.addEventListener('click', () => {
-      cart_notify.classList.remove('animate');
-  });
+      cart_notify.style.visiable="hidden";
 	console.log("Element is visiable.");
 
 }
