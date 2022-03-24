@@ -80,7 +80,7 @@ let check = document.getElementById('check');
   
  open.addEventListener('click', () => {
   	if (check.offsetParent == null) {
-   break;
+   		return 1;
 //       cart_notify.classList.add('animate');
  	} else cart_notify.classList.remove('animate');
   });
