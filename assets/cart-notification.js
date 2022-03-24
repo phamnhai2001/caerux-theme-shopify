@@ -11,6 +11,22 @@ class CartNotification extends HTMLElement {
     );
   }
 
+  open() {
+  	this.addCart = document.getElementById('cart_view');
+
+    this.addCart.addEventListener('click', () => {
+        this.notification.classList.add('active');
+    });
+
+    
+  }
+
+  close(){
+  	this.closeCart = document.getElementById('close');
+	this.closeCart.addEventListener('click', () => {
+        this.notification.classList.remove('active');
+    });
+  }
 
   renderContents(parsedState) {
       this.productId = parsedState.id;
@@ -20,6 +36,7 @@ class CartNotification extends HTMLElement {
       }));
 
       if (this.header) this.header.reveal();
+    	this.notification.open();
   }
 
   getSectionsToRender() {
