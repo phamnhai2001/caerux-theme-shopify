@@ -16,7 +16,7 @@
 
                                      <p>
                                        {{ product.price | money }}
-                                        {%- if product == false -%}
+                                        {%- if product.available == false -%}
                                     <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
                                       {%- elsif products.product.compare_at_price > products.product.price and product_card_product.available -%}
                                     <span class="sale">{{ 'products.product.on_sale' | t }}</span>
