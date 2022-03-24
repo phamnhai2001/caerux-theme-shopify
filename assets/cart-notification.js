@@ -76,18 +76,36 @@ let check = document.getElementById('check');
 
 // }
 
+let hidden = element.getAttribute("hidden");
 
-  
- open.addEventListener('click', () => {
-     console.log(check.offsetParent == null);
-  	if (check.offsetParent != null) {
-      cart_notify.classList.remove('animate');
-      
-     }
-     if (check.offsetParent == null) {
-cart_notify.classList.add('animate');
-      close.addEventListener('click', () => {
-         cart_notify.classList.remove('animate');
+    if (hidden) {
+       element.removeAttribute("hidden");
+      open.addEventListener('click', () => {
+      cart_notify.classList.add('animate');
       });
-     }
- });
+      close.addEventListener('click', () => {
+          cart_notify.classList.remove('animate');
+      });
+console.log('visiable');
+      
+    } else {
+       element.setAttribute("hidden", "hidden");
+       open.addEventListener('click', () => {
+      		cart_notify.classList.remove('animate');
+  		});
+	console.log('hidden');
+    }
+  
+//  open.addEventListener('click', () => {
+//      console.log(check.offsetParent == null);
+//   	if (check.offsetParent != null) {
+//       cart_notify.classList.remove('animate');
+      
+//      }
+//      if (check.offsetParent == null) {
+// cart_notify.classList.add('animate');
+//       close.addEventListener('click', () => {
+//          cart_notify.classList.remove('animate');
+//       });
+//      }
+//  });
