@@ -69,15 +69,7 @@ customElements.define('cart-notification', CartNotification);
 const open = document.getElementById('cart_view');
 const cart_notify = document.getElementById('cart');
 const close = document.getElementById('close');
-// if(hidden.is(':hidden')){
-//   open.addEventListener('click', () => {
-//       cart_notify.classList.add('animate');
-//   });
-// }else{
-//   close.addEventListener('click', () => {
-//       cart_notify.classList.remove('animate');
-//   });
-// }
+
 
 let check = document.getElementById('check');
 
