@@ -85,6 +85,6 @@ let check = document.getElementById('check');
       close.addEventListener('click', () => {
          cart_notify.classList.remove('animate');
       });
-     } else {
+     } else if (check.offsetParent == null) {
        cart_notify.classList.remove('animate');}
  });
