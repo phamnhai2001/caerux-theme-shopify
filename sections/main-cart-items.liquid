@@ -226,7 +226,9 @@ a .visually-hidden {
                                     </small>
                                 </div>
                                 <div class="cart_checkout" {{ block.shopify_attributes }}>
-                                    <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">{{ 'sections.cart.checkout' | t }}</button>
+                                    <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                                      {{ 'sections.cart.checkout' | t }}
+                                    </button>
                                     <a href="{{ routes.all_products_collection_url }}">{{ 'general.continue_shopping' | t }}</a>
                                 </div>
                            {%- endcase -%}
