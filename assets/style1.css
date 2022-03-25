@@ -11124,6 +11124,8 @@ header#header.header_home02 > .inner .header_main .header_main_nav nav.global_na
     padding: 6px 12px;
     text-align: center;
     margin-left: 6px;
+   position: absolute;
+    bottom: 10px;
 }
  .list_item ul li a .item_content .thumb span{
   	position: absolute;
