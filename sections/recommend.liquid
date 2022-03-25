@@ -9,7 +9,7 @@
                      	<a class="item_type" href="{{ product.url }}">
                        		<div class="item_content">
                                 <div class="thumb">
-                                       <img src="{{ product.featured_image | img_url: 'medium' | format: 'jpg' }}" alt="">
+                                       <img src="{{ product.featured_image | img_url: 'master' | format: 'jpg' }}" alt="">
                                  		{%- if product.available == false -%}
                                         <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
                                           {%- elsif product.compare_at_price > product.price and product.available -%}
