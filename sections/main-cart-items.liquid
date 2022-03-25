@@ -188,14 +188,7 @@ a .visually-hidden {
                       </li>
                       {%- endfor -%}
                     </ul>
-                    
-                  </div>
-                </div>
-                </div>
-                <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
-              <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
-              </form>
-              <div class="cart_footer" id="main-cart-footer" data-id="{{ section.id }}">
+                    <div class="cart_footer" id="main-cart-footer" data-id="{{ section.id }}">
                         <div class="cart_blocks">
                           {% for block in section.blocks %}
                             {%- case block.type -%}
@@ -244,6 +237,12 @@ a .visually-hidden {
                         </div>
                     </div>
                     {%- endif -%}
+                  </div>
+                </div>
+                </div>
+                <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+              <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
+              </form>
             </div>
         </div>
     </cart-items>
