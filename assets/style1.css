@@ -11114,3 +11114,15 @@ header#header.header_home02 > .inner .header_main .header_main_nav nav.global_na
 .list_order_history li:last-child {
   border: none;
 }
+.sold_out {
+    background: #d90000;
+    border-radius: 12px;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    min-width: 75px;
+    padding: 6px 12px;
+    text-align: center;
+    margin-left: 6px;
+}
