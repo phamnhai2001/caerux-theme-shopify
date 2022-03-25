@@ -34,7 +34,7 @@
       }
     },
     "collection": {
-      "type": "main-collection",
+      "type": "collection-list",
       "blocks": {
         "4c272516-2b84-44e8-b110-c3b37d38e797": {
           "type": "collection",
@@ -131,7 +131,6 @@
         "title": "BLOG",
         "blog": "news",
         "post_limit": 6,
-        "blog_show_author": false,
         "blog_show_date": true
       }
     }
