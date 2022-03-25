@@ -9024,7 +9024,7 @@ section.section#blog .inner .list_item ul li .item_content .txt_desp p span:befo
 .list_order_history li:last-child {
   border: none;
 }
-.sold_out {
+.thumb .sold_out {
     background: #d90000;
     border-radius: 12px;
     color: #fff;
