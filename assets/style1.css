@@ -2580,8 +2580,7 @@ section.section#new_arrival .inner .list_item ul li a .item_content .txt_desp p 
   padding: 6px 12px;
   text-align: center;
   margin-left: 6px;
-      position: absolute;
-    bottom: 10px;
+     
 }
 @media (max-width: 1000px) {
   section.section#new_arrival .inner .list_item ul li a .item_content .txt_desp p span.sold_out, section.section#recommend .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
