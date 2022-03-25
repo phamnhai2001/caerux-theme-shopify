@@ -1,5 +1,5 @@
 .template-search {
-  padding-top: 15%;
+  padding-top: 12%;
   max-width: 1200px;
   margin: 0 auto;
   width: 88.888%;
@@ -9,7 +9,6 @@
   font-size: 32px;
   font-weight: 500;
   line-height: 40px;
-  margin-bottom: 30px;
 }
 .template-search .template-search__header .template-search__search form {
   max-width: 500px;
