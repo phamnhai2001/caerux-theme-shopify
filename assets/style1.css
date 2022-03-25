@@ -6799,6 +6799,7 @@ section.section#blog .inner .list_item ul li .item_content .txt_desp p span:befo
   cursor: pointer;
   padding: 15px 25px;
   background: #000000;
+  width: 80%;
   font-size: 16px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
