@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ 'register.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'register.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'register.js' | asset_url }}" defer="defer"></script>
 <div id="wrapper" class="register">
