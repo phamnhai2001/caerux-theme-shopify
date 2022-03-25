@@ -227,6 +227,7 @@ a .visually-hidden {
                                 </div>
                                 <div class="cart_checkout" >
                                     <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                                      {{ form | payment_button }}
                                       {{ 'sections.cart.checkout' | t }}
                                     </button>
                                     <a href="{{ routes.all_products_collection_url }}">{{ 'general.continue_shopping' | t }}</a>
