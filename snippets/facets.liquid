@@ -32,7 +32,6 @@
 {% endstyle %}
 		<div class="collection_filters">
              {% if enable_filtering %}
-           {%- for filter in results.filters -%}
              <div class="filters util_pc" id="filters">
                         <div class="txt_desp ">
                             <h3>Filter By</h3>
@@ -40,6 +39,7 @@
                		<facet-filters-form class="facets small-hide">
                         <form id="FacetFiltersForm" class="facets_wrapper">
                           <div id="FacetsWrapperDesktop" class="facets__wrapper">
+                             {%- for filter in results.filters -%}
                               {%- assign total_active_values = total_active_values | plus: filter.active_values.size -%}
                               {% case filter.type %}
                               {% when 'list' %}
@@ -144,6 +144,7 @@
                                     </div>
                                 </div>
                           {% endcase %}
+                           {%- endfor -%}
                             {%- if enable_sorting -%}
                               <div class="facet-filters sorting caption">
                                 <div class="facet-filters__field">
@@ -170,7 +171,6 @@
                			</facet-filters-form>
                             
           </div>
-             {%- endfor -%}
           {%- endif -%}
           <menu-drawer class="util_sp mobile-facets__wrapper {% unless collapse_on_larger_devices %} medium-hide large-up-hide{% endunless %}" data-breakpoint="mobile">
             <details class="mobile-facets__disclosure disclosure-has-popup">
