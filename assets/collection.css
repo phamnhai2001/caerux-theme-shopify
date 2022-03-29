@@ -1379,7 +1379,7 @@ input, select, textarea {
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets__open-wrapper .mobile-facets__open .mobile-facets__open-label {
     padding-left: 1.3020833333vw;
-    font-size: 3.6458333333vw;
+    font-size: 2.6041666667vw;
   }
 }
 @media (max-width: 1000px) {
@@ -1470,7 +1470,9 @@ input, select, textarea {
     padding: 2.6041666667vw;
   }
 }
-
+#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details.menu-opening .mobile-facets__close {
+  opacity: 1;
+}
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__summary {
     list-style: none;
@@ -1569,11 +1571,13 @@ input, select, textarea {
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__close-button {
     padding: 2vw 1vw;
+    font-size: 2vw;
   }
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__close-button {
     padding: 2.6041666667vw 1.3020833333vw;
+    font-size: 2vw;
   }
 }
 #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__close-button svg {
@@ -1637,13 +1641,13 @@ input, select, textarea {
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg.icon-checkmark {
     width: 1.5vw;
-    left: 3.9vw;
+    left: 2vw;
   }
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg.icon-checkmark {
     width: 1.953125vw;
-    left: 5.078125vw;
+    left: 2.6041666667vw;
   }
 }
 @media (max-width: 1000px) {
@@ -1951,8 +1955,4 @@ input, select, textarea {
     min-width: 9.765vw;
     padding: 0.781vw 1.526vw;
   }
-}
-details.menu-opening .mobile-facets__close {
-  opacity: 1;
-  display: flex;
 }
