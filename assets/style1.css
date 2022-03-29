@@ -57,7 +57,7 @@ ul, ol {
 }
 .upper .navi_top {
   max-width: 1200px;
-  width: 100%;
+  width: 88.888%;
   margin: 0 auto 35px;
 }
 @media (max-width: 1000px) {
