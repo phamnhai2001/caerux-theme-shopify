@@ -13,6 +13,7 @@
 @media (max-width: 1000px) {
   #wrapper.blog_detail .inner section.section#blog_detail .inner {
     max-width: 85vw;
+    width: 88.888%;
     margin: 0 auto 8vw;
   }
 }
