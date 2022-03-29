@@ -543,7 +543,7 @@
   }
 }
 #wrapper.blog_detail .inner section.section#related_post .inner .list_item ul li {
-  width: 23%;
+  width: 32%;
   margin-bottom: 30px;
 }
 @media (max-width: 1000px) {
