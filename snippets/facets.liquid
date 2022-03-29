@@ -32,20 +32,6 @@
 {% endstyle %}
 		<div class="collection_filters">
              {% if enable_filtering %}
-             <div class="categories util_pc">
-                 <div class="txt_desp">
-                            <h3>Collection</h3>
-                        </div>
-                 <ul class="list_items">
-                            {% for collection in collections %}	
-                            <li>
-                                <a href="{{ collection.url }}">
-                                    <p>{{- collection.title -}}</p>
-                                </a>
-                            </li>
-                   			{% endfor %}
-                        </ul>
-             </div>
            {%- for filter in results.filters -%}
              <div class="filters util_pc" id="filters">
                         <div class="txt_desp ">
