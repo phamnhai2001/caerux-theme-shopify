@@ -537,6 +537,8 @@
     position: fixed;
     background: #ffff;
     z-index: 999;
+    overflow-x: hidden;
+    overflow-y: scroll;
     width: 100%;
     max-width: 540px;
     text-align: center;
@@ -549,6 +551,7 @@
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets {
     padding-top: 6.5104166667vw;
+    
   }
 }
 @media (max-width: 1000px) {
