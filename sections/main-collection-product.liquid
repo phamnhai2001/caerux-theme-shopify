@@ -12,13 +12,11 @@
                 <div class="collection_product_grid">
                     <div class="collection util_pc">
                         <div class="collection_banner">
-                          {%- for collection in collections -%}
                           {%- if collection.featured_image != blank -%}
                           	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="">
                           {% else %}
                             <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="">
                           {% endif %}
-                          {% endfor %}
                         </div>
                     </div>
                     <div class="collection_product">
