@@ -437,7 +437,8 @@ header .inner .header_main nav .nav_main_top #global_nav ul li {
 }
 header .inner .header_main nav .nav_main_top #global_nav ul li a {
   color: #000000;
-  font-weight: 700;
+     text-transform: uppercase;
+    font-weight: 500;
   font-size: 14px;
   -webkit-transition: all .2s;
   transition: all .2s;
