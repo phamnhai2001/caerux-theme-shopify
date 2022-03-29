@@ -466,6 +466,7 @@ header .inner .header_main nav .nav_main_top #global_nav ul li details {
 }
 header .inner .header_main nav .nav_main_top #global_nav ul li details summary {
   font-weight: 700;
+  font-size: 14px;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
