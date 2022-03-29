@@ -1102,3 +1102,14 @@ details.menu-opening .mobile-facets__close {
     display: flex;
     opacity: 1 !important;
 }
+@media (max-width: 1000px) {
+  .mobile-facets__count {
+    font-size: 1.4vw;
+    color: #454f5b;
+  }
+}
+@media (max-width: 768px) {
+  .mobile-facets__count {
+    font-size: 1.8229166667vw;
+  }
+}
