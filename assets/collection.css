@@ -568,6 +568,7 @@
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__header .mobile-facets__header-inner .mobile-facets__heading {
     margin-bottom: 1vw;
+    font-weight: 500;
   }
 }
 @media (max-width: 768px) {
