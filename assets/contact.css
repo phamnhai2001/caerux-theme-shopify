@@ -14,7 +14,7 @@
   #wrapper.contact .inner {
     max-width: 100%;
     padding-top: 3.4vw;
-    padding: 3.4vw 2.2vw;
+    padding: 3.4vw 5vw;
     width: 100%;
     margin: 0 auto 8vw;
   }
@@ -22,7 +22,7 @@
 @media (max-width: 768px) {
   #wrapper.contact .inner {
     padding-top: 4.427vw;
-    padding: 4.427vw 2.208vw;
+    padding: 4.427vw 6.510vw;
     margin: 0 auto 10.416vw;
   }
 }
