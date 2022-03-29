@@ -1096,5 +1096,5 @@
 }
 details.menu-opening .mobile-facets__close {
     display: flex;
-    opacity: 1;
+    opacity: 1 !important;
 }
