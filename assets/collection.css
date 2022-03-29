@@ -1113,3 +1113,9 @@ details.menu-opening .mobile-facets__close {
     font-size: 2.34375vw;
   }
 }
+.mobile-facets__open svg line {
+  stroke: #000000;
+}
+.mobile-facets__open svg circle {
+  stroke: #000000;
+}
