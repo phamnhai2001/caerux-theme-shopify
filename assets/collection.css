@@ -1954,4 +1954,5 @@ input, select, textarea {
 }
 details.menu-opening .mobile-facets__close {
   opacity: 1;
+  display: flex;
 }
