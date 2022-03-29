@@ -940,10 +940,30 @@ input, select, textarea {
   border: 1px solid #979797;
   margin-bottom: 40px;
 }
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories {
+    margin-bottom: 4vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories {
+    margin-bottom: 5.2083333333vw;
+  }
+}
 #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp {
   background: #0097CC;
   padding: 8px 10px;
   margin-bottom: 0;
+}
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp {
+    padding: 0.8vw 1vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp {
+    padding: 1.0416666667vw 1.3020833333vw;
+  }
 }
 #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp h3 {
   font-size: 16px;
@@ -951,9 +971,31 @@ input, select, textarea {
   text-transform: uppercase;
   color: #fff;
 }
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp h3 {
+    font-size: 1.6vw;
+    line-height: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .txt_desp h3 {
+    font-size: 2.0833333333vw;
+    line-height: 2.6041666667vw;
+  }
+}
 #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li {
   border-top: 1px solid #979797;
   padding: 8px 10px;
+}
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li {
+    padding: 0.8vw 1vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li {
+    padding: 1.0416666667vw 1.3020833333vw;
+  }
 }
 #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li a p {
   font-size: 14px;
@@ -962,6 +1004,18 @@ input, select, textarea {
   color: #000000;
   text-align: left;
   font-weight: 600;
+}
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li a p {
+    font-size: 1.4vw;
+    line-height: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .collection_filters .categories .list_items li a p {
+    font-size: 1.8229166667vw;
+    line-height: 2.6041666667vw;
+  }
 }
 #wrapper.collection > .inner .collection_section .collection_filters .filters {
   border: 1px solid #979797;
@@ -1504,7 +1558,7 @@ input, select, textarea {
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__summary div span.mobile-facets__arrow svg {
-    width: 3.90625vw;
+    width: 2.6041666667vw;
   }
 }
 #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__summary .mobile-facets__sort {
@@ -1954,5 +2008,48 @@ input, select, textarea {
     font-size: 1.562vw;
     min-width: 9.765vw;
     padding: 0.781vw 1.526vw;
+  }
+}
+
+.facet-filters__sort {
+  width: 135px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  color: #979797;
+  -webkit-appearance: button;
+     -moz-appearance: button;
+          appearance: button;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .facet-filters__sort {
+    width: 13.5vw;
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 768px) {
+  .facet-filters__sort {
+    width: 17.578125vw;
+    font-size: 1.5625vw;
+  }
+}
+
+.facet-filters__label {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 3px 18px;
+  color: #979797;
+}
+@media (max-width: 1000px) {
+  .facet-filters__label {
+    font-size: 1.2vw;
+    padding: 0.3vw 1.8vw;
+  }
+}
+@media (max-width: 768px) {
+  .facet-filters__label {
+    font-size: 1.5625vw;
+    padding: 0.390625vw 2.34375vw;
   }
 }
