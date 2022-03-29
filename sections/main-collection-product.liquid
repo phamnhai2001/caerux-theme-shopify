@@ -90,10 +90,10 @@
 
 <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 <script>
-  const open = document.querySelector("details");
+  const element = document.querySelector("details");
   const close = document.querySelector("mobile-facets__close");
-  open.classList.contains("menu-opening");
-  close.style.opacity = 1;
+  if(element.classList.contains("menu-opening")){
+    close.style.opacity = 1;}
   
 </script>
 {% schema %}
