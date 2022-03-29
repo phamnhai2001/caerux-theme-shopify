@@ -1952,6 +1952,6 @@ input, select, textarea {
     padding: 0.781vw 1.526vw;
   }
 }
-.mobile-facets__details.menu-opening .mobile-facets__close {
+details.menu-opening .mobile-facets__close {
   opacity: 1;
 }
