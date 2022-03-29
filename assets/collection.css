@@ -718,7 +718,7 @@
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__close-button svg {
     width: 1.953125vw;
-    margin-right: 1.953125vw;
+    margin-right: 5.2083333333vw;
   }
 }
 @media (max-width: 1000px) {
