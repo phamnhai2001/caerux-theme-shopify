@@ -1094,3 +1094,7 @@
     padding: 0.781vw 1.526vw;
   }
 }
+details.menu-opening .mobile-facets__close {
+    display: flex;
+    opacity: 1;
+}
