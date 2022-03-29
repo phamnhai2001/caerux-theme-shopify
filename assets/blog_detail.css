@@ -257,7 +257,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/twitter.svg") no-repeat center;
+  background: url("twitter.svg") no-repeat center;
 }
 @media (max-width: 1000px) {
   #wrapper.blog_detail .inner section.section#blog_detail .inner .entry_content .sns_social ul li.share_twitter a:before {
@@ -282,7 +282,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/facebook.svg") no-repeat center;
+  background: url("facebook.svg") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -313,7 +313,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/blogger-logo.png") no-repeat center;
+  background: url("blogger-logo.png") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -343,7 +343,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/pocket.svg") no-repeat center;
+  background: url("pocket.svg") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -373,7 +373,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 10px;
-  background: url("../images/line.svg") no-repeat center;
+  background: url("line.svg") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -404,7 +404,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/copy-solid.png") no-repeat center;
+  background: url("copy-solid.png") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -435,7 +435,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/Feedly.svg") no-repeat center;
+  background: url("Feedly.svg") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
@@ -466,7 +466,7 @@
   height: 20px;
   display: inline-block;
   margin-right: 15px;
-  background: url("../images/Feed.svg") no-repeat center;
+  background: url("Feed.svg") no-repeat center;
   background-size: cover;
   position: relative;
   top: 2px;
