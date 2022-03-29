@@ -869,7 +869,7 @@
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__footer {
     padding: 1.5vw;
-    margin-top: 3vw;
+    margin-top: 10vw;
   }
 }
 @media (max-width: 768px) {
