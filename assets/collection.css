@@ -917,6 +917,8 @@
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner img {
   -o-object-fit: cover;
      object-fit: cover;
+      width: 900px;
+    height: 250px;
 }
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection_product .collection_product_count {
   margin-bottom: 10px;
