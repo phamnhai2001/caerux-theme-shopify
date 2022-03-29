@@ -895,7 +895,7 @@
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__footer button {
-    padding: 3.90625vw 4.6875vw;
+    padding: 1.953125vw 4.6875vw;
   }
 }
 #wrapper.collection > .inner .collection_section .collection_product_grid {
