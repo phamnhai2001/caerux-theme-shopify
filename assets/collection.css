@@ -436,7 +436,7 @@
 }
 #wrapper.collection > .inner .collection_section .collection_filters .filters .facets_wrapper .sorting .facet-filters__field .facet-filters__label label {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
 }
 #wrapper.collection > .inner .collection_section .collection_filters .filters .facets_wrapper .sorting .facet-filters__field .select {
   position: relative;
