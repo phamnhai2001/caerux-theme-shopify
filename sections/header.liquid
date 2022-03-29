@@ -58,7 +58,43 @@
                         </button>
                     </li>
                     <li class="header_welcart_cart header__icons">
-                        <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+                        
+                      {%- if link.links != blank -%}
+                      		<details-disclosure>
+                                        <details id="Details-HeaderSubMenu-{{ forloop.index }}">
+                                            <summary
+                                                class="header__menu-item link link--text list-menu__item focus-inset caption-large">
+                                                <span {%- if link.child_active %} class="header__active-menu-item"{% endif %}>{{ link.title | escape }}</span>
+                      							{% render 'icon-caret' %}
+                                            </summary>
+                                            <ul id="HeaderMenu-SubMenuList-{{ forloop.index }}"
+                                                class="header__submenu list-menu motion-reduce">
+                                                <li class="item">
+                                                    <a href=""
+                                                        class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                                                        {% if grandchildlink.current %} aria-current="page" {% endif %}>
+                                                        Good
+                                                    </a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href=""
+                                                        class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                                                        {% if grandchildlink.current %} aria-current="page" {% endif %}>
+                                                        Good
+                                                    </a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href=""
+                                                        class="header__menu-item list-menu__item link link--text focus-inset caption-large{% if grandchildlink.current %} list-menu__item--active{% endif %}"
+                                                        {% if grandchildlink.current %} aria-current="page" {% endif %}>
+                                                        Good
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </details>
+                                    </details-disclosure>
+                              {%- else -%}
+                              <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
                             <span class="header_welcart_cart_badge">
                                     <img src="{{'cart.svg' | asset_url }}" alt="">
                             </span>
@@ -69,7 +105,8 @@
                                 {%- endif -%}
                               </div>
                             {%- endif -%}
-                          </a>
+                         </a>
+                              {%- endif -%}
                     </li>
                 </ul>
             </div>
