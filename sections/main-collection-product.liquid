@@ -1,44 +1,6 @@
 {{ 'collection.css' | asset_url | stylesheet_tag }}
 {% style %}
-    .collection_section {
-    	position: relative;
-    }
-	.sorting {
-		position: absolute;
-        top: 24%;
-        right: 0;
-		transform: translateY(-24%);
-	}
-    .facet-filters__field {
-        display: flex;
-		position: relative;
-    }
-	.facet-filters__sort {
-		width: 135px;
-        border: none;
-        font-size: 12px;
-        font-weight: 500;
-        color: #979797;
-        appearance: button;
-        cursor: pointer;
-	}
-    .facet-filters__label {
-        font-size: 12px;
-        font-weight: 500;
-        padding: 3px 18px;
-        color: #979797;
-    }
     
-@media (max-width: 1000px){
-	.sorting {
-		top: 0;
-    	right: 9.5vw;
-    	transform: translateY(-23%);
-	}
-	#FacetsWrapperDesktop {
-        display: flex;
-    }
-}
 {% endstyle %}
 <div id="wrapper" class="collection">
         <div class="inner">
