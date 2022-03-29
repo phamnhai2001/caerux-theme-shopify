@@ -14,7 +14,7 @@
   #wrapper.contact .inner {
     max-width: 100%;
     padding-top: 3.4vw;
-    padding: 3.4vw 5vw;
+    padding: 3.4vw 2.2vw;
     width: 100%;
     margin: 0 auto 8vw;
   }
@@ -22,7 +22,7 @@
 @media (max-width: 768px) {
   #wrapper.contact .inner {
     padding-top: 4.427vw;
-    padding: 4.427vw 6.510vw;
+    padding: 4.427vw 2.208vw;
     margin: 0 auto 10.416vw;
   }
 }
@@ -59,7 +59,7 @@
 }
 @media (max-width: 768px) {
   #wrapper.contact .inner .form_contact h2 {
-    font-size: 5.208vw;
+    font-size: 3.645vw;
     line-height: 4.557vw;
     margin-bottom: 3.906vw;
   }
@@ -108,10 +108,16 @@
   width: 49%;
   margin-bottom: 0;
 }
+#wrapper.contact .inner .form_contact form ul li #box_check_option {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 #wrapper.contact .inner .form_contact form ul li #box_check_option #select-box {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
   padding: 20px 5px;
   border-radius: 5px;
   border: 1px solid #a6a4a4;
@@ -212,7 +218,7 @@
   display: block;
   width: 15px;
   height: 15px;
-  background-image: url(check_white.png);
+  background-image: url(../images/check_white.png);
   position: absolute;
   top: 0;
   left: 0;
@@ -294,6 +300,25 @@ p svg {
     width: 1.953125vw;
     margin-right: 1.3020833333vw;
   }
+}
+
+#box_check_option svg {
+  width: 15px;
+  position: absolute;
+  right: 52%;
+}
+@media (max-width: 1000px) {
+  #box_check_option svg {
+    width: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  #box_check_option svg {
+    width: 1.953125vw;
+  }
+}
+#box_check_option svg path {
+  fill: #979797;
 }
 
 #wrapper.success {
