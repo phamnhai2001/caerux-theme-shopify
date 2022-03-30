@@ -442,7 +442,6 @@ header .inner .header_main nav .nav_main_top #global_nav ul li a {
   font-size: 14px;
   -webkit-transition: all .2s;
   transition: all .2s;
-  padding: 10px 0;
 }
 header .inner .header_main nav .nav_main_top #global_nav ul li a:hover {
   color: #999999;
