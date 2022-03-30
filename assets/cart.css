@@ -434,7 +434,7 @@
   #wrapper.cart > .inner .cart_wrapper .cart_content .cart_footer .cart_blocks .cart_checkout button {
     width: 46%;
     padding: 2.5vw;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 0 auto;
   }
 }
@@ -458,8 +458,8 @@
 @media (max-width: 1000px) {
   #wrapper.cart > .inner .cart_wrapper .cart_content .cart_footer .cart_blocks .cart_checkout a {
     width: 50%;
-    padding: 2.5vw 7vw;
-    font-size: 3vw;
+    padding: 2.5vw 6vw;
+    font-size: 2.5vw;
     margin-bottom: 0;
     margin-left: 4vw;
   }
