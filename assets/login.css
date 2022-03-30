@@ -47,7 +47,6 @@
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper .login_form {
     width: 100%;
-    border-bottom: 1px solid #D6D6D6;
     padding-bottom: 4vw;
     margin-bottom: 4vw;
     flex-direction: column;
