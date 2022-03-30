@@ -1360,7 +1360,7 @@
   .spr-form {
   	width: 100% !important;
   }
-  .spr-form-label+.spr-form-input {
+  input[type=email] {
   	height: 7.161vw;
   }
 }
