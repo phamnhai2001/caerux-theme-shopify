@@ -556,6 +556,7 @@ h1#recover {
   margin-bottom: 45px;
   font-size: 26px;
   font-weight: 600;
+  outline: none;
 }
 @media (max-width: 1000px) {
   h1#recover {
