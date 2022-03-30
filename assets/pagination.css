@@ -93,35 +93,6 @@
   }
 }
 
-.pagi_nav ul li a.next:hover:before {
-  background: url("bx-chevron-right_wht.svg") no-repeat;
-  background-size: 100% auto;
-}
-
-.pagi_nav ul li a.next:before {
-  content: "";
-  background: url("bx-chevron-right.svg") no-repeat;
-  background-size: 100% auto;
-  width: 20px;
-  display: inline-block;
-  height: 20px;
-  vertical-align: sub;
-}
-@media (max-width: 1000px) {
-  .pagi_nav ul li a.next:before {
-    width: 2vw;
-    height: 2vw;
-  }
-}
-@media (max-width: 768px) {
-  .pagi_nav ul li a.next:before {
-    width: 2.6041666667vw;
-    height: 2.6041666667vw;
-  }
-}
-
-
-
 .prev .icon {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
