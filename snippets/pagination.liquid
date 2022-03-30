@@ -10,7 +10,141 @@
     - paginate: {Object}
     - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
 {% endcomment %}
+{% style %}
+.pagi_nav {
+  padding: 80px 0;
+  width: 200px;
+  margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .pagi_nav {
+    padding: 8vw 0;
+    width: 20vw;
+  }
+}
+@media (max-width: 768px) {
+  .pagi_nav {
+    padding: 10.4166666667vw 0;
+    width: 26.0416666667vw;
+  }
+}
 
+.pagi_nav .list_pagi {
+  text-align: center;
+  display: inline-block !important;
+}
+
+.pagi_nav .list_pagi .pagi_item {
+  display: inline-block !important;
+  vertical-align: top;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
+}
+@media (max-width: 1000px) {
+  .pagi_nav .list_pagi .pagi_item {
+    padding: 0 0.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .pagi_nav .list_pagi .pagi_item {
+    padding: 0 0.6510416667vw;
+  }
+}
+
+.pagi_nav .list_pagi .pagi_item .page_num {
+  border: 1px solid #ddd;
+  color: #000000;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  min-width: 40px;
+  text-align: center;
+}
+@media (max-width: 1000px) {
+  .pagi_nav .list_pagi .pagi_item .page_num {
+    height: 4vw;
+    line-height: 4vw;
+    min-width: 4vw;
+  }
+}
+@media (max-width: 768px) {
+  .pagi_nav .list_pagi .pagi_item .page_num {
+    height: 5.2083333333vw;
+    line-height: 5.2083333333vw;
+    min-width: 5.2083333333vw;
+  }
+}
+
+.pagi_nav .list_pagi .pagi_item .page_num:hover {
+  background-color: #006689;
+  color: #fff;
+}
+
+.pagi_nav .list_pagi .pagi_item .page_num.current {
+  background-color: #4DA2E2;
+  color: #fff;
+  border: 1px solid #4DA2E2;
+}
+
+.pagi_nav .list_pagi .pagi_item .page_num.current:hover {
+  background-color: #4DA2E2;
+}
+
+.pagi_nav .list_pagi .pagi_item a {
+  font-size: 12px;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  .pagi_nav .list_pagi .pagi_item a {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 768px) {
+  .pagi_nav .list_pagi .pagi_item a {
+    font-size: 1.5625vw;
+  }
+}
+
+.prev .icon {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  position: absolute;
+  height: 8px;
+  top: 40%;
+  left: 35%;
+}
+@media (max-width: 1000px) {
+  .prev .icon {
+    height: 0.8vw;
+  }
+}
+@media (max-width: 768px) {
+  .prev .icon {
+    height: 1.0416666667vw;
+  }
+}
+
+.next .icon {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  position: absolute;
+  height: 8px;
+  top: 40%;
+  left: 35%;
+}
+@media (max-width: 1000px) {
+  .next .icon {
+    height: 0.8vw;
+  }
+}
+@media (max-width: 768px) {
+  .next .icon {
+    height: 1.0416666667vw;
+  }
+}
+
+{% endstyle %}
 <div class="pagi_nav">
     <ul class="list_pagi">
      	<li class="pagi_item">
@@ -27,7 +161,7 @@
             {%- endif -%}
        </li>
        {% endfor %}
-       <li  class="pagi_item">
+       <li class="pagi_item">
        		<a class="next page_num" href="{{ paginate.next.url }}">
               {%- render 'icon-caret' -%}
          </a>
