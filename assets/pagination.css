@@ -1,18 +1,14 @@
 .pagi_nav {
   padding: 80px 0;
-  width: 200px;
-  margin: 0 auto;
 }
 @media (max-width: 1000px) {
   .pagi_nav {
     padding: 8vw 0;
-    width: 20vw;
   }
 }
 @media (max-width: 768px) {
   .pagi_nav {
     padding: 10.4166666667vw 0;
-    width: 26.0416666667vw;
   }
 }
 
