@@ -473,17 +473,20 @@
   margin-bottom: 20px;
   font-weight: 500;
   font-size: 16px;
+  line-height: 20px;
 }
 @media (max-width: 1000px) {
   .reset_password_form p {
     margin-bottom: 2vw;
     font-size: 1.6vw;
+    line-height: 2vw;
   }
 }
 @media (max-width: 768px) {
   .reset_password_form p {
     margin-bottom: 2.6041666667vw;
-    font-size: 2.0833333333vw;
+    font-size: 3.2552083333vw;
+    line-height: 3.90625vw;
   }
 }
 
