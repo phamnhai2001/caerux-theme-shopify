@@ -310,6 +310,7 @@ p svg {
 @media (max-width: 1000px) {
   #box_check_option svg {
     width: 1.5vw;
+    right: 3%;
   }
 }
 @media (max-width: 768px) {
