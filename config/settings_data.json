@@ -5,8 +5,7 @@
         "type": "header",
         "settings": {
           "description": "Photogenic and glamorous everyday wear.",
-          "menu": "main-menu-1",
-          "logo": "shopify:\/\/shop_images\/blogger-logo.png"
+          "menu": "main-menu-1"
         }
       },
       "footer": {
