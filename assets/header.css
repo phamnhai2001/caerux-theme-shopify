@@ -682,6 +682,9 @@ header .inner .header_main nav.open #global_nav ul li details {
   header .inner .header_main nav.open #global_nav ul li details summary {
     width: 18.8802083333vw;
   }
+  header .inner .header_main nav.open #global_nav ul li details summary a{
+    margin-bottom: 0;
+  }
 }
 header .inner .header_main nav.open #global_nav ul li details summary svg {
   width: 15px;
