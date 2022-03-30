@@ -336,7 +336,7 @@
 }
 @media (max-width: 1000px) {
   #wrapper.cart > .inner .cart_wrapper .cart_content .cart_footer .cart_blocks .js_contents {
-    margin-bottom: 8vw;
+    margin-bottom: 4vw;
   }
 }
 @media (max-width: 768px) {
