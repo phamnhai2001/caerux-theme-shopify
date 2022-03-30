@@ -349,7 +349,7 @@
 }
 @media (max-width: 1000px) {
   #wrapper.cart > .inner .cart_wrapper .cart_content .cart_footer .cart_blocks .js_contents .total {
-    margin-bottom: 5.5vw;
+    margin-bottom: 1.5vw;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
