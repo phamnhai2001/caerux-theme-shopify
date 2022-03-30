@@ -438,7 +438,9 @@
   .form {
     padding: 0 1.5vw;
     width: 100%;
-    margin-bottom: 8vw;
+    margin-bottom: 5vw;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5vw;
   }
 }
 @media (max-width: 768px) {
