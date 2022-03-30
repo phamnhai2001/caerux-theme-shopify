@@ -443,19 +443,3 @@
     padding-left: 9.115vw;
   }
 }
-.errors ul li {
-  margin-bottom: 10px !important;
-  font-weight: 500;
-  color: red;
-  text-align: left;
-}
-@media (max-width: 1000px) {
-  .errors ul li {
-    margin-bottom: 1vw;
-  }
-}
-@media (max-width: 768px) {
-  .errors ul li {
-    margin-bottom: 1.3020833333vw;
-  }
-}
