@@ -96,8 +96,8 @@ a.item_type .item_content .thumb {
 }
 @media (max-width: 1000px) {
   .template-search #ProductGridContainer ul li a .item_content .txt_desp h3 {
-    font-size: 1.6vw;
-    margin-bottom: 1vw;
+    font-size: 2.4vw;
+    margin-bottom: 1.5vw;
   }
 }
 @media (max-width: 768px) {
