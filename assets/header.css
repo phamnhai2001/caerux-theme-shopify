@@ -279,6 +279,9 @@ header .inner .header_main nav .logo {
   line-height: 1;
   margin-right: 30px;
 }
+header .inner .header_main nav .logo img {
+	width: 230px;
+}
 @media (max-width: 1000px) {
   header .inner .header_main nav .logo {
     width: 13.5vw;
