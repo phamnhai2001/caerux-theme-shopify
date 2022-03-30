@@ -11,7 +11,7 @@
                  {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
                 <div class="collection_product_grid">
                     <div class="collection util_pc">
-                        <div class="collection_banner">
+                        <div class="collection_banner{%- if collection.products.size == 0 -%} empty {% endif %}">
                           {%- if collection.featured_image != blank -%}
                           	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="">
                           {% else %}
