@@ -1350,6 +1350,9 @@
   .spr-content {
 	flex-direction: column-reverse;
   }
+  .spr-reviews {
+  	width: 100%;
+  }
 }
 .spr-form {
   width: 40%;
