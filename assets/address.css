@@ -403,8 +403,8 @@
 }
 @media (max-width: 768px) {
   .addresses ul p {
-    font-size: 2.0833333333vw;
-    line-height: 3.2552083333vw;
+    font-size: 3.225vw;
+    line-height: 5.208vw;
     margin-bottom: 1.953125vw;
   }
 }
