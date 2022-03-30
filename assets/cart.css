@@ -391,6 +391,7 @@
   #wrapper.cart > .inner .cart_wrapper .cart_content .cart_footer .cart_blocks .js_contents .total p {
     font-size: 5vw;
     line-height: 7.5vw;
+    margin-left: 4vw;
   }
 }
 @media (max-width: 768px) {
