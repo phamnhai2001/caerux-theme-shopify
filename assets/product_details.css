@@ -1678,7 +1678,7 @@ a .visually-hidden {
 
 @media (max-width: 768px) {
   .shopify-payment-button__button {
-    line-height: 2.6041666667vw;
+    line-height: 3.225vw;
         width: 100%;
     font-size: 2.604vw;
     border-radius: 0;
