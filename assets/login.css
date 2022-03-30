@@ -574,7 +574,7 @@ h1#recover {
   width: 62%;
 }
 @media (max-width: 768px) {
-  input_reset li input {
+  .input_reset li input {
     width: 100%;
   }
 }
