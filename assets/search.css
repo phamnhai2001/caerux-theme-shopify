@@ -156,7 +156,7 @@ a .item_content .txt_desp p {
 }
 @media (max-width: 768px) {
   .card__content h2 {
-    font-size: 1.8229166667vw;
+    font-size: 2.343vw;
     margin-bottom: 0.6510416667vw;
   }
 }
