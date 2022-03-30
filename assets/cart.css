@@ -639,38 +639,38 @@
   }
 }
 
-#recommend .inner {
+#recommended .inner {
   max-width: 1200px;
   width: 88.8888%;
   margin: 0 auto;
   position: relative;
 }
 @media (max-width: 1000px) {
-  #recommend .inner {
+  #recommended .inner {
     max-width: 100%;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner {
+  #recommended .inner {
     width: 100%;
     padding: 0 5.208vw;
   }
 }
-#recommend .inner .list_item {
+#recommended .inner .list_item {
   margin-bottom: 80px;
   overflow: hidden;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item {
+  #recommended .inner .list_item {
     margin-bottom: 8vw;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item {
+  #recommended .inner .list_item {
     margin-bottom: 10.461vw;
   }
 }
-#recommend .inner .list_item ul {
+#recommended .inner .list_item ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -684,33 +684,33 @@
   margin: 0 -10px;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul {
+  #recommended .inner .list_item ul {
     margin: 0 -1vw;
   }
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul {
+  #recommended .inner .list_item ul {
     margin: 0 -1.302vw;
     width: 171%;
   }
 }
-#recommend .inner .list_item ul li {
+#recommended .inner .list_item ul li {
   padding: 0 10px;
   width: 25%;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li {
+  #recommended .inner .list_item ul li {
     padding: 0 1.2vw;
     width: 33.333%;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li {
+  #recommended .inner .list_item ul li {
     width: 50%;
     padding: 0 1.302vw;
   }
 }
-#recommend .inner .list_item ul li a .item_content .thumb {
+#recommended .inner .list_item ul li a .item_content .thumb {
   -webkit-transition-duration: 0.75s;
           transition-duration: 0.75s;
   margin-bottom: 10px;
@@ -720,16 +720,16 @@
   width: 100%;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li a .item_content .thumb {
+  #recommended .inner .list_item ul li a .item_content .thumb {
     margin-bottom: 1vw;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li a .item_content .thumb {
+  #recommended .inner .list_item ul li a .item_content .thumb {
     margin-bottom: 1.302vw;
   }
 }
-#recommend .inner .list_item ul li a .item_content .thumb img {
+#recommended .inner .list_item ul li a .item_content .thumb img {
   display: block;
   height: 100%;
   width: 100%;
@@ -739,22 +739,22 @@
   left: 0;
   top: 0;
 }
-#recommend .inner .list_item ul li a .item_content .txt_desp {
+#recommended .inner .list_item ul li a .item_content .txt_desp {
   font-size: 14px;
   font-weight: 400;
   line-height: 2;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp {
+  #recommended .inner .list_item ul li a .item_content .txt_desp {
     font-size: 1.4vw;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp {
+  #recommended .inner .list_item ul li a .item_content .txt_desp {
     font-size: 1.823vw;
   }
 }
-#recommend .inner .list_item ul li a .item_content .txt_desp h3 {
+#recommended .inner .list_item ul li a .item_content .txt_desp h3 {
   word-break: break-all;
   font-size: 16px;
   font-weight: bold;
@@ -766,33 +766,33 @@
   -webkit-line-clamp: 2;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp h3 {
+  #recommended .inner .list_item ul li a .item_content .txt_desp h3 {
     font-size: 2.4vw;
     letter-spacing: 0;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp h3 {
+  #recommended .inner .list_item ul li a .item_content .txt_desp h3 {
     font-size: 2.864vw;
   }
 }
-#recommend .inner .list_item ul li a .item_content .txt_desp p {
+#recommended .inner .list_item ul li a .item_content .txt_desp p {
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.38px;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp p {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p {
     font-size: 2.2vw;
     letter-spacing: 0;
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp p {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p {
     font-size: 2.864vw;
   }
 }
-#recommend .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+#recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
   background: #d90000;
   border-radius: 12px;
   color: #fff;
@@ -805,7 +805,7 @@
   margin-left: 6px;
 }
 @media (max-width: 1000px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
     border-radius: 1.2vw;
     font-size: 1.2vw;
     min-width: 7.5vw;
@@ -814,7 +814,7 @@
   }
 }
 @media (max-width: 768px) {
-  #recommend .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
     border-radius: 1.822vw;
     font-size: 1.562vw;
     min-width: 9.765vw;
