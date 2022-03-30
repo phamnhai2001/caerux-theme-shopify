@@ -396,8 +396,8 @@
 }
 @media (max-width: 1000px) {
   .addresses ul p {
-    font-size: 1.6vw;
-    line-height: 2.5vw;
+    font-size: 2.5vw;
+    line-height: 3.8vw;
     margin-bottom: 1.5vw;
   }
 }
