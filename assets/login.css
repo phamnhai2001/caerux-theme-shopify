@@ -446,7 +446,8 @@
 }
 @media (max-width: 768px) {
   .form {
-    padding: 0 1.953125vw;
+        padding: 0 1.953125vw 6.5104166667vw;
+    margin-bottom: 6.5104166667vw;
   }
 }
 
