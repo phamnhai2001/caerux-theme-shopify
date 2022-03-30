@@ -1,7 +1,6 @@
-/* automatic size vw */
-/* automatic size vh */
-/* text clamp */
-/* anime In order */
+.upper .navi_top {
+	width: 88.888%;
+}
 #wrapper {
   padding-top: 14%;
 }
