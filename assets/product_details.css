@@ -1360,6 +1360,9 @@
   .spr-form {
   	width: 100% !important;
   }
+  .spr-form-label+.spr-form-input {
+  	height: 7.161vw;
+  }
 }
 .spr-form {
   width: 40%;
