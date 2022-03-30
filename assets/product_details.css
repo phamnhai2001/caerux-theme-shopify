@@ -1747,8 +1747,6 @@ a .visually-hidden {
   display: inline-block;
   font-size: 12px;
   line-height: 1;
-  position: absolute;
-  bottom: 10px;
   min-width: 75px;
   padding: 6px 12px;
   text-align: center;
