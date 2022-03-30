@@ -1140,8 +1140,7 @@ details.menu-opening .mobile-facets__close {
   }
 }
 .collection_banner.empty img {
-  width: 1200px;
-  height: 400px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 1200px !important;
+  height: 400px !important;
+ 
 }
