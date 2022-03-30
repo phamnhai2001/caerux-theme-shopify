@@ -758,12 +758,15 @@ header .inner .header_main nav.open #global_nav .header_logo {
   }
   header .inner .header_main nav.open #global_nav .header_logo a img {
 	width: 23vw;
-}
+  }
 }
 @media (max-width: 768px) {
   header .inner .header_main nav.open #global_nav .header_logo {
     width: 24.154vw;
     margin: 0 auto 5.024vw;
+  }
+  header .inner .header_main nav.open #global_nav .header_logo a img {
+	width: 29.9479166vw;
   }
 }
 header .inner .header_main nav.open #nav_bg {
