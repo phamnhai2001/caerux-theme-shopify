@@ -279,25 +279,16 @@ header .inner .header_main nav .logo {
   line-height: 1;
   margin-right: 30px;
 }
-header .inner .header_main nav .logo img {
-	width: 230px;
-}
 @media (max-width: 1000px) {
   header .inner .header_main nav .logo {
     width: 13.5vw;
     margin-right: 3vw;
-  }
-  header .inner .header_main nav .logo img {
-  	width: 23vw;
   }
 }
 @media (max-width: 768px) {
   header .inner .header_main nav .logo {
     width: 15.885vw;
     margin-right: 3.125vw;
-  }
-  header .inner .header_main nav .logo img {
-  	width: 29.9479166vw;
   }
 }
 header .inner .header_main nav .logo a {
