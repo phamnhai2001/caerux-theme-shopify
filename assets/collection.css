@@ -1139,3 +1139,9 @@ details.menu-opening .mobile-facets__close {
     padding: 5.859375vw;
   }
 }
+.collection_banner.empty img {
+  width: 1200px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
