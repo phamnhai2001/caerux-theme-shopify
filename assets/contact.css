@@ -315,6 +315,8 @@ p svg {
 @media (max-width: 768px) {
   #box_check_option svg {
     width: 1.953125vw;
+    left: 92%;
+    right: 0;
   }
 }
 #box_check_option svg path {
