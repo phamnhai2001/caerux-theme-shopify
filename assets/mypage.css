@@ -51,27 +51,27 @@
     padding: 3.906vw 0;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .title {
+#wrapper > .inner section.my_page .order_info .card_content .title {
   font-size: 21px;
   line-height: 30px;
   font-weight: 600;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .title {
+  #wrapper > .inner section.my_page .order_info .card_content .title {
     font-size: 2.1vw;
     line-height: 3vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .title {
+  #wrapper > .inner section.my_page .order_info .card_content .title {
     font-size: 4.9479166667vw;
     line-height: 4.557vw;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li {
   border-bottom: 1px solid #D6D6D6;
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,12 +81,12 @@
   padding: 22px 0;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
     padding: 2.2vw 0;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page {
     padding: 3.90625vw 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -94,7 +94,7 @@
             flex-direction: column;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
   margin-bottom: 16px;
   font-size: 16px;
   font-weight: 600;
@@ -102,20 +102,20 @@
   text-align: left;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
     margin-bottom: 1.6vw;
     font-size: 1.6vw;
     line-height: 3vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 {
     margin-bottom: 2.083vw;
     font-size: 3.90625vw;
     line-height: 3.906vw;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
   font-size: 18px;
   line-height: 30px;
   text-align: left;
@@ -124,20 +124,20 @@
   display: inline-block;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
     font-size: 1.8vw;
     line-height: 3vw;
     margin-left: 2.2vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history h3 .send {
     font-size: 3.2552083333vw;
     line-height: 3.906vw;
     margin-left: 2.864vw;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
   font-size: 14px;
   line-height: 19px;
   text-align: left;
@@ -146,20 +146,20 @@
   display: block;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
     font-size: 1.4vw;
     line-height: 1.9vw;
     margin-bottom: 0.6vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .info_order_history span {
     font-size: 3.90625vw;
     line-height: 5.2083333333vw;
     margin-bottom: 0.781vw;
   }
 }
-#wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
+#wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
   width: 175px;
   height: 50px;
   color: #000000;
@@ -171,7 +171,7 @@
   font-size: 16px;
 }
 @media (max-width: 1000px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
     width: 17.5vw;
     line-height: 5vw;
     height: 5vw;
@@ -181,7 +181,7 @@
   }
 }
 @media (max-width: 768px) {
-  #wrapper.page > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
+  #wrapper > .inner section.my_page .order_info .card_content .list_order_history li .item_my_page .btn_short {
     width: 36.4583333333vw;
     height: 10.4166666667vw;
     border-radius: 0.915vw;
