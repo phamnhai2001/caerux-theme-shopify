@@ -787,3 +787,6 @@ details[open] > .header__submenu {
           animation: animeInorder .2 ease;
   z-index: 1;
 }
+.header__icon.header__icon--cart {
+	display: flex;
+}
