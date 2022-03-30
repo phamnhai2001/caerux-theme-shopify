@@ -99,9 +99,14 @@
                         <div id="nav_bg"></div>
                         <div id="global_nav">
                             <div class="header_logo util_sp">
-                                <a href="">
-                                    <img src="{{'logo.png' | asset_url }}" alt="">
-                                </a>
+                                <a href="{{ routes.root_url }}" class="logo">
+                                    {%- if section.settings.logo != blank -%}
+                                    <img srcset="{{ section.settings.logo | img_url}}",
+                                    src="{{ section.settings.logo | img_url }}"
+                                    alt="">
+                                {%- else -%}
+                                    <img src="{{ 'logo.png' | asset_url }}" alt="">
+                                {%- endif -%}
                             </div>
                             <ul class="list_menu">
                                     {%- for link in section.settings.menu.links -%}
