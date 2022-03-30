@@ -120,32 +120,7 @@
   }
 }
 
-.pagi_nav ul li a.prev:hover:before {
-  background: url("bx-chevron-left_wht.svg") no-repeat;
-  background-size: 100% auto;
-}
 
-.pagi_nav ul li a.prev:before {
-  content: "";
-  background: url("bx-chevron-left.svg") no-repeat;
-  background-size: 100% auto;
-  width: 20px;
-  display: inline-block;
-  height: 20px;
-  vertical-align: sub;
-}
-@media (max-width: 1000px) {
-  .pagi_nav ul li a.prev:before {
-    width: 2vw;
-    height: 2vw;
-  }
-}
-@media (max-width: 768px) {
-  .pagi_nav ul li a.prev:before {
-    width: 2.6041666667vw;
-    height: 2.6041666667vw;
-  }
-}
 
 .prev .icon {
   -webkit-transform: rotate(90deg);
