@@ -33,7 +33,12 @@
 		<div class="collection_filters">
              {% if enable_filtering %}
              <div class="filters util_pc" id="filters">
-                        <div class="txt_desp ">
+                {%- if collection.products.size == 0 -%}
+                        <div class="txt_desp " style="display:none">
+                            <h3>Filter By</h3>
+                        </div>
+               {% else %}
+               <div class="txt_desp ">
                             <h3>Filter By</h3>
                         </div>
                		<facet-filters-form class="facets small-hide">
@@ -170,7 +175,7 @@
                           </div>
                          </form>
                			</facet-filters-form>
-                            
+                  {%- endif -%}          
           </div>
           {%- endif -%}
           <menu-drawer class="util_sp mobile-facets__wrapper {% unless collapse_on_larger_devices %} medium-hide large-up-hide{% endunless %}" data-breakpoint="mobile">
