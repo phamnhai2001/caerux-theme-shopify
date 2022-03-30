@@ -1181,12 +1181,12 @@
 }
 @media (max-width: 1000px) {
   .quantity__button {
-    width: 3vw;
+    width: 3vw !important;
   }
 }
 @media (max-width: 768px) {
   .quantity__button {
-    width: 3.90625vw;
+    width: 3.90625vw !important;
   }
 }
 
