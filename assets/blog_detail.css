@@ -551,7 +551,7 @@
 }
 @media (max-width: 1000px) {
   #wrapper.blog_detail .inner section.section#related_post .inner .list_item ul li {
-    width: 33.333%;
+    width: 48.8888%;
   }
 }
 @media (max-width: 768px) {
