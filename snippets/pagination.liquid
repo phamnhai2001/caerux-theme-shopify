@@ -12,14 +12,14 @@
 {% endcomment %}
 
 <div class="pagi_nav">
-    <ul>
-     	<li>
+    <ul class="list_pagi">
+     	<li class="pagi_item">
             <a class="prev page_num" href="{{ paginate.previous.url }}">
               {%- render 'icon-caret' -%}
           </a>
         </li>
        {% for part in paginate.parts %}
-       <li>
+       <li  class="pagi_item">
          {%- if part.title == paginate.current_page -%}
               <span aria-current="page" class="page_num current">{{ part.title }}</span>
             {%- else -%}
@@ -27,7 +27,7 @@
             {%- endif -%}
        </li>
        {% endfor %}
-       <li>
+       <li  class="pagi_item">
        		<a class="next page_num" href="{{ paginate.next.url }}">
               {%- render 'icon-caret' -%}
          </a>
