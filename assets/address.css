@@ -101,6 +101,13 @@
     margin: 2vw 0;
   }
 }
+@media (max-width: 768px) {
+  .addresses div h2 {
+    font-size: 3.225vw;
+    line-height: 3.906vw;
+    margin: 2.604vw 0;
+  }
+}
 
 .addresses div form {
   max-width: 500px;
