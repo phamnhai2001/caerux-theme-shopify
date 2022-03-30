@@ -495,17 +495,17 @@ header .inner .header_main nav .nav_main_top #global_nav ul li details .list-men
   min-width: 100%;
   background-color: #fff;
 }
-header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item {
+header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item_child {
   margin: 0;
 }
-header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item a {
+header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item_child a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
   color: #a7a7a7;
 }
-header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item a:hover {
+header .inner .header_main nav .nav_main_top #global_nav ul li details .list-menu .item_child a:hover {
   color: #000000;
 }
 header .inner .header_main nav .nav_main_top #global_nav .header_logo {
@@ -725,11 +725,11 @@ header .inner .header_main nav.open #global_nav ul li details summary svg {
     margin-top: 1.3020833333vw;
   }
 }
-header .inner .header_main nav.open #global_nav ul li details .list-menu .item {
+header .inner .header_main nav.open #global_nav ul li details .list-menu .item_child {
   margin: 0;
 }
 @media (max-width: 1000px) {
-  header .inner .header_main nav.open #global_nav ul li details .list-menu .item a {
+  header .inner .header_main nav.open #global_nav ul li details .list-menu .item_child a {
     display: inline-block;
     margin-bottom: 0;
     padding: 1vw;
@@ -737,11 +737,11 @@ header .inner .header_main nav.open #global_nav ul li details .list-menu .item {
   }
 }
 @media (max-width: 768px) {
-  header .inner .header_main nav.open #global_nav ul li details .list-menu .item a {
+  header .inner .header_main nav.open #global_nav ul li details .list-menu .item_child a {
     padding: 1.3020833333vw;
   }
 }
-header .inner .header_main nav.open #global_nav ul li details .list-menu .item a:hover {
+header .inner .header_main nav.open #global_nav ul li details .list-menu .item_child a:hover {
   color: #a7a7a7;
 }
 header .inner .header_main nav.open #global_nav .header_logo {
