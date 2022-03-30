@@ -377,7 +377,7 @@
   }
 }
 
-.addresses ul li button label[Delete] {
+.addresses ul li button aria-label[Delete] {
   border-right: none;
 }
 
