@@ -556,8 +556,8 @@
 }
 @media (max-width: 768px) {
   #wrapper.blog_detail .inner section.section#related_post .inner .list_item ul li {
-    width: 50%;
-    padding: 0 1.302vw;
+    width: 100%;
+    padding: 0 0 0 1.302vw;
   }
 }
 #wrapper.blog_detail .inner section.section#related_post .inner .list_item ul li a .item_content .thumb {
