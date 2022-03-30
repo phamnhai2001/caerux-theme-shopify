@@ -18,15 +18,15 @@
 
 .pagi_nav .list_pagi {
   text-align: center;
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .pagi_nav .list_pagi .pagi_item {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: top;
-  width: auto;
-  margin: 0;
-  padding: 0 5px;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 5px !important;
 }
 @media (max-width: 1000px) {
   .pagi_nav .list_pagi .pagi_item {
