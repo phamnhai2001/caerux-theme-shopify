@@ -1357,6 +1357,9 @@
   	margin-top: 0;
     padding: 0;
   }
+  .spr-form {
+  	width: 100% !important;
+  }
 }
 .spr-form {
   width: 40%;
