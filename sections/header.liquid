@@ -77,7 +77,7 @@
         <div class="header_main">
            		<nav>
                     <div class="logo">
-                        <a href="" class="logo">
+                        <a href="{{ routes.root_url }}" class="logo">
                             {%- if section.settings.logo != blank -%}
                             <img srcset="{{ section.settings.logo | img_url}}",
                             src="{{ section.settings.logo | img_url }}"
