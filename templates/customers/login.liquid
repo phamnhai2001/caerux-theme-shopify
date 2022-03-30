@@ -3,72 +3,7 @@
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'login.js' | asset_url }}" defer="defer"></script>
 {% style %}
-	#recover {
-		display: none;
-	}
-	#recover + div {
-		display: none;
-	}
-	#recover:target,#recover:target + div
-	{
-		display: block;
-	}
-	#recover:target ~ #login,
-    #recover:target ~ #login + div {
-        display: none;
-    }
-    .login_form {
-    	display: flex;
-    }
-    .form {
-        width: 50%;
-		padding: 0 15px;
-    }
-	.login_form form{	
-		width: 100%;
-	}
-    #RecoverEmail-email-error svg{
-        width: 15px;
-    }
-
-    .reset_password_form p {
-        margin-bottom: 20px;
-        font-weight: 500;
-        font-size: 16px;
-    }
-    .input_reset {
-        margin-bottom: 20px;
-    }
-    .reset_password_form button {
-        background: black;
-        color: #fff;
-        border: none;
-        padding: 10px 20px;
-        margin-right: 25px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-    .reset_password_form a {
-        color: #000;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-    }
-    h1#login {
-        margin-bottom: 45px;
-        font-size: 26px;
-        font-weight: 600;
-    }
-    h1#recover {
-        margin-bottom: 45px;
-        font-size: 26px;
-        font-weight: 600;
-    }
-    .input_reset li input {
-        width: 62%;
-    }
-    .form h3 svg {
-        width: 15px;
-    }
+	
 {% endstyle %}
 <div id="wrapper" class="login">
     <div class="inner">
