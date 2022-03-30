@@ -736,44 +736,73 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
-#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked ~ .icon-checkmark {
-  visibility: visible;
-}
-#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg {
+#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox] {
+  display: inline-block;
   position: relative;
+  padding: 0 0 18px 20px;
+  outline: none;
+  line-height: 30px;
+  vertical-align: middle;
+  font-weight: 500;
 }
 @media (max-width: 1000px) {
-  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg {
-    width: 2vw;
-    height: 2vw;
-    margin-right: 1.5vw;
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox] {
+    padding: 0 0 1.8vw 2vw;
+    line-height: 3vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg {
-    width: 2.6041666667vw;
-    height: 2.6041666667vw;
-    margin-right: 1.953125vw;
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox] {
+    padding: 0 0 2.34375vw 2.6041666667vw;
+    line-height: 3.90625vw;
   }
 }
-#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg.icon-checkmark {
+#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]::before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #121212;
   position: absolute;
-  visibility: hidden;
+  top: 0;
+  left: 0;
+  cursor: pointer;
 }
 @media (max-width: 1000px) {
-  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg.icon-checkmark {
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]::before {
     width: 1.5vw;
-    left: 2vw;
+    height: 1.5vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label svg.icon-checkmark {
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]::before {
     width: 1.953125vw;
-    left:3.05vw;
+    height: 1.953125vw;
+  }
+}
+#wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url(check-black.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 100% auto;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked::after {
+    width: 1.5vw;
+    height: 1.5vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked::after {
+    width: 1.953125vw;
+    height: 1.953125vw;
   }
 }
 @media (max-width: 1000px) {
