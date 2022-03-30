@@ -377,8 +377,8 @@
   }
 }
 
-.addresses ul li button:nth-child(03) {
-  border-right: 0 !important;
+.addresses ul li button label[Delete] {
+  border-right: none;
 }
 
 .addresses ul li .edit {
