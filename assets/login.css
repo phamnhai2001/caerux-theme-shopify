@@ -573,7 +573,11 @@ h1#recover {
 .input_reset li input {
   width: 62%;
 }
-
+@media (max-width: 768px) {
+  input_reset li input {
+    width: 100%;
+  }
+}
 .form h3 svg {
   width: 15px;
 }
