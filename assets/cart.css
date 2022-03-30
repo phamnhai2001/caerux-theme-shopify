@@ -1278,6 +1278,19 @@
 
 .icon-error {
   width: 14px;
+  
+}
+@media (max-width: 1000px) {
+  .icon-error {
+  width: 1.4vw;
+  
+}
+}
+@media (max-width: 768px) {
+  .icon-error {
+  width: 1.8229166667vw;
+  
+}
 }
 
 .cart-item__error-text:empty + svg {
