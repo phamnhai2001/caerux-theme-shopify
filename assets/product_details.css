@@ -60,7 +60,6 @@
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item {
   position: relative;
-/*   display: none; */
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a img {
   -o-object-fit: cover;
