@@ -698,6 +698,7 @@ header .inner .header_main nav.open #global_nav ul li details summary svg {
   header .inner .header_main nav.open #global_nav ul li details summary svg {
     width: 1.953125vw;
     right: -4.5572916667vw;
+    top: 2.343vw;
   }
 }
 @media (max-width: 1000px) {
