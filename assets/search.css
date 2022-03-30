@@ -102,7 +102,7 @@ a.item_type .item_content .thumb {
 }
 @media (max-width: 768px) {
   .template-search #ProductGridContainer ul li a .item_content .txt_desp h3 {
-    font-size: 2.0833333333vw;
+    font-size: 3.225vw;
     margin-bottom: 1.3020833333vw;
   }
 }
@@ -118,7 +118,7 @@ a .item_content .txt_desp p {
 }
 @media (max-width: 768px) {
   a .item_content .txt_desp p {
-    font-size: 2.0833333333vw;
+    font-size: 3.225vw;
   }
 }
 
