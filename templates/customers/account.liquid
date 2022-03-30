@@ -128,16 +128,15 @@
                         </ul>
                     </div>
                     <div class="card_content">
-                        <div class="title">Shipping address</div>
+                        <div class="title">{{ 'customer.account.details' | t }}</div>
                         <div class="item">
                             <div class="address">
-                               <p>Not registered yet.</p>
+                               <p>{{ customer.default_address | format_address }}</p>
                             </div>
-                            <a href="create_address.html" class="add_address">Add an address</a>
+                            <a href="{{ routes.account_addresses_url }}" class="view-address">
+                              {{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+                            </a>
                         </div>
-                    </div>
-                    <div class="card_content">
-                        <div class="title">Inquiry</div>
                     </div>
                     <div class="card_content">
                         <div class="title">
