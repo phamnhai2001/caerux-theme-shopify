@@ -515,7 +515,7 @@
 }
 @media (max-width: 1000px) {
   .reset_password_form button {
-    padding: 1vw 2vw;
+    padding: 1.5vw 3.5vw;
     margin-right: 2.5vw;
     font-size: 1.6vw;
   }
