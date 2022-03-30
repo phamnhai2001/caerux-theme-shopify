@@ -641,24 +641,59 @@
 
 #recommended .inner {
   max-width: 1200px;
-  width: 88.8888%;
-  margin: 0 auto;
-  position: relative;
+  width: 88.888%;
+  margin: 0 auto 80px;
 }
 @media (max-width: 1000px) {
   #recommended .inner {
     max-width: 100%;
+    margin: 0 auto 8vw;
+    width: 100%;
   }
 }
 @media (max-width: 768px) {
   #recommended .inner {
-    width: 100%;
-    padding: 0 5.208vw;
+    margin: 0 auto 10.416vw;
+  }
+}
+#recommended .inner .ttl_product {
+  background: #0097CC;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .ttl_product {
+    margin-bottom: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .ttl_product {
+    margin-bottom: 3.906vw;
+  }
+}
+#recommended .inner .ttl_product h3 {
+  font-size: 24px;
+  padding: 12px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #fff;
+  text-align: left;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .ttl_product h3 {
+    font-size: 2.4vw;
+    padding: 1.2vw;
+    line-height: 2.6vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .ttl_product h3 {
+    font-size: 3.125vw;
+    padding: 1.562vw;
+    line-height: 3.385vw;
   }
 }
 #recommended .inner .list_item {
   margin-bottom: 80px;
-  overflow: hidden;
 }
 @media (max-width: 1000px) {
   #recommended .inner .list_item {
@@ -680,7 +715,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 127%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -10px;
 }
 @media (max-width: 1000px) {
@@ -688,10 +724,9 @@
     margin: 0 -1vw;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 768px) {
   #recommended .inner .list_item ul {
     margin: 0 -1.302vw;
-    width: 171%;
   }
 }
 #recommended .inner .list_item ul li {
@@ -701,13 +736,13 @@
 @media (max-width: 1000px) {
   #recommended .inner .list_item ul li {
     padding: 0 1.2vw;
-    width: 33.333%;
   }
 }
 @media (max-width: 768px) {
   #recommended .inner .list_item ul li {
     width: 50%;
     padding: 0 1.302vw;
+    margin-bottom: 2vw;
   }
 }
 #recommended .inner .list_item ul li a .item_content .thumb {
@@ -759,15 +794,10 @@
   font-size: 16px;
   font-weight: bold;
   letter-spacing: -0.38px;
-  overflow: hidden;
-  width: 100%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
 }
 @media (max-width: 1000px) {
   #recommended .inner .list_item ul li a .item_content .txt_desp h3 {
-    font-size: 2.4vw;
+    font-size: 2.2vw;
     letter-spacing: 0;
   }
 }
@@ -783,7 +813,7 @@
 }
 @media (max-width: 1000px) {
   #recommended .inner .list_item ul li a .item_content .txt_desp p {
-    font-size: 2.2vw;
+    font-size: 2vw;
     letter-spacing: 0;
   }
 }
