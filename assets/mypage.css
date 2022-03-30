@@ -412,3 +412,16 @@
     font-size: 2.0833333333vw;
   }
 }
+.view-address{
+ color: white;
+    background-color: black;
+    padding: 13px 13px;
+    text-align: center;
+    display: block;
+    @include sp {
+        padding: get_pc(13) get_pc(13);
+    }
+    @include sp_min {
+        padding: get_sp(13) get_sp(13);
+    }
+}
