@@ -1709,7 +1709,7 @@ a .visually-hidden {
   color: #000;
 }
 
-.sale {
+.price .sale {
   background: #006fbb;
   border-radius: 12px;
   color: #fff;
