@@ -777,8 +777,8 @@
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]::before {
-    width: 3.255vw;
-    height: 3.255vw;
+    width: 3.225vw;
+    height: 3.225vw;
   }
 }
 #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked::after {
@@ -801,8 +801,8 @@
 }
 @media (max-width: 768px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets .mobile-facets__inner .mobile-facets__main .mobile-facets__details .mobile-facets__submenu .mobile-facets__list .mobile-facets__item label input[type=checkbox]:checked::after {
-    width: 1.953125vw;
-    height: 1.953125vw;
+    width: 3.225vw;
+    height: 3.225vw;
   }
 }
 @media (max-width: 1000px) {
