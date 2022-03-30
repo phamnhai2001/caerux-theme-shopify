@@ -110,7 +110,8 @@
 }
 #wrapper.login section.section#content .inner .login_wrapper .login_form form .btn_login button {
   width: 100%;
-  padding: 10px;
+  padding: 19px;
+  border-radius: 5px;
   font-size: 16px;
   margin-bottom: 25px;
   cursor: pointer;
