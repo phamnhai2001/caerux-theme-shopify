@@ -352,3 +352,16 @@ footer#footer .copyright .container .time p {
 footer#footer .copyright .container .time p span {
   font-weight: 600;
 }
+ul li a img {
+	width: 20px;
+}
+@media (max-width: 1000px) {
+  ul li a img {
+	width: 2vw;
+}
+}
+@media (max-width: 768px) {
+  ul li a img {
+	width: 3.906vw;
+}
+}
