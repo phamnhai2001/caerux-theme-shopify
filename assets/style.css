@@ -1007,16 +1007,19 @@ section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .
 }
 section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
   height: 16.9px;
+  width: 20px;
   vertical-align: middle;
 }
 @media (max-width: 1000px) {
   section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
     height: 1.7vw;
+    width: 2vw;
   }
 }
 @media (max-width: 768px) {
   section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
     height: 2.213vw;
+    width: 2.604vw;
   }
 }
 section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop:hover {
