@@ -276,30 +276,87 @@
   visibility: visible;
 }
 .cart-notification-product {
-	display: flex;
-    margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
 }
+@media (max-width: 1000px) {
+  .cart-notification-product {
+    margin-bottom: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart-notification-product {
+    margin-bottom: 3.90625vw;
+  }
+}
+
 .cart-notification-product__image {
-	width: 80px;
-	margin-right: 10px;
-  	height: 80px;
-    object-fit: cover;
+  width: 80px;
+  margin-right: 10px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
+@media (max-width: 1000px) {
+  .cart-notification-product__image {
+    width: 8vw;
+    margin-right: 1vw;
+    height: 8vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart-notification-product__image {
+    width: 10.4166666667vw;
+    margin-right: 1.3020833333vw;
+    height: 10.4166666667vw;
+  }
+}
+
 .cart-notification-product__name {
-	font-size: 14px;
-    font-weight: bold;
-  	text-align: left;
-    margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
 }
+@media (max-width: 1000px) {
+  .cart-notification-product__name {
+    font-size: 1.4vw;
+    margin-bottom: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart-notification-product__name {
+    font-size: 1.8229166667vw;
+    margin-bottom: 1.3020833333vw;
+  }
+}
+
 #cart-notification-button {
-    border: 1px solid black;
-    width: 100%;
-    padding: 10px;
-    display: block;
-    margin-bottom: 10px;
-  	color: black;
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+  color: black;
 }
+@media (max-width: 1000px) {
+  #cart-notification-button {
+    padding: 1vw;
+    margin-bottom: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  #cart-notification-button {
+    padding: 1.3020833333vw;
+    margin-bottom: 1.3020833333vw;
+  }
+}
+
 .product-option {
-	display: flex;
-  	text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
 }
