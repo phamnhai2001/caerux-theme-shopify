@@ -45,7 +45,7 @@
   <localization-form>
     {% form 'localization' %}
       <div class="disclosure">
-        <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
+        <button type="button" class="disclosure__button localization-form__select localization-selector link link--text caption-large" aria-expanded="false" aria-controls="CountryList">
           {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
 
           {% render 'icon-caret' %}
