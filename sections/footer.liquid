@@ -15,7 +15,7 @@
                     </div>
                     <div class="form_sub">
                         {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-                            <input type="email" placeholder="your@email.address" required>
+                            <input type="email" placeholder="your@email.address" name=[contact[Email]] required>
                             <button type="submit">
                                 <img src="{{'envelope-regular-24.png' | asset_url }}" alt="">
                             </button>
