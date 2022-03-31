@@ -467,3 +467,6 @@ ul li a img {
       line-height: 5.2083333333vw;
     }
   }
+.footer__localization .shopify-localization-form .disclosure .disclosure__list .disclosure__item a:hover {
+  color: #000000;
+}
