@@ -19,6 +19,9 @@
                             <button type="submit">
                                 <img src="{{'envelope-regular-24.png' | asset_url }}" alt="">
                             </button>
+                      {%- if form.posted_successfully? -%}
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+              {%- endif -%}
                         {%- endform -%}
                     </div>
                     <div class="social_icon">
