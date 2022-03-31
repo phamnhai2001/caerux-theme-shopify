@@ -427,12 +427,16 @@ ul li a img {
     width: 245px;
     border: 1px solid #dddddd;
     padding: 10px 20px;
+    position: absolute;
+    bottom: 45px;
+    background: #fff;
   }
   @media (max-width: 1000px) {
     .footer__localization .shopify-localization-form .disclosure .disclosure__list {
       height: 20vw;
       width: 24.5vw;
       padding: 1vw 2vw;
+      bottom: 4.5vw;
     }
   }
   @media (max-width: 768px) {
@@ -440,6 +444,7 @@ ul li a img {
       height: 26.0416666667vw;
       width: 31.9010416667vw;
       padding: 1.3020833333vw 2.6041666667vw;
+      bottom: 5.859375vw;
     }
   }
   .footer__localization .shopify-localization-form .disclosure .disclosure__list .disclosure__item a {
