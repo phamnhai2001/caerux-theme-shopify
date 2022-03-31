@@ -417,15 +417,18 @@
   padding: 13px 13px;
   text-align: center;
   display: block;
+  width: 200px;
 }
 @media (max-width: 1000px) {
   .view-address {
     padding: 1.3vw 1.3vw;
+    width: 20vw;
   }
 }
 @media (max-width: 768px) {
   .view-address {
     padding: 1.6927083333vw 1.6927083333vw;
+    width: 26.041666vw;
   }
 }
 
