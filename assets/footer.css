@@ -378,62 +378,84 @@ ul li a img {
       padding-top: 3.90625vw;
     }
   }
-  .footer__localization .localization-form h2 {
-    margin-bottom: 10px;
-    font-size: 16px;
-    color: #637381;
-  }
-  @media (max-width: 1000px) {
-    .footer__localization .localization-form h2 {
-      margin-bottom: 1vw;
-      font-size: 1.6vw;
-    }
-  }
-  @media (max-width: 768px) {
-    .footer__localization .localization-form h2 {
-      margin-bottom: 1.3020833333vw;
-      font-size: 2.0833333333vw;
-    }
-  }
-  .footer__localization .localization-form .disclosure {
-    position: relative;
-  }
-  .footer__localization .localization-form .disclosure .disclosure__button {
+  .footer__localization .shopify-localization-form .disclosure .disclosure__button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 10px 20px;
     background: transparent;
     border: 1px solid #637381;
-    color: #454f5b;
+    padding: 10px 20px;
+    margin-bottom: 5px;
+    color: #31373d;
     cursor: pointer;
   }
   @media (max-width: 1000px) {
-    .footer__localization .localization-form .disclosure .disclosure__button {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__button {
+      padding: 1vw 2vw;
+      margin-bottom: 0.5vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__button {
+      padding: 1.3020833333vw 2.6041666667vw;
+      margin-bottom: 0.6510416667vw;
+    }
+  }
+  .footer__localization .shopify-localization-form .disclosure .disclosure__button svg {
+    width: 12px;
+    margin-left: 10px;
+  }
+  @media (max-width: 1000px) {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__button svg {
+      width: 1.2vw;
+      margin-left: 1vw;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__button svg {
+      width: 1.5625vw;
+      margin-left: 1.3020833333vw;
+    }
+  }
+  .footer__localization .shopify-localization-form .disclosure .disclosure__list {
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 245px;
+    border: 1px solid #dddddd;
+    padding: 10px 20px;
+  }
+  @media (max-width: 1000px) {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__list {
+      height: 20vw;
+      width: 24.5vw;
       padding: 1vw 2vw;
     }
   }
   @media (max-width: 768px) {
-    .footer__localization .localization-form .disclosure .disclosure__button {
+    .footer__localization .shopify-localization-form .disclosure .disclosure__list {
+      height: 26.0416666667vw;
+      width: 31.9010416667vw;
       padding: 1.3020833333vw 2.6041666667vw;
     }
   }
-  .footer__localization .localization-form .disclosure .disclosure__button svg {
-    width: 12px;
-    margin-left: 15px;
+  .footer__localization .shopify-localization-form .disclosure .disclosure__list .disclosure__item a {
+    color: #919eab;
+    font-size: 16px;
+    line-height: 40px;
   }
   @media (max-width: 1000px) {
-    .footer__localization .localization-form .disclosure .disclosure__button svg {
-      width: 1.2vw;
-      margin-left: 1.5vw;
+    .footer__localization .shopify-localization-form .disclosure .disclosure__list .disclosure__item a {
+      font-size: 1.6vw;
+      line-height: 4vw;
     }
   }
   @media (max-width: 768px) {
-    .footer__localization .localization-form .disclosure .disclosure__button svg {
-      width: 1.5625vw;
-      margin-left: 1.953125vw;
+    .footer__localization .shopify-localization-form .disclosure .disclosure__list .disclosure__item a {
+      font-size: 2.0833333333vw;
+      line-height: 5.2083333333vw;
     }
   }
