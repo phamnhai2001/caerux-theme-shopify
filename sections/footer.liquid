@@ -1,6 +1,7 @@
   <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <footer id="footer">
+    {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
     <div class="inner">
         <div class="container">
             <div class="subscribe">
@@ -94,6 +95,7 @@
             </div>
         </div>
     </div>
+    {%- endif -%}
     <div class="copyright">
         <div class="container">
              <div class="footer__column footer__localization">
