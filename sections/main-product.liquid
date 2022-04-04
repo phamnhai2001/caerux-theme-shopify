@@ -11,13 +11,13 @@
                             <div class="container">
                               {%- for media in product.media -%}
                                 <div class="item">
-                                    <a class="lightbox" href="#{{image.position}}">
+                                    <a class="lightbox" href="#{{media.position}}">
                                         <img src="{{ media | image_url }}" alt="">
                                         <button class="zoom_in">
                                             <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="">
                                         </button>
                                     </a>
-                                    <div class="lightbox-target" id="{{image.position}}">
+                                    <div class="lightbox-target" id="{{media.position}}">
 	                                     <img src="{{ media | image_url }}" >   
                                         <a class="lightbox-close" href="#">
                                         </a>
