@@ -26,10 +26,12 @@
         "type": "footer",
         "settings": {
           "footer_description": "Enter your address to get $20 off your first orders",
+          "enable_country_selector": true,
+          "enable_language_selector": true,
+          "show_social": true,
           "footer_linklist": "footer",
           "copyright": "@2022 Shopify. All Right Reserved",
-          "open_time": "9:00 am",
-          "close_time": "8:00 pm"
+          "payment_enable": true
         }
       }
     },
