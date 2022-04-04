@@ -21,18 +21,24 @@
                             </button>
                         {%- endform -%}
                     </div>
+                  {%- if section.settings.show_social -%}
                     <div class="social_icon">
                         <ul>
+                          {%- if settings.social_facebook_link != blank -%}
                             <li>
-                                <a href="">
+                                <a href="{{ settings.social_facebook_link }}">
                                     <img src="{{'btn_share_fb.png' | asset_url }}" alt="">
+                                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
                                 </a>
                             </li>
+                          {%- endif -%}
+                          {%- if settings.social_instagram_link != blank -%}
                             <li>
-                                <a href="">
+                                <a href="{{ settings.social_instagram_link }}">
                                     <img src="{{'btn_share_insta.png' | asset_url }}" alt="">
                                 </a>
                             </li>
+                           {%- endif -%}
                             <li>
                                 <a href="">
                                     <img src="{{'btn_share_twitter.png' | asset_url }}" alt="">
@@ -40,7 +46,7 @@
                             </li>
                         </ul>
                     </div>
-                 
+                  {%- endif -%}
                 </div>
             </div>
             <div class="category">
