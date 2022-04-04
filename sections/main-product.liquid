@@ -9,16 +9,16 @@
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
-                              {% for image in product.images %}
+                              {%- for media in product.media -%}
                                 <div class="item">
                                     <a class="lightbox" href="#{{image.position}}">
-                                        <img src="{{ image | image_url }}" alt="">
+                                        <img src="{{ media | image_url }}" alt="">
                                         <button class="zoom_in">
                                             <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="">
                                         </button>
                                     </a>
                                     <div class="lightbox-target" id="{{image.position}}">
-	                                     <img src="{{ image | image_url }}" >   
+	                                     <img src="{{ media | image_url }}" >   
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
