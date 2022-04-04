@@ -17,6 +17,7 @@
                     <div class="inner_order_history">
                         <div class="contanier_list_order_history">
                             <ul class="list_order_history">
+                              {%- for line_item in order.line_items -%}
                                 <li>
                                     <div class="item_order_history">
                                         <div class="data_order_history">
@@ -39,6 +40,7 @@
                                         </div>
                                     </div>
                                 </li>
+                                {%- endfor -%}
                                 <li>
                                     <div class="item_order_history">
                                         <div class="data_order_history">
