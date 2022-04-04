@@ -63,17 +63,15 @@
         "text": ""
       }
     },
-    "featured-product": {
-      "type": "featured-product",
+    "product-recommendations": {
+      "type": "product-recommendations",
       "settings": {
-        "heading": "Related Product",
-        "feature_collection": "product-recommendations"
       }
     }
   },
   "order": [
     "main",
     "review-product",
-    "featured-product"
+    "product-recommendations"
   ]
 }
