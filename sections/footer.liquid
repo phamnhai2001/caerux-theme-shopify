@@ -40,7 +40,54 @@
                             </li>
                         </ul>
                     </div>
-                  <div class="footer__column footer__localization">
+                 
+                </div>
+            </div>
+            <div class="category">
+                <ul>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>ADDRESS</h3>
+                        </div>
+                        <div class="txt_category">
+                            <p>Ha Noi</p>
+                            <p>Ho Chi Minh</p>
+                            <p>Da Nang</p>
+                            <p>Hai Phong</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>EXPLORE</h3>
+                        </div>
+                          {%- assign footer_linklist = section.settings.footer_linklist -%}
+                          {% if linklists[footer_linklist].links.size > 0 %}
+                            <div class="txt_category">
+                              {% for link in linklists[footer_linklist].links %}
+                                <p>{{ link.title }}</p>
+                              {% endfor %}
+                          	</div>
+                          {% endif %}
+                    </li>
+                    <li>
+                        <div class="ttl_category">
+                            <h3>BLOGS</h3>
+                        </div>
+                        <div class="txt_category">
+                            <p>News</p>
+                            <p>Fashion</p>
+                            <p>Event</p>
+                            <p>Promotion</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <div class="logo">
+                         <div class="footer__column footer__localization">
                     {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
                       <localization-form>
                         {% form 'localization' %}
@@ -90,59 +137,6 @@
                     {% endif %}
 
       			</div>
-                </div>
-            </div>
-            <div class="category">
-                <ul>
-                    <li>
-                        <div class="ttl_category">
-                            <h3>ADDRESS</h3>
-                        </div>
-                        <div class="txt_category">
-                            <p>Ha Noi</p>
-                            <p>Ho Chi Minh</p>
-                            <p>Da Nang</p>
-                            <p>Hai Phong</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="ttl_category">
-                            <h3>EXPLORE</h3>
-                        </div>
-                          {%- assign footer_linklist = section.settings.footer_linklist -%}
-                          {% if linklists[footer_linklist].links.size > 0 %}
-                            <div class="txt_category">
-                              {% for link in linklists[footer_linklist].links %}
-                                <p>{{ link.title }}</p>
-                              {% endfor %}
-                          	</div>
-                          {% endif %}
-                    </li>
-                    <li>
-                        <div class="ttl_category">
-                            <h3>BLOGS</h3>
-                        </div>
-                        <div class="txt_category">
-                            <p>News</p>
-                            <p>Fashion</p>
-                            <p>Event</p>
-                            <p>Promotion</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="copyright">
-        <div class="container">
-            <div class="logo">
-                        {%- if section.settings.logo_footer != blank -%}
-                            <img srcset="{{ section.settings.logo_footer | img_url }}"
-                            src="{{ section.settings.logo_footer | img_url }}"
-                            alt="">
-                        {%- else -%}
-                            <img src="{{ 'logo.png' | asset_url }}" alt="">
-                        {%- endif -%}
                 <div class="txt_desp">
                     <p>{{section.settings.copyright}}</p>
                         <!-- @2022 Shopify. All Right Reserved</p> -->
