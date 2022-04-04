@@ -87,7 +87,7 @@
     <div class="copyright">
         <div class="container">
             <div class="logo">
-                         <div class="footer__column footer__localization">
+             <div class="footer__column footer__localization">
                     {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
                       <localization-form>
                         {% form 'localization' %}
@@ -137,13 +137,24 @@
                     {% endif %}
 
       			</div>
-                <div class="txt_desp">
-                    <p>{{section.settings.copyright}}</p>
-                        <!-- @2022 Shopify. All Right Reserved</p> -->
-                </div>
             </div>
-            <div class="time">
-                <p>Opening Hour: <span>{{section.settings.open_time}}</span> - <span>{{section.settings.close_time}}</span></p>
+            <div class="footer__column footer__column--info">
+              {%- if section.settings.payment_enable -%}
+                <div class="footer__payment">
+                  <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+                  <ul class="list list-payment" role="list">
+                    {%- for type in shop.enabled_payment_types -%}
+                      <li class="list-payment__item">
+                        {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                </div>
+              {%- endif -%}
+              <div class="footer__copyright caption">
+                <small class="copyright__content">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}</small>
+                <small class="copyright__content">{{ powered_by_link }}</small>
+              </div>
             </div>
         </div>
     </div>
