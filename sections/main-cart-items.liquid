@@ -1,5 +1,10 @@
 <link rel="stylesheet" href="{{ 'cart.css' | asset_url }}" media="print" onload="this.media='all'">
-
+{% style %}
+.icon-discount {
+    width: 15px;
+    margin-right: 5px;
+}
+{% endstyle %}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 <cart-items id="wrapper" class="cart{% if cart == empty %} cart_empty{% endif %}">
         <div class="inner">
