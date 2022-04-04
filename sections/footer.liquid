@@ -40,11 +40,14 @@
                                 </a>
                             </li>
                            {%- endif -%}
+                           {%- if settings.social_twitter_link != blank -%}
                             <li>
-                                <a href="">
+                                <a href="{{ settings.social_twitter_link }}">
                                     <img src="{{'btn_share_twitter.png' | asset_url }}" alt="">
+                                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
                                 </a>
                             </li>
+                            {%- endif -%}
                         </ul>
                     </div>
                   {%- endif -%}
