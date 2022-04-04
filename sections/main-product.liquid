@@ -27,7 +27,7 @@
                                 <div class="row">
                                   {%- for media in product.media -%}
                                     <div class="column">
-                                        <img class="image" src="{{ media | image_url }}" onclick="currentSlide({{image.position}})"
+                                        <img class="image" src="{{ media | image_url }}" onclick="currentSlide({{media.position}})"
                                             alt="">
                                     </div>
                                    {% endfor %}
