@@ -86,7 +86,6 @@
     </div>
     <div class="copyright">
         <div class="container">
-            <div class="logo">
              <div class="footer__column footer__localization">
                     {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
                       <localization-form>
@@ -137,7 +136,6 @@
                     {% endif %}
 
       			</div>
-            </div>
             <div class="footer__column footer__column--info">
               {%- if section.settings.payment_enable -%}
                 <div class="footer__payment">
@@ -256,15 +254,11 @@ customElements.define('localization-form', LocalizationForm);
             "label": "Text copyright"
         },
 		{
-			"type": "text",
-			"id": "open_time",
-			"label": "Open time"
-		},
-		{
-			"type": "text",
-			"id": "close_time",
-			"label": "Close time"
-		}
+            "type": "checkbox",
+            "id": "payment_enable",
+            "default": true,
+            "label": "t:sections.footer.settings.payment_enable.label"
+         }
     ]
 }
 {% endschema %}
