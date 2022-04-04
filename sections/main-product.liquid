@@ -144,25 +144,33 @@
                             <div class="txt_note">
                               <p>{{section.settings.text}} </p>
                             </div>
-                            <div class="social_icon">
-                                <ul>
-                                    <li>
-                                        <a href="">
-                                            <img src="{{'facebook_icon.png' | asset_url }}" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="{{'linkedin_icon.png' | asset_url }}" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img src="{{'twitter_icon.png' | asset_url }}" alt="">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            {%- if section.settings.show_social -%}
+                              <div class="social_icon">
+                                  <ul>
+                                    {%- if settings.social_facebook_link != blank -%}
+                                      <li>
+                                          <a href="{{ settings.social_facebook_link }}">
+                                              <img src="{{'btn_share_fb.png' | asset_url }}" alt="">
+                                          </a>
+                                      </li>
+                                    {%- endif -%}
+                                    {%- if settings.social_instagram_link != blank -%}
+                                      <li>
+                                          <a href="{{ settings.social_instagram_link }}">
+                                              <img src="{{'btn_share_insta.png' | asset_url }}" alt="">
+                                          </a>
+                                      </li>
+                                     {%- endif -%}
+                                     {%- if settings.social_twitter_link != blank -%}
+                                      <li>
+                                          <a href="{{ settings.social_twitter_link }}">
+                                              <img src="{{'btn_share_twitter.png' | asset_url }}" alt="">
+                                          </a>
+                                      </li>
+                                      {%- endif -%}
+                                  </ul>
+                              </div>
+                            {%- endif -%}
                           {%- endcase -%}
         				{%- endfor -%}
                         </div>
@@ -259,10 +267,17 @@
 	],
     "settings": [
 		{
+          "type": "checkbox",
+          "id": "show_social",
+          "default": false,
+          "label": "t:sections.footer.settings.show_social.label"
+        },
+		{
 			"type": "text",
 			"id": "text",
 			"label": "Text note"
 		}
+
       ]
 }
 {% endschema %}
