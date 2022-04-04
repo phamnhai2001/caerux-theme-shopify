@@ -10,6 +10,13 @@
                         <div class="product_images">
                             <div class="container">
                               {%- for media in product.media -%}
+                              {%- capture media_index -%}
+                                {%- if media.media_type == 'model' -%}{%- increment model_index -%}
+                                {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{%- increment video_index -%}
+                                {%- elsif media.media_type == 'image'%}{%- increment image_index -%}
+                                {%- endif -%}
+                              {%- endcapture -%}
+                              {%- assign media_index = media_index | plus: 1 -%}
                                 <div class="item">
                                     <a class="lightbox" href="#{{media.position}}">
                                         <img src="{{ media | image_url }}" alt="">
