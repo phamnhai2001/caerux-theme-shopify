@@ -1,5 +1,6 @@
-
-<section class="section" id="recommended">
+<div id="wrapper_product">
+  <div class="inner">
+	<section class="section" id="recommended">
                 <div class="inner">
                 <product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
                    {% if recommendations.performed and recommendations.products_count > 0 %}
@@ -20,7 +21,9 @@
                    {% endif %}
                  </product-recommendations>
                 </div>
-</section>
+	</section>
+  </div>
+</div>
 {% javascript %}
   class ProductRecommendations extends HTMLElement {
     constructor() {
