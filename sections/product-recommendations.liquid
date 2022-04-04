@@ -1,5 +1,6 @@
 <section class="section" id="recommended">
                 <div class="inner">
+                  <product-recommendations class="product-recommendations page-width" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4">
                     <div class="ttl_product">
                         <h3>{{section.settings.heading}}</h3>
                     </div>
@@ -30,5 +31,6 @@
                           {% endfor %}
 						</ul>                       
                     </div>
+                    </product-recommendations>
                 </div>
             </section>
