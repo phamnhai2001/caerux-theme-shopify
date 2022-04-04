@@ -17,6 +17,15 @@
                                 {%- endif -%}
                               {%- endcapture -%}
                               {%- assign media_index = media_index | plus: 1 -%}
+                              {%- if media.media_type == 'model' -%}
+                                <span class="thumbnail__badge" aria-hidden="true">
+                                  {%- render 'icon-3d-model' -%}
+                                </span>
+                              {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
+                                <span class="thumbnail__badge" aria-hidden="true">
+                                  {%- render 'icon-play' -%}
+                                </span>
+                              {%- endif -%}
                                 <div class="item">
                                     <a class="lightbox" href="#{{media.position}}">
                                         <img src="{{ media | image_url }}" alt="">
