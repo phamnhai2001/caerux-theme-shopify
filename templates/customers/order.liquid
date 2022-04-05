@@ -29,9 +29,6 @@
                                 <li>
                                     <div class="item_order_history">
                                         <div class="data_order_history">
-                                            <div class="item_thumb">
-                                                <img src="{{'conletc_01.jpg' | asset_url }}" alt="">
-                                            </div>
                                             <div class="data">
                                               	<div>
                                                   {%- if line_item.url != blank -%}
@@ -104,14 +101,9 @@
                                                     </div>
                                                   {%- endif -%}
                                                 </div>
-                                                <div class="info_data">
-                                                    <span>Takako Ohta</span>
-                                                    <span>Format: CD + DVD / Specifications: BOX set</span>
-                                                    <span>Item No .: 00022323232323</span>
-                                                </div>
                                                 <div class="number_price_order">
                                                     <span>{{ 'customer.order.quantity' | t }} :{{ line_item.quantity }}</span>
-                                                    <span>Price : $20,5</span>
+                                                    <span>{{ 'customer.order.price' | t }}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -126,14 +118,15 @@
                         <div class="total_order_history">
                             <div class="order_num">
                                 <div class="item_num">
-                                    <span>Order number: # 1001</span>
-                                    <span>Order date: 2020/5/1</span>
-                                    <span>Number of products: 2</span>
+                                    <span>{{ 'customer.order.title' | t: name: order.name }}</span>
+                                    {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
+                                  	<span>{{ 'customer.order.date_html' | t: date: order_date }}</span>
+                                    <span>{{ 'customer.order.quantity' | t }}</span>
                                     <a href="">Preparing to ship</a>
                                     <div class="returns_about">
                                         <a href="">
                                             <div class="item_thumb">
-                                                <img src="{{'help-circle.png' | asset_url }}" alt="">
+                                                <img src="{{'help-circle.png' | asset_url }}" alt="Help">
                                             </div>
                                             <span>About product cancellation / return</span>
                                         </a>
@@ -143,20 +136,24 @@
                             <div class="total_product_order">
                                 <div class="list_total_order">
                                     <div class="total_order">
-                                        <span>Product total</span>
-                                        <span>$50,00</span>
+                                        <span> {{ 'customer.order.subtotal' | t }}</span>
+                                        <span>{{ order.line_items_subtotal_price | money }}</span>
                                     </div>
+                                   {%- for tax_line in order.tax_lines -%}
                                     <div class="total_order">
-                                        <span>Consumption tax</span>
-                                        <span>$8,00</span>
+                                        <span>{{ 'customer.order.tax' | t }}</span>
+                                        <span>{{ tax_line.price | money }}</span>
                                     </div>
+                                   {%- endfor -%}
+                                  {%- for shipping_method in order.shipping_methods -%}
                                     <div class="total_order">
-                                        <span>Postage</span>
-                                        <span>$5,00</span>
+                                        <span>{{ shipping_method.title }}</span>
+                                        <span>{{ shipping_method.price | money }}</span>
                                     </div>
+                                  {%- endfor -%}
                                     <div class="total_order total_last">
-                                        <span>Total</span>
-                                        <span>$63,00</span>
+                                        <span>{{ 'customer.order.total' | t }}</span>
+                                        <span>{{ order.total_price | money_with_currency }}</span>
                                     </div>
                                     <div class="total_order payment_method">
                                         <span>Payment method: Credit card payment</span>
