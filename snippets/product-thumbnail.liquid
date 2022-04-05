@@ -40,17 +40,6 @@
 </noscript>
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
-  <span class="product__media-icon motion-reduce" aria-hidden="true">
-    {%- liquid
-      case media.media_type
-      when 'video' or 'external_video'
-        render 'icon-play'
-      when 'model'
-        render 'icon-3d-model'
-      endcase
-    -%}
-  </span>
-
     <img class="image"
       srcset="{{ media.preview_image | img_url: 'master' }}"
       src="{{ media | img_url: 'master' }}"
