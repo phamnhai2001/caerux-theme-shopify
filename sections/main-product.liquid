@@ -52,7 +52,7 @@ details {
                                 </div>
                               {% endfor %}
                                 <div class="row">
-                                  {%- for media in product.media -%}
+<!--                                   {%- for media in product.media -%} -->
                                    {%- capture media_index -%}
                                 {%- if media.media_type == 'model' -%}{%- increment model_index -%}
                                 {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{%- increment video_index -%}
@@ -86,7 +86,7 @@ details {
                                         <img class="image" src="{{ media | img_url:'master' }}" onclick="currentSlide({{media.position}})"
                                             alt="{{ media.alt | escape }}">
                                     </div>
-                                   {% endfor %}
+<!--                                    {% endfor %} -->
                                 </div>
                             </div>
                         </div>
