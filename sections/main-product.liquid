@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="{{ 'product_details.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
