@@ -112,7 +112,6 @@
                                     <div class="total">
                                         <h3 class="total_subtotal">{{ 'sections.cart.subtotal' | t }}</h3>
                                         <p class="total_price">{{ cart.total_price | money_with_currency }}</p>
-                                      {{ form | payment_terms }}
                                       <div>
                                         {%- if cart.cart_level_discount_applications.size > 0 -%}
                                           <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
