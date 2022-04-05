@@ -80,8 +80,6 @@ details {
                                               {%- assign media_position = media_position | default: 0 | plus: 1 -%}
                                               {% render 'product-thumbnail', media: media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
                                           {%- endunless -%}
-                                        <img class="image" src="{{ media | img_url:'master' }}" onclick="currentSlide({{media.position}})"
-                                            alt="{{ media.alt | escape }}">
                                     </div>
                                    {% endfor %}
                                 </div>
