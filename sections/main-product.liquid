@@ -52,6 +52,14 @@ details {
                               {% endfor %}
                                 <div class="row">
                                   {%- for media in product.media -%}
+                                   {%- if featured_media != null -%}
+                                    {%- capture media_index -%}
+                                      {%- if featured_media.media_type == 'model' -%}{%- increment model_index -%}
+                                      {%- elsif featured_media.media_type == 'video' or featured_media.media_type == 'external_video' -%}{%- increment video_index -%}
+                                      {%- elsif featured_media.media_type == 'image'%}{%- increment image_index -%}
+                                      {%- endif -%}
+                                    {%- endcapture -%}
+                                    {%- assign media_index = media_index | plus: 1 -%}
                                     <div class="column">
                                       	{%- if product.selected_or_first_available_variant.featured_media != null -%}
                                           {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
@@ -64,6 +72,7 @@ details {
                                         {%- endunless -%}
                                        
                                     </div>
+                                  {%- endif -%}
                                    {% endfor %}
                                 </div>
                               {%- capture media_index -%}
