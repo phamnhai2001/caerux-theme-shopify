@@ -121,7 +121,7 @@
                                     <span>{{ 'customer.order.title' | t: name: order.name }}</span>
                                     {%- assign order_date = order.created_at | time_tag: format: "date_at_time" -%}
                                   	<span>{{ 'customer.order.date_html' | t: date: order_date }}</span>
-                                    <span>{{ 'customer.order.quantity' | t }}</span>
+                                    <span>{{ 'customer.order.quantity' | t }} :  {{ line_item.quantity }}</span>
                                     <a href="">Preparing to ship</a>
                                     <div class="returns_about">
                                         <a href="">
