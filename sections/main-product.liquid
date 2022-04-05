@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="{{ 'product_details.css' | asset_url }}" media="print" onload="this.media='all'">
 <script src="{{ 'product_detail.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 
 {% style %}
 .hidden {
@@ -238,6 +237,7 @@ summary svg {
               </details>
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script> 
+                          <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
                           {%- endcase -%}
         				{%- endfor -%}
                         </div>
