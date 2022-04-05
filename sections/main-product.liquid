@@ -41,11 +41,11 @@ details {
                                     <a class="lightbox" href="#{{media.position}}">
                                         <img src="{{ media | img_url:'master' }}" alt="">
                                         <button class="zoom_in">
-                                            <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="">
+                                            <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="{{ media.alt | escape }}">
                                         </button>
                                     </a>
                                     <div class="lightbox-target" id="{{media.position}}">
-	                                     <img src="{{ media | img_url:'master' }}" >   
+	                                     <img src="{{ media | img_url:'master' }}" alt="{{ media.alt | escape }}">   
                                         <a class="lightbox-close" href="#">
                                         </a>
                                     </div>
@@ -73,7 +73,7 @@ details {
                               {%- endif -%}
                                     <div class="column">
                                         <img class="image" src="{{ media | img_url:'master' }}" onclick="currentSlide({{media.position}})"
-                                            alt="">
+                                            alt="{{ media.alt | escape }}">
                                     </div>
                                    {% endfor %}
                                 </div>
