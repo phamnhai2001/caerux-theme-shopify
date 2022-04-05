@@ -80,6 +80,7 @@ details {
                                               {%- assign media_position = media_position | default: 0 | plus: 1 -%}
                                               {% render 'product-thumbnail', media: media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
                                           {%- endunless -%}
+                                       
                                     </div>
                                    {% endfor %}
                                 </div>
