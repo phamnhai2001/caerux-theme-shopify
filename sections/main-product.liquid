@@ -73,36 +73,6 @@ details {
                                     </div>
                                    {% endfor %}
                                 </div>
-                              {%- capture media_index -%}
-                                      {%- if media.media_type == 'model' -%}{%- increment model_index -%}
-                                      {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}{%- increment video_index -%}
-                                      {%- elsif media.media_type == 'image'%}{%- increment image_index -%}
-                                      {%- endif -%}
-                                    {%- endcapture -%}
-                                    {%- assign media_index = media_index | plus: 1 -%}
-
-                                        {%- if media.media_type == 'model' -%}
-                                      <span class="thumbnail__badge" aria-hidden="true">
-                                        {%- render 'icon-3d-model' -%}
-                                      </span>
-                                    {%- elsif media.media_type == 'video' or media.media_type == 'external_video' -%}
-                                      <span class="thumbnail__badge" aria-hidden="true">
-                                        {%- render 'icon-play' -%}
-                                      </span>
-
-                                    {%- endif -%}
-                              <div class="column">
-                                      	{%- if product.selected_or_first_available_variant.featured_media != null -%}
-                                          {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
-                                            {%- assign media_position = 1 -%}
-                                            {% render 'product-thumbnail', media: featured_media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
-                                        {%- endif -%}
-                                        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-                                            {%- assign media_position = media_position | default: 0 | plus: 1 -%}
-                                            {% render 'product-thumbnail', media: media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
-                                        {%- endunless -%}
-                                       
-                                    </div>
                             </div>
                         </div>
                         <div class="product_details">
