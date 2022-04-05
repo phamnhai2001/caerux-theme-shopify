@@ -41,7 +41,9 @@ if (!customElements.get('product-form')) {
           console.error(e);
         })
         .finally(() => {
+          submitButton.classList.remove('loading');
           submitButton.removeAttribute('aria-disabled');
+          this.querySelector('.loading-overlay__spinner').classList.add('hidden');
         });
     }
     handleErrorMessage(errorMessage = false) {
