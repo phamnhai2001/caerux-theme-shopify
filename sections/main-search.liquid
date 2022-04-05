@@ -1,11 +1,17 @@
 <link rel="stylesheet" href="{{ 'search.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'pagination.css' | asset_url }}" media="print" onload="this.media='all'">
 {% style %}
-	.search__input {
-		height: 40px;
-    	width: 350px;
-    	border: 1px solid #31373d;
-	}
+.search__input {
+	height: 40px;
+    width: 350px;
+    border: 1px solid #31373d;
+	position: relative;
+}
+.search__button {
+    background: black;
+    border: 1px solid;
+    cursor: pointer;
+}
 {% endstyle %}
 <div class="template-search spaced-section{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %}">
   <div class="template-search__header page-width center">
