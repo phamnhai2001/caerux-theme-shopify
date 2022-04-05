@@ -164,8 +164,8 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
 }
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img {
