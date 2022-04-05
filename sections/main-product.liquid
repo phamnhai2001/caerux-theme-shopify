@@ -35,7 +35,6 @@ details {
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
-<!--                               {%- for media in product.media -%} -->
                              
                                 <div class="item">
                                     <a class="lightbox" href="#{{media.position}}">
@@ -50,7 +49,6 @@ details {
                                         </a>
                                     </div>
                                 </div>
-                              {% endfor %}
                                 <div class="row">
                                    {%- capture media_index -%}
                                 {%- if media.media_type == 'model' -%}{%- increment model_index -%}
@@ -83,7 +81,6 @@ details {
                                         <img class="image" src="{{ media | img_url:'master' }}" onclick="currentSlide({{media.position}})"
                                             alt="{{ media.alt | escape }}">
                                     </div>
-
                                 </div>
                             </div>
                         </div>
