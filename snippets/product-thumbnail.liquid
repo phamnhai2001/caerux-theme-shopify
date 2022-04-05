@@ -34,7 +34,7 @@
       <img
         srcset="{{ media.preview_image | img_url: 'master' }}"
         src="{{ media | img_url: 'master' }}"
-        alt="{{ media.preview_image.alt | escape }}"
+        alt="{{ media.preview_image.alt | escape }}" onclick="currentSlide({{media.position}})"
       >
   {%- endif -%}
 </noscript>
@@ -54,13 +54,8 @@
     <img
       srcset="{{ media.preview_image | img_url: 'master' }}"
       src="{{ media | img_url: 'master' }}"
-      alt="{{ media.preview_image.alt | escape }}"
+      alt="{{ media.preview_image.alt | escape }}" onclick="currentSlide({{media.position}})"
     >
-  <button class="product__media-toggle" type="button" aria-haspopup="dialog" data-media-id="{{ media.id }}">
-    <span class="visually-hidden">
-      {{ 'products.product.media.open_media' | t: index: position }}
-    </span>
-  </button>
 </modal-opener>
 
 {%- if media.media_type != 'image' -%}
@@ -82,7 +77,7 @@
     <img
       srcset="{{ media.preview_image | img_url: 'master' }}"
       src="{{ media | img_url: 'master' }}"
-      alt="{{ media.preview_image.alt | escape }}"
+      alt="{{ media.preview_image.alt | escape }}" onclick="currentSlide({{media.position}})"
     >
   </button>
   <template>
