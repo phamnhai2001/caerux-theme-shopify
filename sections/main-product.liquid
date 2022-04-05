@@ -7,6 +7,13 @@
 .hidden {
 	display: none !important;
 }
+details {
+	list-style: none;
+	cursor: pointer;
+}
+summary {
+	list-style: none;
+}
 {% endstyle %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
