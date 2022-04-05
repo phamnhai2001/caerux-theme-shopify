@@ -30,10 +30,11 @@ summary svg {
     font-size: 16px !important;
 }
 .share-button__copy {
-position: absolute;
-    right: 0;
-    /* top: 0; */
+	position: absolute;
+    right: 15%;
+    background: transparent;
     bottom: 17px;
+    border: 0;
 }
 {% endstyle %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
