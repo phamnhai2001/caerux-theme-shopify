@@ -18,26 +18,7 @@
     %}
 {% endcomment %}
 
-<noscript>
-  {%- if media.media_type == 'video' or media.media_type == 'external_video' -%}
-    
-      <img class="image"
-        srcset="{{ media.preview_image | img_url: 'master' }}"
-        src="{{ media | img_url: 'master' }}"
-        alt="{{ media.preview_image.alt | escape }}"
-      >
-    
-    <a href="{% if media.media_type == 'video' %}{{ media.sources[1].url }}{% else %}{{ media | external_video_url }}{% endif %}" class="product__media-toggle">
-      <span class="visually-hidden">{{ 'products.product.video_exit_message' | t: title: product.title | escape }}</span>
-    </a>
-  {%- else -%}
-      <img
-        srcset="{{ media.preview_image | img_url: 'master' }}"
-        src="{{ media | img_url: 'master' }}"
-        alt="{{ media.preview_image.alt | escape }}" onclick="currentSlide({{media.position}})"
-      >
-  {%- endif -%}
-</noscript>
+
 
 <modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
     <img class="image"
