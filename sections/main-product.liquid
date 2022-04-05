@@ -10,40 +10,14 @@ details {
 	display: none;
 	cursor: pointer;
 }
-summary {
+.share-button__button {
 	list-style: none;
 	display: flex;
     align-items: center;
     font-weight: 500;
     font-size: 14px;
 }
-summary svg {
-	margin-right: 6px;
-}
-.field__label {
-	display: none;
-}
-.field__input {
-	position: relative;
-    width: 380px !important;
-    font-size: 16px !important;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-right: 60px !important;
-}
-.share-button__copy {
-	position: absolute;
-    right: 16%;
-    background: transparent;
-    bottom: 17px;
-    border: 0;
-	cursor: pointer;
-}
-.icon-clipboard {
-	width: 18px;
-    height: 20px;
-}
+
 {% endstyle %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
