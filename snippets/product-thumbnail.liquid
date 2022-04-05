@@ -20,13 +20,7 @@
 
 
 
-<modal-opener class="product__modal-opener product__modal-opener--{{ media.media_type }} no-js-hidden" data-modal="#ProductModal-{{ modal_id }}">
-    <img class="image"
-      srcset="{{ media.preview_image | img_url: 'master' }}"
-      src="{{ media | img_url: 'master' }}"
-      alt="{{ media.preview_image.alt | escape }}" onclick="currentSlide({{media.position}})"
-    >
-</modal-opener>
+
 
 {%- if media.media_type != 'image' -%}
   {%- if media.media_type == 'model' -%}
