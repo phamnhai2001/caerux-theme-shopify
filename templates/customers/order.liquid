@@ -128,7 +128,11 @@
                                             <div class="item_thumb">
                                                 <img src="{{'help-circle.png' | asset_url }}" alt="Help">
                                             </div>
-                                            <span>About product cancellation / return</span>
+                                            <span>{%- if order.cancelled -%}
+                                              {%- assign cancelled_at = order.cancelled_at | time_tag: format: "date_at_time" -%}
+                                              <p>{{ 'customer.order.cancelled_html' | t: date: cancelled_at }}</p>
+                                              <p>{{ 'customer.order.cancelled_reason' | t: reason: order.cancel_reason_label }}</p>
+                                            {%- endif -%}</span>
                                         </a>
                                     </div>
                                 </div>
