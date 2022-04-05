@@ -21,6 +21,15 @@ summary {
 summary svg {
 	margin-right: 6px;
 }
+.field__label {
+	display: none;
+}
+.share-button__copy {
+position: absolute;
+    right: 0;
+    /* top: 0; */
+    bottom: 17px;
+}
 {% endstyle %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
