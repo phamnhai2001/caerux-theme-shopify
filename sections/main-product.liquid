@@ -35,6 +35,7 @@ details {
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
+                              {%- for media in product.media -%}
                              
                                 <div class="item">
                                     <a class="lightbox" href="#{{media.position}}">
@@ -49,6 +50,7 @@ details {
                                         </a>
                                     </div>
                                 </div>
+                              {% endfor %}
                                 <div class="row">
                                    {%- capture media_index -%}
                                 {%- if media.media_type == 'model' -%}{%- increment model_index -%}
