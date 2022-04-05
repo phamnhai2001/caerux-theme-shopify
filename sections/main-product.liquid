@@ -13,6 +13,11 @@ details {
 }
 summary {
 	list-style: none;
+	display: flex;
+    align-items: center;
+}
+summary svg {
+	margin-right: 6px;
 }
 {% endstyle %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
