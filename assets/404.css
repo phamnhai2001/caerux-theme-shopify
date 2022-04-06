@@ -1,9 +1,6 @@
-/* automatic size vw */
-/* automatic size vh */
-/* text clamp */
-/* anime In order */
+
 #wrapper .inner {
-  padding-top: 10%;
+  padding-top: 20%;
 }
 #wrapper .inner .template-404 {
   text-align: center;
