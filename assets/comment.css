@@ -12,6 +12,33 @@
   max-width: 850px;
   width: 100%;
 }
+.article-template__comment-wrapper #comments h2 {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 45px;
+  margin-bottom: 15px;
+  text-align: left;
+}
+.article-template__comment-wrapper #comments .article-template__comments {
+  background: #fff;
+  margin-bottom: 50px;
+}
+.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment {
+  padding: 20px;
+}
+.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment p {
+  text-align: left;
+  font-size: 18px;
+  line-height: 30px;
+}
+.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right {
+  text-align: right;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right span .circle-divider {
+  margin-right: 15px;
+}
 .article-template__comment-wrapper #comments .comment-form h2 {
   font-weight: 500;
   font-size: 34px;
