@@ -19,6 +19,9 @@
   margin-bottom: 15px;
   text-align: left;
 }
+.article-template__comment-wrapper #comments .comment-form .form-status-list {
+  outline: none;
+}
 .article-template__comment-wrapper #comments .comment-form .form-status-list.form__message h3 {
   font-size: 17px;
   font-weight: 500;
