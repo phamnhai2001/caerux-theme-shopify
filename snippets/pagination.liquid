@@ -10,7 +10,7 @@
     - paginate: {Object}
     - anchor: {String} (optional) This can be added so that on page reload it takes you to wherever you've placed your anchor tag.
 {% endcomment %}
-
+{%- if paginate.parts.size > 0 -%}
 <div class="pagi_nav">
     <ul class="list_pagi">
      	<li class="pagi_item">
@@ -34,3 +34,4 @@
        </li>
     </ul>
 </div>
+{%- endif -%}
