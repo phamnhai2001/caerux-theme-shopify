@@ -85,7 +85,7 @@
 }
 @media (max-width: 768px) {
   #wrapper.blog_detail .inner section.section#blog_detail .inner .entry_content .info_content_post .time {
-    font-size: 1.953125vw;
+    font-size: 2.343vw;
     line-height: 1.953125vw;
   }
 }
