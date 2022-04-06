@@ -166,6 +166,7 @@
                 {%- endif -%}
               </div>
               <div class="field field--with-error">
+               <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
                 <input
                   type="email"
                   name="comment[email]"
@@ -182,7 +183,6 @@
                   {% endif %}
                   placeholder="{{ 'blogs.article.email' | t }}"
                 >
-                <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
                 {%- if form.errors contains 'email' -%}
                   <small id="CommentForm-email-error">
                     <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
