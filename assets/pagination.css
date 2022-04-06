@@ -26,12 +26,12 @@
 }
 @media (max-width: 1000px) {
   .pagi_nav .list_pagi .pagi_item {
-    padding: 0 0.5vw;
+    padding: 0 0.5vw !important;
   }
 }
 @media (max-width: 768px) {
   .pagi_nav .list_pagi .pagi_item {
-    padding: 0 0.6510416667vw;
+    padding: 0 0.6510416667vw !important;
   }
 }
 
