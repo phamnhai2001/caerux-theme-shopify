@@ -1,0 +1,66 @@
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+#wrapper .inner {
+  padding-top: 10%;
+}
+#wrapper .inner .template-404 {
+  text-align: center;
+}
+#wrapper .inner .template-404 p {
+  font-weight: 500;
+  font-size: 34px;
+  color: #bfbbbb;
+  margin: 0 0 10px;
+}
+@media (max-width: 1000px) {
+  #wrapper .inner .template-404 p {
+    margin: 0 0 1vw;
+    font-size: 3.4vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper .inner .template-404 p {
+    margin: 0 0 1.3020833333vw;
+    font-size: 4.4270833333vw;
+  }
+}
+#wrapper .inner .template-404 .title {
+  font-weight: 500;
+  font-size: 40px;
+  color: #bfbbbb;
+  margin: 0 0 50px;
+}
+@media (max-width: 1000px) {
+  #wrapper .inner .template-404 .title {
+    font-size: 4vw;
+    margin: 0 0 5vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper .inner .template-404 .title {
+    font-size: 5.2083333333vw;
+    margin: 0 0 6.5104166667vw;
+  }
+}
+#wrapper .inner .template-404 .button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+}
+@media (max-width: 1000px) {
+  #wrapper .inner .template-404 .button {
+    padding: 1vw 2vw;
+    font-size: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper .inner .template-404 .button {
+    padding: 1.3020833333vw 2.6041666667vw;
+    font-size: 3.90625vw;
+  }
+}
