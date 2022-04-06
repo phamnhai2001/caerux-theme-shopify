@@ -1,4 +1,7 @@
-
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
 .cart__note {
   display: grid;
 }
@@ -12,4 +15,5 @@
   width: 400px;
   height: 140px;
   outline: none;
+  padding: 10px;
 }
