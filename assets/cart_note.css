@@ -1,0 +1,15 @@
+
+.cart__note {
+  display: grid;
+}
+.cart__note label {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.cart__note .text-area {
+  width: 400px;
+  height: 140px;
+  outline: none;
+}
