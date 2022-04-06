@@ -3,12 +3,14 @@
 /* text clamp */
 /* anime In order */
 .article-template__comment-wrapper {
-  background-color: azure;
+  background-color: #f3f3f3;
   padding: 70px;
+  margin-bottom: 70px;
 }
 .article-template__comment-wrapper #comments {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 850px;
+  width: 100%;
 }
 .article-template__comment-wrapper #comments .comment-form h2 {
   font-weight: 500;
@@ -54,4 +56,18 @@
   margin-bottom: 5px;
   display: block;
   text-align: left;
+}
+.article-template__comment-wrapper #comments .comment-form .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 15px 35px;
+  font-size: 18px;
 }
