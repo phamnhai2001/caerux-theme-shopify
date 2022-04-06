@@ -1,12 +1,181 @@
+<link rel="stylesheet" href="{{ 'blog_detail.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- style -%}
+	.entry_content .entry_thumb img {
+		width: 100%;
+		max-width: 850px;
+        object-fit: cover;
+	}
+#related_post p time{
+	font-size: 12px;
+	margin-right: 10px;
+	color: #666;
+}
+#related_post p span {
+	color: #666;
+	font-size: 12px;
+	padding-left: 10px;
+	border-left: 1px solid #d3caca;
+}
+{%- endstyle -%}
+<div id="wrapper" class="blog_detail">
+    <div class="inner">
+        <div class="upper">
+            <div class="navi_top">
+                <ul>
+                    <li><a href="/"><img src="{{'bx-home.svg' | asset_url }}" alt=""></a></li>
+                    <li><span class="current"></span><a href="/">Blog</a></li>
+                    <li><span class="current">{{ article.title }}</span></li>
+                </ul>
+            </div>
+        </div>
+        <!-- BLOG -->
+        <section class="section" id="blog_detail">
+            <div class="inner">
+                <div class="entry_content">
+                    <div class="entry_thumb">
+                        {%- if article.image -%}
+                             {{ article | img_url: 'master' | img_tag:'' }}
+                       {%- endif -%}
+                    </div>
+                    <div class="info_content_post">
+                      {%- for tag in article.tags -%}
+                          <div class="name_cat">{{ tag }}</div>
+                       {%- endfor -%}
+                      {%- if section.settings.blog_show_date -%}
+                          <div class="time">{{ article.published_at | date: format: 'basic' }}</div>
+                      {%- endif -%}
+                    </div>
+                    <h2 class="tlt_blog">{{ article.title }}</h2>
+                    <div class="txt_desp">
+                      <p>{{article.content}}</p>
+                    </div>
+                    <div class="sns_social">
+                        <ul>
+                            <li class="share_twitter">
+                                <a target="_blank" href="https://twitter.com/share?text=&url=">Twitter</a>
+                            </li>
+                            <li class="share_facebook">
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Facebook</a>
+                            </li>
+                            <li class="share_B">
+                                <a target="_blank" href="https://b.hatena.ne.jp/entry/panel/?url=">はてブ</a>
+                            </li>
+                            <li class="share_Pocket">
+                                <a target="_blank" href="https://getpocket.com/save?url=">Pocket</a>
+                            </li>
+                            <li class="share_line">
+                                <a target="_blank" href="https://social-plugins.line.me/lineit/share?url="> LINE</a>
+                            </li>
+                            <li class="share_kobi">
+                                <a id="copy" href="javascript:void(0)">コピー</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /BLOG -->
+
+        <!-- Related Posts -->
+        <section class="section" id="related_post">
+            <div class="inner">
+                <h2 class="tlt_section">{{section.settings.title}}</h2>
+                <div class="list_item">
+                    {%- assign blog = blogs[section.settings.blog_post] -%}
+                    {%- if blog.articles_count > 0 -%}
+                      <ul>
+                          {%- for article in blog.articles limit: section.settings.post_limit -%}
+                          <li>
+                              <a class="item_type" href="{{ article.url }}">
+                                  <div class="item_content">
+                                      <div class="thumb">
+                                        {%- if article.image -%}
+                                          {{ article | img_url: 'master' | img_tag: '' }}
+                                        {%- endif -%}
+                                      </div>
+                                      <div class="txt_desp">
+                                          <h3>{{ article.title }}</h3>
+                                          <p>
+                                            {%- if section.settings.blog_show_date -%}
+                                                <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
+                                            {%- endif -%}
+                                            
+                                            {%- if section.settings.blog_show_tag -%}
+                                              {%- for tag in article.tags -%}
+                                                <span data-url="https://translate.google.com/">{{ tag }}</span>
+                                              {%- endfor -%}
+                                            {%- endif -%}
+                                          </p>
+                                        	{%- if section.settings.blog_show_author -%}
+                                                 <p>{{article.author}}</p>
+                                            {%- endif -%}
+                                       
+                                      </div>
+                                  </div>
+                              </a>
+                          </li>
+                        {%- endfor -%}
+
+                      </ul>
+                    {%- endif -%}
+                </div>
+            </div>
+        </section>
+        <!-- /Related Posts -->
+    </div>
+</div>
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Blog post",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Blog detail"
+    },
+    {
+      "id": "blog_post",
+      "type": "blog",
+      "label": "Blog"
+    },
+    {
+      "type": "range",
+      "id": "post_limit",
+      "label": "Posts",
+      "min": 3,
+      "max": 12,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "label": "Show author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": "Show date",
+      "default": true
+    },
+	{
+      "type": "checkbox",
+      "id": "blog_show_tag",
+      "label": "Show tag",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog posts",
+      "category": "Blog",
+      "settings": {
+        "blog_post": "News",
+        "post_limit": 3
+      }
+    }
+  ]
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
