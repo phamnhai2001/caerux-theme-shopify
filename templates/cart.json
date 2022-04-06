@@ -19,7 +19,7 @@
         "buttons"
       ],
       "settings": {
-        "show_cart_note": false
+        "show_cart_note": true
       }
     },
     "featured-collection": {
