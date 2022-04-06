@@ -19,12 +19,10 @@
   margin-bottom: 15px;
   text-align: left;
 }
-.article-template__comment-wrapper #comments .article-template__comments {
-  background: #fff;
-  margin-bottom: 50px;
-}
 .article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment {
   padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
 }
 .article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment p {
   text-align: left;
