@@ -103,7 +103,7 @@
                   </footer>
                 </article>
               {%- endfor -%}
-              {% render 'pagination', paginate: paginate %}
+              {% render 'pagination', paginate: paginate, anchor: anchorId %}
             </div>
           {% endpaginate %}
         {%- endif -%}
