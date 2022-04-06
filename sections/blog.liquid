@@ -54,7 +54,7 @@
                       </ul>
                     {%- endif -%}
                   {% if paginate.blog > 1 %}
-                  		{% include "paginate" %}
+                  {% render 'pagination', paginate: paginate, anchor: anchorID %}
                   {% endif %}
             </div>
           </div>
