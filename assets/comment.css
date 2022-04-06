@@ -65,6 +65,11 @@
 .article-template__comment-wrapper #comments .comment-form .form-status-list.form__message h3 svg {
   width: 15px;
 }
+.article-template__comment-wrapper #comments .comment-form .form-status-list li a {
+  color: #000;
+  font-weight: 500;
+  line-height: 25px;
+}
 .article-template__comment-wrapper #comments .comment-form .article-template__comments-fields {
   margin-bottom: 30px;
 }
@@ -115,7 +120,7 @@
   display: block;
   text-align: left;
 }
-.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .field.field--with-error small .form__message {
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields small .form__message {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -123,7 +128,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .field.field--with-error small .form__message svg {
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields small .form__message svg {
   width: 15px;
 }
 .article-template__comment-wrapper #comments .comment-form .button {
