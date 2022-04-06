@@ -191,6 +191,7 @@
               </div>
             </div>
             <div class="field field--with-error">
+              <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
               <textarea
                 rows="5"
                 name="comment[body]"
@@ -203,7 +204,6 @@
                 {% endif %}
                 placeholder="{{ 'blogs.article.message' | t }}"
               >{{ form.body }}</textarea>
-                <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
             </div>
             {%- if form.errors contains 'body' -%}
               <small id="CommentForm-body-error">
