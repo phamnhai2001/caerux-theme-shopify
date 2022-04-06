@@ -101,7 +101,7 @@
 }
 @media (max-width: 768px) {
   .article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right {
-    font-size: 1.5625vw;
+    font-size: 1.953125vw;
   }
 }
 .article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right span.circle-divider {
