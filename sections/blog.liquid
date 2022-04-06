@@ -11,7 +11,7 @@
             </div>
         </div>
         <!-- BLOG -->
-      {%- paginate blog.articles by 6 -%}
+      {%- paginate blog.articles by 3 -%}
         <section class="section" id="blog">
             <div class="inner">
                 <h2 class="tlt_section">{{section.settings.title}}</h2>
@@ -83,10 +83,10 @@
       "type": "range",
       "id": "post_limit",
       "label": "Posts",
-      "min": 6,
+      "min": 3,
       "max": 12,
       "step": 3,
-      "default": 6
+      "default": 3
     },
     {
       "type": "checkbox",
@@ -113,7 +113,7 @@
       "category": "Blog",
       "settings": {
         "blog_post": "News",
-        "post_limit": 6
+        "post_limit": 3
       }
     }
   ]
