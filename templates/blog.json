@@ -5,7 +5,7 @@
       "settings": {
         "title": "Blog posts",
         "blog_post": "news",
-        "post_limit": 3,
+        "post_limit": 6,
         "blog_show_author": false,
         "blog_show_date": true,
         "blog_show_tag": true
