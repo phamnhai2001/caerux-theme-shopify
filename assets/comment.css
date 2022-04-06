@@ -36,7 +36,7 @@
   font-size: 12px;
   text-transform: uppercase;
 }
-.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right span .circle-divider {
+.article-template__comment-wrapper #comments .article-template__comments .article-template__comments-comment .right span.circle-divider {
   margin-right: 15px;
 }
 .article-template__comment-wrapper #comments .comment-form h2 {
