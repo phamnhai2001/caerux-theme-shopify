@@ -169,14 +169,15 @@
                     </div>
                     {%- endif -%}
                   </div>
-                </div>
-                </div>
-                 {%- if section.settings.show_cart_note -%}
+                    {%- if section.settings.show_cart_note -%}
                   <cart-note class="cart__note field">
                     <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
                     <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
                   </cart-note>
                 {%- endif -%}
+                </div>
+                </div>
+                 
                 <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
               <p class="visually-hidden" id="shopping-cart-line-item-status" aria-live="polite" aria-hidden="true" role="status">{{ 'accessibility.loading' | t }}</p>
               </form>

@@ -19,12 +19,15 @@
         "buttons"
       ],
       "settings": {
+        "show_cart_note": true
       }
     },
     "featured-collection": {
       "type": "featured-collection",
       "settings": {
-        "collection": "all"
+        "title": "Featured collection",
+        "collection": "all",
+        "products_to_show": 4
       }
     }
   },
