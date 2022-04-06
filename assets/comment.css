@@ -20,15 +20,15 @@
 .article-template__comment-wrapper #comments .comment-form .article-template__comments-fields {
   margin-bottom: 30px;
 }
-.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comments-fields {
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comment-fields {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 40px;
 }
-.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comments-fields .field.field--with-error .field__input {
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comment-fields .field.field--with-error .field__input {
   width: 100%;
 }
-.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comments-fields .field.field--with-error .field__label {
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comment-fields .field.field--with-error .field__label {
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
