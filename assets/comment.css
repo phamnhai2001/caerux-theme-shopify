@@ -15,7 +15,7 @@
 }
 @media (max-width: 768px) {
   .article-template__comment-wrapper {
-    padding: 9.1145833333vw;
+    padding: 5.2083333333vw;
     margin-bottom: 9.1145833333vw;
   }
 }
@@ -32,7 +32,6 @@
 @media (max-width: 768px) {
   .article-template__comment-wrapper #comments {
     max-width: 100%;
-    width: 88.8888%;
   }
 }
 .article-template__comment-wrapper #comments h2 {
