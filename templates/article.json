@@ -1,7 +1,7 @@
 {
   "sections": {
     "article": {
-      "type": "blog-detail",
+      "type": "main-article",
       "settings": {
         "title": "Related Posts",
         "blog_post": "news",
