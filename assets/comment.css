@@ -17,6 +17,9 @@
   margin-bottom: 15px;
   text-align: left;
 }
+.article-template__comment-wrapper #comments .comment-form .article-template__comments-fields {
+  margin-bottom: 30px;
+}
 .article-template__comment-wrapper #comments .comment-form .article-template__comments-fields .article-template__comments-fields {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
