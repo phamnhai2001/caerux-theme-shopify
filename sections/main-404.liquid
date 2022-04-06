@@ -1,16 +1,7 @@
-<style type="text/css">
-  .template-404 .title + * {
-    margin-top: 1rem;
-  }
 
-  @media screen and (min-width: 750px) {
-    .template-404 .title + * {
-      margin-top: 2rem;
-    }
-  }
-</style>
+<link rel="stylesheet" href="{{ '404.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<div class="template-404 page-width page-margin center">
+<div class="template-404">
   <p>
     {{ 'templates.404.subtext' | t }}
   </p>
