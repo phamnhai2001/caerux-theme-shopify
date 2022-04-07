@@ -116,12 +116,14 @@ details {
                                   {%- endif -%}
                                 </div>
                               {%- endif -%}
-                              <div {{ block.shopify_attributes }}>
-                                {%- form 'product', product, id: 'product-form-installment', class: 'installment caption-large' -%}
-                                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                                  {{ form | payment_terms }}
-                                {%- endform -%}
-                              </div>
+                              {%- if product != blank -%}
+                                <div {{ block.shopify_attributes }}>
+                                  {%- form 'product', product -%}
+                                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                                    {{ form | payment_terms }}
+                                  {%- endform -%}
+                                </div>
+                              {%- endif -%}
                             </div>
                           {%- when 'variant_picker' -%}
                           {%- unless product.has_only_default_variant -%}
