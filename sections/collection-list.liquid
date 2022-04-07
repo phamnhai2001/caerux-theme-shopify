@@ -22,7 +22,7 @@
       								{{ collection.title | default: default_label }}</h2>
                             </div>
                             <div class="thumb">
-                                <img src="{{collection.image | img_url: 'master' }}" alt="">
+                                <img src="{{collection.image | img_url: 'master' }}" alt="{{ collection.title | default: default_label }}">
                             </div>
                         </div>
               			{% elsif collection == empty %}
