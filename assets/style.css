@@ -1331,14 +1331,13 @@ section.section#new_arrival .inner .prev_next .prev, section.section#recommend .
   }
 }
 section.section#new_arrival .inner .prev_next .prev img, section.section#recommend .inner .prev_next .prev img {
-     width: 45px;
-    height: 45px;
-    object-fit: cover;
+  width: 28px;
+  height: 28px;
 }
 @media (max-width: 1000px) {
   section.section#new_arrival .inner .prev_next .prev img, section.section#recommend .inner .prev_next .prev img {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 2.8vw;
+    height: 2.8vw;
   }
 }
 section.section#new_arrival .inner .prev_next .next, section.section#recommend .inner .prev_next .next {
@@ -1378,14 +1377,13 @@ section.section#new_arrival .inner .prev_next .next, section.section#recommend .
   }
 }
 section.section#new_arrival .inner .prev_next .next img, section.section#recommend .inner .prev_next .next img {
-   width: 45px;
-    height: 45px;
-    object-fit: cover;
+  width: 28px;
+  height: 28px;
 }
 @media (max-width: 1000px) {
   section.section#new_arrival .inner .prev_next .next img, section.section#recommend .inner .prev_next .next img {
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 2.8vw;
+    height: 2.8vw;
   }
 }
 @media (max-width: 768px) {
