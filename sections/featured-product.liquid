@@ -91,9 +91,8 @@ details {
 
                             {%- for block in section.blocks -%}
                               {%- case block.type -%}
-                          
+                            {%- when 'title' -%}
                             <div class="txt_desp">
-                              {%- when 'title' -%}
                               {%- if product.title != blank -%}
                                 <h1 class="name">{{product.title}}</h1>
                               {%- else -%}
