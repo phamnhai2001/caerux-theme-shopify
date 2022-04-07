@@ -160,7 +160,8 @@ details {
                               </quantity-input>
                             </div>
                           {%- when 'buy_buttons' -%}
-                          <div {{ block.shopify_attributes }}>
+                           <div {{ block.shopify_attributes }}>
+                			{%- if product != blank -%}
                             <product-form class="btn product-form" {{ block.shopify_attributes }}>
                               <div class="product-form__error-message-wrapper" id="check" role="alert" hidden>
                                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -187,7 +188,7 @@ details {
                                       {{ form | payment_button }}
                                     {%- endif -%}
                               {%- endform -%}
-                                       
+                              {%- endif -%}         
                             </product-form>
                             <div class="txt_note">
                               <p>{{section.settings.text}} </p>
