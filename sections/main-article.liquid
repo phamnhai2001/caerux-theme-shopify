@@ -34,45 +34,60 @@
         <section class="section" id="blog_detail">
             <div class="inner">
                 <div class="entry_content">
-                    <div class="entry_thumb">
-                        {%- if article.image -%}
-                             {{ article | img_url: 'master' | img_tag:'' }}
-                       {%- endif -%}
-                    </div>
-                    <div class="info_content_post">
-                      {%- for tag in article.tags -%}
-                          <div class="name_cat">{{ tag }}</div>
-                       {%- endfor -%}
-                      {%- if section.settings.blog_show_date -%}
-                          <div class="time">{{ article.published_at | date: format: 'basic' }}</div>
-                      {%- endif -%}
-                    </div>
-                    <h2 class="tlt_blog">{{ article.title }}</h2>
-                    <div class="txt_desp">
-                      <p>{{article.content}}</p>
-                    </div>
-                    <div class="sns_social">
-                        <ul>
-                            <li class="share_twitter">
-                                <a target="_blank" href="https://twitter.com/share?text=&url=">Twitter</a>
-                            </li>
-                            <li class="share_facebook">
-                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Facebook</a>
-                            </li>
-                            <li class="share_B">
-                                <a target="_blank" href="https://b.hatena.ne.jp/entry/panel/?url=">はてブ</a>
-                            </li>
-                            <li class="share_Pocket">
-                                <a target="_blank" href="https://getpocket.com/save?url=">Pocket</a>
-                            </li>
-                            <li class="share_line">
-                                <a target="_blank" href="https://social-plugins.line.me/lineit/share?url="> LINE</a>
-                            </li>
-                            <li class="share_kobi">
-                                <a id="copy" href="javascript:void(0)">コピー</a>
-                            </li>
-                        </ul>
-                    </div>
+                  {%- for block in section.blocks -%}
+                    {%- case block.type -%}
+                      {%- when '@app' -%}
+                        <div class="page-width page-width--narrow">
+                          {% render block %}
+                        </div>
+                      {%- when 'featured_image'-%}
+                  		{%- if article.image -%}
+                        <div class="entry_thumb">
+                           <img srcset="{{ article.image | img_url: 'master' }}"
+                                src="{{ article.image | img_url: 'master' }}"
+                                loading="lazy"
+                                alt="{{ article.image.alt | escape }}">
+                        </div>
+                        {%- endif -%}
+                  	  {%- when 'title'-%}
+                        <div class="info_content_post">
+                          {%- for tag in article.tags -%}
+                              <div class="name_cat">{{ tag }}</div>
+                           {%- endfor -%}
+                          {%- if section.settings.blog_show_date -%}
+                              <div class="time">{{ article.published_at | date: format: 'basic' }}</div>
+                          {%- endif -%}
+                        </div>
+                        <h2 class="tlt_blog">{{ article.title }}</h2>
+                      {%- when 'content'-%}
+                        <div class="txt_desp">
+                          <p>{{article.content}}</p>
+                        </div>
+                  	  {%- when 'share' -%}
+                        <div class="sns_social">
+                            <ul>
+                                <li class="share_twitter">
+                                    <a target="_blank" href="https://twitter.com/share?text=&url=">Twitter</a>
+                                </li>
+                                <li class="share_facebook">
+                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Facebook</a>
+                                </li>
+                                <li class="share_B">
+                                    <a target="_blank" href="https://b.hatena.ne.jp/entry/panel/?url=">はてブ</a>
+                                </li>
+                                <li class="share_Pocket">
+                                    <a target="_blank" href="https://getpocket.com/save?url=">Pocket</a>
+                                </li>
+                                <li class="share_line">
+                                    <a target="_blank" href="https://social-plugins.line.me/lineit/share?url="> LINE</a>
+                                </li>
+                                <li class="share_kobi">
+                                    <a id="copy" href="javascript:void(0)">コピー</a>
+                                </li>
+                            </ul>
+                        </div>
+                  	  {%- endcase -%}
+  					{%- endfor -%}
                 </div>
             </div>
         </section>
