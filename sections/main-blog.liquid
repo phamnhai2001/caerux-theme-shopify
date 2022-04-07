@@ -21,7 +21,7 @@
                                       <time datetime="">{{ article.published_at | date: format: 'basic' }}</time>
                                   {%- endif -%}
                                   {%- for tag in article.tags -%}
-                                    <span data-url="https://translate.google.com/">{{ tag }}</span>
+                                    <span >{{ tag }}</span>
                                   {%- endfor -%}
                                   
                                 </p>
