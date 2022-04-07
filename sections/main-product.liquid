@@ -38,7 +38,7 @@ details {
                               {%- for media in product.media -%}
                                 <div class="item">
                                     <a class="lightbox" href="#{{media.position}}">
-                                        <img src="{{ media | img_url:'master' }}" alt="">
+                                        <img src="{{ media | img_url:'master' }}" alt="{{ media.alt | escape }}">
                                         <button class="zoom_in">
                                             <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="{{ media.alt | escape }}">
                                         </button>
