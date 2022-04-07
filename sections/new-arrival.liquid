@@ -44,9 +44,9 @@
               {%- if section.settings.image != blank -%}
                  	<img srcset="{{ section.settings.image | img_url}}",
                      src="{{ section.settings.image | img_url }}"
-                     alt="{{section.settings.image.alt}}">
+                     alt="image banner">
                {%- else -%}
-                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="{{section.settings.image.alt}}">
+                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="image banner">
                {%- endif -%}
             </div>
             <div class="content">
