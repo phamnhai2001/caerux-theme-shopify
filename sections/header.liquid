@@ -101,9 +101,9 @@
                                 {%- if section.settings.logo != blank -%}
                                     <img srcset="{{ section.settings.logo | img_url}}",
                                     src="{{ section.settings.logo | img_url }}"
-                                    alt="">
+                                    alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                                 {%- else -%}
-                                    <img src="{{ 'logo.png' | asset_url }}" alt="">
+                                    <img src="{{ 'logo.png' | asset_url }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                                 {%- endif -%}
                               </a>
                             </div>
