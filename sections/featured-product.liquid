@@ -189,18 +189,12 @@ details {
                                     {%- endif -%}
                               {%- endform -%}
                               {%- else -%}
-                                <div class="product-form">
-                                  <div class="product-form__buttons form">
-                                    <button
-                                      type="submit"
-                                      name="add"
-                                      class="product-form__submit button button--full-width button--primary"
-                                      disabled
-                                    >
-                                      {{ 'products.product.sold_out' | t }}
+                                <button type="submit" name="add"
+                      class="add_cart product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                                         <span>
+                                              {{ 'products.product.sold_out' | t }}
+                                          </span>
                                     </button>
-                                  </div>
-                                </div>
                               {%- endif -%}         
                             </product-form>
                             <div class="txt_note">
