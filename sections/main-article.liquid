@@ -54,8 +54,8 @@
                           {%- for tag in article.tags -%}
                               <div class="name_cat">{{ tag }}</div>
                            {%- endfor -%}
-                          {%- if section.settings.blog_show_date -%}
-                              <div class="time">{{ article.published_at | date: format: 'basic' }}</div>
+                          {%- if block.settings.blog_show_date -%}
+                              <div class="time">{{ article.published_at | time_tag: format: 'date' }}</div>
                           {%- endif -%}
                         </div>
                         <h2 class="tlt_blog">{{ article.title }}</h2>
