@@ -133,6 +133,54 @@
         "post_limit": 6,
         "blog_show_date": true
       }
+    },
+    "16493207204534f63a": {
+      "type": "featured-product",
+      "blocks": {
+        "16493207202b28b455-0": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "16493207202b28b455-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "16493207202b28b455-2": {
+          "type": "variant_picker",
+          "settings": {
+          }
+        },
+        "16493207202b28b455-3": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "16493207202b28b455-4": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "16493207202b28b455-5": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "16493207202b28b455-0",
+        "16493207202b28b455-1",
+        "16493207202b28b455-2",
+        "16493207202b28b455-3",
+        "16493207202b28b455-4",
+        "16493207202b28b455-5"
+      ],
+      "settings": {
+        "product": ""
+      }
     }
   },
   "order": [
@@ -140,6 +188,7 @@
     "collection",
     "new-arrival",
     "recommend",
-    "blog"
+    "blog",
+    "16493207204534f63a"
   ]
 }
