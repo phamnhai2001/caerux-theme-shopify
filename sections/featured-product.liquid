@@ -34,46 +34,38 @@ details {
                     <div class="product_grid">
                         <div class="product_images">
                             <div class="container">
-                              <media-gallery id="MediaGallery-{{ section.id }}" role="region" aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="stacked">
-          <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
-            {{ "accessibility.skip_to_product_info" | t }}
-          </a>
-          <div id="GalleryViewer-{{ section.id }}" class="product__media-list">
-            {%- if product.selected_or_first_available_variant.featured_media != null -%}
-              {%- assign media = product.selected_or_first_available_variant.featured_media -%}
-              <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                {% render 'product-thumbnail', media: media, position: 'featured', loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
-              </div>
-            {%- endif -%}
-            {%- liquid
-              assign media_to_render = product.featured_media.id
-              for variant in product.variants
-                assign media_to_render = media_to_render | append: variant.featured_media.id | append: ' '
-              endfor
-            -%}
-            {%- for media in product.media -%}
-              {%- if media_to_render contains media.id and media.id != product.selected_or_first_available_variant.featured_media.id -%}
-                <div class="product__media-item" data-media-id="{{ section.id }}-{{ media.id }}">
-                  {% render 'product-thumbnail', media: media, position: forloop.index, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: false, media_width: 0.5 %}
-                </div>
-              {%- endif -%}
-            {%- endfor -%}
-          </div>
-          {%- if first_3d_model -%}
-            <button
-              class="button button--full-width product__xr-button"
-              type="button"
-              aria-label="{{ 'products.product.xr_button_label' | t }}"
-              data-shopify-xr
-              data-shopify-model3d-id="{{ first_3d_model.id }}"
-              data-shopify-title="{{ product.title | escape }}"
-              data-shopify-xr-hidden
-            >
-              {% render 'icon-3d-model' %}
-              {{ 'products.product.xr_button' | t }}
-            </button>
-          {%- endif -%}
-        </media-gallery>
+                              {%- for media in product.media -%}
+                                <div class="item">
+                                    <a class="lightbox" href="#{{media.position}}">
+                                        <img src="{{ media | img_url:'master' }}" alt="{{ media.alt | escape }}">
+                                        <button class="zoom_in">
+                                            <img class="icon_zoom" src="{{ 'zoom-in.png' | asset_url }}" alt="{{ media.alt | escape }}">
+                                        </button>
+                                    </a>
+                                    <div class="lightbox-target" id="{{media.position}}">
+	                                     <img src="{{ media | img_url:'master' }}" alt="{{ media.alt | escape }}">   
+                                        <a class="lightbox-close" href="#">
+                                        </a>
+                                    </div>
+                                </div>
+                              {% endfor %}
+                                <div class="row">
+                                  {%- for media in product.media -%}
+                                    <div class="column">
+                                      {%- if product.selected_or_first_available_variant.featured_media != null -%}
+                                          {%- assign featured_media = product.selected_or_first_available_variant.featured_media -%}
+                                            {%- assign media_position = 1 -%}
+                                            {% render 'product-thumbnail', media: featured_media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
+                                        {%- endif -%}
+                                          {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
+                                              {%- assign media_position = media_position | default: 0 | plus: 1 -%}
+                                              {% render 'product-thumbnail', media: media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width %}
+                                          {%- endunless -%}
+                                     
+                                    </div>
+                                   {% endfor %}
+                                </div>
+                            </div>
                         </div>
                         <div class="product_details">
                            {%- assign product_form_id = 'product-form-' | append: section.id -%}
