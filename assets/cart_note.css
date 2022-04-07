@@ -1,7 +1,4 @@
-/* automatic size vw */
-/* automatic size vh */
-/* text clamp */
-/* anime In order */
+
 .cart__note {
   display: grid;
 }
@@ -11,9 +8,35 @@
   font-weight: 500;
   margin-bottom: 10px;
 }
+@media (max-width: 1000px) {
+  .cart__note label {
+    font-size: 1.8vw;
+    margin-bottom: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart__note label {
+    font-size: 2.34375vw;
+    margin-bottom: 1.3020833333vw;
+  }
+}
 .cart__note .text-area {
   width: 400px;
   height: 140px;
   outline: none;
   padding: 10px;
+}
+@media (max-width: 1000px) {
+  .cart__note .text-area {
+    width: 40vw;
+    height: 14vw;
+    padding: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  .cart__note .text-area {
+    width: 52.0833333333vw;
+    height: 18.2291666667vw;
+    padding: 1.3020833333vw;
+  }
 }
