@@ -78,7 +78,7 @@ details {
                               <div class="time">{{ article.published_at | time_tag: format: 'date' }}</div>
                           {%- endif -%}
                         </div>
-                        <h2 class="tlt_blog">{{ article.title }}</h2>
+                        <h1 class="tlt_blog">{{ article.title }}</h1>
                       {%- when 'content'-%}
                         <div class="txt_desp">
                           <p>{{article.content}}</p>
