@@ -84,28 +84,6 @@ details {
                           <p>{{article.content}}</p>
                         </div>
                   	  {%- when 'share' -%}
-                        <div class="sns_social">
-                            <ul>
-                                <li class="share_twitter">
-                                    <a target="_blank" href="https://twitter.com/share?text=&url=">Twitter</a>
-                                </li>
-                                <li class="share_facebook">
-                                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=">Facebook</a>
-                                </li>
-                                <li class="share_B">
-                                    <a target="_blank" href="https://b.hatena.ne.jp/entry/panel/?url=">はてブ</a>
-                                </li>
-                                <li class="share_Pocket">
-                                    <a target="_blank" href="https://getpocket.com/save?url=">Pocket</a>
-                                </li>
-                                <li class="share_line">
-                                    <a target="_blank" href="https://social-plugins.line.me/lineit/share?url="> LINE</a>
-                                </li>
-                                <li class="share_kobi">
-                                    <a id="copy" href="javascript:void(0)">コピー</a>
-                                </li>
-                            </ul>
-                        </div>
                   			<share-button id="Share-{{ section.id }}" class="share-button" {{ block.shopify_attributes }}>
                                 <button class="share-button__button hidden">
                                   {% render 'icon-share' %}
