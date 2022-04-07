@@ -1,7 +1,7 @@
 {
   "sections": {
-    "banner": {
-      "type": "banner",
+    "slideshow": {
+      "type": "slideshow",
       "blocks": {
         "6d5ba0c2-a9f7-4f3f-b3bf-5185e0a0e164": {
           "type": "image",
@@ -136,7 +136,7 @@
     }
   },
   "order": [
-    "banner",
+    "slideshow",
     "collection",
     "new-arrival",
     "recommend",
