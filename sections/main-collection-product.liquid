@@ -3,7 +3,7 @@
 <div id="wrapper" class="collection">
         <div class="inner">
             <div class="txt_desp">
-                <h3>{{- collection.title | escape -}}</h3>
+                <h1>{{- collection.title | escape -}}</h1>
             </div>
             <div class="collection_section">
                  {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
@@ -12,17 +12,17 @@
                       {%- if collection.products.size == 0 -%}
                         <div class="collection_banner empty">
                           {%- if collection.featured_image != blank -%}
-                          	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="">
+                          	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="{{- collection.title | escape -}}">
                           {% else %}
-                            <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="">
+                            <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="{{- collection.title | escape -}}">
                           {% endif %}
                         </div>
                       {% else %}
                       <div class="collection_banner">
                           {%- if collection.featured_image != blank -%}
-                          	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="">
+                          	<img src="{{ collection.featured_image | img_url: 'master' }}" alt="{{- collection.title | escape -}}">
                           {% else %}
-                            <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="">
+                            <img src="{{section.settings.image_banner | img_url: 'master' }}" alt="{{- collection.title | escape -}}">
                           {% endif %}
                         </div>
                       {% endif %}
