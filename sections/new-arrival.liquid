@@ -18,7 +18,7 @@
                                       {%- endif -%}
                               	</div>
                                 <div class="txt_desp">
-                                     <h2>{{ product.title }}</h2>
+                                     <h3>{{ product.title }}</h3>
 
                                      <p>
                                        {{ product.price | money }}
@@ -58,9 +58,9 @@
                                 {{ block.settings.text | escape }}
                  			</p>
                  		{%- when 'heading' -%}
-                              <h2>
+                              <h3>
                                 {{ block.settings.heading | escape }}
-                              </h2>
+                              </h3>
                          {%- when 'buttons' -%}
                               <a class="banner_btn a_btn" href="#">
                                   <span>
