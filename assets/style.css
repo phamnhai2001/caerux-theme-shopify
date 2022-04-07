@@ -1378,13 +1378,14 @@ section.section#new_arrival .inner .prev_next .next, section.section#recommend .
   }
 }
 section.section#new_arrival .inner .prev_next .next img, section.section#recommend .inner .prev_next .next img {
-  width: 28px;
-  height: 28px;
+   width: 45px;
+    height: 45px;
+    object-fit: cover;
 }
 @media (max-width: 1000px) {
   section.section#new_arrival .inner .prev_next .next img, section.section#recommend .inner .prev_next .next img {
-    width: 2.8vw;
-    height: 2.8vw;
+    width: 4.5vw;
+    height: 4.5vw;
   }
 }
 @media (max-width: 768px) {
