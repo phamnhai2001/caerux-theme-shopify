@@ -215,7 +215,7 @@
 {%- endif -%}
 {% schema %}
     {
-    "name": "Header",
+    "name": "t:sections.header.name",
     "tag": "section",
     "settings": [
         {
@@ -226,26 +226,15 @@
         {
             "type": "link_list",
             "id": "menu",
-            "label": "Menu"
+             "default": "main-menu",
+      		"label": "t:sections.header.settings.menu.label"
         },
         {
             "type": "image_picker",
             "id": "logo",
-            "label": "Logo"
+            "label": "t:sections.header.settings.logo.label"
         }
-        ],
-        "blocks": [
-            {
-            "name": "image icon",
-            "type": "header",
-            "settings": [
-                {
-                    "type": "image_picker",
-                    "id": "image",
-                    "label": "Image"
-                }
-            ]
-            }
         ]
+        
     }
 {% endschema %}
