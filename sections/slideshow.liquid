@@ -1,0 +1,71 @@
+<script src="{{ 'main.js' | asset_url }}" defer="defer"></script>
+
+
+<section class="section" id="banner">
+    <div class="inner">
+        <div class="slider_top">
+           {% for block in section.blocks %}
+            <div class="slider_item fade">
+                <div class="thumb">
+                    <div class="thumb">
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="{{ block.settings.title }}">
+                </div>
+                <div class="txt_desp">
+                    <div class="desp_content">
+                        <h3>{{ block.settings.title}}</h3>
+                        <div class="btn_shop">
+                            <a href="{{ routes.all_products_collection_url }}">Shop now!</a>
+                            <img src="{{'arrow-right.svg' | asset_url }}" alt="chevron-right">
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </div>
+            {% endfor %}
+            <div class="prev_next">
+                <a class="prev" onclick="plusSlides(-1)">
+                   <img src="{{'arrow-left.svg' | asset_url }}" alt="Pervious">
+                </a>
+                <a class="next" onclick="plusSlides(1)">
+                    <img src="{{'arrow-right.svg' | asset_url }}" alt="Next">
+                </a>
+            </div>
+            
+
+            <div class="slider_dot">
+                <span class="dot_" onclick="currentSlide(1)"></span>
+                <span class="dot_" onclick="currentSlide(2)"></span>
+                <span class="dot_" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+  "name": "t:sections.slideshow.name",
+  "max_blocks": 3,
+  "settings": [
+    
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "t:sections.slideshow.blocks.slide.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label":"t:sections.slideshow.blocks.slide.settings.heading.label"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
