@@ -31,10 +31,10 @@
                 </ul>
                 <div class="prev_next">
                     <a class="prev" onclick="prev(this)">
-                        <img src="{{'arrow-left.svg' | asset_url }}" alt="">
+                        <img src="{{'chevron-left-regular-24.png' | asset_url }}" alt="Previous">
                     </a>
                     <a class="next" onclick="next(this)">
-                        <img src="{{'arrow-right.svg' | asset_url }}" alt="">
+                        <img src="{{'chevron-right-regular-24.png' | asset_url }}" alt="Next">
                     </a>
                 </div>
             </div>
@@ -44,9 +44,9 @@
               {%- if section.settings.image != blank -%}
                  	<img srcset="{{ section.settings.image | img_url}}",
                      src="{{ section.settings.image | img_url }}"
-                     alt="">
+                     alt="{{section.settings.image.alt}}">
                {%- else -%}
-                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="">
+                 	<img src="{{'banner_arrival.jpg' | asset_url }}" alt="{{section.settings.image.alt}}">
                {%- endif -%}
             </div>
             <div class="content">
