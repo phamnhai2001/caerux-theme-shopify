@@ -846,6 +846,7 @@ body {
 /*   font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif; */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  font-family: var(--font-body-family);
   word-wrap: break-word;
   text-align: center;
   background-color: #ffffff;
