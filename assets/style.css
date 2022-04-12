@@ -843,7 +843,7 @@ body {
   height: 100%;
   color: #000000;
   font-size: 100%;
-  font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
+/*   font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif; */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   word-wrap: break-word;
@@ -1009,7 +1009,7 @@ section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
-  font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
+/*   font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif; */
   vertical-align: middle;
 }
 @media (max-width: 1000px) {
