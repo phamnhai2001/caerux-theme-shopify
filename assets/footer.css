@@ -157,16 +157,15 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 30px;
+  padding: 0;
 }
 @media (max-width: 1000px) {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
-    top: 1vw;
     right: 0.5vw;
   }
 }
 @media (max-width: 768px) {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
-    top: 1.302vw;
     right: 0.651vw;
   }
 }
