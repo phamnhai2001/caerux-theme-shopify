@@ -214,7 +214,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
 }
 
 header .inner .header_main {
-/*   background-color: #ffffff; */
+  background-color: #ffffff;
 }
 header .inner .header_main nav {
   display: -webkit-box;
