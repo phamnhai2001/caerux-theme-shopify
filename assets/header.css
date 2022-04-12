@@ -15,7 +15,7 @@ header.header > .inner {
 }
 header.header > .inner .header_top {
   position: relative;
-  color: #fff;
+/*   color: #fff; */
 /*   background: #000000; */
   z-index: 9;
 }
