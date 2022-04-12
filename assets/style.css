@@ -850,6 +850,8 @@ body {
   word-wrap: break-word;
   text-align: center;
   background-color: #ffffff;
+  font-style: var(--font-body-style);
+  font-weight: var(--font-body-weight);
 }
 html.hidden,
 body.hidden {
