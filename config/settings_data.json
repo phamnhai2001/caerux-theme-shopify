@@ -11,8 +11,8 @@
     "social_facebook_link": "https:\/\/www.facebook.com",
     "social_instagram_link": "https:\/\/www.instagram.com\/?hl=en",
     "type_header_font": "fira_sans_n4",
-    "heading_scale": 120,
     "type_body_font": "assistant_n4",
+    "heading_scale": 120,
     "body_scale": 110,
     "page_width": "1200",
     "predictive_search_enabled": true,
@@ -21,7 +21,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
+          "show_line_separator": true,
           "description": "Photogenic and glamorous everyday wear.",
           "menu": "main-menu-1"
         }
