@@ -7,7 +7,7 @@
 
 <header id="header" class="header">
     <div class="inner">
-        <div class="header_top color-{{ section.settings.color_scheme }}">
+        <div class="header_top color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
             <div class="header_top_content">
                 <div class="header_description">
                     {{section.settings.description }}
@@ -220,6 +220,12 @@
           ],
           "default": "background-1",
           "label": "t:sections.header.settings.color_scheme.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_line_separator",
+          "default": true,
+          "label": "t:sections.header.settings.show_line_separator.label"
         },
         {
             "type": "text",
