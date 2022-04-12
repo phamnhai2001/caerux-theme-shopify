@@ -18,7 +18,7 @@
                         {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                             <input type="email" placeholder="your@email.address" name=[contact[Email]] required>
                             <button type="submit">
-                                <img src="{{'envelope-regular-24.png' | asset_url }}" alt="">
+                                <img src="{{'envelope-regular-24.png' | asset_url }}" alt="Submit">
                             </button>
                         {%- endform -%}
                     </div>
@@ -28,21 +28,21 @@
                           {%- if settings.social_facebook_link != blank -%}
                             <li>
                                 <a href="{{ settings.social_facebook_link }}">
-                                    <img src="{{'btn_share_fb.png' | asset_url:'master' }}" alt="Facebook">
+                                    <img src="{{'btn_share_fb.png' | asset_url }}" alt="Facebook">
                                 </a>
                             </li>
                           {%- endif -%}
                           {%- if settings.social_instagram_link != blank -%}
                             <li>
                                 <a href="{{ settings.social_instagram_link }}">
-                                    <img src="{{'btn_share_insta.png' | asset_url:'master' }}" alt="Instagram">
+                                    <img src="{{'btn_share_insta.png' | asset_url }}" alt="Instagram">
                                 </a>
                             </li>
                            {%- endif -%}
                            {%- if settings.social_twitter_link != blank -%}
                             <li>
                                 <a href="{{ settings.social_twitter_link }}">
-                                    <img src="{{'btn_share_twitter.png' | asset_url:'master' }}" alt="Twitter">
+                                    <img src="{{'btn_share_twitter.png' | asset_url }}" alt="Twitter">
                                 </a>
                             </li>
                             {%- endif -%}
