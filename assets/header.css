@@ -162,7 +162,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   cursor: pointer;
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn {
-  background-color: #000000;
+  background-color: transparent;
   border: none;
   vertical-align: middle;
   cursor: pointer;
