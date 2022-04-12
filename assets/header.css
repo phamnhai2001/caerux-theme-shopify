@@ -127,12 +127,14 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   cursor: text;
   outline-style: none;
   border-radius: 0;
+  padding: 10px;
 }
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #header_upper_search_form.search_content form #header_upper_search__input {
     width: 30vw;
     height: 4vw;
     font-size: 1.4vw;
+    padding: 1vw;
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #header_upper_search_form.search_content form .p-header__upper-search__submit {
