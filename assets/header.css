@@ -15,8 +15,9 @@ header.header > .inner {
 }
 header.header > .inner .header_top {
   position: relative;
-  color: #fff;
-  background: #000000;
+/*   color: #fff;
+  background: #000000; */
+   background: var(--gradient-background);
   z-index: 9;
 }
 header.header > .inner .header_top .header_top_content {
