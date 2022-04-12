@@ -14,6 +14,7 @@
                           {{section.settings.footer_description}}
                         </p>
                     </div>
+                  {%- if section.settings.newsletter_enable -%}
                     <div class="form_sub">
                         {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
                             <input type="email" placeholder="your@email.address" name=[contact[Email]] required>
@@ -22,6 +23,7 @@
                             </button>
                         {%- endform -%}
                     </div>
+                   {%- endif -%}
                   {%- if section.settings.show_social -%}
                     <div class="social_icon">
                         <ul>
