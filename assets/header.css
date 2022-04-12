@@ -89,6 +89,9 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li a {
   line-height: 20px;
   text-transform: uppercase;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li a {
@@ -170,22 +173,6 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
     margin-top: 0.5vw;
   }
 }
-header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img {
-  width: 14px;
-  height: 14px;
-}
-@media (max-width: 1000px) {
-  header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img {
-    width: 1.9vw;
-    height: 1.9vw;
-  }
-}
-@media (max-width: 768px) {
-  header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img {
-    width: 2.604vw;
-    height: 2.604vw;
-  }
-}
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img:hover {
   -webkit-filter: invert(0.6) sepia(1) saturate(0) hue-rotate(175deg);
           filter: invert(0.6) sepia(1) saturate(0) hue-rotate(175deg);
@@ -216,22 +203,6 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart .header_welcart_cart_badge {
     margin-top: 0.5vw;
-  }
-}
-header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart img {
-  width: 20px;
-  height: 20px;
-}
-@media (max-width: 1000px) {
-  header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart img {
-    width: 2.9vw;
-    height: 2.9vw;
-  }
-}
-@media (max-width: 768px) {
-  header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart img {
-    width: 3.906vw;
-    height: 3.906vw;
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart:hover {
@@ -675,17 +646,4 @@ header .inner .header_main nav.open #nav_bg {
   right: 0;
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
-}
-
-details[open] > .header__menu-item .icon-caret {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-}
-
-details[open] > .header__submenu {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-animation: animeInorder .2 ease;
-          animation: animeInorder .2 ease;
-  z-index: 1;
 }
