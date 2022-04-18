@@ -94,6 +94,7 @@ customElements.define('cart-notification', CartNotification);
 //       });
 // 	console.log('visiable');
 //     }
+console.log('1234');
   
 //  open.addEventListener('click', () => {
 //      console.log(check.offsetParent == null);
