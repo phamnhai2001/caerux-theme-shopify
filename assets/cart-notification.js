@@ -94,7 +94,10 @@ customElements.define('cart-notification', CartNotification);
 //       });
 // 	console.log('visiable');
 //     }
-console.log('1234');
+    document.querySelector('#checkout').addEventListener('click', function(event) {
+      console.log('1234');
+      document.querySelector('#cart').submit();
+    });
   
 //  open.addEventListener('click', () => {
 //      console.log(check.offsetParent == null);
