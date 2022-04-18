@@ -201,6 +201,7 @@
     cartSubmitInput.setAttribute('name', 'checkout');
     cartSubmitInput.setAttribute('type', 'hidden');
     document.querySelector('#cart').appendChild(cartSubmitInput);
+    console.log(document.querySelector('#checkout'));
     document.querySelector('#checkout').addEventListener('click', function(event) {
       console.log('1234');
       document.querySelector('#cart').submit();
