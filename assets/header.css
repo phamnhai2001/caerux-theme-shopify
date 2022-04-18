@@ -15,8 +15,8 @@ header.header > .inner {
 }
 header.header > .inner .header_top {
   position: relative;
-color: rgb(var(--color-foreground));
-   background: var(--gradient-background);
+  color: #fff;
+  background: #000000;
   z-index: 9;
 }
 header.header > .inner .header_top .header_top_content {
@@ -43,7 +43,7 @@ header.header > .inner .header_top .header_top_content {
   }
 }
 header.header > .inner .header_top .header_top_content .header_description {
-  font-size: 16px;
+  font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: left;
@@ -84,8 +84,8 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li {
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li a {
-  color: rgb(var(--color-foreground));
-  font-size: 16px;
+  color: #fff;
+  font-size: 13px;
   line-height: 20px;
   text-transform: uppercase;
   position: relative;
@@ -162,7 +162,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   cursor: pointer;
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn {
-  background-color: transparent;
+  background-color: #000000;
   border: none;
   vertical-align: middle;
   cursor: pointer;
@@ -414,7 +414,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu {
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a {
   color: #000000;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-transition: all .2s;
   transition: all .2s;
   padding: 10px 0;
@@ -446,6 +446,18 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+}
+header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
+  content: '';
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  width: 6px;
+  right: -15px;
+  height: 6px;
+  top: 11px;
+  position: absolute;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper:hover {
   color: #999999;
