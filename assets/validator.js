@@ -26,11 +26,11 @@ function Validator(options) {
     if(formElement) {
         formElement.onsubmit = function(e) {
             e.preventDefault();
-//             options.rules.forEach(function(rule) {
-//                 var inputElement = formElement.querySelector(rule.selector);
-//                 validate(inputElement,rule);
+            options.rules.forEach(function(rule) {
+                var inputElement = formElement.querySelector(rule.selector);
+                validate(inputElement,rule);
                
-//             });
+            });
             
         }
         options.rules.forEach(function(rule) {
