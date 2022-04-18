@@ -201,9 +201,10 @@
     cartSubmitInput.setAttribute('name', 'checkout');
     cartSubmitInput.setAttribute('type', 'hidden');
     document.querySelector('#cart').appendChild(cartSubmitInput);
-//     document.querySelector('#checkout').addEventListener('click', function(event) {
-//       document.querySelector('#cart').submit();
-//     });
+    document.querySelector('#checkout').addEventListener('click', function(event) {
+      console.log('122333');
+      document.querySelector('#cart').submit();
+    });
   });
 </script>
 {% schema %}
