@@ -112,7 +112,6 @@
                                       <li class="item_menu">
                                         	{%- if link.links != blank -%}
                                                 <a href="{{ link.url }}" class="menu_wrapper">{{ link.title | escape }}
-                                                    <img src="{{'chevron-down-regular-24_2.png' | asset_url }}" alt="arrow down">
                                                 </a>
                                                 <ul class="list_menu_child">
                                                    {%- for childlink in link.links -%}
