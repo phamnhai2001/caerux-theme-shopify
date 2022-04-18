@@ -96,7 +96,7 @@ customElements.define('cart-notification', CartNotification);
 //     }
     document.querySelector('#checkout').addEventListener('click', function(event) {
       console.log('1234');
-      document.querySelector('#cart').submit();
+      document.getElementById("cart").submit();
     });
   
 //  open.addEventListener('click', () => {
