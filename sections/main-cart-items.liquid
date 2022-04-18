@@ -29,7 +29,7 @@
                 <div class="txt_desp">
                     <h2>Your cart</h2>
                 </div>
-              <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart">
+              <form action="{{ routes.cart_url }}" class="cart__contents critical-hidden" method="post" id="cart_item">
                 <div class="cart__items" id="main-cart-items" data-id="{{ section.id }}">
                   <div class="js-contents">
                   <div class="cart_content">
@@ -159,7 +159,7 @@
                                     </small>
                                 </div>
                                 <div class="cart_checkout" >
-                                    <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                                    <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart_item">
                                       {{ form | payment_button }}
                                       {{ 'sections.cart.checkout' | t }}
                                     </button>
