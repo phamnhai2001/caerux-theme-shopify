@@ -17,7 +17,7 @@ header.header > .inner .header_top {
   position: relative;
   color: #fff;
   background: #000000;
-  z-index: 9;
+/*   z-index: 9; */
 }
 header.header > .inner .header_top .header_top_content {
   max-width: 1300px;
