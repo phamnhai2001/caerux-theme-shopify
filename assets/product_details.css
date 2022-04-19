@@ -81,7 +81,7 @@
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in {
   all: unset;
 }
-#wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in .icon_zoom {
+#wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
   width: 35px;
   height: 35px;
   background: #ffffff;
@@ -94,7 +94,7 @@
   margin: 15px;
 }
 @media (max-width: 1000px) {
-  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in .icon_zoom {
+  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
     width: 3.5vw;
     height: 3.5vw;
     padding: 0.7vw;
@@ -103,7 +103,7 @@
   }
 }
 @media (max-width: 768px) {
-  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in .icon_zoom {
+  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
     width: 4.557vw;
     height: 4.557vw;
     padding: 0.911vw;
@@ -1124,7 +1124,7 @@
   }
 }
 #wrapper_product > .inner section.section#recommended .inner .ttl_product {
-  background: #000000;
+  background: #0097CC;
   margin-bottom: 30px;
 }
 @media (max-width: 1000px) {
@@ -1346,24 +1346,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media (max-width: 768px) {
-  .spr-content {
-	flex-direction: column-reverse;
-  }
-  .spr-reviews {
-  	width: 100% !important;
-  }
-  .spr-review {
-  	margin-top: 0;
-    padding: 0;
-  }
-  .spr-form {
-  	width: 100% !important;
-  }
-  input[type=email],input[type=text]  {
-  	height: 7.161vw;
-  }
-}
+
 .spr-form {
   width: 40%;
   border-top: none;
@@ -1693,23 +1676,13 @@ a .visually-hidden {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
-  .shopify-payment-button__button {
-    line-height: 3.225vw;
-        width: 100%;
-    font-size: 2.604vw;
-    border-radius: 0;
-    margin-bottom: 1.953vw;
-    padding: 1.953vw;
-  }
-}
 .shopify-payment-button__button:hover:not([disabled]) {
   border: 1px solid;
   background-color: #fff;
   color: #000;
 }
 
-.price .sale {
+.sale {
   background: #006fbb;
   border-radius: 12px;
   color: #fff;
