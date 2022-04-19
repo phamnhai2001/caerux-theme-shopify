@@ -204,19 +204,19 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .cart-count-bubble {
   position: absolute;
-  top: -6px;
-  right: -6px;
+  top: -2px;
+  right: -8px;
 }
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .cart-count-bubble {
-    top: -0.6vw;
-    right: -0.6vw;
+    top: -0.2vw;
+    right: -0.8vw;
   }
 }
 @media (max-width: 768px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .cart-count-bubble {
-    top: -0.78125vw;
-    right: -0.78125vw;
+    top: -0.2604166667vw;
+    right: -1.0416666667vw;
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a:hover {
