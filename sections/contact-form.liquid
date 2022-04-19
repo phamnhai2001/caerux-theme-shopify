@@ -1,5 +1,5 @@
- <link rel="stylesheet" href="{{ 'contact.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'contact_success.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'contact.css' | asset_url | stylesheet_tag }}
+{{ 'contact_success.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'validator.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'contact.js' | asset_url }}" defer="defer"></script>
 {% style %}
