@@ -663,7 +663,8 @@ header .inner .header_main nav.open #global_nav .header_logo {
 }
 @media (max-width: 1000px) {
   header .inner .header_main nav.open #global_nav .header_logo {
-    margin-bottom: 3.9vw;
+    margin: 0 auto 3.9vw;
+    width: 22vw;
   }
 }
 @media (max-width: 768px) {
