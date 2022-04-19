@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ 'search.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'pagination.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'search.css' | asset_url | stylesheet_tag }}
+{{ 'pagination.css' | asset_url | stylesheet_tag }}
 {% style %}
 .search__input {
 	height: 40px;
