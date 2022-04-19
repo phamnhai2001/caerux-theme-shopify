@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{ 'address.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'address.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'customer.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'address.js' | asset_url }}" defer="defer"></script>
 {% style %}
