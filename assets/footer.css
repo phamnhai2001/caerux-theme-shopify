@@ -378,7 +378,7 @@ footer#footer .copyright .container .footer__localization {
 }
 footer#footer .copyright .container .footer__localization .disclosure__button {
   background: transparent;
-  border: 1px solid;
+  border: 1px solid #787b7e;
   position: relative;
   min-width: 200px;
   padding: 10px;
@@ -386,8 +386,8 @@ footer#footer .copyright .container .footer__localization .disclosure__button {
 }
 footer#footer .copyright .container .footer__localization .disclosure__button::after {
   content: '';
-  border-left: 2px solid;
-  border-bottom: 2px solid;
+  border-left: 2px solid #787b7e;
+  border-bottom: 2px solid #787b7e;
   width: 6px;
   right: 10px;
   height: 6px;
@@ -401,7 +401,7 @@ footer#footer .copyright .container .footer__localization .disclosure__list {
   overflow: hidden;
   overflow-x: scroll;
   overflow-y: scroll;
-  width: 200px;
+  width: 250px;
   border: 1px solid #ddd;
   position: absolute;
   background: #fff;
