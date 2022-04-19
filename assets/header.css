@@ -414,7 +414,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu {
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a {
   color: #000000;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   -webkit-transition: all .2s;
   transition: all .2s;
   padding: 10px 0;
@@ -491,8 +491,28 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
   background: #fff;
   display: none;
 }
+@media (max-width: 1000px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child {
+    min-width: 19vw;
+  }
+}
+@media (max-width: 768px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child {
+    min-width: 24.7395833333vw;
+  }
+}
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item {
   padding: 10px 20px;
+}
+@media (max-width: 1024px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item {
+    padding: 1vw 2vw;
+  }
+}
+@media (max-width: 768px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item {
+    padding: 1.3020833333vw 2.6041666667vw;
+  }
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item a {
   text-transform: uppercase;
