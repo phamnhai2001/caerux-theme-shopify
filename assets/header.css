@@ -301,7 +301,7 @@ header .inner .header_main nav .logo a {
     display: block;
     position: fixed;
     right: 4vw;
-    top: 7.5vw;
+    top: 8.5vw;
     width: 53px;
     height: 5.7vw;
     cursor: pointer;
@@ -555,7 +555,7 @@ header .inner .header_main nav .nav_main_top #global_nav .header_logo {
     background: #ffffff;
     width: 5.3vw;
     height: 5.3vw;
-    top: 7.5vw;
+    top: 8.5vw;
     right: 4.3vw;
     padding: 0;
     -webkit-box-shadow: unset;
