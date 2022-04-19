@@ -166,6 +166,7 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
     right: 0.5vw;
     width: 3vw;
+    top: 43%;
   }
 }
 @media (max-width: 768px) {
