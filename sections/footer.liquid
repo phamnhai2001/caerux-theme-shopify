@@ -105,7 +105,7 @@
                             <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
                               {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
                             </button>
-
+							<div class="disclosure__list-wrapper" hidden>
                             <ul id="CountryList" role="list" class="disclosure__list" hidden>
                               {% for country in localization.available_countries %}
                                 <li class="disclosure__item" tabindex="-1">
@@ -115,6 +115,7 @@
                                 </li>
                               {% endfor %}
                             </ul>
+                            </div>
                             <input type="hidden" name="country_code" value="{{ localization.country.iso_code }}">
                           </div>
                         {% endform %}
