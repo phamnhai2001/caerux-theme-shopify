@@ -514,3 +514,6 @@ footer#footer .copyright .container .footer__column--info .footer__copyright {
     font-size: 1.5625vw;
   }
 }
+footer#footer .copyright .container .footer__column--info .footer__copyright .copyright__content a {
+  color: #666666;
+}
