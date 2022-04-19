@@ -1,5 +1,5 @@
-<link rel="stylesheet" href="{{ 'cart.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'cart_note.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'cart.css' | asset_url | stylesheet_tag  }}
+{{ 'cart_note.css' | asset_url | stylesheet_tag  }}
 
 {% style %}
 .discounts__discount {
