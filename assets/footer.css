@@ -166,11 +166,13 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
 @media (max-width: 1000px) {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
     right: 0.5vw;
+    width: 3vw;
   }
 }
 @media (max-width: 768px) {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
     right: 0.651vw;
+    width: 3.90625vw;
   }
 }
 footer#footer .inner .container .subscribe .content_sub .social_icon ul li a i {
