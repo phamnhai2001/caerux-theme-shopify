@@ -23,8 +23,8 @@
     </title>
     
 	{{ 'style.css' | asset_url | stylesheet_tag }}
-<!--     {{ 'base.css' | asset_url | stylesheet_tag }} -->
-    {% if page_description %}
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+<!--     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
     {%- unless settings.type_body_font.system? -%}
@@ -34,7 +34,7 @@
       <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
 
-	<script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+	<script src="{{ 'global.js' | asset_url }}" defer="defer"></script> -->
     {{ content_for_header }}
 
   </head>
