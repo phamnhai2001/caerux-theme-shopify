@@ -373,6 +373,9 @@ footer#footer .copyright .container {
     max-width: 100%;
   }
 }
+footer#footer .copyright .container .footer__localization {
+  position: relative;
+}
 footer#footer .copyright .container .footer__localization .disclosure__button {
   background: transparent;
   border: 1px solid;
@@ -402,6 +405,7 @@ footer#footer .copyright .container .footer__localization .disclosure__list {
   border: 1px solid #ddd;
   position: absolute;
   background: #fff;
+  bottom: 50px;
 }
 footer#footer .copyright .container .footer__localization .disclosure__list .disclosure__item {
   padding: 10px;
