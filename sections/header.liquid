@@ -99,8 +99,8 @@
                             <div class="header_logo util_sp">
                                 <a href="{{ routes.root_url }}">
                                 {%- if section.settings.logo != blank -%}
-                                    <img srcset="{{ section.settings.logo | img_url}}",
-                                    src="{{ section.settings.logo | img_url }}"
+                                    <img srcset="{{ section.settings.logo | img_url:'master'}}",
+                                    src="{{ section.settings.logo | img_url:'master' }}"
                                     alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                                 {%- else -%}
                                     <img src="{{ 'logo.png' | asset_url }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
