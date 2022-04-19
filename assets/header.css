@@ -583,7 +583,7 @@ header .inner .header_main nav .nav_main_top #global_nav .header_logo {
   }
 }
 header .inner .header_main nav.open #global_nav {
-  z-index: 1000;
+  z-index: 9;
   visibility: visible;
 }
 @media (max-width: 1000px) {
