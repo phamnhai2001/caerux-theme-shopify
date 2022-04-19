@@ -1,3 +1,10 @@
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+/*
+	header
+*/
 header.header {
   position: relative;
 }
@@ -451,6 +458,20 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
   position: absolute;
   -webkit-transform: rotate(315deg);
           transform: rotate(315deg);
+}
+@media (max-width: 1000px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
+    width: 0.5vw;
+    right: -1.5vw;
+    top: 1.2vw;
+  }
+}
+@media (max-width: 768px) {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
+    width: 0.6510416667vw;
+    right: -1.953125vw;
+    top: 1.5625vw;
+  }
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper:hover {
   color: #999999;
