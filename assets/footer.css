@@ -9,13 +9,6 @@ footer#footer {
 	color: rgb(var(--color-foreground));
    background: var(--gradient-background);
 }
-/* automatic size vw */
-/* automatic size vh */
-/* text clamp */
-/* anime In order */
-/*
-    footer
-*/
 footer#footer .inner {
   background-color: #fff;
   padding: 80px 0;
@@ -406,7 +399,10 @@ footer#footer .copyright .container .footer__localization .disclosure__list {
   overflow-x: scroll;
   overflow-y: scroll;
   width: 200px;
-  border: 1px solid;
+  border: 1px solid #ddd;
+  position: absolute;
+  background: #fff;
+  bottom: 50px;
 }
 footer#footer .copyright .container .footer__localization .disclosure__list .disclosure__item {
   padding: 10px;
