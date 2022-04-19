@@ -6,8 +6,7 @@
     footer
 */
 footer#footer {
-	color: rgb(var(--color-foreground));
-   background: var(--gradient-background);
+  border-top: 1px solid #ebeef0;
 }
 footer#footer .inner {
   background-color: #fff;
