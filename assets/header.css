@@ -17,7 +17,7 @@ header.header > .inner .header_top {
   position: relative;
   color: #fff;
   background: #000000;
-/*   z-index: 9; */
+  z-index: 9;
 }
 header.header > .inner .header_top .header_top_content {
   max-width: 1300px;
@@ -43,7 +43,7 @@ header.header > .inner .header_top .header_top_content {
   }
 }
 header.header > .inner .header_top .header_top_content .header_description {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: left;
@@ -85,7 +85,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li {
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li a {
   color: #fff;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   position: relative;
