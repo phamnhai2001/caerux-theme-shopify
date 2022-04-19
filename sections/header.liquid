@@ -77,8 +77,8 @@
                     <div class="logo">
                         <a href="{{ routes.root_url }}" class="logo">
                             {%- if section.settings.logo != blank -%}
-                            <img srcset="{{ section.settings.logo | img_url}}",
-                            src="{{ section.settings.logo | img_url }}"
+                            <img srcset="{{ section.settings.logo | img_url:'master'}}",
+                            src="{{ section.settings.logo | img_url:'master' }}"
                             alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
                         {%- else -%}
                             <img src="{{ 'logo.png' | asset_url }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}">
