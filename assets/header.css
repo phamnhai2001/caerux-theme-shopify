@@ -211,6 +211,23 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
     margin-top: 0.5vw;
   }
 }
+header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart .cart-count-bubble {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+}
+@media (max-width: 1000px) {
+  header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart .cart-count-bubble {
+    top: -0.6vw;
+    right: -0.6vw;
+  }
+}
+@media (max-width: 768px) {
+  header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart .cart-count-bubble {
+    top: -0.78125vw;
+    right: -0.78125vw;
+  }
+}
 header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a.header_cart:hover {
   color: #999999;
   -webkit-filter: invert(0.6) sepia(1) saturate(0) hue-rotate(175deg);
