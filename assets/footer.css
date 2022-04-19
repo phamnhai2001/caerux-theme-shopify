@@ -394,7 +394,7 @@ footer#footer .copyright .container .footer__localization .disclosure__button {
 }
 @media (max-width: 768px) {
   footer#footer .copyright .container .footer__localization .disclosure__button {
-    min-width: 26.0416666667vw;
+    min-width: 33.0416666667vw;
     padding: 1.3020833333vw;
   }
 }
