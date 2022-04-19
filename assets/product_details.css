@@ -80,12 +80,9 @@
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in {
   all: unset;
-}
-#wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
   width: 35px;
   height: 35px;
   background: #ffffff;
-  padding: 7px;
   position: absolute;
   cursor: pointer;
   top: 0;
@@ -94,19 +91,17 @@
   margin: 15px;
 }
 @media (max-width: 1000px) {
-  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
+  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in {
     width: 3.5vw;
     height: 3.5vw;
-    padding: 0.7vw;
     border-radius: 2vw;
     margin: 1.5vw;
   }
 }
 @media (max-width: 768px) {
-  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in svg {
+  #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .item a .zoom_in {
     width: 4.557vw;
     height: 4.557vw;
-    padding: 0.911vw;
     border-radius: 2.604vw;
     margin: 1.95vw;
   }
@@ -890,10 +885,10 @@
 #wrapper_product > .inner section.section#product .inner .cart_notify.active {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  -webkit-transition: visibility 0s,-webkit-transform 200ms ease;
-  transition: visibility 0s,-webkit-transform 200ms ease;
-  transition: transform 200ms ease,visibility 0s;
-  transition: transform 200ms ease,visibility 0s,-webkit-transform 200ms ease;
+  -webkit-transition: visibility 0s, -webkit-transform 200ms ease;
+  transition: visibility 0s, -webkit-transform 200ms ease;
+  transition: transform 200ms ease, visibility 0s;
+  transition: transform 200ms ease, visibility 0s, -webkit-transform 200ms ease;
   visibility: visible;
 }
 #wrapper_product > .inner section.section#review .inner {
@@ -1124,7 +1119,7 @@
   }
 }
 #wrapper_product > .inner section.section#recommended .inner .ttl_product {
-  background: #000;
+  background: #0097CC;
   margin-bottom: 30px;
 }
 @media (max-width: 1000px) {
