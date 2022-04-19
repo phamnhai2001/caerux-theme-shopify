@@ -1283,7 +1283,7 @@
     width: 3.90625vw;
   }
 }
-.item_menu .visually-hidden {
+.header_top_nav .visually-hidden {
 	width: auto;
   	height: auto;
 }
