@@ -1178,7 +1178,7 @@
 }
 @media (max-width: 1000px) {
   .quantity__button {
-    width: 6vw !important;
+    width: 4vw !important;
     background-color: #fff !important;
   }
 }
