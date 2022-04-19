@@ -388,13 +388,13 @@ footer#footer .copyright .container .footer__localization .disclosure__button {
 }
 @media (max-width: 1000px) {
   footer#footer .copyright .container .footer__localization .disclosure__button {
-    min-height: 20vw;
+    min-width: 20vw;
     padding: 1vw;
   }
 }
 @media (max-width: 768px) {
   footer#footer .copyright .container .footer__localization .disclosure__button {
-    min-height: 26.0416666667vw;
+    min-width: 26.0416666667vw;
     padding: 1.3020833333vw;
   }
 }
