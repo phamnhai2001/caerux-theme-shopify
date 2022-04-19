@@ -518,9 +518,6 @@ header .inner .header_main nav .nav_main_top #global_nav .header_logo {
             backface-visibility: hidden;
   }
 }
-header .inner .header_main nav.open {
-  z-index: 9999;
-}
 @media (max-width: 1000px) {
   header .inner .header_main nav.open #nav_toggle {
     background: #ffffff;
