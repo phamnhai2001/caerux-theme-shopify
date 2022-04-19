@@ -707,3 +707,7 @@ header .inner .header_main nav.open #nav_bg {
   -webkit-transition: all .3s ease-out;
   transition: all .3s ease-out;
 }
+.header_top_nav .visually-hidden {
+	width: auto;
+  	height: auto;
+}
