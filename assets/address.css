@@ -377,10 +377,6 @@
   }
 }
 
-.addresses ul li button:last-child {
-  border-right: 0 !important;
-}
-
 .addresses ul li .edit {
   padding-top: 30px;
 }
