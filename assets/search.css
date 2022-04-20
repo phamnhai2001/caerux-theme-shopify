@@ -276,3 +276,19 @@ a .item_content .txt_desp p {
     font-size: 2.604vw;
   }
 }
+.search__input {
+	height: 50px;
+    width: 450px;
+    border: 1px solid #31373d;
+	position: relative;
+    padding: 7px;
+    outline: none;
+}
+.search__button {
+    background: black;
+    border: 1px solid;
+    cursor: pointer;
+    position: absolute;
+    height: 50px;
+    padding: 11px;
+}
