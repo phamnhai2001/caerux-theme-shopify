@@ -2,33 +2,7 @@
   "sections": {
     "slideshow": {
       "type": "slideshow",
-      "blocks": {
-        "d7d1ab2d-1719-4479-acfc-1038d4fb034c": {
-          "type": "collection",
-          "settings": {
-            "collection": "50-off"
-          }
-        },
-        "8fd2bedb-a48a-4269-8d2d-4a1e98ac67ff": {
-          "type": "collection",
-          "settings": {
-            "collection": "chair"
-          }
-        },
-        "45b6c8db-70dd-4019-b3f2-b233fc2e4d9d": {
-          "type": "collection",
-          "settings": {
-            "collection": "frontpage"
-          }
-        }
-      },
-      "block_order": [
-        "d7d1ab2d-1719-4479-acfc-1038d4fb034c",
-        "8fd2bedb-a48a-4269-8d2d-4a1e98ac67ff",
-        "45b6c8db-70dd-4019-b3f2-b233fc2e4d9d"
-      ],
       "settings": {
-        "title": "Collections"
       }
     },
     "collection": {
