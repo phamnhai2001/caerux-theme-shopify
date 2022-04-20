@@ -1185,3 +1185,10 @@ details.menu-opening .mobile-facets__close {
   }
 }
 
+
+.facets_price .field .field_input {
+	width: 85px !important;
+}
+.facets__price {
+	display: flex;
+}

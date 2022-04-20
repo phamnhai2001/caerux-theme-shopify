@@ -21,15 +21,7 @@
     assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
   endif
 -%}
-{% style %}
 
-.facets_price .field .field_input {
-	width: 85px !important;
-}
-.facets__price {
-	display: flex;
-}
-{% endstyle %}
 		<div class="collection_filters">
              {% if enable_filtering %}
              <div class="filters util_pc {% if collection.featured_image == blank %} all{% endif %} {%- if collection.products.size == 0 -%} item_none{% endif %}" id="filters">
