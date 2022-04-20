@@ -39,7 +39,8 @@
   }
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form {
-  width: 50%;
+      width: 80%;
+    margin: 0 auto;
 }
 @media (max-width: 1000px) {
   #wrapper.register section.section#content .inner .register_wrapper .register_form {
