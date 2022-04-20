@@ -205,12 +205,14 @@
   #wrapper.contact .inner .form_contact form ul li .c_contact_policy input::before {
     width: 1.5vw;
     height: 1.5vw;
+    top: 0;
   }
 }
 @media (max-width: 768px) {
   #wrapper.contact .inner .form_contact form ul li .c_contact_policy input::before {
     width: 1.953vw;
     height: 1.953vw;
+    top: 0;
   }
 }
 #wrapper.contact .inner .form_contact form ul li .c_contact_policy input:checked::after {
