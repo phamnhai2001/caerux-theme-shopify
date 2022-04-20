@@ -24,12 +24,14 @@
   .template-search .template-search__header .h2 {
     font-size: 3.2vw;
     line-height: 7vw;
+    margin-bottom: 2vw;
   }
 }
 @media (max-width: 768px) {
   .template-search .template-search__header .h2 {
     font-size: 4.1666666667vw;
     line-height: 5.2083333333vw;
+    margin-bottom: 2.604vw;
   }
 }
 
