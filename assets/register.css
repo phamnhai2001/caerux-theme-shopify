@@ -38,17 +38,7 @@
     padding: 9.145vw;
   }
 }
-#wrapper.register section.section#content .inner .register_wrapper .register_form {
-  width: 50%;
-}
-@media (max-width: 1000px) {
-  #wrapper.register section.section#content .inner .register_wrapper .register_form {
-    width: 100%;
-    border-bottom: 1px solid #D6D6D6;
-    padding-bottom: 4vw;
-    margin-bottom: 4vw;
-  }
-}
+
 #wrapper.register section.section#content .inner .register_wrapper .register_form h3 {
   font-size: 24px;
   line-height: 31px;
