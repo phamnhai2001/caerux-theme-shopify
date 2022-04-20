@@ -357,6 +357,8 @@
   .addresses div form .btn button:last-child {
     border-radius: 0.5vw;
     padding: 1.3vw 2.5vw;
+     font-size: 1.6vw;
+        font-weight: 500;
   }
 }
 @media (max-width: 768px) {
