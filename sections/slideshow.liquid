@@ -5,17 +5,16 @@
     <div class="inner">
         <div class="slider_top">
            {% for block in section.blocks %}
-    			{%- assign collection = collections[block.settings.collection] -%}
             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
-                 <img src="{{collection.image | img_url: 'master' }}" alt="{{ collection.title | default: default_label }}">
+                  <img  src="{{ block.settings.image | img_url: 'master'}}" alt="{{ block.settings.title }}">
                 </div>
                 <div class="txt_desp">
                     <div class="desp_content">
-                        <h3>{{ collection.title | default: default_label }}</h3>
+                        <h3>{{ block.settings.title}}</h3>
                         <div class="btn_shop">
-                            <a href="{{ collection.url }}">Shop now!</a>
+                            <a href="{{ routes.all_products_collection_url }}">Shop now!</a>
                             <img src="{{'arrow-right.svg' | asset_url }}" alt="Next">
                         </div>
                     </div>
@@ -42,10 +41,11 @@
     </div>
 </section>
 
-<!-- {
+{% schema %}
+{
   "name": "t:sections.slideshow.name",
-  "max_blocks": 3, --> 
-<!--   "settings": [
+  "max_blocks": 3,
+  "settings": [
     
   ],
   "blocks": [
@@ -62,8 +62,7 @@
           "type": "text",
           "id": "title",
           "label":"t:sections.slideshow.blocks.slide.settings.heading.label"
-        },
-
+        }
       ]
     }
   ],
@@ -81,34 +80,5 @@
       }
     ]
 }
- -->
-
-
-
-{% schema %}
-  {
-     "name": "t:sections.slideshow.name",
-  	 "max_blocks": 3,
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "t:sections.main-list-collections.settings.title.label",
-        "default": "Collections"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "collection",
-        "name": "Collection",
-        "settings": [
-          {
-            "label": "Collection",
-            "id": "collection",
-            "type": "collection"
-          }
-        ]
-      }
-    ]
-  }
 {% endschema %}
+
