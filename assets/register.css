@@ -42,7 +42,7 @@
   }
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form {
-      width: 80%;
+      width: 65%;
     margin: 0 auto;
 }
 @media (max-width: 1000px) {
