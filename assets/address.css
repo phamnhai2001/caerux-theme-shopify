@@ -363,6 +363,8 @@
   .addresses div form .btn button:last-child {
     border-radius: 0.6510416667vw;
     padding: 1.6927083333vw 3.2552083333vw;
+        font-size: 3.606vw;
+    font-weight: 500;
   }
 }
 
