@@ -1058,6 +1058,7 @@ section.section#banner .inner .slider_top .prev_next .prev {
   z-index: 9;
   cursor: pointer;
   position: absolute;
+  box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
