@@ -2,6 +2,20 @@
   "sections": {
     "slideshow": {
       "type": "slideshow",
+      "blocks": {
+        "4684ca12-3bab-4b03-b67e-8401f0dddb3b": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/02_434cc02d-4fba-4d69-824c-35c09b775fab.png",
+            "title": "The title banner 01",
+            "link": "",
+            "collection": "50-off"
+          }
+        }
+      },
+      "block_order": [
+        "4684ca12-3bab-4b03-b67e-8401f0dddb3b"
+      ],
       "settings": {
       }
     },
