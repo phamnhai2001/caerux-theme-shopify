@@ -956,8 +956,6 @@
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner.empty {
   max-width: 1200px;
   width: 100%;
-   -o-object-fit: cover;
-     object-fit: cover;
 }
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner {
