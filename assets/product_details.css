@@ -255,6 +255,10 @@
   padding-right: 8px;
   position: relative;
 }
+#wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column button {
+     position: absolute;
+    right: 0;
+}
 @media (max-width: 1000px) {
   #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column {
     padding-right: 0.8vw;
