@@ -15,8 +15,17 @@ li[data-address]>h2 {
 li[data-address] {
 	margin-bottom: 50px;
 }
-.addresses input[type=checkbox] {
+.addresses input[type=checkbox]:: before {
 	appearance: auto;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #121212;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
 }
 .upper .navi_top {
 	padding-top: 15%;
