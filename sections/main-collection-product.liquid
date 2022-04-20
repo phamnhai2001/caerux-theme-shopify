@@ -6,7 +6,9 @@
                 <h3>{{- collection.title | escape -}}</h3>
             </div>
             <div class="collection_section">
-              {%- if enable_sorting and  collection.featured_image == blank -%}
+              
+                 {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
+                {%- if enable_sorting and  collection.featured_image == blank -%}
                                       <div class="facet-filters sorting caption">
                                         <div class="facet-filters__field">
                                           <h2 class="facet-filters__label caption-large text-body">
@@ -27,8 +29,7 @@
                                         </noscript>
                                       </div>
                                     {%- endif -%}
-                 {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
-                <div class="collection_product_grid">
+              <div class="collection_product_grid">
                     <div class="collection util_pc">
                       {%- if collection.products.size == 0 -%}
                         <div class="collection_banner empty">
