@@ -464,14 +464,14 @@ li[data-address] {
 }
 @media (max-width: 1000px) {
   .addresses input[type=checkbox]::before {
-    width: 1.5vw
+    width: 1.5vw;
     height: 1.5vw;
     top: -0.8vw;
   }
 }
 @media (max-width: 768px) {
   .addresses input[type=checkbox]::before {
-    width: 1.953vw
+    width: 1.953vw;
     height: 1.953vw;
     top: -1.04166vw;
   }
