@@ -462,6 +462,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+      justify-content: center;
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
   content: '';
