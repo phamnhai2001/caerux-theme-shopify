@@ -32,10 +32,7 @@
 }
 @media (max-width: 1000px) {
   #wrapper.login section.section#content .inner .login_wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+   
     padding: 7vw;
   }
 }
@@ -52,7 +49,6 @@
     width: 100%;
     padding-bottom: 4vw;
     margin-bottom: 4vw;
-    flex-direction: column;
   }
 }
 #wrapper.login section.section#content .inner .login_wrapper .login_form h3 {
