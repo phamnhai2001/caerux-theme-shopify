@@ -294,12 +294,12 @@ a .item_content .txt_desp p {
 }
 @media (max-width: 1000px) {
   .search__input {
-    height: 8vw;
+    height: 6vw;
     width: 45vw;
     padding: 0.7vw;
   }
   .search__button {
-  	height: 8vw;
+  	height: 6vw;
     padding: 1vw;
   }
 }
