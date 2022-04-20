@@ -16,6 +16,9 @@
     max-width: 100%;
     margin: 0 auto 8vw;
   }
+  #wrapper.register {
+  padding-top: 16%;
+}
 }
 @media (max-width: 768px) {
   #wrapper.register section.section#content .inner {
