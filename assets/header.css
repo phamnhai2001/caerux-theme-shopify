@@ -700,6 +700,9 @@ header .inner .header_main nav.open #global_nav .header_logo {
     width: 24.154vw;
     margin: 0 auto 5.024vw;
   }
+  header .inner .header_main nav.open #global_nav .list_item .item_menu .list_menu_child .menu_child_item a {
+  	font-size: 3.125vw;
+  }
 }
 header .inner .header_main nav.open #nav_bg {
   right: 0;
