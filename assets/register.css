@@ -26,10 +26,16 @@
 #wrapper.register section.section#content .inner .register_wrapper {
   background: #f7f7f7;
   padding: 70px;
- 
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 @media (max-width: 1000px) {
   #wrapper.register section.section#content .inner .register_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding: 7vw;
   }
 }
@@ -38,7 +44,17 @@
     padding: 9.145vw;
   }
 }
-
+#wrapper.register section.section#content .inner .register_wrapper .register_form {
+  width: 50%;
+}
+@media (max-width: 1000px) {
+  #wrapper.register section.section#content .inner .register_wrapper .register_form {
+    width: 100%;
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 4vw;
+    margin-bottom: 4vw;
+  }
+}
 #wrapper.register section.section#content .inner .register_wrapper .register_form h3 {
   font-size: 24px;
   line-height: 31px;
