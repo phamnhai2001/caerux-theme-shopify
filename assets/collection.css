@@ -953,6 +953,12 @@
    -o-object-fit: cover;
      object-fit: cover;
 }
+#wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner.empty {
+  max-width: 1200px;
+  width: 100%;
+   -o-object-fit: cover;
+     object-fit: cover;
+}
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner {
     margin-bottom: 5vw;
@@ -1173,8 +1179,4 @@ details.menu-opening .mobile-facets__close {
     padding: 5.859375vw;
   }
 }
-.collection_banner.empty img {
-  width: 1200px !important;
-  height: 400px !important;
- 
-}
+
