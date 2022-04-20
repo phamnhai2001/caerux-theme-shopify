@@ -263,7 +263,7 @@
 }
 @media (max-width: 768px) {
   #wrapper.register section.section#content .inner .register_wrapper .register_form .rules_information {
-    padding: 0 5.208vw;
+    padding: 0;
   }
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form .rules_information p {
