@@ -477,18 +477,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
 }
 @media (max-width: 1000px) {
   header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
-    width: 0.5vw;
-    right: -1.5vw;
-    top: 2.2vw;
-    height: 0.5vw;
-  }
-}
-@media (max-width: 768px) {
-  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
-    width: 0.6510416667vw;
-    right: -1.953125vw;
-    top: 2.34333vw;
-    height: 0.6510416667vw;
+    display: none;
   }
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper:hover {
