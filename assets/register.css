@@ -147,6 +147,7 @@
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form form .btn_register .txt_confirm {
   margin-bottom: 20px;
+  text-align: left;
 }
 @media (max-width: 1000px) {
   #wrapper.register section.section#content .inner .register_wrapper .register_form form .btn_register .txt_confirm {
