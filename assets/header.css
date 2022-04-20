@@ -6,6 +6,10 @@
 	header
 */
 header.header {
+	color: rgb(var(--color-foreground));
+   background: var(--gradient-background);
+}
+header.header {
   position: relative;
 }
 header.header > .inner {
