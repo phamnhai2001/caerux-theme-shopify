@@ -301,11 +301,13 @@
 @media (max-width: 1000px) {
   .addresses div form .default_address label {
     font-size: 1.4vw;
+    margin-left: 2vw;
   }
 }
 @media (max-width: 768px) {
   .addresses div form .default_address label {
     font-size: 2.34333vw;
+    margin-left: 2.604vw;
   }
 }
 
