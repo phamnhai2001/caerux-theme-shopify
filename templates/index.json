@@ -66,7 +66,7 @@
         "4e903327-7da8-4702-8ec9-a7f44d8b9f3d": {
           "type": "collection",
           "settings": {
-            "collection": "feature"
+            "collection": "sofa"
           }
         },
         "e4c6b62e-fd8c-433c-b969-cf1c8e1ee3f2": {
@@ -118,7 +118,7 @@
       ],
       "settings": {
         "title": "NEW ARRIVAL",
-        "feature_collection": "feature"
+        "feature_collection": "sofa"
       }
     },
     "recommend": {
