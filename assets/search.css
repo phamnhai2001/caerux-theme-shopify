@@ -299,7 +299,8 @@ a .item_content .txt_desp p {
     padding: 0.7vw;
   }
   .search__button {
-  	
+  	height: 5vw;
+    padding: 1vw;
   }
 }
 @media (max-width: 768px) {
@@ -309,6 +310,7 @@ a .item_content .txt_desp p {
     padding: 0.91145vw;
   }
   .search__button {
-  
+  	height: 6.5104vw;
+    padding: 1.302vw;
   }
 }
