@@ -503,6 +503,8 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
     display: block;
     border: none;
     position: unset;
+    padding-left: 4.5vw;
+
   }
 }
 @media (max-width: 768px) {
