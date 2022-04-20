@@ -304,7 +304,7 @@ a .item_content .txt_desp p {
   }
 }
 @media (max-width: 768px) {
-  .search__inputp {
+  .search__input {
     width: 5.859375vw;
     padding: 0.91145vw;
   }
