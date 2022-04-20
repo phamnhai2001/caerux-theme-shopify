@@ -307,8 +307,10 @@ a .item_content .txt_desp p {
   .search__input {
     width: 75%;
     padding: 0.91145vw;
+    height: 7.11458vw;
   }
   .search__button {
     padding: 1.302vw;
+    height: 7.11458vw;
   }
 }
