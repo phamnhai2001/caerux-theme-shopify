@@ -3,7 +3,7 @@
 /* text clamp */
 /* anime In order */
 .template-search {
-  padding-top: 20%;
+  padding-top: 12%;
   max-width: 1200px;
   margin: 0 auto;
   width: 88.888%;
@@ -11,6 +11,7 @@
 @media (max-width: 1000px) {
   .template-search {
     max-width: 100%;
+    padding-top: 20%;
   }
 }
 
