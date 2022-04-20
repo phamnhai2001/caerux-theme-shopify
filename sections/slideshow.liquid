@@ -14,7 +14,7 @@
                     <div class="desp_content">
                         <h3>{{ block.settings.title}}</h3>
                         <div class="btn_shop">
-                            <a href="{{ routes.all_products_collection_url }}">Shop now!</a>
+                            <a href="{{ block.settings.link }}">Shop now!</a>
                             <img src="{{'arrow-right.svg' | asset_url }}" alt="Next">
                         </div>
                     </div>
@@ -62,7 +62,13 @@
           "type": "text",
           "id": "title",
           "label":"t:sections.slideshow.blocks.slide.settings.heading.label"
-        }
+        },
+		{
+			"type":"link_list",
+			"id":"link",
+			"label":"Link collection"
+		}
+		
       ]
     }
   ],
