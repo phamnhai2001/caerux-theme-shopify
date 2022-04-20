@@ -1044,7 +1044,7 @@ section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .
   }
 }
 section.section#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop:hover {
-  background: #9b9ea157;
+  background: #429ad6;
   -webkit-transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   transition: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
