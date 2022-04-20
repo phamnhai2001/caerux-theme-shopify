@@ -6,29 +6,7 @@
                 <h3>{{- collection.title | escape -}}</h3>
             </div>
             <div class="collection_section">
-              
                  {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting %}
-                {%- if enable_sorting and  collection.featured_image == blank -%}
-                                      <div class="facet-filters sorting caption">
-                                        <div class="facet-filters__field">
-                                          <h2 class="facet-filters__label caption-large text-body">
-                                            <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
-                                          </h2>
-                                          <div class="select">
-                                            {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-                                            <select name="sort_by" class="facet-filters__sort select__select caption-large" id="SortBy" aria-describedby="a11y-refresh-page-message">
-                                              {%- for option in results.sort_options -%}
-                                                <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
-                                              {%- endfor -%}
-                                            </select>
-                                             {% render 'icon-caret' %}
-                                          </div>
-                                        </div>
-                                        <noscript>
-                                          <button type="submit" class="facets__button-no-js button button--tertiary">{{ 'products.facets.sort_button' | t }}</button>
-                                        </noscript>
-                                      </div>
-                                    {%- endif -%}
               <div class="collection_product_grid">
                     <div class="collection util_pc">
                       {%- if collection.products.size == 0 -%}
