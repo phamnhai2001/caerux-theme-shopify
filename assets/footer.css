@@ -338,7 +338,6 @@ footer#footer .inner .container .category ul li .txt_category p {
   footer#footer .inner .container .category ul li .txt_category p {
     font-size: 1.6vw;
     margin-bottom: 2vw;
-    color: #7f7b7b;
   }
 }
 @media (max-width: 768px) {
@@ -346,6 +345,9 @@ footer#footer .inner .container .category ul li .txt_category p {
     font-size: 2.604vw;
     margin-bottom: 2.604vw;
   }
+}
+footer#footer .inner .container .category ul li .txt_category p a {
+    color: #7f7b7b;
 }
 footer#footer .copyright {
   border-top: 1px solid #c6c6c6;
