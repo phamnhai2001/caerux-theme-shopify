@@ -55,7 +55,7 @@
 }
 #wrapper.collection > .inner .collection_section .collection_filters .filters {
   border: 1px solid #979797;
-/*   min-width: 220px; */
+  min-width: 220px;
 }
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_filters .filters {
