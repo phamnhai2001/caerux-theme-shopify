@@ -948,6 +948,9 @@
   padding-left: 35px;
   width: 80%;
 }
+#wrapper.collection > .inner .collection_section .collection_product_grid.banner {
+	width: 100%;
+}
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_product_grid {
     padding-left: 0;
