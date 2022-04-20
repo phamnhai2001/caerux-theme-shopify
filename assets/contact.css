@@ -220,7 +220,7 @@
   height: 15px;
   background-image: url(check_white.png);
   position: absolute;
-  top: 0;
+  top: 3px;
   left: 0;
   background-size: 100% auto;
   background-color: #000000;
