@@ -16,7 +16,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/banner_arrival.jpg",
             "title": "The title banner 02",
-            "collection": "frontpage"
+            "collection": "good"
           }
         },
         "057f3b33-c943-4516-a396-c1acc6f0fb51": {
@@ -54,7 +54,7 @@
         "07ba67c3-abe5-4be6-9f83-9a48fd8e95f0": {
           "type": "collection",
           "settings": {
-            "collection": "frontpage"
+            "collection": "good"
           }
         },
         "95c59dad-cd3a-4980-84e3-7256c3cd099a": {
@@ -125,7 +125,7 @@
       "type": "recommend",
       "settings": {
         "title": "RECOMMEND",
-        "recommend_collection": "frontpage"
+        "recommend_collection": "good"
       }
     },
     "blog": {
