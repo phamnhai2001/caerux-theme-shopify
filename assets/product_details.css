@@ -257,7 +257,7 @@
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column button {
      position: absolute;
-    left: 0;
+    right: 0;
 }
 @media (max-width: 1000px) {
   #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column {
@@ -266,7 +266,7 @@
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column iframe {
 	    position: absolute;
-    right: 0;
+    left: 0;
 }
 #wrapper_product > .inner section.section#product .inner .product_grid .product_images .container .row .column img {
   cursor: pointer;
