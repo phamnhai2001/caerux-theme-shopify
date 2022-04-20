@@ -663,7 +663,7 @@ header .inner .header_main nav.open #global_nav .list_item {
 @media (max-width: 1000px) {
   header .inner .header_main nav.open #global_nav .list_item .item_menu a {
     color: #000000;
-    font-size: 3.1vw;
+    font-size: 4vw;
     letter-spacing: 0.3px;
     margin-bottom: 4vw;
     text-transform: uppercase;
