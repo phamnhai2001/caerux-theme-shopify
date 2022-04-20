@@ -510,6 +510,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
 @media (max-width: 1000px) {
   header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child {
     min-width: 19vw;
+    display: block;
   }
 }
 @media (max-width: 768px) {
