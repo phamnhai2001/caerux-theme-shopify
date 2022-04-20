@@ -957,8 +957,8 @@
   margin-bottom: 50px;
   max-width: 945px;
   width: 100%;
-   -o-object-fit: cover;
-     object-fit: cover;
+  height: 300px;
+  display: flex;
 }
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner.empty {
   max-width: 1200px;
