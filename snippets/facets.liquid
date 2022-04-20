@@ -32,7 +32,7 @@
 {% endstyle %}
 		<div class="collection_filters">
              {% if enable_filtering %}
-             <div class="filters util_pc {%- if collection.featured_image == blank -%} all {%- endif -%}" id="filters">
+             <div class="filters util_pc{%- if collection.featured_image == blank -%} all{%- endif -%}" id="filters">
                 {%- if collection.products.size == 0 -%}
                         <div class="txt_desp " style="display:none">
                             <h3>Filter By</h3>
