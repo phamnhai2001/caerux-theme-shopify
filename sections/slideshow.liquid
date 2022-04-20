@@ -5,6 +5,7 @@
     <div class="inner">
         <div class="slider_top">
            {% for block in section.blocks %}
+          {%- assign collection = collections[block.settings.collection] -%}
             <div class="slider_item fade">
                 <div class="thumb">
                     <div class="thumb">
@@ -14,7 +15,7 @@
                     <div class="desp_content">
                         <h3>{{ block.settings.title}}</h3>
                         <div class="btn_shop">
-                            <a href="{{ block.settings.link }}">Shop now!</a>
+                            <a href="{{ collection.url }}">Shop now!</a>
                             <img src="{{'arrow-right.svg' | asset_url }}" alt="Next">
                         </div>
                     </div>
@@ -67,7 +68,12 @@
 			"type":"link_list",
 			"id":"link",
 			"label":"Link collection"
-		}
+		},
+{
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          }
 		
       ]
     }
