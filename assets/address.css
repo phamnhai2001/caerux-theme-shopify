@@ -294,6 +294,7 @@
 .addresses div form .default_address label {
   font-size: 14px;
   font-weight: 500;
+    margin-left: 20px;
 }
 @media (max-width: 1000px) {
   .addresses div form .default_address label {
