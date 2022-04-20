@@ -62,6 +62,9 @@
 #wrapper.collection > .inner .collection_section .collection_filters .filters.all {
 	  min-width: 220px;
 }
+#wrapper.collection > .inner .collection_section .collection_filters .filters.item_none {
+	  display: none;
+}
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_filters .filters {
     border: none;
