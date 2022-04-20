@@ -18,11 +18,20 @@
             "title": "The title banner 02",
             "collection": "frontpage"
           }
+        },
+        "057f3b33-c943-4516-a396-c1acc6f0fb51": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
+            "title": "The title banner 03",
+            "collection": "storage"
+          }
         }
       },
       "block_order": [
         "4684ca12-3bab-4b03-b67e-8401f0dddb3b",
-        "037309e2-d1a2-4fae-84fc-40f25d057e0f"
+        "037309e2-d1a2-4fae-84fc-40f25d057e0f",
+        "057f3b33-c943-4516-a396-c1acc6f0fb51"
       ],
       "settings": {
       }
