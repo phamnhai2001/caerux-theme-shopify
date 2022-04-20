@@ -1,4 +1,4 @@
-  <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'footer.css' | asset_url | stylesheet_tag  }}
 
 <footer id="footer" class="color-{{ section.settings.color_scheme }} gradient">
     {%- if section.settings.newsletter_enable or section.settings.show_social -%}
