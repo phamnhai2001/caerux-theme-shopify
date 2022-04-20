@@ -87,7 +87,7 @@
 @media (max-width: 768px) {
   #wrapper.register section.section#content .inner .register_wrapper .register_form form ul li {
     margin-bottom: 3.255vw;
-    padding: 0 5.208vw;
+    padding: 0;
   }
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form form ul li a {
@@ -117,7 +117,7 @@
 }
 @media (max-width: 768px) {
   #wrapper.register section.section#content .inner .register_wrapper .register_form form .btn_register {
-    padding: 0 5.208vw;
+    padding: 0;
   }
 }
 #wrapper.register section.section#content .inner .register_wrapper .register_form form .btn_register button {
