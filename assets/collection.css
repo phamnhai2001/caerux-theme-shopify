@@ -961,7 +961,7 @@
 }
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection_product .collection_product_count p {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 16px;
 }
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_product_grid .collection_product .collection_product_count p {
