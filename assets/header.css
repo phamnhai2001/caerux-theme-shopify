@@ -511,6 +511,8 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
   header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child {
     min-width: 19vw;
     display: block;
+    border: none;
+    position: unset;
   }
 }
 @media (max-width: 768px) {
