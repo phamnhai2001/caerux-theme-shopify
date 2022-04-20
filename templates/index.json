@@ -3,34 +3,32 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "40e69330-c198-4e33-8d6d-7e20820506e8": {
-          "type": "slide",
+        "d7d1ab2d-1719-4479-acfc-1038d4fb034c": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/02_434cc02d-4fba-4d69-824c-35c09b775fab.png",
-            "title": "The title banner 01"
+            "collection": "50-off"
           }
         },
-        "1dc7f7ed-21d4-445a-9043-c1122b08fbd5": {
-          "type": "slide",
+        "8fd2bedb-a48a-4269-8d2d-4a1e98ac67ff": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/03.png",
-            "title": "The title banner 02"
+            "collection": "chair"
           }
         },
-        "3eba0221-ac7f-414a-8116-fd1ee60a7e5e": {
-          "type": "slide",
+        "45b6c8db-70dd-4019-b3f2-b233fc2e4d9d": {
+          "type": "collection",
           "settings": {
-            "image": "shopify:\/\/shop_images\/01.jpg",
-            "title": "The title banner 03"
+            "collection": "frontpage"
           }
         }
       },
       "block_order": [
-        "40e69330-c198-4e33-8d6d-7e20820506e8",
-        "1dc7f7ed-21d4-445a-9043-c1122b08fbd5",
-        "3eba0221-ac7f-414a-8116-fd1ee60a7e5e"
+        "d7d1ab2d-1719-4479-acfc-1038d4fb034c",
+        "8fd2bedb-a48a-4269-8d2d-4a1e98ac67ff",
+        "45b6c8db-70dd-4019-b3f2-b233fc2e4d9d"
       ],
       "settings": {
+        "title": "Collections"
       }
     },
     "collection": {
