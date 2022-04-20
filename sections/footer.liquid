@@ -74,7 +74,11 @@
                           {% if linklists[footer_linklist].links.size > 0 %}
                             <div class="txt_category">
                               {% for link in linklists[footer_linklist].links %}
-                                <p>{{ link.title }}</p>
+                                <p>
+                                  <a href="{{ link.url }}">
+                                  {{ link.title }}
+                                  </a>
+                                    </p>
                               {% endfor %}
                           	</div>
                           {% endif %}
