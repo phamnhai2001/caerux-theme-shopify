@@ -52,6 +52,7 @@
             <div class="content">
                <div class="txt_desp">
                {%- for block in section.blocks -%}
+                 {%- assign collection = collections[block.settings.collection] -%}
         			{%- case block.type -%}
           				{%- when 'text' -%}
                               <p>
