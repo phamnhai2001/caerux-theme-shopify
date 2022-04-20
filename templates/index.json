@@ -107,7 +107,7 @@
           "type": "buttons",
           "settings": {
             "button_label": "Check the item",
-            "button_link": "shopify:\/\/collections\/chair"
+            "collection": "chair"
           }
         }
       },
