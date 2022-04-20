@@ -21,11 +21,11 @@
                             <li>
                                 <div class="item_my_page">
                                     <div class="info_order_history">
-                                        <h3>Order number: # 1001<span class="send">Sent</span></h3>
-                                        <span>Order date: 2020/5/1 Number of products: 2 Total: $20.9</span>
-                                        <span>Payment status: Hold</span>
+                                        <h3>Order number: {{ 'customer.orders.order_number' | t }}<span class="send">{{ 'customer.orders.fulfillment_status' | t }}</span></h3>
+                                        <span>Order date:  {{ order.created_at | time_tag: format: 'date' }} Total: {{ order.total_price | money_with_currency }}</span>
+                                        <span>Payment status: {{ 'customer.orders.payment_status' | t }}</span>
                                     </div>
-                                    <a href="" class="btn_short">View the details</a>
+                                    <a href="{{ order.customer_url }}" class="btn_short">{{ order.name }}</a>
                                 </div>
                             </li>
                            {%- endfor -%}
