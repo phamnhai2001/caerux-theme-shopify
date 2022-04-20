@@ -292,3 +292,17 @@ a .item_content .txt_desp p {
     height: 50px;
     padding: 11px;
 }
+@media (max-width: 1000px) {
+  .search__input {
+    height: 5vw;
+    width: 45vw;
+    padding: 0.7vw;
+  }
+}
+@media (max-width: 768px) {
+  .search__inputp {
+     height: 6.5104vw;
+    width: 5.859375vw;
+    padding: 0.91145vw;
+  }
+}
