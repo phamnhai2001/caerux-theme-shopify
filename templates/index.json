@@ -14,8 +14,9 @@
         "037309e2-d1a2-4fae-84fc-40f25d057e0f": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/01.jpg",
             "title": "The title banner 02",
-            "collection": "good"
+            "collection": "wood"
           }
         },
         "057f3b33-c943-4516-a396-c1acc6f0fb51": {
