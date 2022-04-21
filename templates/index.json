@@ -22,8 +22,9 @@
         "057f3b33-c943-4516-a396-c1acc6f0fb51": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/03_dd0c962b-3e87-476f-8857-327404b14735.png",
             "title": "The title banner 03",
-            "collection": "storage"
+            "collection": "chair"
           }
         }
       },
