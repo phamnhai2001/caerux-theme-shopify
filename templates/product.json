@@ -58,14 +58,14 @@
     "review-product": {
       "type": "review-product",
       "blocks": {
-        "dee4d23c-d33d-4ffa-86a1-3548e7348d6c": {
+        "b4ae08eb-bd6f-446e-ab55-5c9c395ac631": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
           "settings": {
           }
         }
       },
       "block_order": [
-        "dee4d23c-d33d-4ffa-86a1-3548e7348d6c"
+        "b4ae08eb-bd6f-446e-ab55-5c9c395ac631"
       ],
       "settings": {
         "text": ""
