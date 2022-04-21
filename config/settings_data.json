@@ -25,12 +25,13 @@
           "color_scheme": "accent-1",
           "show_line_separator": true,
           "description": "Photogenic and glamorous everyday wear.",
-          "menu": "main-menu-1"
+          "menu": "main-menu"
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
+          "color_scheme": "background-1",
           "footer_description": "Enter your address to get $20 off your first orders",
           "newsletter_enable": true,
           "enable_country_selector": true,
