@@ -6,7 +6,6 @@
         "4684ca12-3bab-4b03-b67e-8401f0dddb3b": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/02_434cc02d-4fba-4d69-824c-35c09b775fab.png",
             "title": "DESIGN CHAIR",
             "collection": "50-off"
           }
@@ -14,7 +13,6 @@
         "037309e2-d1a2-4fae-84fc-40f25d057e0f": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/banner_arrival.jpg",
             "title": "The title banner 02",
             "collection": "good"
           }
@@ -22,7 +20,6 @@
         "057f3b33-c943-4516-a396-c1acc6f0fb51": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/01.jpg",
             "title": "The title banner 03",
             "collection": "storage"
           }
@@ -54,7 +51,7 @@
         "07ba67c3-abe5-4be6-9f83-9a48fd8e95f0": {
           "type": "collection",
           "settings": {
-            "collection": "good"
+            "collection": "wood"
           }
         },
         "95c59dad-cd3a-4980-84e3-7256c3cd099a": {
