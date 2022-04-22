@@ -79,7 +79,7 @@
                         </h3>
                       {%- endif -%}
                           {%- form 'customer_login', id: 'login_form' -%}
-                      {{ form.errors | default_errors }}
+                      		{{ form.errors | default_errors }}
                             <ul>
                                 <li>
                                     <input type="email" name="customer[email]" id="email" value="" placeholder="{{ 'customer.login_page.email' | t }}" class="lg_input" aria-invalid="true">
