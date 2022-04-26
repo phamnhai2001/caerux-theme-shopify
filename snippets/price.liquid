@@ -48,6 +48,11 @@
             {% endif %}
           </s>
       {%- endunless -%}
+      {%- if product.available == false -%}
+         <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
+             {%- elsif product.compare_at_price > product.price and product.available -%}
+         <span class="sale">{{ 'products.product.on_sale' | t }}</span>
+       {%- endif -%}
 	</p>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
