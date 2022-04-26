@@ -131,7 +131,6 @@
                             <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="LanguageList">
                               {{ localization.language.endonym_name | capitalize }}
 
-                              {% render 'icon-caret' %}
                             </button>
                             <ul id="LanguageList" role="list" class="disclosure__list" hidden>
                               {% for language in localization.available_languages %}
