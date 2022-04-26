@@ -36,6 +36,7 @@
     {%- endcomment -%}
       <p class="price price__regular">
         {{ money_price }}
+	  </p>
     <p class="price price__sale">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <s class="price-item price-item--regular">
@@ -46,7 +47,7 @@
             {% endif %}
           </s>
       {%- endunless -%}
-        {{ money_price }}
+	</p>
     <small class="unit-price caption{% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
       <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
       <span class="price-item price-item--last">
