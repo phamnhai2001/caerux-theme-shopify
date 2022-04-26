@@ -217,7 +217,7 @@ footer#footer .inner .container .subscribe .content_sub .footer__localization .s
     margin-bottom: 0.6510416667vw;
   }
 }
-footer#footer .inner .container .subscribe .content_sub .footer__localization .shopify-localization-form .disclosure h2 {
+footer#footer .inner .container .subscribe .content_sub .footer__localization .shopify-localization-form .disclosure .visually-hidden {
 	font-size: 12px;
     text-align: left;
     line-height: 20px;
