@@ -106,6 +106,7 @@
                       <localization-form>
                         {% form 'localization' %}
                           <div class="disclosure">
+                            <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
                             <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="CountryList">
                               {{ localization.country.name }} ({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})
                             </button>
@@ -128,6 +129,7 @@
                       <localization-form>
                         {% form 'localization' %}
                           <div class="disclosure">
+                            <h2 class="caption-large text-body" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
                             <button type="button" class="disclosure__button" aria-expanded="false" aria-controls="LanguageList">
                               {{ localization.language.endonym_name | capitalize }}
                             </button>
