@@ -29,14 +29,7 @@
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
-
-<div class="price
-  {%- if price_class %} {{ price_class }}{% endif -%}
-  {%- if available == false %} price--sold-out {% endif -%}
-  {%- if compare_at_price > price %} price--on-sale {% endif -%}
-  {%- if product.price_varies == false and product.compare_at_price_varies %} price--no-compare{% endif -%}
-  {%- if show_badges %} price--show-badge{% endif -%}">
-  <div>
+<h3>
     {%- comment -%}
       Explanation of description list:
         - div.price__regular: Displayed when there are no variants on sale
@@ -90,4 +83,4 @@
       {{ 'products.product.sold_out' | t }}
     </span>
   {%- endif -%}
-</div>
+</h3>
