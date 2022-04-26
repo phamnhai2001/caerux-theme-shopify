@@ -6,10 +6,12 @@ footer#footer {
 	color: rgb(var(--color-foreground));
    background: var(--gradient-background);
 }
+
 footer#footer {
   border-top: 1px solid #ebeef0;
 }
 footer#footer .inner {
+  background-color: #fff;
   padding: 80px 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -166,7 +168,6 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
   footer#footer .inner .container .subscribe .content_sub .form_sub form button {
     right: 0.5vw;
     width: 3vw;
-    top: 43%;
   }
 }
 @media (max-width: 768px) {
@@ -216,11 +217,6 @@ footer#footer .inner .container .subscribe .content_sub .footer__localization .s
     padding: 1.3020833333vw 2.6041666667vw;
     margin-bottom: 0.6510416667vw;
   }
-}
-footer#footer .inner .container .subscribe .content_sub .footer__localization .shopify-localization-form .disclosure .visually-hidden {
-	font-size: 12px;
-    text-align: left;
-    line-height: 20px;
 }
 footer#footer .inner .container .subscribe .content_sub .footer__localization .shopify-localization-form .disclosure .disclosure__button svg {
   width: 12px;
@@ -348,9 +344,6 @@ footer#footer .inner .container .category ul li .txt_category p {
     margin-bottom: 2.604vw;
   }
 }
-footer#footer .inner .container .category ul li .txt_category p a {
-    color: #7f7b7b;
-}
 footer#footer .copyright {
   border-top: 1px solid #c6c6c6;
   padding: 25px 0;
@@ -386,6 +379,11 @@ footer#footer .copyright .container {
 footer#footer .copyright .container .footer__localization {
   position: relative;
 }
+footer#footer .copyright .container .footer__localization .visually-hidden {
+  font-size: 12px;
+  text-align: left;
+  line-height: 20px;
+}
 footer#footer .copyright .container .footer__localization .disclosure__button {
   background: transparent;
   border: 1px solid #787b7e;
@@ -402,7 +400,7 @@ footer#footer .copyright .container .footer__localization .disclosure__button {
 }
 @media (max-width: 768px) {
   footer#footer .copyright .container .footer__localization .disclosure__button {
-    min-width: 33.0416666667vw;
+    min-width: 26.0416666667vw;
     padding: 1.3020833333vw;
   }
 }
@@ -454,9 +452,9 @@ footer#footer .copyright .container .footer__localization .disclosure__list {
 }
 @media (max-width: 768px) {
   footer#footer .copyright .container .footer__localization .disclosure__list {
-    height: 30.041667vw;
-    width: 48.552083vw;
-    bottom: 7.510417vw;
+    height: 26.0416666667vw;
+    width: 32.5520833333vw;
+    bottom: 6.5104166667vw;
   }
 }
 footer#footer .copyright .container .footer__localization .disclosure__list .disclosure__item {
