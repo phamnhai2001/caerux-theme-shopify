@@ -25,7 +25,7 @@
           "color_scheme": "accent-1",
           "show_line_separator": true,
           "description": "Photogenic and glamorous everyday wear.",
-          "menu": "main-menu"
+          "menu": "menu-1"
         }
       },
       "footer": {
@@ -37,7 +37,7 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "show_social": true,
-          "footer_linklist": "footer-menu",
+          "footer_linklist": "",
           "copyright": "@2022 Shopify. All Right Reserved",
           "payment_enable": true
         }
