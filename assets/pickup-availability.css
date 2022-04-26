@@ -1,10 +1,11 @@
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
 .pickup-availability-preview {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 10px;
 }
 @media (max-width: 1000px) {
@@ -37,40 +38,166 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .pickup-availability-preview .pickup-availability-info .caption-large {
   font-size: 14px;
   font-weight: 500;
   margin-right: 10px;
+  line-height: 22px;
+  margin-bottom: 5px;
 }
 @media (max-width: 1000px) {
   .pickup-availability-preview .pickup-availability-info .caption-large {
     font-size: 1.4vw;
     margin-right: 1vw;
+    line-height: 2.2vw;
+    margin-bottom: 0.5vw;
   }
 }
 @media (max-width: 768px) {
   .pickup-availability-preview .pickup-availability-info .caption-large {
     font-size: 1.8229166667vw;
     margin-right: 1.3020833333vw;
+    line-height: 2.8645833333vw;
+    margin-bottom: 0.6510416667vw;
+  }
+}
+.pickup-availability-preview .pickup-availability-info .caption {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+@media (max-width: 1000px) {
+  .pickup-availability-preview .pickup-availability-info .caption {
+    font-size: 1.4vw;
+    margin-right: 1vw;
+    line-height: 2.2vw;
+    margin-bottom: 0.5vw;
+  }
+}
+@media (max-width: 768px) {
+  .pickup-availability-preview .pickup-availability-info .caption {
+    font-size: 1.8229166667vw;
+    margin-right: 1.3020833333vw;
+    line-height: 2.8645833333vw;
+    margin-bottom: 0.6510416667vw;
   }
 }
 .pickup-availability-preview .pickup-availability-info .pickup-availability-button {
   background: none;
-  border: 1px solid;
-  padding: 5px 10px;
+  border: none;
+  padding: 10px 0 0 0;
+  text-decoration: underline;
   cursor: pointer;
+  margin-bottom: 10px;
+  text-underline-offset: 3px;
 }
 @media (max-width: 1000px) {
   .pickup-availability-preview .pickup-availability-info .pickup-availability-button {
-    padding: 0.5vw 1vw;
+    padding: 1vw 0 0 0;
+    margin-bottom: 1vw;
   }
 }
 @media (max-width: 768px) {
   .pickup-availability-preview .pickup-availability-info .pickup-availability-button {
-    padding: 0.6510416667vw 1.3020833333vw;
+    padding: 1.3020833333vw 0 0 0;
+    margin-bottom: 1.3020833333vw;
+  }
+}
+
+pickup-availability-drawer {
+  text-align: left;
+  background-color: #f6f5f5;
+  display: block;
+  max-width: 400px;
+  padding: 20px;
+}
+pickup-availability-drawer .pickup-availability-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+pickup-availability-drawer .pickup-availability-header .pickup-availability-drawer-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+pickup-availability-drawer .pickup-availability-header .pickup-availability-drawer-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+pickup-availability-drawer .pickup-availability-header .pickup-availability-drawer-button svg {
+  width: 20px;
+  height: 20px;
+}
+pickup-availability-drawer .pickup-availability-variant {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item {
+  border-top: 1px solid #dddddd;
+  padding: 20px 0;
+}
+pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .h4 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-preview {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-preview svg {
+  margin-right: 0;
+}
+@media (max-width: 1000px) {
+  pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-preview {
+    font-size: 1.4vw;
+    margin-right: 1vw;
+    line-height: 2.2vw;
+    margin-bottom: 0.5vw;
+  }
+}
+@media (max-width: 768px) {
+  pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-preview {
+    font-size: 1.8229166667vw;
+    margin-right: 1.3020833333vw;
+    line-height: 2.8645833333vw;
+    margin-bottom: 0.6510416667vw;
+  }
+}
+pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-address {
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+}
+@media (max-width: 1000px) {
+  pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-address {
+    font-size: 1.4vw;
+    line-height: 2.2vw;
+  }
+}
+@media (max-width: 768px) {
+  pickup-availability-drawer .pickup-availability-list .pickup-availability-list__item .pickup-availability-address {
+    font-size: 1.8229166667vw;
+    line-height: 2.8645833333vw;
   }
 }
