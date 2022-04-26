@@ -384,6 +384,18 @@ footer#footer .copyright .container .footer__localization .visually-hidden {
   text-align: left;
   line-height: 20px;
 }
+@media (max-width: 1000px) {
+  footer#footer .copyright .container .footer__localization .visually-hidden {
+    font-size: 1.2vw;
+    line-height: 2vw;
+  }
+}
+@media (max-width: 768px) {
+  footer#footer .copyright .container .footer__localization .visually-hidden {
+    font-size: 1.5625vw;
+    line-height: 2.6041666667vw;
+  }
+}
 footer#footer .copyright .container .footer__localization .disclosure__button {
   background: transparent;
   border: 1px solid #787b7e;
