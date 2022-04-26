@@ -114,7 +114,22 @@
                                     </svg>
                                   </div>
                                  <div class="point">
-                                     <h3>{{item.price | money }}</h3>
+                                     {%- if item.original_price != item.final_price -%}
+                                        <div class="cart-item__discounted-prices">
+                                          
+                                          <h3 class="cart-item__old-price product-option">
+                                            {{- item.original_price | money -}}
+                                          </h3>
+                                          
+                                          <h3 class="cart-item__final-price product-option">
+                                            {{ item.final_price | money }}
+                                          </h3>
+                                        </div>
+                                      {%- else -%}
+                                        <h3 class="product-option">
+                                          {{ item.original_price | money }}
+                                        </h3>
+                                      {%- endif -%}
                                  </div>
                               </div>
                           </div>
