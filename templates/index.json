@@ -135,42 +135,6 @@
         "post_limit": 6,
         "blog_show_date": true
       }
-    },
-    "16509590342ac51dcb": {
-      "type": "slideshow",
-      "blocks": {
-        "1650959034f59e201d-0": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/03.png",
-            "title": "",
-            "collection": ""
-          }
-        },
-        "1650959034f59e201d-1": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/02_434cc02d-4fba-4d69-824c-35c09b775fab.png",
-            "title": "",
-            "collection": ""
-          }
-        },
-        "f4ac12c0-e067-4c02-84af-5f7b405de761": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/01.jpg",
-            "title": "",
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "1650959034f59e201d-0",
-        "1650959034f59e201d-1",
-        "f4ac12c0-e067-4c02-84af-5f7b405de761"
-      ],
-      "settings": {
-      }
     }
   },
   "order": [
@@ -178,7 +142,6 @@
     "collection",
     "new-arrival",
     "recommend",
-    "blog",
-    "16509590342ac51dcb"
+    "blog"
   ]
 }
