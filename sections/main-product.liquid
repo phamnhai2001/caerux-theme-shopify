@@ -97,7 +97,6 @@ details {
                           {%- when 'title' -%}
                             <div class="txt_desp">
                                 <h1 class="name">{{product.title}}</h1>
-                                <p class="price">
                                                 {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
 
                                   {%- if product.available == false -%}
