@@ -22,7 +22,6 @@
         "057f3b33-c943-4516-a396-c1acc6f0fb51": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/03_688dc6dc-b6ad-44d4-8c05-ccf2ce87ca03.png",
             "title": "Chair",
             "collection": "chair"
           }
@@ -136,6 +135,40 @@
         "post_limit": 6,
         "blog_show_date": true
       }
+    },
+    "16509590342ac51dcb": {
+      "type": "slideshow",
+      "blocks": {
+        "1650959034f59e201d-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/03.png",
+            "title": "",
+            "collection": ""
+          }
+        },
+        "1650959034f59e201d-1": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "collection": ""
+          }
+        },
+        "f4ac12c0-e067-4c02-84af-5f7b405de761": {
+          "type": "slide",
+          "settings": {
+            "title": "",
+            "collection": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650959034f59e201d-0",
+        "1650959034f59e201d-1",
+        "f4ac12c0-e067-4c02-84af-5f7b405de761"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -143,6 +176,7 @@
     "collection",
     "new-arrival",
     "recommend",
-    "blog"
+    "blog",
+    "16509590342ac51dcb"
   ]
 }
