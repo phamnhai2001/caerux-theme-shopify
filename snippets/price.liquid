@@ -36,7 +36,7 @@
     {%- endcomment -%}
       <p class="price price__regular">
         {{ money_price }}
-    <p class="price price__regular price__sale">
+    <p class="price price__sale">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
           <s class="price-item price-item--regular">
             {% if settings.currency_code_enabled %}
