@@ -1,6 +1,16 @@
-
 .rich-text__wrapper {
   text-align: center;
+  padding: 50px 0;
+}
+@media (max-width: 1000px) {
+  .rich-text__wrapper {
+    padding: 5vw 0;
+  }
+}
+@media (max-width: 768px) {
+  .rich-text__wrapper {
+    padding: 6.5104166667vw 0;
+  }
 }
 .rich-text__wrapper .rich-text__content .rich-text__blocks {
   width: 700px;
