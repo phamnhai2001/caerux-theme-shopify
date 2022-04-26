@@ -95,7 +95,8 @@ details {
                             <div class="txt_desp">
                                 <h1 class="name">{{product.title}}</h1>
                                 <p class="price">
-                                  {{product.price | money }}
+                                                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+
                                   {%- if product.available == false -%}
                                     <span class="sold_out">{{ 'products.product.sold_out' | t }}</span>
                                       {%- elsif product.compare_at_price > product.price and product.available -%}
