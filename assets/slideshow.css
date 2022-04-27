@@ -1,8 +1,4 @@
-@charset "UTF-8";
-/* automatic size vw */
-/* automatic size vh */
-/* text clamp */
-/* anime In order */
+s
 #banner .inner {
   padding-top: 135px;
 }
@@ -31,7 +27,7 @@
 @media (max-width: 768px) {
   #banner .inner .slider_top {
     margin-bottom: 10.416vw;
-    min-height: 78.125vw;
+    min-height: 42.125vw;
   }
 }
 #banner .inner .slider_top .slider_item {
@@ -207,6 +203,13 @@
     height: 1.5vw;
     width: 1.5vw;
     margin: 0 0.2vw;
+  }
+}
+@media (max-width: 768px) {
+  #banner .inner .slider_top .dots .dots__dot {
+    height: 2vw;
+    width: 2vw;
+    margin: 0 0.5vw;
   }
 }
 #banner .inner .slider_top .dots .dots__dot.dots__dot--active {
