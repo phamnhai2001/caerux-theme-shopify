@@ -57,7 +57,9 @@
                 <ul>
                     <li>
                         <div class="ttl_category">
-                            <h3>ADDRESS</h3>
+                            {%- if block.settings.heading != blank -%}
+                <h3 class="footer-block__heading">{{- block.settings.heading | escape -}}</h3>
+              {%- endif -%}
                         </div>
                         <div class="txt_category">
                             <p>Ha Noi</p>
