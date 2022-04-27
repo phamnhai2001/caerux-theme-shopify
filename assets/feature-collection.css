@@ -1,0 +1,178 @@
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+#recommended .inner {
+  max-width: 1200px;
+  width: 88.8888%;
+  margin: 0 auto;
+  position: relative;
+}
+@media (max-width: 1000px) {
+  #recommended .inner {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner {
+    width: 100%;
+    padding: 0 5.208vw;
+  }
+}
+#recommended .inner .list_item {
+  margin-bottom: 80px;
+  overflow: hidden;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item {
+    margin-bottom: 8vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item {
+    margin-bottom: 10.461vw;
+  }
+}
+#recommended .inner .list_item ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 127%;
+  margin: 0 -10px;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul {
+    margin: 0 -1vw;
+  }
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul {
+    margin: 0 -1.302vw;
+    width: 171%;
+  }
+}
+#recommended .inner .list_item ul li {
+  padding: 0 10px;
+  width: 25%;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li {
+    padding: 0 1.2vw;
+    width: 33.333%;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li {
+    width: 50%;
+    padding: 0 1.302vw;
+  }
+}
+#recommended .inner .list_item ul li a .item_content .thumb {
+  transition-duration: 0.75s;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li a .item_content .thumb {
+    margin-bottom: 1vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li a .item_content .thumb {
+    margin-bottom: 1.302vw;
+  }
+}
+#recommended .inner .list_item ul li a .item_content .thumb img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#recommended .inner .list_item ul li a .item_content .txt_desp {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp {
+    font-size: 1.4vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp {
+    font-size: 1.823vw;
+  }
+}
+#recommended .inner .list_item ul li a .item_content .txt_desp h3 {
+  word-break: break-all;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.38px;
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp h3 {
+    font-size: 2.4vw;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp h3 {
+    font-size: 2.864vw;
+  }
+}
+#recommended .inner .list_item ul li a .item_content .txt_desp p {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.38px;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p {
+    font-size: 2.2vw;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p {
+    font-size: 2.864vw;
+  }
+}
+#recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+  background: #d90000;
+  border-radius: 12px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  min-width: 75px;
+  padding: 6px 12px;
+  text-align: center;
+  margin-left: 6px;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+    border-radius: 1.2vw;
+    font-size: 1.2vw;
+    min-width: 7.5vw;
+    padding: 0.6vw 1.2vw;
+    margin-left: 0.6vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .list_item ul li a .item_content .txt_desp p span.sold_out {
+    border-radius: 1.822vw;
+    font-size: 1.562vw;
+    min-width: 9.765vw;
+    padding: 0.781vw 1.526vw;
+  }
+}
