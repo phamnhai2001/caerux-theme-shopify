@@ -444,7 +444,7 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
     font-size: 1.4vw;
     padding: 1vw 0;
   }
-  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper {
+  header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper_1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -467,6 +467,9 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0;
+   -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu a.menu_wrapper::after {
