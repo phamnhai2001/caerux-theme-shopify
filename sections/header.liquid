@@ -121,7 +121,10 @@
                                                 <ul class="list_menu_child">
                                                    {%- for childlink in link.links -%}
                                                     <li class="item_menu menu_child_item">
-                                                        <a href="{{ childlink.url }}" class="menu_wrapper">{{ childlink.title | escape }}</a>
+                                                      {%- if childlink.links == blank -%} {
+                                                          <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                                                      }{%- else -%} 
+                                                      {%- endif -%}
                                                     </li>
                                                    {%- endfor -%}
                                                 </ul>
