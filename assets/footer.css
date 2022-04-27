@@ -309,7 +309,7 @@ footer#footer .inner .container .category ul li .ttl_category {
   }
 }
 footer#footer .inner .container .category ul li .ttl_category h3 {
-  color: #000000;
+  color: rgb(var(--color-foreground));
   font-size: 18px;
   font-weight: bold;
   letter-spacing: -0.43px;
