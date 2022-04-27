@@ -402,6 +402,7 @@ footer#footer .copyright .container .footer__localization .disclosure__button {
   min-width: 200px;
   padding: 10px;
   cursor: pointer;
+  color: rgb(var(--color-foreground));
 }
 @media (max-width: 1000px) {
   footer#footer .copyright .container .footer__localization .disclosure__button {
