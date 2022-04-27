@@ -7,10 +7,7 @@
     Usage:
     {% render 'product-card' %}
 {% endcomment %}
-{% style %}
-	
 
-{% endstyle %}
 {%- if product_card_product.featured_media -%}
 <a class="item_type" href="{{ product_card_product.url | default: '#' }}">
   <div class="item_content">
