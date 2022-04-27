@@ -184,7 +184,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn svg {
-	fill: rgb(var(--color-foreground));
+	fill: rgb(var(--color-foreground)) !important;
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img:hover {
   -webkit-filter: invert(0.6) sepia(1) saturate(0) hue-rotate(175deg);
