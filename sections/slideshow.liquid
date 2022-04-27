@@ -24,21 +24,13 @@
             </div>
               </div>
             {% endfor %}
-            <div class="prev_next">
-                <a class="prev" onclick="plusSlides(-1)">
-                   <img src="{{'arrow-left.svg' | asset_url }}" alt="Pervious">
-                </a>
-                <a class="next" onclick="plusSlides(1)">
-                    <img src="{{'arrow-right.svg' | asset_url }}" alt="Next">
-                </a>
-            </div>
-            
-
-            <div class="slider_dot">
-                <span class="dot_" onclick="currentSlide(1)"></span>
-                <span class="dot_" onclick="currentSlide(2)"></span>
-                <span class="dot_" onclick="currentSlide(3)"></span>
-            </div>
+            <button class="slider__btn slider__btn--left">
+                            <img src="assets/images/arrow-left.svg" alt="">
+                        </button>
+                        <button class="slider__btn slider__btn--right">
+                            <img src="assets/images/arrow-right.svg" alt="">
+                        </button>
+                        <div class="dots"></div>
         </div>
     </div>
 </section>
