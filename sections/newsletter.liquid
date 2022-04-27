@@ -14,7 +14,7 @@
             {% form 'customer', class: 'newsletter-form' %}
               <input type="hidden" name="contact[tags]" value="newsletter">
               <div class="newsletter-form__field-wrapper">
-                <div class="field">
+                <div class="field form_sub">
                   <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
@@ -35,9 +35,6 @@
                     placeholder="{{ 'newsletter.label' | t }}"
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                    {{ 'newsletter.label' | t }}
-                  </label>
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
                      <img src="{{'envelope-regular-24.png' | asset_url }}" alt="Submit">
                   </button>
