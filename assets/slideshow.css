@@ -132,13 +132,17 @@
     vertical-align: sub;
 }
 @media (max-width: 1000px) {
-  #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
-    height: 1.7vw;
+  #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop a::after {
+    height: 1.8vw;
+    height: 1.8vw;
+    margin-left: 0.6vw;
   }
 }
 @media (max-width: 768px) {
-  #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
-    height: 2.213vw;
+  #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop a::after {
+    height: 2.343vw;
+    height: 2.343vw;
+    margin-left: 0.6vw;
   }
 }
 #banner .inner .slider_top .slider_item.fade {
