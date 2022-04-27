@@ -204,6 +204,9 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
 header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .header_welcart_cart_badge {
   margin-top: 5px;
 }
+header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .header_welcart_cart_badge svg {
+	fill: rgb(var(--color-foreground)) !important;
+}
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .header_welcart_cart_badge {
     margin-top: 0.5vw;
