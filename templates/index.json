@@ -310,7 +310,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured collection",
-        "collection": "chair",
+        "collection": "good",
         "products_to_show": 4
       }
     }
