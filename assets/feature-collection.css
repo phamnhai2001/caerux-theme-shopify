@@ -19,6 +19,25 @@
     padding: 0 5.208vw;
   }
 }
+#recommended .inner .ttl_product {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 28px;
+  text-align: left;
+}
+@media (max-width: 1000px) {
+  #recommended .inner .ttl_product {
+    font-size: 3.4vw;
+    margin-bottom: 2.8vw;
+  }
+}
+@media (max-width: 768px) {
+  #recommended .inner .ttl_product {
+    font-size: 4.4270833333vw;
+    margin-bottom: 3.6458333333vw;
+  }
+}
 #recommended .inner .list_item {
   margin-bottom: 80px;
   overflow: hidden;
