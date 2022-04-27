@@ -326,7 +326,7 @@ footer#footer .inner .container .category ul li .ttl_category h3 {
   }
 }
 footer#footer .inner .container .category ul li .txt_category p {
-  color: #7f7b7b;
+  color: rgb(var(--color-foreground));
   font-size: 14px;
   margin-bottom: 20px;
   font-weight: 500;
