@@ -1,4 +1,4 @@
-s
+
 #banner .inner {
   padding-top: 135px;
 }
@@ -105,7 +105,6 @@ s
   font-size: 18px;
   line-height: 20px;
   font-weight: bold;
-  font-family: "YuGothic", "游ゴシック体", "Yu Gothic", "游ゴシック", Hiragino Sans, "ヒラギノ角ゴシック", Hiragino Kaku Gothic ProN, "ヒラギノ角ゴ ProN W3", "Meiryo", sans-serif;
   vertical-align: middle;
 }
 @media (max-width: 1000px) {
@@ -120,9 +119,17 @@ s
     padding-right: 0;
   }
 }
-#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
-  height: 16.9px;
-  vertical-align: middle;
+#banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop a::after {
+  content: "";
+    display: inline-block;
+    margin-left: 6px;
+    background-image: url(arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    width: 18px;
+    height: 18px;
+    vertical-align: sub;
 }
 @media (max-width: 1000px) {
   #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop img {
