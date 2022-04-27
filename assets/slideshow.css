@@ -21,7 +21,7 @@ s
 @media (max-width: 1000px) {
   #banner .inner .slider_top {
     margin-bottom: 8vw;
-    min-height: 60vw;
+    min-height: 42vw;
   }
 }
 @media (max-width: 768px) {
