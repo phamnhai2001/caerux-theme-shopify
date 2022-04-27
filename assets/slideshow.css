@@ -134,14 +134,14 @@
 @media (max-width: 1000px) {
   #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop a::after {
     height: 1.8vw;
-    height: 1.8vw;
+    width: 1.8vw;
     margin-left: 0.6vw;
   }
 }
 @media (max-width: 768px) {
   #banner .inner .slider_top .slider_item .txt_desp .desp_content .btn_shop a::after {
     height: 2.343vw;
-    height: 2.343vw;
+    width: 2.343vw;
     margin-left: 0.6vw;
   }
 }
