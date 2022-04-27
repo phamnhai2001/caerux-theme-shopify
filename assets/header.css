@@ -546,9 +546,6 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
           align-items: center;
   margin-bottom: 0;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item a.menu_wrapper_1::after {
   content: '';
