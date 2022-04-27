@@ -170,7 +170,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   cursor: pointer;
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn {
-  background: rgb(var(--color-foreground));
+  background: var(--gradient-background);
   border: none;
   vertical-align: middle;
   cursor: pointer;
@@ -184,7 +184,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li#head
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn svg {
-	fill: var(--gradient-background);
+	fill: rgb(var(--color-foreground));
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li#header_upper-search #btn img:hover {
   -webkit-filter: invert(0.6) sepia(1) saturate(0) hue-rotate(175deg);
