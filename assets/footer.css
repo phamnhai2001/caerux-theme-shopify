@@ -533,5 +533,5 @@ footer#footer .copyright .container .footer__column--info .footer__copyright {
   }
 }
 footer#footer .copyright .container .footer__column--info .footer__copyright .copyright__content a {
-  color: #666666;
+  color: rgb(var(--color-foreground));
 }
