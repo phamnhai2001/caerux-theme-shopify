@@ -123,7 +123,11 @@
                                                     <li class="menu_child_item">
                                                       {%- if childlink.links == blank -%}
                                                         <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                                                       {%- endif -%}
+                                                       {%- else -%}
+                                                       <a href="{{ childlink.url }}" class="menu_wrapper">{{ childlink.title | escape }}
+
+                                                      {%- endif -%}
+                                                      
                                                     </li>
                                                    {%- endfor -%}
                                                 </ul>
