@@ -123,19 +123,17 @@
                                                     <li class="menu_child_item">
                                                       {%- if childlink.links == blank -%}
                                                         <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                                                       {%- else -%}
-                                                      	<a href="{{ childlink.url }}" class="menu_wrapper">{{ childlink.title | escape }}</a>
-														<ul class="list_menu_child">
-                                                           {%- for childlink in link.links -%}
-                                                            <li class="menu_child_item">
-                                                                <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                                                               {%- else -%}
-                                                            </li>
-                                                           {%- endfor -%}
-                                                        </ul>
+                                                      {%- else -%}
+                                                      <a href="" class="menu_wrapper_1">{{ childlink.title | escape }}</a>
+                                                      <ul class="list_menu_child_1">
+                                                        {%- for childlink in link.links -%}
+                                                          <li class="menu_child_item_1">
+                                                              <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                                                          </li>
+                                                        {%- endfor -%}
+                                                      </ul>
                                                       {%- endif -%}
-                                                      
-                                                    </li>
+                                                  </li>
                                                    {%- endfor -%}
                                                 </ul>
                                             {%- else -%}
