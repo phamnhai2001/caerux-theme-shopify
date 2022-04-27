@@ -69,7 +69,7 @@ footer#footer .inner .container .subscribe .content_sub .ttl_desp {
   }
 }
 footer#footer .inner .container .subscribe .content_sub .ttl_desp h3 {
-  color: #000000;
+  color: rgb(var(--color-foreground));
   font-size: 18px;
   font-weight: bold;
   letter-spacing: -0.5px;
