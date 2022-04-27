@@ -121,22 +121,10 @@
                                                 <ul class="list_menu_child">
                                                    {%- for childlink in link.links -%}
                                                     <li class="menu_child_item">
-                                                      {%- if childlink.links == blank -%}
-                                                          <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                                                      {%- else -%} 
-                                                      <a href="{{ link.url }}" class="menu_wrapper">{{ link.title | escape }}
-                                                      </a>
-                                                      <ul class="list_menu_child">
-                                                         {%- for childlink in link.links -%}
-                                                          <li class="menu_child_item">
-                                                                <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
-                                                          </li>
-                                                         {%- endfor -%}
-                                                      </ul>
-                                                            {%- endif -%}
-                                                          </li>
-                                                         {%- endfor -%}
-                                                      </ul>
+                                                        <a href="{{ childlink.url }}">{{ childlink.title | escape }}</a>
+                                                    </li>
+                                                   {%- endfor -%}
+                                                </ul>
                                             {%- else -%}
                                           		<a href="{{ link.url }}">{{ link.title | escape }} </a>
                   							{%- endif -%}
