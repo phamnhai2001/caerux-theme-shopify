@@ -1,3 +1,4 @@
+{{ 'newletter.css' | asset_url | stylesheet_tag }}
 <div class="newsletter center{% if section.settings.full_width == false %} newsletter--narrow page-width{% endif%}">
   <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient">
     {%- for block in section.blocks -%}
@@ -38,7 +39,7 @@
                     {{ 'newsletter.label' | t }}
                   </label>
                   <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                    {% render 'icon-arrow' %}
+                     <img src="{{'envelope-regular-24.png' | asset_url }}" alt="Submit">
                   </button>
                 </div>
                 {%- if form.errors -%}
