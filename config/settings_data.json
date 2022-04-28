@@ -37,7 +37,7 @@
           "enable_country_selector": true,
           "enable_language_selector": true,
           "show_social": true,
-          "footer_linklist": "",
+          "footer_linklist": "footer",
           "copyright": "@2022 Shopify. All Right Reserved",
           "payment_enable": true
         }
