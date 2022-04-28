@@ -331,6 +331,9 @@ footer#footer .inner .container .category ul li .txt_category p {
   margin-bottom: 20px;
   font-weight: 500;
 }
+footer#footer .inner .container .category ul li .txt_category p a {
+	color: rgb(var(--color-foreground));
+}
 @media (max-width: 1000px) {
   footer#footer .inner .container .category ul li .txt_category p {
     font-size: 1.6vw;
