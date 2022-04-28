@@ -208,6 +208,13 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/livingroom-tray-with-plant-and-game-controllers.jpg"
       }
+    },
+    "16511391572b43b2ef": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
     }
   },
   "order": [
@@ -218,6 +225,7 @@
     "blog",
     "16509660968ec8ad72",
     "1651040278694790b8",
-    "1651120234681ea326"
+    "1651120234681ea326",
+    "16511391572b43b2ef"
   ]
 }
