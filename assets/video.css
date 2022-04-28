@@ -67,3 +67,10 @@ img {
   position: relative;
   height: 700px;
 }
+iframe {
+    position: absolute;
+    width: 100%;
+    left: 245px;
+    max-width: 1200px;
+    height: 700px;
+}
