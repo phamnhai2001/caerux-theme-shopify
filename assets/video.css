@@ -1,0 +1,58 @@
+/* automatic size vw */
+/* automatic size vh */
+/* text clamp */
+/* anime In order */
+svg {
+  width: 40px;
+}
+@media (max-width: 1000px) {
+  svg {
+    width: 4vw;
+  }
+}
+@media (max-width: 768px) {
+  svg {
+    width: 5.2083333333vw;
+  }
+}
+
+img {
+  position: relative;
+}
+
+.deferred-media__poster-button {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background: aliceblue;
+  border-radius: 50%;
+  padding: 24px 40px;
+  cursor: pointer;
+}
+@media (max-width: 1000px) {
+  .deferred-media__poster-button {
+    padding: 2.4vw 4vw;
+  }
+}
+@media (max-width: 768px) {
+  .deferred-media__poster-button {
+    padding: 3.125vw 5.2083333333vw;
+  }
+}
+
+.video {
+  max-width: 1200px;
+  width: 88.88%;
+  margin: 0 auto 80px;
+}
+@media (max-width: 1000px) {
+  .video {
+    max-width: 100%;
+    margin: 0 auto 8vw;
+  }
+}
+@media (max-width: 768px) {
+  .video {
+    margin: 0 auto 10.4166666667vw;
+  }
+}
