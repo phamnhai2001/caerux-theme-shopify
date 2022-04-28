@@ -77,7 +77,7 @@
 @media (max-width: 1000px) {
   #recommended .inner .list_item ul li {
     padding: 0 1.2vw;
-    width: 33.333%;
+    width: 50%;
   }
 }
 @media (max-width: 768px) {
