@@ -64,4 +64,5 @@ img {
 .video-section__poster {
 	width: 100%;
     border: none;
+  position: relative;
 }
