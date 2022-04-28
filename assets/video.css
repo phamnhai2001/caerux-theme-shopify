@@ -21,10 +21,6 @@ img {
 }
 
 .deferred-media__poster-button {
-  position: absolute;
-  bottom: 0;
-  right: 50%;
-  background: aliceblue;
   border-radius: 50%;
   padding: 24px 40px;
   cursor: pointer;
