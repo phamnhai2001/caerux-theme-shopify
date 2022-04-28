@@ -2,16 +2,16 @@
 /* automatic size vh */
 /* text clamp */
 /* anime In order */
-svg {
+span svg {
   width: 40px;
 }
 @media (max-width: 1000px) {
-  svg {
+span  svg {
     width: 4vw;
   }
 }
 @media (max-width: 768px) {
-  svg {
+span  svg {
     width: 5.2083333333vw;
   }
 }
