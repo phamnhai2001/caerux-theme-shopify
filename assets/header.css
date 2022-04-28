@@ -92,7 +92,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li {
   }
 }
 header.header > .inner .header_top .header_top_content ul.header_top_nav li a {
-  color: #fff;
+  color: rgb(var(--color-foreground));
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
