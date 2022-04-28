@@ -67,7 +67,7 @@
 @media (max-width: 1000px) {
   #recommended .inner .list_item ul {
     margin: 0 -1.302vw;
-    width: 171%;
+    width: 100%;
   }
 }
 #recommended .inner .list_item ul li {
