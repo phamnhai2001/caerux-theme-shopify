@@ -642,7 +642,6 @@ header .inner .header_main nav .nav_main_top #global_nav .header_logo {
 }
 @media (max-width: 1000px) {
   header .inner .header_main nav.open #nav_toggle {
-    background: #ffffff;
     width: 5.3vw;
     height: 5.3vw;
     top: 7.5vw;
