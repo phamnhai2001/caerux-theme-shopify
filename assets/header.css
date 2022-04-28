@@ -216,6 +216,7 @@ header.header > .inner .header_top .header_top_content ul.header_top_nav li.head
   position: absolute;
   top: -2px;
   right: -8px;
+  color: rgb(var(--color-foreground));
 }
 @media (max-width: 1000px) {
   header.header > .inner .header_top .header_top_content ul.header_top_nav li.header_welcart_cart a .cart-count-bubble {
