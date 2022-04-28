@@ -1,5 +1,5 @@
-<div class="color-{{ section.settings.color_scheme }} gradient">
-  <div class="video-section isolate{% unless section.settings.full_width %} page-width{% endunless %} section-{{ section.id }}-padding">
+{{ 'rich-text.css' | asset_url | stylesheet_tag }}
+  <div class="video video-section">
     <div{% if section.settings.full_width %} class="page-width"{% endif %}>
       {%- unless section.settings.heading == blank -%}
         <div class="title-wrapper title-wrapper--no-top-margin">
@@ -47,7 +47,6 @@
       </template>
     </deferred-media>
   </div>
-</div>
 {% schema %}
 {
   "name": "t:sections.video.name",
