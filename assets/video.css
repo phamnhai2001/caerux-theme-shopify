@@ -24,6 +24,10 @@ img {
   border-radius: 50%;
   padding: 24px 40px;
   cursor: pointer;
+      position: absolute;
+    right: 50%;
+    top: 50%;
+    background: #fff;
 }
 @media (max-width: 1000px) {
   .deferred-media__poster-button {
