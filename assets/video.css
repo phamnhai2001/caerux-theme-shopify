@@ -67,6 +67,10 @@ img {
   position: relative;
   height: 700px;
 }
+.video-section__poster svg {
+	width: 100%;
+    height: 100%;
+}
 iframe {
     position: absolute;
     width: 100%;
