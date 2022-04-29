@@ -1233,11 +1233,12 @@ details.menu-opening .mobile-facets__close {
       .mobile-facets__open-wrapper .mobile-facets__open {
         position: absolute;
         width: 100%;
-        top: -4px;
+        top: -5px;
         background: #fff;
       }
       .mobile-facets__open-wrapper {
         position: relative;
+        display: block;
       }
 
 	}
