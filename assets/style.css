@@ -1641,3 +1641,6 @@ section.section#blog .inner .list_item ul li .item_content .txt_desp p span:befo
     margin-left: 0.78125vw;
   }
 }
+.price-item--regular {
+    color: #9e9e9e;
+}
