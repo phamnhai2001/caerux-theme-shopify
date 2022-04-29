@@ -536,6 +536,9 @@ header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .
     padding: 1vw 2vw;
     text-align: left;
   }
+  .cart-count-bubble {
+  	font-size: 1.4vw;
+  }
 }
 @media (max-width: 768px) {
   header .inner .header_main nav .nav_main_top #global_nav .list_item .item_menu .list_menu_child .menu_child_item {
