@@ -1205,6 +1205,9 @@ details.menu-opening .mobile-facets__close {
 }
 @media not all and (min-resolution: 0.001dpcm) {
   @supports (-webkit-appearance: none) {
+    .mobile-facets__main .mobile-facets__details .mobile-facets__summary {
+    	position: relative;
+    }
     .mobile-facets__main .mobile-facets__details .mobile-facets__summary div {
       display: -webkit-box;
     display: -ms-flexbox;
