@@ -74,7 +74,8 @@ img {
 iframe {
     position: absolute;
     width: 100%;
-    left: 200px;
+    left: 90%;
     max-width: 1200px;
     height: 700px;
+  transform: translateX(-98%);
 }
