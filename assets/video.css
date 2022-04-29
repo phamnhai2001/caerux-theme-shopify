@@ -2,16 +2,16 @@
 /* automatic size vh */
 /* text clamp */
 /* anime In order */
-.deferred-media__poster-button svg {
+span svg {
   width: 40px;
 }
 @media (max-width: 1000px) {
-.deferred-media__poster-button  svg {
+span  svg {
     width: 4vw;
   }
 }
 @media (max-width: 768px) {
-.deferred-media__poster-button  svg {
+span  svg {
     width: 5.2083333333vw;
   }
 }
@@ -77,4 +77,16 @@ iframe {
     left: 200px;
     max-width: 1200px;
     height: 700px;
+}
+@media not all and (min-resolution:.001dpcm) { 
+     @supports (-webkit-appearance:none) {
+         iframe {
+              position: absolute;
+              width: 100%;
+              left: 90%;
+              max-width: 1200px;
+              height: 700px;
+            transform: translateX(-98%);
+          }
+     }
 }
