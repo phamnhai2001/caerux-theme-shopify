@@ -137,38 +137,6 @@
         "blog_show_date": true
       }
     },
-    "16509660968ec8ad72": {
-      "type": "rich-text",
-      "blocks": {
-        "1650966096a4c3448f-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "1650966096a4c3448f-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "1650966096a4c3448f-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1650966096a4c3448f-0",
-        "1650966096a4c3448f-1",
-        "1650966096a4c3448f-2"
-      ],
-      "settings": {
-        "color_scheme": "background-2"
-      }
-    },
     "1651040278694790b8": {
       "type": "featured-collection",
       "settings": {
@@ -223,7 +191,6 @@
     "new-arrival",
     "recommend",
     "blog",
-    "16509660968ec8ad72",
     "1651040278694790b8",
     "1651120234681ea326",
     "16511391572b43b2ef"
