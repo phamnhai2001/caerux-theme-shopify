@@ -1229,5 +1229,23 @@ details.menu-opening .mobile-facets__close {
     	 top: 0;
     	background: none;
     }
+    @media (max-width: 1000px) {
+      .mobile-facets__open-wrapper .mobile-facets__open {
+          margin-bottom: 1.5vw;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-align: left;
+          width: 100%;
+          color: #121212;
+        position: absolute;
+        width: 100%;
+        top: -4px;
+        background: #fff;
+      }
+	}
   }
 }
