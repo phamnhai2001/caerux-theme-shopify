@@ -3,16 +3,19 @@
   padding: 50px 0;
   max-width: 1200px;
   width: 88.888%;
+  margin: 0 auto 30px;
 }
 @media (max-width: 1000px) {
   .rich-text__wrapper {
     padding: 5vw 0;
     max-width: 100%;
+    margin: 0 auto 3vw;
   }
 }
 @media (max-width: 768px) {
   .rich-text__wrapper {
     padding: 6.5104166667vw 0;
+    margin: 0 auto 3.906vw;
   }
 }
 .rich-text__wrapper .rich-text__content .rich-text__blocks {
