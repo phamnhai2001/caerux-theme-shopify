@@ -73,8 +73,8 @@
   }
 }
 .rich-text__wrapper .rich-text__content .rich-text__blocks .rich-text__button {
+  background: #656566;
   color: rgb(var(--color-foreground));
-   background: var(--gradient-background);
   text-decoration: none;
   padding: 15px 25px;
   display: inline-block;
