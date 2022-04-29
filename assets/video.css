@@ -113,7 +113,6 @@ iframe {
 }
 @media (max-width: 768px) {
   iframe {
-    left: 31.9010416667vw;
     height: 91.1458333333vw;
   }
 }
