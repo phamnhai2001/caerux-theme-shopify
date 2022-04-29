@@ -1225,17 +1225,10 @@ details.menu-opening .mobile-facets__close {
     .mobile-facets__open-wrapper .mobile-facets__close {
     	top: 0 !important;
     }
-    @media (max-width: 1000px) {
-      iframe {
-        max-width: 100%;
-        height: 70vw;
-      }
-    }
-    @media (max-width: 768px) {
-      iframe {
-        height: 91.1458333333vw;
-        left: 93%;
-      }
+	.mobile-facets__sort .select {
+    	 top: 0;
+    	background: none;
+    	padding-right: 0;
     }
   }
 }
