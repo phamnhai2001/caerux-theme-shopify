@@ -125,7 +125,7 @@
       "type": "recommend",
       "settings": {
         "title": "RECOMMEND",
-        "recommend_collection": "good"
+        "recommend_collection": "frontpage"
       }
     },
     "blog": {
