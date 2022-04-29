@@ -1229,6 +1229,7 @@ details.menu-opening .mobile-facets__close {
     	 top: 0;
     	background: none;
     	padding-right: 0;
+      width: auto;
     }
   }
 }
