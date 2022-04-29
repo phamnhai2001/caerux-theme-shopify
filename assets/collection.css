@@ -619,6 +619,7 @@
     list-style: none;
     cursor: pointer;
     padding: 2.5vw 2vw;
+    outline: none;
   }
 }
 @media (max-width: 768px) {
