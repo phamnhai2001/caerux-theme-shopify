@@ -476,14 +476,7 @@
   display: flex;
       list-style: none;
 }
-@media not all and (min-resolution:.001dpcm) { @media {
 
-    details > summary { 
-
-        display: block; 
-
-    }
-}}
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .mobile-facets__wrapper .mobile-facets__disclosure .mobile-facets__open-wrapper .mobile-facets__open {
     margin-bottom: 1.5vw;
