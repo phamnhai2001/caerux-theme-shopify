@@ -1228,8 +1228,6 @@ details.menu-opening .mobile-facets__close {
 	.mobile-facets__main .mobile-facets__details .mobile-facets__summary .mobile-facets__sort {
     	 top: 0;
     	background: none;
-    	padding-right: 0;
-      width: auto;
     }
   }
 }
