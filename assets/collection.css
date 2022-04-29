@@ -1246,6 +1246,10 @@ details.menu-opening .mobile-facets__close {
         top: -4px;
         background: #fff;
       }
+      .mobile-facets__open-wrapper {
+        position: relative;
+      }
+
 	}
   }
 }
