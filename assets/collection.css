@@ -1225,7 +1225,7 @@ details.menu-opening .mobile-facets__close {
     .mobile-facets__open-wrapper .mobile-facets__close {
     	top: 0 !important;
     }
-	.mobile-facets__sort .select {
+	.mobile-facets__main .mobile-facets__details .mobile-facets__summary .mobile-facets__sort {
     	 top: 0;
     	background: none;
     	padding-right: 0;
