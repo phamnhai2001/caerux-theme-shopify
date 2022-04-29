@@ -176,7 +176,7 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
   }
 }
 footer#footer .inner .container .subscribe .content_sub .social_icon ul li a svg {
-  fill: rgb(var(--color-foreground));
+  fill: rgb(var(--color-foreground)) !important;
 }
 footer#footer .inner .container .subscribe .content_sub .footer__localization {
   padding-top: 30px;
