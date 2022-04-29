@@ -1,6 +1,6 @@
 {{ 'rich-text.css' | asset_url | stylesheet_tag }}
-<div class="rich-text__wrapper">
-  <div class="rich-text__content color-{{ section.settings.color_scheme }} gradient">
+<div class="rich-text__wrapper color-{{ section.settings.color_scheme }} gradient">
+  <div class="rich-text__content ">
     <div class="rich-text__blocks">
       {%- for block in section.blocks -%}
         {%- case block.type -%}
