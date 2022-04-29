@@ -23,7 +23,7 @@
         "type": "header",
         "settings": {
           "color_scheme": "accent-1",
-          "show_line_separator": true,
+          "show_line_separator": false,
           "description": "Photogenic and glamorous everyday wear.",
           "menu": "main-menu"
         }
