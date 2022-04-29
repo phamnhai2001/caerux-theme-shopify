@@ -1222,6 +1222,12 @@ details.menu-opening .mobile-facets__close {
     width: -webkit-fill-available;
       
     }
+    .mobile-facets__main .mobile-facets__details .mobile-facets__summary div.select {
+    top: 0;
+    padding-right: 0;
+    width: unset;
+      
+    }
     .mobile-facets__open-wrapper .mobile-facets__close {
     	top: 0 !important;
     }
