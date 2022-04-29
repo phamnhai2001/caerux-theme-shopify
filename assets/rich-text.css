@@ -4,6 +4,8 @@
   max-width: 1200px;
   width: 88.888%;
   margin: 0 auto 30px;
+  color: rgb(var(--color-foreground));
+   background: var(--gradient-background);
 }
 @media (max-width: 1000px) {
   .rich-text__wrapper {
