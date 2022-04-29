@@ -79,6 +79,7 @@
   padding: 15px 25px;
   display: inline-block;
   font-size: 22px;
+    cursor: pointer;
 }
 @media (max-width: 1000px) {
   .rich-text__wrapper .rich-text__content .rich-text__blocks .rich-text__button {
