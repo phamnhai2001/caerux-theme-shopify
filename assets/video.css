@@ -56,6 +56,25 @@ img {
     margin: 0 auto 10.4166666667vw;
   }
 }
+
+.title {
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .title {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 5.2083333333vw;
+    margin-bottom: 3.90625vw;
+  }
+}
+
 .video-section__poster {
   width: 88.88%;
   border: none;
