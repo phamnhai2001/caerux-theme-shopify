@@ -1222,6 +1222,9 @@ details.menu-opening .mobile-facets__close {
     width: -webkit-fill-available;
       
     }
+    .mobile-facets__open-wrapper .mobile-facets__close {
+    	top: 0;
+    }
     @media (max-width: 1000px) {
       iframe {
         max-width: 100%;
