@@ -957,7 +957,10 @@
 @media (max-width: 1000px) {
   #wrapper.collection > .inner .collection_section .collection_product_grid {
     padding-left: 0;
-        width: 100%;
+    width: 100%;
+  }
+  #wrapper.collection>.inner .collection_section .collection_filters {
+   width: 100%;
   }
 }
 #wrapper.collection > .inner .collection_section .collection_product_grid .collection .collection_banner {
