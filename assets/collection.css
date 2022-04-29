@@ -1223,7 +1223,7 @@ details.menu-opening .mobile-facets__close {
       
     }
     .mobile-facets__open-wrapper .mobile-facets__close {
-    	top: 0 important;
+    	top: 0 !important;
     }
     @media (max-width: 1000px) {
       iframe {
