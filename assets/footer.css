@@ -175,8 +175,8 @@ footer#footer .inner .container .subscribe .content_sub .form_sub form button {
     width: 3.90625vw;
   }
 }
-footer#footer .inner .container .subscribe .content_sub .social_icon ul li a i {
-  color: #000000;
+footer#footer .inner .container .subscribe .content_sub .social_icon ul li a svg fill {
+  color: rgb(var(--color-foreground));
 }
 footer#footer .inner .container .subscribe .content_sub .footer__localization {
   padding-top: 30px;
