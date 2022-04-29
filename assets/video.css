@@ -2,16 +2,16 @@
 /* automatic size vh */
 /* text clamp */
 /* anime In order */
-span svg {
+.deferred-media__poster-button svg {
   width: 40px;
 }
 @media (max-width: 1000px) {
-span  svg {
+.deferred-media__poster-button  svg {
     width: 4vw;
   }
 }
 @media (max-width: 768px) {
-span  svg {
+.deferred-media__poster-button  svg {
     width: 5.2083333333vw;
   }
 }
@@ -74,8 +74,7 @@ img {
 iframe {
     position: absolute;
     width: 100%;
-    left: 90%;
+    left: 200px;
     max-width: 1200px;
     height: 700px;
-  transform: translateX(-98%);
 }
